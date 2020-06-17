@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L704.dir/c10_erfen/L704_fib_climbstairs.cpp.obj"
+  "CMakeFiles/L704.dir/c10_erfen/L704_fib_climbstairs.cpp.o"
   "L704.pdb"
-  "L704.exe"
-  "L704.exe.manifest"
-  "libL704.dll.a"
+  "L704"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L208.dir/c7_binaryTree_recurrent/L208-m.cpp.obj"
+  "CMakeFiles/L208.dir/c7_binaryTree_recurrent/L208-m.cpp.o"
   "L208.pdb"
-  "L208.exe"
-  "L208.exe.manifest"
-  "libL208.dll.a"
+  "L208"
 )
 
 # Per-language clean rules from dependency scanning.

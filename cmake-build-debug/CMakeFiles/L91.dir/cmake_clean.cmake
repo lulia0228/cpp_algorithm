@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L91.dir/c9_dynamic_plan/L91-m.cpp.obj"
+  "CMakeFiles/L91.dir/c9_dynamic_plan/L91-m.cpp.o"
   "L91.pdb"
-  "L91.exe"
-  "L91.exe.manifest"
-  "libL91.dll.a"
+  "L91"
 )
 
 # Per-language clean rules from dependency scanning.

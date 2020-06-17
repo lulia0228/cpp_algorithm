@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L151.dir/c15_string_sets/L151.cpp.obj"
+  "CMakeFiles/L151.dir/c15_string_topic/L151.cpp.o"
   "L151.pdb"
-  "L151.exe"
-  "L151.exe.manifest"
-  "libL151.dll.a"
+  "L151"
 )
 
 # Per-language clean rules from dependency scanning.

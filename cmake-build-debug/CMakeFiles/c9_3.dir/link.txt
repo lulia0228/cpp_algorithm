@@ -1,3 +1,0 @@
-"D:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\c9_3.dir/objects.a
-C:\mingw64\bin\ar.exe cr CMakeFiles\c9_3.dir/objects.a @CMakeFiles\c9_3.dir\objects1.rsp
-C:\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\c9_3.dir/objects.a -Wl,--no-whole-archive  -o c9_3.exe -Wl,--out-implib,libc9_3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\c9_3.dir\linklibs.rsp

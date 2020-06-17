@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/c7_3.dir/c7_binaryTree_recurrent/use_stack_bianli_tree.cpp.obj"
+  "CMakeFiles/c7_3.dir/c7_binaryTree_recurrent/use_stack_bianli_tree.cpp.o"
   "c7_3.pdb"
-  "c7_3.exe"
-  "c7_3.exe.manifest"
-  "libc7_3.dll.a"
+  "c7_3"
 )
 
 # Per-language clean rules from dependency scanning.

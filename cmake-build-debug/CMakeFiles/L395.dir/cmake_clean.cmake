@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L395.dir/c13_slide_window/L395-m.cpp.obj"
+  "CMakeFiles/L395.dir/c13_slide_window/L395-m.cpp.o"
   "L395.pdb"
-  "L395.exe"
-  "L395.exe.manifest"
-  "libL395.dll.a"
+  "L395"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L3.dir/c13_slide_window/L3-m.cpp.obj"
+  "CMakeFiles/L3.dir/c13_slide_window/L3-m.cpp.o"
   "L3.pdb"
-  "L3.exe"
-  "L3.exe.manifest"
-  "libL3.dll.a"
+  "L3"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -141,9 +141,9 @@ add_executable(L22 c14_graph/L22-m.cpp)
 add_executable(L207 c14_graph/L207-m.cpp)
 add_executable(L279-g c14_graph/L279-G.cpp)
 
-add_executable(L8 c15_string_sets/L8.cpp)
-add_executable(L14 c15_string_sets/L14.cpp)
-add_executable(L151 c15_string_sets/L151.cpp)
+add_executable(L8 c15_string_topic/L8.cpp)
+add_executable(L14 c15_string_topic/L14.cpp)
+add_executable(L151 c15_string_topic/L151.cpp)
 
 add_executable(L11 c16_two_points/L11-m.cpp)
 add_executable(L15 c16_two_points/L15-m.cpp)

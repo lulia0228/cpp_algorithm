@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L557.dir/c6_stack_queue/L557.cpp.obj"
+  "CMakeFiles/L557.dir/c6_stack_queue/L557.cpp.o"
   "L557.pdb"
-  "L557.exe"
-  "L557.exe.manifest"
-  "libL557.dll.a"
+  "L557"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L48.dir/c3_array/L48-m.cpp.obj"
+  "CMakeFiles/L48.dir/c3_array/L48-m.cpp.o"
   "L48.pdb"
-  "L48.exe"
-  "L48.exe.manifest"
-  "libL48.dll.a"
+  "L48"
 )
 
 # Per-language clean rules from dependency scanning.

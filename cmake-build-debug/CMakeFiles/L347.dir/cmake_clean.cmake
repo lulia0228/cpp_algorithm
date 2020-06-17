@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L347.dir/c6_stack_queue/L347-m.cpp.obj"
+  "CMakeFiles/L347.dir/c6_stack_queue/L347-m.cpp.o"
   "L347.pdb"
-  "L347.exe"
-  "L347.exe.manifest"
-  "libL347.dll.a"
+  "L347"
 )
 
 # Per-language clean rules from dependency scanning.
