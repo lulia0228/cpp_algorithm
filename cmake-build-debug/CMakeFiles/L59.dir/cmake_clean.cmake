@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L59.dir/c3_array/L59-m.cpp.o"
+  "CMakeFiles/L59.dir/c3_array/L59-m.cpp.obj"
   "L59.pdb"
-  "L59"
+  "L59.exe"
+  "L59.exe.manifest"
+  "libL59.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

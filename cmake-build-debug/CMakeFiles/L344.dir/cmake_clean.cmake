@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L344.dir/c16_two_points/L344.cpp.o"
+  "CMakeFiles/L344.dir/c16_two_points/L344.cpp.obj"
   "L344.pdb"
-  "L344"
+  "L344.exe"
+  "L344.exe.manifest"
+  "libL344.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

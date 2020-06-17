@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L102.dir/c6_stack_queue/L102.cpp.o"
+  "CMakeFiles/L102.dir/c6_stack_queue/L102.cpp.obj"
   "L102.pdb"
-  "L102"
+  "L102.exe"
+  "L102.exe.manifest"
+  "libL102.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
