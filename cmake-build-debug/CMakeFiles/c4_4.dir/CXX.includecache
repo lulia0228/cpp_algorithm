@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c4_find(set_map)/find_stl_4.cpp
+iostream
+-
+unordered_map
+-
+vector
+-
+cassert
+-
+

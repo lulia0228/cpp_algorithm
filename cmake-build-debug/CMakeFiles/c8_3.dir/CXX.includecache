@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c8_recurrent_backtrack/recurrent_3.cpp
+iostream
+-
+cassert
+-
+vector
+-
+

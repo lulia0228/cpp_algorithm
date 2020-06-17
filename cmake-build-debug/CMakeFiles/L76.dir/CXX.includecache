@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c13_slide_window/L76-h.cpp
+iostream
+-
+cstring
+-
+unordered_map
+-
+vector
+-
+
