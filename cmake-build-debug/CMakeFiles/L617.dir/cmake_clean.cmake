@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L617.dir/c7_binaryTree_recurrent/L617.cpp.obj"
+  "CMakeFiles/L617.dir/c7_binaryTree_recurrent/L617.cpp.o"
   "L617.pdb"
-  "L617.exe"
-  "L617.exe.manifest"
-  "libL617.dll.a"
+  "L617"
 )
 
 # Per-language clean rules from dependency scanning.

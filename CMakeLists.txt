@@ -126,9 +126,9 @@ add_executable(L56 c11_greedy/L56-m.cpp)
 add_executable(L122 c11_greedy/L122.cpp)
 add_executable(L581 c11_greedy/L581.cpp)
 
-add_executable(L7 c12_math_problem/L7.cpp)
-add_executable(L9 c12_math_problem/L9.cpp)
-add_executable(L43 c12_math_problem/L43.cpp)
+add_executable(L7 c12_math_topic/L7.cpp)
+add_executable(L9 c12_math_topic/L9.cpp)
+add_executable(L43 c12_math_topic/L43.cpp)
 
 add_executable(L3 c13_sliding_window/L3-m.cpp)
 add_executable(L76 c13_sliding_window/L76-h.cpp)

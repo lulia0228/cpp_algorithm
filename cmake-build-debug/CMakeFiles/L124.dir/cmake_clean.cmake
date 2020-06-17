@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L124.dir/c7_binaryTree_recurrent/L124-h.cpp.obj"
+  "CMakeFiles/L124.dir/c7_binaryTree_recurrent/L124-h.cpp.o"
   "L124.pdb"
-  "L124.exe"
-  "L124.exe.manifest"
-  "libL124.dll.a"
+  "L124"
 )
 
 # Per-language clean rules from dependency scanning.

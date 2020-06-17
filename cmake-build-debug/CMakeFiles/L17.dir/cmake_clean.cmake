@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L17.dir/c8_recurrent_backtrack/L17-m.cpp.obj"
+  "CMakeFiles/L17.dir/c8_recurrent_backtrack/L17-m.cpp.o"
   "L17.pdb"
-  "L17.exe"
-  "L17.exe.manifest"
-  "libL17.dll.a"
+  "L17"
 )
 
 # Per-language clean rules from dependency scanning.

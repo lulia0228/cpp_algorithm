@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L350.dir/c4_hash/L350.cpp.obj"
+  "CMakeFiles/L350.dir/c4_hash/L350.cpp.o"
   "L350.pdb"
-  "L350.exe"
-  "L350.exe.manifest"
-  "libL350.dll.a"
+  "L350"
 )
 
 # Per-language clean rules from dependency scanning.
