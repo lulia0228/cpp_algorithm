@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c12_math_topic/L7.cpp
+iostream
+-
+cassert
+-
+cmath
+-
+

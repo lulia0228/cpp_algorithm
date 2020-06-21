@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L128.dir/c4_hash/L128-h.cpp.o"
+  "CMakeFiles/L128.dir/c4_hash/L128-h.cpp.obj"
   "L128.pdb"
-  "L128"
+  "L128.exe"
+  "L128.exe.manifest"
+  "libL128.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -26,9 +26,6 @@ public:
  int main(){
     int re = Solution().reverseInt(-534236469);
     cout << re << endl  ;
-    bool re1 = Solution().isZhiShu(6);
-    cout << re1 << endl  ;
-    double re2 = Solution().mySqrt(3);
-    cout << re2 << endl ;
+    return 0;
 
 }

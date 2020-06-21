@@ -1,1 +1,3 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/L235.dir/c7_binaryTree_recurrent/L235.cpp.o  -o L235 
+"D:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\L235.dir/objects.a
+C:\mingw64\bin\ar.exe cr CMakeFiles\L235.dir/objects.a @CMakeFiles\L235.dir\objects1.rsp
+C:\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\L235.dir/objects.a -Wl,--no-whole-archive  -o L235.exe -Wl,--out-implib,libL235.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\L235.dir\linklibs.rsp
