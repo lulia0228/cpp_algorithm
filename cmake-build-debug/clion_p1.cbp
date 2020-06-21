@@ -941,6 +941,50 @@
 					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="L646">
+				<Option output="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/L646.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c1_time_complexity"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L646"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L646/fast">
+				<Option output="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/L646.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c1_time_complexity"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L646/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="c2_2">
 				<Option output="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/c2_2.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug"/>
@@ -4373,6 +4417,50 @@
 					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="L303">
+				<Option output="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/L303.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c1_time_complexity"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L303"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L303/fast">
+				<Option output="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/L303.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c1_time_complexity"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L303/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug"/>
 				<Option type="4"/>
@@ -4510,6 +4598,138 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L343/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L376">
+				<Option output="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/L376.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c1_time_complexity"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L376"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L376/fast">
+				<Option output="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/L376.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c1_time_complexity"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L376/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L377">
+				<Option output="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/L377.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c1_time_complexity"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L377"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L377/fast">
+				<Option output="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/L377.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c1_time_complexity"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L377/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L413">
+				<Option output="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/L413.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c1_time_complexity"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L413"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L413/fast">
+				<Option output="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/L413.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c1_time_complexity"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L413/fast"/>
 					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -4686,6 +4906,94 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L518/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L583">
+				<Option output="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/L583.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c1_time_complexity"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L583"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L583/fast">
+				<Option output="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/L583.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c1_time_complexity"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L583/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L650">
+				<Option output="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/L650.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c1_time_complexity"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L650"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L650/fast">
+				<Option output="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/L650.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c1_time_complexity"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L650/fast"/>
 					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -6700,6 +7008,9 @@
 			<Option target="L279"/>
 		</Unit>
 		<Unit filename="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L300.cpp">
+			<Option target="L303"/>
+		</Unit>
+		<Unit filename="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L303.cpp">
 			<Option target="L300"/>
 		</Unit>
 		<Unit filename="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L322-m.cpp">
@@ -6711,8 +7022,17 @@
 		<Unit filename="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L343.cpp">
 			<Option target="L343"/>
 		</Unit>
+		<Unit filename="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L376-m.cpp">
+			<Option target="L376"/>
+		</Unit>
+		<Unit filename="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L377-m.cpp">
+			<Option target="L377"/>
+		</Unit>
 		<Unit filename="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L39-m.cpp">
 			<Option target="L39"/>
+		</Unit>
+		<Unit filename="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L413-m.cpp">
+			<Option target="L413"/>
 		</Unit>
 		<Unit filename="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L416-m.cpp">
 			<Option target="L416"/>
@@ -6729,14 +7049,23 @@
 		<Unit filename="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L53.cpp">
 			<Option target="L53"/>
 		</Unit>
+		<Unit filename="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L583-m.cpp">
+			<Option target="L583"/>
+		</Unit>
 		<Unit filename="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L62-m.cpp">
 			<Option target="L62"/>
 		</Unit>
 		<Unit filename="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L64-m.cpp">
 			<Option target="L64"/>
 		</Unit>
+		<Unit filename="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L646-m.cpp">
+			<Option target="L646"/>
+		</Unit>
 		<Unit filename="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L647-m.cpp">
 			<Option target="L647"/>
+		</Unit>
+		<Unit filename="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L650-m.cpp">
+			<Option target="L650"/>
 		</Unit>
 		<Unit filename="D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L70.cpp">
 			<Option target="L70"/>
