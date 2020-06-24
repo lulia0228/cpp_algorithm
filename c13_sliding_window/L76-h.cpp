@@ -25,7 +25,8 @@ public:
                 ++record[s[r]];
                 // 若目前滑动窗口已包含T中全部字符，
                 // 则尝试将l右移，在不影响结果的情况下获得最短子字符串
-                while (chars == record) {
+
+                while (IsIntend(chars, record)) {
                     if (r - l + 1 < min_size) {
                         min_l = l;
                         min_size = r - l + 1;
@@ -39,6 +40,14 @@ public:
             }
         }
         return min_size > s.size()? "": s.substr(min_l, min_size);
+    }
+
+    bool IsIntend(vector<int>& v1, vector<int>& v2){
+        for(int i=0; i<128; ++i){
+            if (v1[i] < v2[i])
+                return false;
+        }
+        return true;
     }
 
 };
