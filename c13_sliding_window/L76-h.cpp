@@ -8,7 +8,6 @@
 #include <vector>
 using namespace std;
 
-
 class Solution {
 public:
     string minWindow(string s, string t) {
@@ -27,7 +26,7 @@ public:
                 ++record[s[r]];
                 // 若目前滑动窗口已包含T中全部字符，
                 // 则尝试将l右移，在不影响结果的情况下获得最短子字符串
-
+                //条件是record中字母频次要≥chars中字母频次
                 while (IsIntend(chars, record)) {
                     if (r - l + 1 < min_size) {
                         min_l = l;
@@ -57,7 +56,6 @@ public:
 //下面的解法之所以快，是因为设计了一个cnt变量来代表目前窗口中所有t中字母都出现，就算重复也是
 
 
-
 //这种设计很巧妙 cnt计数 时间16ms
 //重要理解： chars 表示目前每个字符缺少的数量，flag 表示每个字符是否在 T 中存在。
 #include <vector>
@@ -84,7 +82,6 @@ public:
                     if (r - l + 1 < min_size) {
                         min_l = l;
                         min_size = r - l + 1;
-                        //cout << s.substr(min_l, min_size)<<endl;
                     }
                     if (flag[s[l]] && ++chars[s[l]] > 0) {
                         --cnt;
