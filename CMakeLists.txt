@@ -145,6 +145,7 @@ add_executable(L76 c13_sliding_window/L76-h.cpp)
 add_executable(L209 c13_sliding_window/L209.cpp)
 add_executable(L395 c13_sliding_window/L395-m.cpp)
 add_executable(L438 c13_sliding_window/L438-m.cpp)
+add_executable(L567 c13_sliding_window/L567-m.cpp)
 add_executable(L904 c13_sliding_window/L904-m.cpp)
 
 add_executable(L22 c14_graph/L22-m.cpp)
