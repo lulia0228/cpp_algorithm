@@ -7,7 +7,6 @@ using namespace std;
 
 //设计一个前缀树
 class Trie {
-
 private:
     bool isEnd;     //当前字符是不是单词的结尾
     Trie* next[26]; //指针数组
@@ -20,7 +19,7 @@ public:
 
     void insert(string word) {
         Trie* node = this;
-        for (char c : word) {//并没有显式的存储字符，而是存在数组索引里
+        for (char c : word) {  //并没有显式的存储字符，而是存在数组索引里
             if (node->next[c-'a'] == NULL) {
                 node->next[c-'a'] = new Trie();
             }
@@ -51,8 +50,6 @@ public:
         return true;
     }
 };
-
-
 
 /**
  * Your Trie object will be instantiated and called as such:

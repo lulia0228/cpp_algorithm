@@ -2,7 +2,7 @@
 // Created by LiHeng on 2019/8/25.
 //
 
-//最长公共子序列LCS L718 L1143
+//最长公共子序列L1143 字符串
 #include <iostream>
 #include <cstring>
 #include <vector>
@@ -11,7 +11,31 @@
 #include <cassert>
 
 using namespace std ;
-class Solution{
+class Solution {
+public:
+    int longestCommonSubsequence(string text1, string text2) {
+        int m = text1.size() ;
+        int n = text2.size() ;
+        int longest = 0 ;
+        vector<vector<int>> memo(m+1 ,vector<int> (n+1,0));
+        //memo[0][0]存储的是2个字符串中都没有字符的状态
+        //memo[i][j]代表text1[0:i) text2[0:j) 两个字符串的最长公共子序列
+        for(int i=1 ; i < m+1 ; i++){
+            for(int j = 1 ; j < n+1 ;j++){
+                if(text1[i-1] == text2[j-1]){
+                    memo[i][j] = memo[i-1][j-1] + 1 ;
+                }
+                else
+                    memo[i][j] = max(memo[i-1][j], memo[i][j-1]) ;
+            }
+        }
+        return memo[m][n];
+    }
+};
+
+
+
+class Solution1{
 private:
     //flag[i][j] 存储 s1[0,...,i] s2[0,...,j] 二者的最长公共子序列值
     vector<vector<int>> flag ; //flag[0][0]表示的是2个字符串中都只有1个字符的意思
@@ -45,9 +69,9 @@ public:
         int n = s2.length() ;
         //这里memo[0][0]存储的是2个字符串中都没有字符的状态
         vector<vector<int>> memo( m+1  , vector<int>(n+1 , -1) ); //注意尺寸是(m+1)*(n+1)最大索引是（m,n)
-        for(int i = 0 ; i <= n ; i++) //初始化S1中米有字符
+        for(int i = 0 ; i <= n ; i++) //初始化S1中没有字符
             memo[0][i] = 0;
-        for(int j = 1 ; j <= m ; j++)//初始化S2中米有字符
+        for(int j = 1 ; j <= m ; j++)//初始化S2中没有字符
             memo[j][0] = 0;
         for(int i = 1 ; i <= m ; i++){
             for(int j = 1 ; j <= n ; j++){
@@ -63,9 +87,10 @@ public:
 
 
 };
-class Solution1{
+
+//动态规划 自底向上解决 要求返回实际序列
+class Solution2{
 public:
-    //动态规划 自底向上解决 要求得到实际序列
     void LCS_DP(string s1 , string s2){
         int m = s1.length() ;
         int n = s2.length() ;
@@ -122,9 +147,9 @@ public:
 int main(){
     string string1 = "ABCD" ;
     string string2 = "AEBD" ;
-    int maxL = Solution().LCS(string1 , string2);
+    int maxL = Solution1().LCS(string1 , string2);
     cout << maxL << endl ;
-    int maxL2 = Solution().LCS_DP(string1 , string2);
+    int maxL2 = Solution1().LCS_DP(string1 , string2);
     cout << maxL2 << endl ;
     Solution1().LCS_DP(string1 , string2);
 }

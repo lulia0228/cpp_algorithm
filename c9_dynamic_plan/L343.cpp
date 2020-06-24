@@ -9,7 +9,20 @@
 
 using namespace std;
 
-class Solution{
+class Solution {
+public:
+    int integerBreak(int n) {
+        vector<int> memo(n+1 , -1) ;
+        memo[1] = 1;
+        for(int i = 2;i <= n ; i++)
+            //求解memo[i]
+            for(int j = 1 ; j < i ; j ++)
+                memo[i] = max(memo[i] , max(j*(i-j) , j * memo[i-j]));
+        return memo[n];
+    }
+};
+
+class Solution1{
 private:
     vector<int> memo ;
     int max3(int a , int b , int c){
@@ -28,10 +41,7 @@ private:
         memo[n] = res ;
         return res ;
     }
-
-
-
-
+    
 public:
     int integerBreak(int n ){
         assert(n > 1) ;
@@ -52,10 +62,11 @@ public:
 
 };
 
+
 int main(){
     int n  =  10 ;
     cout << Solution().integerBreak(n)<<endl;
-    cout << Solution().integerBreakDP(n);
+    cout << Solution1().integerBreakDP(n);
 }
 
 
