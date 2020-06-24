@@ -31,7 +31,7 @@ public:
         dp[0] = 0;
         for (int i=1; i<=amount; ++i) {
             for (auto coin : coins)
-                if (coin <= i) //是coin<i 不是amount，容易出错
+                if (coin <= i) //是coin<=i 不是amount，容易出错
                     dp[i] = min(dp[i], dp[i-coin]+1);
         }
         return dp[amount] > amount ? -1 : dp[amount];
