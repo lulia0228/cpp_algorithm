@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L160.dir/c5_linkedlist/L160.cpp.o"
+  "CMakeFiles/L160.dir/c5_linkedlist/L160.cpp.obj"
   "L160.pdb"
-  "L160"
+  "L160.exe"
+  "L160.exe.manifest"
+  "libL160.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

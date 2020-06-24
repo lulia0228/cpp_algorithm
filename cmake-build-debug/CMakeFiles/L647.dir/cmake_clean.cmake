@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L647.dir/c9_dynamic_plan/L647-m.cpp.o"
+  "CMakeFiles/L647.dir/c9_dynamic_plan/L647-m.cpp.obj"
   "L647.pdb"
-  "L647"
+  "L647.exe"
+  "L647.exe.manifest"
+  "libL647.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

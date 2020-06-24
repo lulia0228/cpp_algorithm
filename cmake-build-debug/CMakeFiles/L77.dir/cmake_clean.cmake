@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L77.dir/c8_recurrent_backtrack/L77.cpp.o"
+  "CMakeFiles/L77.dir/c8_recurrent_backtrack/L77.cpp.obj"
   "L77.pdb"
-  "L77"
+  "L77.exe"
+  "L77.exe.manifest"
+  "libL77.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

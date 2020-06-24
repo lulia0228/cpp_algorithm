@@ -2,10 +2,12 @@
 // Created by LiHeng on 2020/6/4.
 //
 
+// 滑动窗口思想
 #include <iostream>
 #include <cstring>
 #include <vector>
 using namespace std;
+
 
 class Solution {
 public:
@@ -30,7 +32,6 @@ public:
                     if (r - l + 1 < min_size) {
                         min_l = l;
                         min_size = r - l + 1;
-                        //cout << s.substr(min_l, min_size)<<endl;
                     }
                     if (flag[s[l]]) {
                         --record[s[l]];
@@ -44,19 +45,20 @@ public:
 
     bool IsIntend(vector<int>& v1, vector<int>& v2){
         for(int i=0; i<128; ++i){
-            if (v1[i] < v2[i])
+            if (v1[i] > v2[i])
                 return false;
         }
         return true;
     }
 
 };
-//上面解法在leetcode上最后一个长测试案例没通过，速度慢是因为我对两个字典进行比较造成的
+
+//上面解法在leetcode上速度比较慢160ms，速度慢是因为对2个哈希表做了比较导致的
 //下面的解法之所以快，是因为设计了一个cnt变量来代表目前窗口中所有t中字母都出现，就算重复也是
 
 
 
-//这种设计很巧妙 cnt计数
+//这种设计很巧妙 cnt计数 时间16ms
 //重要理解： chars 表示目前每个字符缺少的数量，flag 表示每个字符是否在 T 中存在。
 #include <vector>
 class Solution1 {

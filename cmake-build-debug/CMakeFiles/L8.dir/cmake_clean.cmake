@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L8.dir/c15_string_topic/L8.cpp.o"
+  "CMakeFiles/L8.dir/c15_string_topic/L8.cpp.obj"
   "L8.pdb"
-  "L8"
+  "L8.exe"
+  "L8.exe.manifest"
+  "libL8.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
