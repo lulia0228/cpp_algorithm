@@ -21,10 +21,6 @@ public:
             string tmp_str = strs[i];
             sort(tmp_str.begin(), tmp_str.end());
             um1[tmp_str].push_back(strs[i]);
-            //if(um1.find(tmp_str) != um1.end())
-            //um1[tmp_str].push_back(strs[i]);
-            //else
-            //um1[tmp_str].push_back(strs[i]);
         }
         for(auto x:um1)
             res.push_back(x.second);

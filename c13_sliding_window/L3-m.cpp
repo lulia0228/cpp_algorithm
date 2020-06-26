@@ -30,7 +30,7 @@ public:
     }
 };
 
-//方法2 同样是滑动窗口
+//方法2 同样是滑动窗口；更加模板化
 #include <unordered_map>
 class Solution1 {
 public:
