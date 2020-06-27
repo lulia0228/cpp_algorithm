@@ -21,7 +21,8 @@ public:
         int sum = 0, res = 0;
         unordered_map<int, int> cul;
         cul[0] = 1;
-        for (auto &m : nums) {
+        //存下来所有累计和的哈希计数
+        for (auto m : nums) {
             sum += m;
             res += cul[sum - k];
             ++cul[sum];
