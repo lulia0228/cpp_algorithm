@@ -56,28 +56,28 @@ include CMakeFiles/L136.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/L136.dir/flags.make
 
-CMakeFiles/L136.dir/c4_hash/L136.cpp.obj: CMakeFiles/L136.dir/flags.make
-CMakeFiles/L136.dir/c4_hash/L136.cpp.obj: CMakeFiles/L136.dir/includes_CXX.rsp
-CMakeFiles/L136.dir/c4_hash/L136.cpp.obj: ../c4_hash/L136.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Program Files\JetBrains\CLion 2018.2.5\Item_Set\clion_p1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/L136.dir/c4_hash/L136.cpp.obj"
-	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\L136.dir\c4_hash\L136.cpp.obj -c "D:\Program Files\JetBrains\CLion 2018.2.5\Item_Set\clion_p1\c4_hash\L136.cpp"
+CMakeFiles/L136.dir/c17_bit_calculate/L136.cpp.obj: CMakeFiles/L136.dir/flags.make
+CMakeFiles/L136.dir/c17_bit_calculate/L136.cpp.obj: CMakeFiles/L136.dir/includes_CXX.rsp
+CMakeFiles/L136.dir/c17_bit_calculate/L136.cpp.obj: ../c17_bit_calculate/L136.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Program Files\JetBrains\CLion 2018.2.5\Item_Set\clion_p1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/L136.dir/c17_bit_calculate/L136.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\L136.dir\c17_bit_calculate\L136.cpp.obj -c "D:\Program Files\JetBrains\CLion 2018.2.5\Item_Set\clion_p1\c17_bit_calculate\L136.cpp"
 
-CMakeFiles/L136.dir/c4_hash/L136.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/L136.dir/c4_hash/L136.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Program Files\JetBrains\CLion 2018.2.5\Item_Set\clion_p1\c4_hash\L136.cpp" > CMakeFiles\L136.dir\c4_hash\L136.cpp.i
+CMakeFiles/L136.dir/c17_bit_calculate/L136.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/L136.dir/c17_bit_calculate/L136.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Program Files\JetBrains\CLion 2018.2.5\Item_Set\clion_p1\c17_bit_calculate\L136.cpp" > CMakeFiles\L136.dir\c17_bit_calculate\L136.cpp.i
 
-CMakeFiles/L136.dir/c4_hash/L136.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/L136.dir/c4_hash/L136.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Program Files\JetBrains\CLion 2018.2.5\Item_Set\clion_p1\c4_hash\L136.cpp" -o CMakeFiles\L136.dir\c4_hash\L136.cpp.s
+CMakeFiles/L136.dir/c17_bit_calculate/L136.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/L136.dir/c17_bit_calculate/L136.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Program Files\JetBrains\CLion 2018.2.5\Item_Set\clion_p1\c17_bit_calculate\L136.cpp" -o CMakeFiles\L136.dir\c17_bit_calculate\L136.cpp.s
 
 # Object files for target L136
 L136_OBJECTS = \
-"CMakeFiles/L136.dir/c4_hash/L136.cpp.obj"
+"CMakeFiles/L136.dir/c17_bit_calculate/L136.cpp.obj"
 
 # External object files for target L136
 L136_EXTERNAL_OBJECTS =
 
-L136.exe: CMakeFiles/L136.dir/c4_hash/L136.cpp.obj
+L136.exe: CMakeFiles/L136.dir/c17_bit_calculate/L136.cpp.obj
 L136.exe: CMakeFiles/L136.dir/build.make
 L136.exe: CMakeFiles/L136.dir/linklibs.rsp
 L136.exe: CMakeFiles/L136.dir/objects1.rsp

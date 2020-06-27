@@ -617,32 +617,6 @@ L128/fast:
 .PHONY : L128/fast
 
 #=============================================================================
-# Target rules for targets named c7_1
-
-# Build rule for target.
-c7_1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 c7_1
-.PHONY : c7_1
-
-# fast build rule for target.
-c7_1/fast:
-	$(MAKE) -f CMakeFiles\c7_1.dir\build.make CMakeFiles/c7_1.dir/build
-.PHONY : c7_1/fast
-
-#=============================================================================
-# Target rules for targets named L136
-
-# Build rule for target.
-L136: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 L136
-.PHONY : L136
-
-# fast build rule for target.
-L136/fast:
-	$(MAKE) -f CMakeFiles\L136.dir\build.make CMakeFiles/L136.dir/build
-.PHONY : L136/fast
-
-#=============================================================================
 # Target rules for targets named L146
 
 # Build rule for target.
@@ -992,6 +966,19 @@ L295: cmake_check_build_system
 L295/fast:
 	$(MAKE) -f CMakeFiles\L295.dir\build.make CMakeFiles/L295.dir/build
 .PHONY : L295/fast
+
+#=============================================================================
+# Target rules for targets named c7_1
+
+# Build rule for target.
+c7_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 c7_1
+.PHONY : c7_1
+
+# fast build rule for target.
+c7_1/fast:
+	$(MAKE) -f CMakeFiles\c7_1.dir\build.make CMakeFiles/c7_1.dir/build
+.PHONY : c7_1/fast
 
 #=============================================================================
 # Target rules for targets named c7_2
@@ -2086,6 +2073,19 @@ L680/fast:
 .PHONY : L680/fast
 
 #=============================================================================
+# Target rules for targets named L136
+
+# Build rule for target.
+L136: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 L136
+.PHONY : L136
+
+# fast build rule for target.
+L136/fast:
+	$(MAKE) -f CMakeFiles\L136.dir\build.make CMakeFiles/L136.dir/build
+.PHONY : L136/fast
+
+#=============================================================================
 # Target rules for targets named L231
 
 # Build rule for target.
@@ -3164,6 +3164,33 @@ c16_two_points/L88.cpp.s:
 	$(MAKE) -f CMakeFiles\L88.dir\build.make CMakeFiles/L88.dir/c16_two_points/L88.cpp.s
 .PHONY : c16_two_points/L88.cpp.s
 
+c17_bit_calculate/L136.obj: c17_bit_calculate/L136.cpp.obj
+
+.PHONY : c17_bit_calculate/L136.obj
+
+# target to build an object file
+c17_bit_calculate/L136.cpp.obj:
+	$(MAKE) -f CMakeFiles\L136.dir\build.make CMakeFiles/L136.dir/c17_bit_calculate/L136.cpp.obj
+.PHONY : c17_bit_calculate/L136.cpp.obj
+
+c17_bit_calculate/L136.i: c17_bit_calculate/L136.cpp.i
+
+.PHONY : c17_bit_calculate/L136.i
+
+# target to preprocess a source file
+c17_bit_calculate/L136.cpp.i:
+	$(MAKE) -f CMakeFiles\L136.dir\build.make CMakeFiles/L136.dir/c17_bit_calculate/L136.cpp.i
+.PHONY : c17_bit_calculate/L136.cpp.i
+
+c17_bit_calculate/L136.s: c17_bit_calculate/L136.cpp.s
+
+.PHONY : c17_bit_calculate/L136.s
+
+# target to generate assembly for a file
+c17_bit_calculate/L136.cpp.s:
+	$(MAKE) -f CMakeFiles\L136.dir\build.make CMakeFiles/L136.dir/c17_bit_calculate/L136.cpp.s
+.PHONY : c17_bit_calculate/L136.cpp.s
+
 c17_bit_calculate/L231.obj: c17_bit_calculate/L231.cpp.obj
 
 .PHONY : c17_bit_calculate/L231.obj
@@ -3757,33 +3784,6 @@ c4_hash/L13.s: c4_hash/L13.cpp.s
 c4_hash/L13.cpp.s:
 	$(MAKE) -f CMakeFiles\L13.dir\build.make CMakeFiles/L13.dir/c4_hash/L13.cpp.s
 .PHONY : c4_hash/L13.cpp.s
-
-c4_hash/L136.obj: c4_hash/L136.cpp.obj
-
-.PHONY : c4_hash/L136.obj
-
-# target to build an object file
-c4_hash/L136.cpp.obj:
-	$(MAKE) -f CMakeFiles\L136.dir\build.make CMakeFiles/L136.dir/c4_hash/L136.cpp.obj
-.PHONY : c4_hash/L136.cpp.obj
-
-c4_hash/L136.i: c4_hash/L136.cpp.i
-
-.PHONY : c4_hash/L136.i
-
-# target to preprocess a source file
-c4_hash/L136.cpp.i:
-	$(MAKE) -f CMakeFiles\L136.dir\build.make CMakeFiles/L136.dir/c4_hash/L136.cpp.i
-.PHONY : c4_hash/L136.cpp.i
-
-c4_hash/L136.s: c4_hash/L136.cpp.s
-
-.PHONY : c4_hash/L136.s
-
-# target to generate assembly for a file
-c4_hash/L136.cpp.s:
-	$(MAKE) -f CMakeFiles\L136.dir\build.make CMakeFiles/L136.dir/c4_hash/L136.cpp.s
-.PHONY : c4_hash/L136.cpp.s
 
 c4_hash/L146-m.obj: c4_hash/L146-m.cpp.obj
 
@@ -6314,8 +6314,6 @@ help:
 	@echo ... L155
 	@echo ... L49
 	@echo ... L128
-	@echo ... c7_1
-	@echo ... L136
 	@echo ... L146
 	@echo ... L217
 	@echo ... L219
@@ -6343,6 +6341,7 @@ help:
 	@echo ... L102
 	@echo ... L227
 	@echo ... L295
+	@echo ... c7_1
 	@echo ... c7_2
 	@echo ... c7_3
 	@echo ... L98
@@ -6428,6 +6427,7 @@ help:
 	@echo ... L524
 	@echo ... L633
 	@echo ... L680
+	@echo ... L136
 	@echo ... L231
 	@echo ... L121
 	@echo ... rebuild_cache
@@ -6548,6 +6548,9 @@ help:
 	@echo ... c16_two_points/L88.obj
 	@echo ... c16_two_points/L88.i
 	@echo ... c16_two_points/L88.s
+	@echo ... c17_bit_calculate/L136.obj
+	@echo ... c17_bit_calculate/L136.i
+	@echo ... c17_bit_calculate/L136.s
 	@echo ... c17_bit_calculate/L231.obj
 	@echo ... c17_bit_calculate/L231.i
 	@echo ... c17_bit_calculate/L231.s
@@ -6614,9 +6617,6 @@ help:
 	@echo ... c4_hash/L13.obj
 	@echo ... c4_hash/L13.i
 	@echo ... c4_hash/L13.s
-	@echo ... c4_hash/L136.obj
-	@echo ... c4_hash/L136.i
-	@echo ... c4_hash/L136.s
 	@echo ... c4_hash/L146-m.obj
 	@echo ... c4_hash/L146-m.i
 	@echo ... c4_hash/L146-m.s

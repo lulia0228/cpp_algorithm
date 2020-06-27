@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L136.dir/c4_hash/L136.cpp.obj"
+  "CMakeFiles/L136.dir/c17_bit_calculate/L136.cpp.obj"
   "L136.pdb"
   "L136.exe"
   "L136.exe.manifest"

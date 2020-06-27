@@ -9,18 +9,31 @@
 #include <vector>
 
 using namespace std;
-
+// 数学方法，利用异或位运算
 class Solution {
 public:
+    int singleNumber(vector<int>& nums) {
+        int ans = 0;
+        for(int i = 0; i < nums.size(); ++i){
+            ans = ans^nums[i];
+        }
+        return ans;
+    }
+};
+
+//哈希方法也可以，不过题目要求不得使用额外空间复杂度
+class Solution1 {
+public:
     // 使用哈希表
-    int singleNumber1(vector<int>& nums) {
+    int singleNumber(vector<int>& nums) {
         unordered_map<int,int> n;
         int ans = 0;
         for(int i = 0; i < nums.size(); ++i){
-            if(n.find(nums[i]) != n.end())
-                n[nums[i]]++;
-            else
-                n[nums[i]]=1;
+            n[nums[i]]++;
+            // if(n.find(nums[i]) != n.end())
+            //     n[nums[i]]++;
+            // else
+            //     n[nums[i]]=1;
         }
         unordered_map<int,int>::iterator iter;
         for(iter = n.begin();iter != n.end();iter++){
@@ -29,29 +42,8 @@ public:
         }
         return ans;
     }
-
-    // 数学方法，利用异或位运算
-    int singleNumber2(vector<int>& nums) {
-        int ans = 0;
-        for(int i = 0; i < nums.size(); ++i){
-            ans = ans^nums[i];
-        }
-        return ans;
-    }
-
 };
 
-
-
-
-
-
-
-
-
-
-
 int main(){
-
     return 0;
 }
