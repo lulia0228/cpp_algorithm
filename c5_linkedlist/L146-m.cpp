@@ -2,6 +2,8 @@
 // Created by LiHeng on 2020/4/19.
 //
 
+// L146 LRU缓存设计
+
 #include <vector>
 #include <algorithm>
 #include <iostream>
@@ -84,15 +86,16 @@ public:
     }
 };
 
+#include <list>
 class LRUCache1 {
-
 private:
     unordered_map<int,list<pair<int,int>>::iterator> m;//用一个哈希双向链表来存储
-    int cap;//表示容量。
+    int cap;//表示容量
     list<pair<int,int>> l;//表示双向链表
 
 public:
-    LRUCache(int capacity) {
+    //成员函数名称个类名保持一致
+    LRUCache1(int capacity) {
         this->cap = capacity;
     }
 
@@ -111,7 +114,6 @@ public:
     }
 
     void put(int key, int value) {
-
         //查找要放入的数是否已经存在。
         auto iter = m.find(key);
         if(iter!=m.end()){
