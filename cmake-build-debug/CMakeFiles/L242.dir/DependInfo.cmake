@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/liheng/ClionProjects/clion_p1/c4_hash/L242.cpp" "/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/CMakeFiles/L242.dir/c4_hash/L242.cpp.o"
+  "D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c4_hash/L242.cpp" "D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/CMakeFiles/L242.dir/c4_hash/L242.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

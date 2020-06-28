@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L567.dir/c13_sliding_window/L567-m.cpp.o"
+  "CMakeFiles/L567.dir/c13_sliding_window/L567-m.cpp.obj"
   "L567.pdb"
-  "L567"
+  "L567.exe"
+  "L567.exe.manifest"
+  "libL567.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

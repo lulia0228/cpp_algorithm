@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L524.dir/c16_two_points/L524-m.cpp.o"
+  "CMakeFiles/L524.dir/c16_two_points/L524-m.cpp.obj"
   "L524.pdb"
-  "L524"
+  "L524.exe"
+  "L524.exe.manifest"
+  "libL524.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

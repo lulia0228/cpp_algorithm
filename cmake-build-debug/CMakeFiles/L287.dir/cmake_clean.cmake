@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L287.dir/c16_two_points/L287-m.cpp.o"
+  "CMakeFiles/L287.dir/c16_two_points/L287-m.cpp.obj"
   "L287.pdb"
-  "L287"
+  "L287.exe"
+  "L287.exe.manifest"
+  "libL287.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

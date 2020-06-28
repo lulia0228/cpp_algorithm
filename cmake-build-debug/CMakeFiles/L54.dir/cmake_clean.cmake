@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L54.dir/c3_array/L54-m.cpp.o"
+  "CMakeFiles/L54.dir/c19_matrix/L54-m.cpp.obj"
   "L54.pdb"
-  "L54"
+  "L54.exe"
+  "L54.exe.manifest"
+  "libL54.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

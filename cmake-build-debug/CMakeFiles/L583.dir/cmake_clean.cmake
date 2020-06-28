@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L583.dir/c9_dynamic_plan/L583-m.cpp.o"
+  "CMakeFiles/L583.dir/c9_dynamic_plan/L583-m.cpp.obj"
   "L583.pdb"
-  "L583"
+  "L583.exe"
+  "L583.exe.manifest"
+  "libL583.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

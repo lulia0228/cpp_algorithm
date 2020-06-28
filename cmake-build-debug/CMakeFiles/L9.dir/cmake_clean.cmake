@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L9.dir/c12_math_topic/L9.cpp.o"
+  "CMakeFiles/L9.dir/c12_math_topic/L9.cpp.obj"
   "L9.pdb"
-  "L9"
+  "L9.exe"
+  "L9.exe.manifest"
+  "libL9.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

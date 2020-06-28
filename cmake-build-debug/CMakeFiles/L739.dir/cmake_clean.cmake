@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L739.dir/c6_stack_queue/L739-m.cpp.o"
+  "CMakeFiles/L739.dir/c6_stack_queue/L739-m.cpp.obj"
   "L739.pdb"
-  "L739"
+  "L739.exe"
+  "L739.exe.manifest"
+  "libL739.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

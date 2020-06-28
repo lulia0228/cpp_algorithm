@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L540.dir/c10_erfen/L540-m.cpp.o"
+  "CMakeFiles/L540.dir/c10_erfen/L540-m.cpp.obj"
   "L540.pdb"
-  "L540"
+  "L540.exe"
+  "L540.exe.manifest"
+  "libL540.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

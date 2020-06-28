@@ -10,6 +10,7 @@
 
 //因为哈希表只能做到查找插入和查找删除是o(1)； 第三个要求随机返回做不到o(1) 所以需要设计一个
 //动态数组用于随机返回，此外删除的时候，动态数组可以把最后一个数字和要删除的数字交换位置，然后数组删除最后一个数，并更新哈希
+
 #include <iostream>
 #include <unordered_map>
 #include <vector>
@@ -36,7 +37,7 @@ public:
         if(up1.find(val) == up1.end())
             return false;
         vec[up1[val]] = vec.back();
-        up1[vec.back()] = up1[val];
+        up1[vec.back()] = up1[val]; //把要删除的元素移动到最末尾
         vec.pop_back();
         up1.erase(val);
         return true;

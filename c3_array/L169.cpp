@@ -14,7 +14,6 @@ public:
     }
 };
 
-
 //摩尔投票法
 class Solution1 {
 public:
