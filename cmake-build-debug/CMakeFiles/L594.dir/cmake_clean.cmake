@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L594.dir/c4_hash/L594.cpp.obj"
+  "CMakeFiles/L594.dir/c4_hash/L594.cpp.o"
   "L594.pdb"
-  "L594.exe"
-  "L594.exe.manifest"
-  "libL594.dll.a"
+  "L594"
 )
 
 # Per-language clean rules from dependency scanning.

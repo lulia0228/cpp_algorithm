@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/c2_1.dir/c2_sort/sort-algorithms.cpp.obj"
+  "CMakeFiles/c2_1.dir/c2_sort/sort-algorithms.cpp.o"
   "c2_1.pdb"
-  "c2_1.exe"
-  "c2_1.exe.manifest"
-  "libc2_1.dll.a"
+  "c2_1"
 )
 
 # Per-language clean rules from dependency scanning.

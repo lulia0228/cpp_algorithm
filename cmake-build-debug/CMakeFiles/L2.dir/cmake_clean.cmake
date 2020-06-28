@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L2.dir/c5_linkedlist/L2-m.cpp.obj"
+  "CMakeFiles/L2.dir/c5_linkedlist/L2-m.cpp.o"
   "L2.pdb"
-  "L2.exe"
-  "L2.exe.manifest"
-  "libL2.dll.a"
+  "L2"
 )
 
 # Per-language clean rules from dependency scanning.

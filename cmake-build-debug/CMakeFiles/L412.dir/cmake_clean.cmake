@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L412.dir/c4_hash/L412.cpp.obj"
+  "CMakeFiles/L412.dir/c4_hash/L412.cpp.o"
   "L412.pdb"
-  "L412.exe"
-  "L412.exe.manifest"
-  "libL412.dll.a"
+  "L412"
 )
 
 # Per-language clean rules from dependency scanning.

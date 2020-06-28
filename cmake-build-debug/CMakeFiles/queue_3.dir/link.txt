@@ -1,3 +1,1 @@
-"D:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\queue_3.dir/objects.a
-C:\mingw64\bin\ar.exe cr CMakeFiles\queue_3.dir/objects.a @CMakeFiles\queue_3.dir\objects1.rsp
-C:\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\queue_3.dir/objects.a -Wl,--no-whole-archive  -o queue_3.exe -Wl,--out-implib,libqueue_3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\queue_3.dir\linklibs.rsp
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/queue_3.dir/c6_stack_queue/queue_3.cpp.o  -o queue_3 

@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L200.dir/c8_recurrent_backtrack/L200.cpp.obj"
+  "CMakeFiles/L200.dir/c8_recurrent_backtrack/L200.cpp.o"
   "L200.pdb"
-  "L200.exe"
-  "L200.exe.manifest"
-  "libL200.dll.a"
+  "L200"
 )
 
 # Per-language clean rules from dependency scanning.

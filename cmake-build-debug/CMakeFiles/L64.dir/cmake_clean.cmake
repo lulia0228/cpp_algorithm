@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L64.dir/c9_dynamic_plan/L64-m.cpp.obj"
+  "CMakeFiles/L64.dir/c9_dynamic_plan/L64-m.cpp.o"
   "L64.pdb"
-  "L64.exe"
-  "L64.exe.manifest"
-  "libL64.dll.a"
+  "L64"
 )
 
 # Per-language clean rules from dependency scanning.

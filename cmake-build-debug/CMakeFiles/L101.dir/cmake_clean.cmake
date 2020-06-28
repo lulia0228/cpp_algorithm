@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L101.dir/c7_binaryTree_recurrent/L101-226.cpp.obj"
+  "CMakeFiles/L101.dir/c7_binaryTree_recurrent/L101-226.cpp.o"
   "L101.pdb"
-  "L101.exe"
-  "L101.exe.manifest"
-  "libL101.dll.a"
+  "L101"
 )
 
 # Per-language clean rules from dependency scanning.

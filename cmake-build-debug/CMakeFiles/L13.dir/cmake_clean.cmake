@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L13.dir/c4_hash/L13.cpp.obj"
+  "CMakeFiles/L13.dir/c4_hash/L13.cpp.o"
   "L13.pdb"
-  "L13.exe"
-  "L13.exe.manifest"
-  "libL13.dll.a"
+  "L13"
 )
 
 # Per-language clean rules from dependency scanning.

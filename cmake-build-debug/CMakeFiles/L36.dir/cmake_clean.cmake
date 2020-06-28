@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L36.dir/c4_hash/L36-m.cpp.obj"
+  "CMakeFiles/L36.dir/c4_hash/L36-m.cpp.o"
   "L36.pdb"
-  "L36.exe"
-  "L36.exe.manifest"
-  "libL36.dll.a"
+  "L36"
 )
 
 # Per-language clean rules from dependency scanning.
