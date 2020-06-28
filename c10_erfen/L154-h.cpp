@@ -29,7 +29,7 @@ public:
                 return nums[0];
             while(lt < rt){
                 mid = lt + (rt-lt)/2;
-                if(nums[mid] >= nums[0]) //这里比较mid与left是行不通的
+                if(nums[mid] >= nums[0]) //这里比较mid与left是行不通的,原因我也没明白
                     lt = mid+1;
                 else
                     rt = mid;
@@ -62,7 +62,7 @@ public:
                 return nums[0];
             while(lt < rt){
                 mid = lt + (rt-lt)/2;
-                if(nums[mid] <= nums[rt]) //这里比较mid与left是行不通的
+                if(nums[mid] <= nums[rt])
                     rt = mid;
                 else
                     lt = mid+1;
@@ -71,7 +71,7 @@ public:
         else{
             while(lt < rt){
                 mid = lt + (rt-lt)/2;
-                if(nums[mid] <= nums[rt]) //这里比较mid与left是行不通的
+                if(nums[mid] <= nums[rt])
                     rt = mid;
                 else
                     lt = mid+1;
