@@ -143,6 +143,7 @@ add_executable(L278 c10_erfen/L278.cpp)
 add_executable(L378 c10_erfen/L378-m.cpp)
 add_executable(L540 c10_erfen/L540-m.cpp)
 add_executable(L704 c10_erfen/L704_fib_climbstairs.cpp)
+add_executable(L744 c10_erfen/L744.cpp)
 
 add_executable(L55 c11_greedy/L55-m.cpp)
 add_executable(L56 c11_greedy/L56-m.cpp)

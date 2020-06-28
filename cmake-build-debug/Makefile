@@ -1775,6 +1775,19 @@ L169/fast:
 .PHONY : L169/fast
 
 #=============================================================================
+# Target rules for targets named L744
+
+# Build rule for target.
+L744: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 L744
+.PHONY : L744
+
+# fast build rule for target.
+L744/fast:
+	$(MAKE) -f CMakeFiles/L744.dir/build.make CMakeFiles/L744.dir/build
+.PHONY : L744/fast
+
+#=============================================================================
 # Target rules for targets named L153
 
 # Build rule for target.
@@ -2551,6 +2564,33 @@ c10_erfen/L704_fib_climbstairs.s: c10_erfen/L704_fib_climbstairs.cpp.s
 c10_erfen/L704_fib_climbstairs.cpp.s:
 	$(MAKE) -f CMakeFiles/L704.dir/build.make CMakeFiles/L704.dir/c10_erfen/L704_fib_climbstairs.cpp.s
 .PHONY : c10_erfen/L704_fib_climbstairs.cpp.s
+
+c10_erfen/L744.o: c10_erfen/L744.cpp.o
+
+.PHONY : c10_erfen/L744.o
+
+# target to build an object file
+c10_erfen/L744.cpp.o:
+	$(MAKE) -f CMakeFiles/L744.dir/build.make CMakeFiles/L744.dir/c10_erfen/L744.cpp.o
+.PHONY : c10_erfen/L744.cpp.o
+
+c10_erfen/L744.i: c10_erfen/L744.cpp.i
+
+.PHONY : c10_erfen/L744.i
+
+# target to preprocess a source file
+c10_erfen/L744.cpp.i:
+	$(MAKE) -f CMakeFiles/L744.dir/build.make CMakeFiles/L744.dir/c10_erfen/L744.cpp.i
+.PHONY : c10_erfen/L744.cpp.i
+
+c10_erfen/L744.s: c10_erfen/L744.cpp.s
+
+.PHONY : c10_erfen/L744.s
+
+# target to generate assembly for a file
+c10_erfen/L744.cpp.s:
+	$(MAKE) -f CMakeFiles/L744.dir/build.make CMakeFiles/L744.dir/c10_erfen/L744.cpp.s
+.PHONY : c10_erfen/L744.cpp.s
 
 c10_erfen/binary_search.o: c10_erfen/binary_search.cpp.o
 
@@ -6846,6 +6886,7 @@ help:
 	@echo "... L279"
 	@echo "... L448"
 	@echo "... L169"
+	@echo "... L744"
 	@echo "... L153"
 	@echo "... L23"
 	@echo "... L104"
@@ -6916,6 +6957,9 @@ help:
 	@echo "... c10_erfen/L704_fib_climbstairs.o"
 	@echo "... c10_erfen/L704_fib_climbstairs.i"
 	@echo "... c10_erfen/L704_fib_climbstairs.s"
+	@echo "... c10_erfen/L744.o"
+	@echo "... c10_erfen/L744.i"
+	@echo "... c10_erfen/L744.s"
 	@echo "... c10_erfen/binary_search.o"
 	@echo "... c10_erfen/binary_search.i"
 	@echo "... c10_erfen/binary_search.s"
