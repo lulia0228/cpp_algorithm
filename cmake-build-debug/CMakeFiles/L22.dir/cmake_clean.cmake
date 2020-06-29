@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L22.dir/c14_graph/L22-m.cpp.o"
+  "CMakeFiles/L22.dir/c14_graph/L22-m.cpp.obj"
   "L22.pdb"
-  "L22"
+  "L22.exe"
+  "L22.exe.manifest"
+  "libL22.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

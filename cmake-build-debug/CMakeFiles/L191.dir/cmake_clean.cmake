@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L191.dir/c17_bit_calculate/L191.cpp.o"
+  "CMakeFiles/L191.dir/c17_bit_calculate/L191.cpp.obj"
   "L191.pdb"
-  "L191"
+  "L191.exe"
+  "L191.exe.manifest"
+  "libL191.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

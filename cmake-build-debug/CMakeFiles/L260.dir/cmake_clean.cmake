@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L260.dir/c17_bit_calculate/L260-m.cpp.o"
+  "CMakeFiles/L260.dir/c17_bit_calculate/L260-m.cpp.obj"
   "L260.pdb"
-  "L260"
+  "L260.exe"
+  "L260.exe.manifest"
+  "libL260.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L154.dir/c10_erfen/L154-h.cpp.o"
+  "CMakeFiles/L154.dir/c10_erfen/L154-h.cpp.obj"
   "L154.pdb"
-  "L154"
+  "L154.exe"
+  "L154.exe.manifest"
+  "libL154.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

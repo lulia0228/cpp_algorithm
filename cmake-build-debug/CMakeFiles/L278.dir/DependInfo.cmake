@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/liheng/ClionProjects/clion_p1/c10_erfen/L278.cpp" "/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/CMakeFiles/L278.dir/c10_erfen/L278.cpp.o"
+  "D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c10_erfen/L278.cpp" "D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/CMakeFiles/L278.dir/c10_erfen/L278.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

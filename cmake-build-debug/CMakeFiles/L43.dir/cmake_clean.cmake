@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L43.dir/c12_math_topic/L43.cpp.o"
+  "CMakeFiles/L43.dir/c12_math_topic/L43.cpp.obj"
   "L43.pdb"
-  "L43"
+  "L43.exe"
+  "L43.exe.manifest"
+  "libL43.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

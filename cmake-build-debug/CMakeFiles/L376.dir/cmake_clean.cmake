@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L376.dir/c9_dynamic_plan/L376-m.cpp.o"
+  "CMakeFiles/L376.dir/c9_dynamic_plan/L376-m.cpp.obj"
   "L376.pdb"
-  "L376"
+  "L376.exe"
+  "L376.exe.manifest"
+  "libL376.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

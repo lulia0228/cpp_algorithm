@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L461.dir/c17_bit_calculate/L461.cpp.o"
+  "CMakeFiles/L461.dir/c17_bit_calculate/L461.cpp.obj"
   "L461.pdb"
-  "L461"
+  "L461.exe"
+  "L461.exe.manifest"
+  "libL461.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

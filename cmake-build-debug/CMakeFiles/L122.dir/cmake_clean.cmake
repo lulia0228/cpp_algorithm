@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L122.dir/c11_greedy/L122.cpp.o"
+  "CMakeFiles/L122.dir/c11_greedy/L122.cpp.obj"
   "L122.pdb"
-  "L122"
+  "L122.exe"
+  "L122.exe.manifest"
+  "libL122.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

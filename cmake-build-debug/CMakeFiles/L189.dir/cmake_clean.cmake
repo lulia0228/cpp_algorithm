@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L189.dir/c3_array/L189.cpp.o"
+  "CMakeFiles/L189.dir/c3_array/L189.cpp.obj"
   "L189.pdb"
-  "L189"
+  "L189.exe"
+  "L189.exe.manifest"
+  "libL189.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
