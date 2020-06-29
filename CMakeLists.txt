@@ -193,7 +193,16 @@ add_executable(L633 c16_two_points/L633.cpp)
 add_executable(L680 c16_two_points/L680.cpp)
 
 add_executable(L136 c17_bit_calculate/L136.cpp)
+add_executable(L137 c17_bit_calculate/L137-m.cpp)
+add_executable(L190 c17_bit_calculate/L190.cpp)
+add_executable(L191 c17_bit_calculate/L191.cpp)
 add_executable(L231 c17_bit_calculate/L231.cpp)
+add_executable(L260 c17_bit_calculate/L260-m.cpp)
+add_executable(L268-b c17_bit_calculate/L268.cpp)
+add_executable(L371 c17_bit_calculate/L371-m.cpp)
+add_executable(L461 c17_bit_calculate/L461.cpp)
+add_executable(L476 c17_bit_calculate/L476.cpp)
+add_executable(L693 c17_bit_calculate/L693.cpp)
 
 add_executable(L121 c18_stock_topic/L121.cpp)
 

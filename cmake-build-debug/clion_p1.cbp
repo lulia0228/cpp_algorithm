@@ -81,6 +81,94 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="L461">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L461" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L461"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L461/fast">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L461" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L461/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L268-b">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L268-b" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L268-b"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L268-b/fast">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L268-b" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L268-b/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="L136">
 				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L136" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
@@ -873,6 +961,50 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="L476">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L476" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L476"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L476/fast">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L476" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L476/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="L278">
 				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L278" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
@@ -1264,6 +1396,50 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L718/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L137">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L137" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L137"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L137/fast">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L137" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L137/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -2188,6 +2364,50 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L91/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L190">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L190" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L190"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L190/fast">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L190" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L190/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -4173,6 +4393,50 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="L191">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L191" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L191"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L191/fast">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L191" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L191/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="queue_3">
 				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/queue_3" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
@@ -5273,6 +5537,50 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="L693">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L693" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L693"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L693/fast">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L693" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L693/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="L409">
 				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L409" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
@@ -6197,6 +6505,50 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="L371">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L371" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L371"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L371/fast">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L371" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L371/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="L61">
 				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L61" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
@@ -6324,6 +6676,50 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 c1_4/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L260">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L260" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L260"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L260/fast">
+				<Option output="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/L260" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/ClionProjects/clion_p1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liheng/ClionProjects/clion_p1/c1_time_complexity"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 L260/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -7970,8 +8366,35 @@
 		<Unit filename="/Users/liheng/ClionProjects/clion_p1/c17_bit_calculate/L136.cpp">
 			<Option target="L136"/>
 		</Unit>
+		<Unit filename="/Users/liheng/ClionProjects/clion_p1/c17_bit_calculate/L137-m.cpp">
+			<Option target="L137"/>
+		</Unit>
+		<Unit filename="/Users/liheng/ClionProjects/clion_p1/c17_bit_calculate/L190.cpp">
+			<Option target="L190"/>
+		</Unit>
+		<Unit filename="/Users/liheng/ClionProjects/clion_p1/c17_bit_calculate/L191.cpp">
+			<Option target="L191"/>
+		</Unit>
 		<Unit filename="/Users/liheng/ClionProjects/clion_p1/c17_bit_calculate/L231.cpp">
 			<Option target="L231"/>
+		</Unit>
+		<Unit filename="/Users/liheng/ClionProjects/clion_p1/c17_bit_calculate/L260-m.cpp">
+			<Option target="L260"/>
+		</Unit>
+		<Unit filename="/Users/liheng/ClionProjects/clion_p1/c17_bit_calculate/L268.cpp">
+			<Option target="L268-b"/>
+		</Unit>
+		<Unit filename="/Users/liheng/ClionProjects/clion_p1/c17_bit_calculate/L371-m.cpp">
+			<Option target="L371"/>
+		</Unit>
+		<Unit filename="/Users/liheng/ClionProjects/clion_p1/c17_bit_calculate/L461.cpp">
+			<Option target="L461"/>
+		</Unit>
+		<Unit filename="/Users/liheng/ClionProjects/clion_p1/c17_bit_calculate/L476.cpp">
+			<Option target="L476"/>
+		</Unit>
+		<Unit filename="/Users/liheng/ClionProjects/clion_p1/c17_bit_calculate/L693.cpp">
+			<Option target="L693"/>
 		</Unit>
 		<Unit filename="/Users/liheng/ClionProjects/clion_p1/c18_stock_topic/L121.cpp">
 			<Option target="L121"/>
