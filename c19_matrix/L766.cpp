@@ -1,7 +1,10 @@
 //
 // Created by 李恒 on 2020/6/29.
 //
+#include <iostream>
+#include <vector>
 
+using namespace std;
 class Solution {
 public:
     bool isToeplitzMatrix(vector<vector<int>>& matrix) {
