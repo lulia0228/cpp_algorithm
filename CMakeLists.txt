@@ -25,6 +25,10 @@ add_executable(L268 c3_array/L268.cpp)
 add_executable(L380 c3_array/L380-m.cpp)
 add_executable(L384 c3_array/L384-m.cpp)
 add_executable(L448 c3_array/L448.cpp)
+add_executable(L565 c3_array/L565-m.cpp)
+add_executable(L766 c3_array/L766.cpp)
+add_executable(L769 c3_array/L769-m.cpp)
+
 
 add_executable(L1 c4_hash/L1.cpp)
 add_executable(L13 c4_hash/L13.cpp)

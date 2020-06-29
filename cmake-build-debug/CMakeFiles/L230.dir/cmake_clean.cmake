@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L230.dir/c7_binaryTree_recurrent/L230-m.cpp.obj"
+  "CMakeFiles/L230.dir/c7_binaryTree_recurrent/L230-m.cpp.o"
   "L230.pdb"
-  "L230.exe"
-  "L230.exe.manifest"
-  "libL230.dll.a"
+  "L230"
 )
 
 # Per-language clean rules from dependency scanning.

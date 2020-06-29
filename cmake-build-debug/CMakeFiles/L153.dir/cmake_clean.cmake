@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L153.dir/c10_erfen/L153-m.cpp.obj"
+  "CMakeFiles/L153.dir/c10_erfen/L153-m.cpp.o"
   "L153.pdb"
-  "L153.exe"
-  "L153.exe.manifest"
-  "libL153.dll.a"
+  "L153"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/c9_dynamic_plan/L650-m.cpp" "D:/Program Files/JetBrains/CLion 2018.2.5/Item_Set/clion_p1/cmake-build-debug/CMakeFiles/L650.dir/c9_dynamic_plan/L650-m.cpp.obj"
+  "/Users/liheng/ClionProjects/clion_p1/c9_dynamic_plan/L650-m.cpp" "/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/CMakeFiles/L650.dir/c9_dynamic_plan/L650-m.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

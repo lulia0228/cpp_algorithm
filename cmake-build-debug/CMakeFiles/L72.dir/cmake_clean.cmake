@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L72.dir/c9_dynamic_plan/L72-h.cpp.obj"
+  "CMakeFiles/L72.dir/c9_dynamic_plan/L72-h.cpp.o"
   "L72.pdb"
-  "L72.exe"
-  "L72.exe.manifest"
-  "libL72.dll.a"
+  "L72"
 )
 
 # Per-language clean rules from dependency scanning.

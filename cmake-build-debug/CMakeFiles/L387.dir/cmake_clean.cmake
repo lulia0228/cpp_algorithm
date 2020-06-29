@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L387.dir/c4_hash/L387.cpp.obj"
+  "CMakeFiles/L387.dir/c4_hash/L387.cpp.o"
   "L387.pdb"
-  "L387.exe"
-  "L387.exe.manifest"
-  "libL387.dll.a"
+  "L387"
 )
 
 # Per-language clean rules from dependency scanning.

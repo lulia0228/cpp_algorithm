@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L349.dir/c4_hash/L349.cpp.obj"
+  "CMakeFiles/L349.dir/c4_hash/L349.cpp.o"
   "L349.pdb"
-  "L349.exe"
-  "L349.exe.manifest"
-  "libL349.dll.a"
+  "L349"
 )
 
 # Per-language clean rules from dependency scanning.

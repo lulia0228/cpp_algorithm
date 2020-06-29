@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L4.dir/c10_erfen/L4-h.cpp.obj"
+  "CMakeFiles/L4.dir/c10_erfen/L4-h.cpp.o"
   "L4.pdb"
-  "L4.exe"
-  "L4.exe.manifest"
-  "libL4.dll.a"
+  "L4"
 )
 
 # Per-language clean rules from dependency scanning.

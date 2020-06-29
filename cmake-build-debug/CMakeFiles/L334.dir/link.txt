@@ -1,3 +1,1 @@
-"D:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\L334.dir/objects.a
-C:\mingw64\bin\ar.exe cr CMakeFiles\L334.dir/objects.a @CMakeFiles\L334.dir\objects1.rsp
-C:\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\L334.dir/objects.a -Wl,--no-whole-archive  -o L334.exe -Wl,--out-implib,libL334.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\L334.dir\linklibs.rsp
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/L334.dir/c16_two_points/L334-m.cpp.o  -o L334 

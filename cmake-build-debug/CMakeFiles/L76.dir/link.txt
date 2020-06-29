@@ -1,3 +1,1 @@
-"D:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\L76.dir/objects.a
-C:\mingw64\bin\ar.exe cr CMakeFiles\L76.dir/objects.a @CMakeFiles\L76.dir\objects1.rsp
-C:\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\L76.dir/objects.a -Wl,--no-whole-archive  -o L76.exe -Wl,--out-implib,libL76.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\L76.dir\linklibs.rsp
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/L76.dir/c13_sliding_window/L76-h.cpp.o  -o L76 

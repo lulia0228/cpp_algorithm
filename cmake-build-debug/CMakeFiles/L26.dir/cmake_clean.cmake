@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L26.dir/c3_array/L26.cpp.obj"
+  "CMakeFiles/L26.dir/c3_array/L26.cpp.o"
   "L26.pdb"
-  "L26.exe"
-  "L26.exe.manifest"
-  "libL26.dll.a"
+  "L26"
 )
 
 # Per-language clean rules from dependency scanning.

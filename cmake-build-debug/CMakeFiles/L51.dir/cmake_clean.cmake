@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L51.dir/c8_recurrent_backtrack/L51.cpp.obj"
+  "CMakeFiles/L51.dir/c8_recurrent_backtrack/L51.cpp.o"
   "L51.pdb"
-  "L51.exe"
-  "L51.exe.manifest"
-  "libL51.dll.a"
+  "L51"
 )
 
 # Per-language clean rules from dependency scanning.

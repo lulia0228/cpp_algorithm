@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L384.dir/c3_array/L384-m.cpp.obj"
+  "CMakeFiles/L384.dir/c3_array/L384-m.cpp.o"
   "L384.pdb"
-  "L384.exe"
-  "L384.exe.manifest"
-  "libL384.dll.a"
+  "L384"
 )
 
 # Per-language clean rules from dependency scanning.

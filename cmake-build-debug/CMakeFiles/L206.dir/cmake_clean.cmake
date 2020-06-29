@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L206.dir/c5_linkedlist/L206.cpp.obj"
+  "CMakeFiles/L206.dir/c5_linkedlist/L206.cpp.o"
   "L206.pdb"
-  "L206.exe"
-  "L206.exe.manifest"
-  "libL206.dll.a"
+  "L206"
 )
 
 # Per-language clean rules from dependency scanning.

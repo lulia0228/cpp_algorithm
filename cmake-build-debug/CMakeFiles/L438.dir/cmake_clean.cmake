@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L438.dir/c13_sliding_window/L438-m.cpp.obj"
+  "CMakeFiles/L438.dir/c13_sliding_window/L438-m.cpp.o"
   "L438.pdb"
-  "L438.exe"
-  "L438.exe.manifest"
-  "libL438.dll.a"
+  "L438"
 )
 
 # Per-language clean rules from dependency scanning.
