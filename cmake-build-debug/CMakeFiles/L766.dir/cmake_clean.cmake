@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/L766.dir/c3_array/L766.cpp.o"
+  "CMakeFiles/L766.dir/c19_matrix/L766.cpp.o"
   "L766.pdb"
   "L766"
 )

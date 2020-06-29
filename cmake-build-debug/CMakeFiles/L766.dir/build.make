@@ -57,27 +57,27 @@ include CMakeFiles/L766.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/L766.dir/flags.make
 
-CMakeFiles/L766.dir/c3_array/L766.cpp.o: CMakeFiles/L766.dir/flags.make
-CMakeFiles/L766.dir/c3_array/L766.cpp.o: ../c3_array/L766.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/L766.dir/c3_array/L766.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/L766.dir/c3_array/L766.cpp.o -c /Users/liheng/ClionProjects/clion_p1/c3_array/L766.cpp
+CMakeFiles/L766.dir/c19_matrix/L766.cpp.o: CMakeFiles/L766.dir/flags.make
+CMakeFiles/L766.dir/c19_matrix/L766.cpp.o: ../c19_matrix/L766.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/L766.dir/c19_matrix/L766.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/L766.dir/c19_matrix/L766.cpp.o -c /Users/liheng/ClionProjects/clion_p1/c19_matrix/L766.cpp
 
-CMakeFiles/L766.dir/c3_array/L766.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/L766.dir/c3_array/L766.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liheng/ClionProjects/clion_p1/c3_array/L766.cpp > CMakeFiles/L766.dir/c3_array/L766.cpp.i
+CMakeFiles/L766.dir/c19_matrix/L766.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/L766.dir/c19_matrix/L766.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liheng/ClionProjects/clion_p1/c19_matrix/L766.cpp > CMakeFiles/L766.dir/c19_matrix/L766.cpp.i
 
-CMakeFiles/L766.dir/c3_array/L766.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/L766.dir/c3_array/L766.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liheng/ClionProjects/clion_p1/c3_array/L766.cpp -o CMakeFiles/L766.dir/c3_array/L766.cpp.s
+CMakeFiles/L766.dir/c19_matrix/L766.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/L766.dir/c19_matrix/L766.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liheng/ClionProjects/clion_p1/c19_matrix/L766.cpp -o CMakeFiles/L766.dir/c19_matrix/L766.cpp.s
 
 # Object files for target L766
 L766_OBJECTS = \
-"CMakeFiles/L766.dir/c3_array/L766.cpp.o"
+"CMakeFiles/L766.dir/c19_matrix/L766.cpp.o"
 
 # External object files for target L766
 L766_EXTERNAL_OBJECTS =
 
-L766: CMakeFiles/L766.dir/c3_array/L766.cpp.o
+L766: CMakeFiles/L766.dir/c19_matrix/L766.cpp.o
 L766: CMakeFiles/L766.dir/build.make
 L766: CMakeFiles/L766.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/liheng/ClionProjects/clion_p1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable L766"
