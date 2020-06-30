@@ -160,6 +160,10 @@ add_executable(L581 c11_greedy/L581.cpp)
 add_executable(L7 c12_math_topic/L7.cpp)
 add_executable(L9 c12_math_topic/L9.cpp)
 add_executable(L43 c12_math_topic/L43.cpp)
+add_executable(L66 c12_math_topic/L66.cpp)
+add_executable(L171 c12_math_topic/L171.cpp)
+
+
 
 add_executable(L3 c13_sliding_window/L3-m.cpp)
 add_executable(L76 c13_sliding_window/L76-h.cpp)
