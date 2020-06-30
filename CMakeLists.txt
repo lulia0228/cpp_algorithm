@@ -162,7 +162,13 @@ add_executable(L9 c12_math_topic/L9.cpp)
 add_executable(L43 c12_math_topic/L43.cpp)
 add_executable(L66 c12_math_topic/L66.cpp)
 add_executable(L171 c12_math_topic/L171.cpp)
-
+add_executable(L172 c12_math_topic/L172-m.cpp)
+add_executable(L179 c12_math_topic/L179-m.cpp)
+add_executable(L202 c12_math_topic/L202.cpp)
+add_executable(L204 c12_math_topic/L204.cpp)
+add_executable(L292 c12_math_topic/L292.cpp)
+add_executable(L326 c12_math_topic/L326.cpp)
+add_executable(J62 c12_math_topic/J62.cpp)
 
 
 add_executable(L3 c13_sliding_window/L3-m.cpp)
