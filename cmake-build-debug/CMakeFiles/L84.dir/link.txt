@@ -1,3 +1,0 @@
-"D:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\L84.dir/objects.a
-C:\mingw64\bin\ar.exe cr CMakeFiles\L84.dir/objects.a @CMakeFiles\L84.dir\objects1.rsp
-C:\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\L84.dir/objects.a -Wl,--no-whole-archive  -o L84.exe -Wl,--out-implib,libL84.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\L84.dir\linklibs.rsp

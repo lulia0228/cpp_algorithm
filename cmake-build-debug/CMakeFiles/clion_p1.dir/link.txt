@@ -1,3 +1,0 @@
-"D:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\clion_p1.dir/objects.a
-C:\mingw64\bin\ar.exe cr CMakeFiles\clion_p1.dir/objects.a @CMakeFiles\clion_p1.dir\objects1.rsp
-C:\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\clion_p1.dir/objects.a -Wl,--no-whole-archive  -o clion_p1.exe -Wl,--out-implib,libclion_p1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\clion_p1.dir\linklibs.rsp
