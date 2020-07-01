@@ -2,35 +2,31 @@
 // Created by liheng on 19-8-28.
 //
 
-
-
+//151 翻转字符串中的每个单词
 #include<iostream>
-#include<string>
-#include<sstream>
-#include <vector>
-#include <stack>
+#include<cstring>
 
 using namespace std;
 
 class Solution {
 public:
-    // leetcode 151 给定一个字符串，逐个翻转字符串中的每个单词。
     string reverseWords(string s) {
-        vector<string> v_c ;
-        string word , res;
-        stringstream ss(s);
-        while(ss >> word)
-            v_c.push_back(word);
-        for(int i = v_c.size()-1; i >= 0 ; i-- ){
-            if(i == 0)
-                res += v_c[i];  //最后不能有空格
+        int sz = s.size();
+        string res = "";
+        string tmp = "";
+        for(int i=sz-1; i>=0; --i){
+            if(s[i] == ' '){
+                if(tmp != ""){
+                    res += tmp;
+                    res += " ";
+                }
+                tmp = "";
+            }
             else
-                res += v_c[i] + " ";
+                tmp = s[i]+tmp;
         }
-        return res ;
+        return tmp == ""?res.substr(0,res.size()-1):res + tmp;
     }
-
-
 };
 
 int test151() {
@@ -38,7 +34,6 @@ int test151() {
     string re = Solution().reverseWords(str);
     cout << re << endl ;
 }
-
 
 int main(){
     test151() ;

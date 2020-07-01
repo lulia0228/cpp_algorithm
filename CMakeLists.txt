@@ -133,7 +133,6 @@ add_executable(L494 c9_dynamic_plan/L494-m.cpp)
 add_executable(L518 c9_dynamic_plan/L518-m.cpp)
 add_executable(L583 c9_dynamic_plan/L583-m.cpp)
 add_executable(L646 c9_dynamic_plan/L646-m.cpp)
-add_executable(L647 c9_dynamic_plan/L647-m.cpp)
 add_executable(L650 c9_dynamic_plan/L650-m.cpp)
 add_executable(L718 c9_dynamic_plan/L718-m.cpp)
 add_executable(L1143 c9_dynamic_plan/L1143.cpp)
@@ -154,7 +153,6 @@ add_executable(L744 c10_erfen/L744.cpp)
 
 add_executable(L55 c11_greedy/L55-m.cpp)
 add_executable(L56 c11_greedy/L56-m.cpp)
-add_executable(L122 c11_greedy/L122.cpp)
 add_executable(L581 c11_greedy/L581.cpp)
 
 add_executable(L7 c12_math_topic/L7.cpp)
@@ -186,6 +184,9 @@ add_executable(L279-g c14_graph/L279-G.cpp)
 add_executable(L8 c15_string_topic/L8.cpp)
 add_executable(L14 c15_string_topic/L14.cpp)
 add_executable(L151 c15_string_topic/L151.cpp)
+add_executable(L205 c15_string_topic/L205.cpp)
+add_executable(L485 c15_string_topic/L485.cpp)
+add_executable(L696 c15_string_topic/L696.cpp)
 
 add_executable(L11 c16_two_points/L11-m.cpp)
 add_executable(L15 c16_two_points/L15-m.cpp)
@@ -215,6 +216,9 @@ add_executable(L476 c17_bit_calculate/L476.cpp)
 add_executable(L693 c17_bit_calculate/L693.cpp)
 
 add_executable(L121 c18_stock_topic/L121.cpp)
+add_executable(L122 c18_stock_topic/L122.cpp)
+
+
 
 add_executable(L48 c19_matrix/L48-m.cpp)
 add_executable(L54 c19_matrix/L54-m.cpp)
@@ -222,3 +226,6 @@ add_executable(L59 c19_matrix/L59-m.cpp)
 add_executable(L73 c19_matrix/L73-m.cpp)
 add_executable(L240 c19_matrix/L240-m.cpp)
 add_executable(L766 c19_matrix/L766.cpp)
+
+add_executable(L131 c20_palindrome_string/L131-m.cpp)
+add_executable(L647 c20_palindrome_string/L647-m.cpp)
