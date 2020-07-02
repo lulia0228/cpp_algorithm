@@ -7,6 +7,8 @@
 #include <vector>
 using namespace std;
 
+
+//最快
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
@@ -27,14 +29,8 @@ public:
     }
 };
 
-//leetcode 75 sort colors
-#include <iostream>
-#include <vector>
-#include <cassert>
-using namespace std;
 
-/*
-class Solution{
+class Solution1{
 public:
     void sortColors(vector<int> & nums){
         int count[3] = {0} ; //存放元素频率
@@ -52,17 +48,10 @@ public:
     }
 };
 
-int main(){
-    int arr[] = {0,1,0,2,1,2,1,2,1,0,0,0,0,2,2,1,0,2,1,2};
-    vector<int> vec(arr, arr + sizeof(arr)/ sizeof(int));
-    Solution().sortColors(vec);
-    for (int i = 0 ; i < vec.size(); i++)
-        cout<< vec[i]<<" ";
-}
-*/
+
 
 //三路快排的思路
-class Solution1{
+class Solution2{
 public:
     void sortColors(vector<int> & nums){
         int zero = -1;
@@ -70,13 +59,11 @@ public:
 
         for (int i = 0 ; i < two; ){
             if (nums[i] == 1)
-                i ++;
+                i++;
             else if (nums[i] == 2)
                 swap(nums[i], nums[--two]);
-            else {// 即nums[i]==0
-                assert(nums[i] == 0);
+            else // 即nums[i]==0
                 swap(nums[i++], nums[++zero]);
-            }
         }
     }
 };
