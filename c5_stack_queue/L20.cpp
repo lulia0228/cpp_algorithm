@@ -2,6 +2,8 @@
 // Created by 李恒 on 2020/1/3.
 //
 
+//栈的问题，要注意栈为空的边界处理
+
 //  20 有效的括号
 #include <iostream>
 #include <cstring>
