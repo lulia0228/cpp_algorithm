@@ -3,13 +3,14 @@
 //
 //循环数组中比当前元素大的下一个元素
 //与 739. Daily Temperatures (Medium) 不同的是，数组是循环数组，并且最后要求的不是距离而是下一个元素。
+
 #include <iostream>
 #include <vector>
 #include <stack>
 
 using namespace std;
 class Solution {
-    
+
 public:
     vector<int> nextGreaterElements(vector<int>& nums) {
         int n = nums.size();
