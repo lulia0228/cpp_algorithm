@@ -2,8 +2,10 @@
 // Created by LiHeng on 2019/8/17.
 //
 
+//带循环的递归，注意皇后问题51和全排列46、组合77这3道题目问题对比
+//组合问题 leetcode 77 给定两个整数 n 和 k，返回 1 ... n 中所有可能的 k 个数的组合
 
-//组合问题 leetcode 77
+
 #include <iostream>
 #include <cassert>
 #include <vector>
@@ -31,7 +33,7 @@ private:
     }
 
 public:
-    vector<vector<int>> combin(int n , int k){
+    vector<vector<int>> combine(int n , int k){
         res.clear() ;
         if(n <= 0 || k <= 0 || k > n)
             return  res ;
@@ -43,7 +45,7 @@ public:
 
 int main(){
     int n = 4 , k = 2 ;
-    vector<vector<int>> re = Solution().combin(n , k );
+    vector<vector<int>> re = Solution().combine(n , k );
     for(int i = 0 ; i < re.size() ; i++ ){
         for(int j = 0 ; j < re[i].size() ; j++)
             cout << re[i][j] << "\t" ;

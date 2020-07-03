@@ -2,7 +2,10 @@
 // Created by LiHeng on 2020/4/18.
 //
 
-//全排列----给定一个 没有重复 数字的序列，返回其所有可能的全排列。
+//带循环的递归，注意皇后问题51和全排列46、组合77这3道题目问题对比
+
+//全排列----给定一个 没有重复 数字的序列，返回其所有可能的全排列
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -17,7 +20,6 @@ private:
             res.push_back(tem);
             return; //递归退出条件
         }
-
         for(int i=0; i < nums.size(); i++){
             if (!flags[i]){
                 tem.push_back(nums[i]);

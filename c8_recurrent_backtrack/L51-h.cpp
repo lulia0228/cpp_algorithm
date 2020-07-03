@@ -3,6 +3,9 @@
 //
 
 //八皇后问题L51
+
+//带循环的递归，注意皇后问题51和全排列46、组合77这3道题目问题对比
+
 #include <iostream>
 #include <cassert>
 #include <vector>
@@ -58,6 +61,7 @@ public:
     }
 };
 
+
 int main(){
     int n = 8 ;
     int nums = 0  ;
@@ -70,6 +74,7 @@ int main(){
     }
     cout << "摆放方法数： " << nums ;
 }
+
 
 //四皇后问题返回值如下：
 //res = [[".Q.." , "...Q" , "Q..." , "..Q."] ,
