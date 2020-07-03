@@ -1,0 +1,23 @@
+//
+// Created by 李恒 on 2020/7/3.
+//
+
+//判断字符串s是否为字符串t的子串（非连续）
+#include <iostream>
+#include <cstring>
+using namespace std;
+class Solution {
+public:
+    bool isSubsequence(string s, string t) {
+        int i=0,j=0;
+        while(i<s.size() && j<t.size()){
+            if(s[i] == t[j]){
+                ++i;
+                ++j;
+            }
+            else
+                ++j;
+        }
+        return i==s.size();
+    }
+};

@@ -2,46 +2,14 @@
 // Created by LiHeng on 2020/4/23.
 //
 
-//这道题标记的是easy,我感觉有点难     最短无序子序列
-//方法1
+// 这道题标记的是easy,我感觉有点难
+// 最短无序子序列
+
 #include <iostream>
 #include <vector>
 using namespace std;
 
-int findUnsortedSubarray(vector<int>& nums) {
-    int star=0,end = nums.size()-1,min_val,max_val;
-    if(nums.size()<=1) return 0;
-    while(star<=end)
-    {
-        min_val = star;
-        max_val = end;
-        for(int i=star;i<=end;i++)
-        {
-            if(nums[min_val]>nums[i]) min_val=i;
-            if(nums[max_val]<nums[i]) max_val=i;
-        }
-        if(min_val==star&&max_val==end)
-        {
-            star+=1;
-            end-=1;
-        }
-        else if(min_val!=star&&max_val==end)
-        {
-            end-=1;
-        }
-        else if(min_val==star&&max_val!=end)
-        {
-            star+=1;
-        }
-        else
-        {
-            break;
-        }
-    }
-    return end-star>0?end-star+1:0;
-}
-
-//方法2 优秀，高效
+//优秀，高效
 class Solution {
 public:
     int findUnsortedSubarray(vector<int>& nums) {

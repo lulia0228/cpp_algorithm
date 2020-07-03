@@ -2,13 +2,15 @@
 // Created by LiHeng on 2020/4/22.
 //
 
+//合并区间，按照区间起始值从小到大排序
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
 using namespace std;
 
 
-//必须放在类外面
+//必须放在类外面或者放在里面要做成static
 bool compare(const vector<int>& a , const vector<int>& b){
     return a[0] < b[0] ;
 }
@@ -27,7 +29,6 @@ public:
         return res;
     }
 };
-
 
 
 //c++ 11以后 更便捷的写法

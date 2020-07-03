@@ -163,7 +163,15 @@ add_executable(L744 c10_erfen/L744.cpp)
 
 add_executable(L55 c11_greedy/L55-m.cpp)
 add_executable(L56 c11_greedy/L56-m.cpp)
+add_executable(L134 c11_greedy/L134-m.cpp)
+add_executable(L406 c11_greedy/L406-m.cpp)
+add_executable(L435 c11_greedy/L435-m.cpp)
+add_executable(L452 c11_greedy/L452-m.cpp)
+add_executable(L455 c11_greedy/L455.cpp)
 add_executable(L581 c11_greedy/L581.cpp)
+add_executable(L605 c11_greedy/L605.cpp)
+add_executable(L665 c11_greedy/L665.cpp)
+add_executable(L763 c11_greedy/L763-m.cpp)
 
 add_executable(L7 c12_math_topic/L7.cpp)
 add_executable(L9 c12_math_topic/L9.cpp)
@@ -210,6 +218,7 @@ add_executable(L287 c16_two_points/L287-m.cpp)
 add_executable(L334 c16_two_points/L334-m.cpp)
 add_executable(L344 c16_two_points/L344.cpp)
 add_executable(L345 c16_two_points/L345.cpp)
+add_executable(L392 c16_two_points/L392.cpp)
 add_executable(L524 c16_two_points/L524-m.cpp)
 add_executable(L633 c16_two_points/L633.cpp)
 add_executable(L680 c16_two_points/L680.cpp)
@@ -228,7 +237,6 @@ add_executable(L693 c17_bit_calculate/L693.cpp)
 
 add_executable(L121 c18_stock_topic/L121.cpp)
 add_executable(L122 c18_stock_topic/L122.cpp)
-
 
 
 add_executable(L48 c19_matrix/L48-m.cpp)
