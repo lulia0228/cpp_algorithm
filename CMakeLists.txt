@@ -105,6 +105,7 @@ add_executable(L538 c7_binaryTree_recurrent/L538.cpp)
 add_executable(L617 c7_binaryTree_recurrent/L617.cpp)
 
 add_executable(L17 c8_recurrent_backtrack/L17-m.cpp)
+add_executable(L22-rc c8_recurrent_backtrack/L22-m-rc.cpp)
 add_executable(L31 c8_recurrent_backtrack/L31-m.cpp)
 add_executable(L39-rc c8_recurrent_backtrack/L39-m-rc.cpp)
 add_executable(L46 c8_recurrent_backtrack/L46-m.cpp)
