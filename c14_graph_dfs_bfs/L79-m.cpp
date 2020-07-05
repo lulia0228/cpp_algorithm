@@ -1,16 +1,29 @@
 //
 // Created by LiHeng on 2020/4/22.
 //
+/*
+Backtracking（回溯）属于 DFS。
+
+普通DFS主要用在可达性问题这种问题只需要执行到特点的位置然后返回即可。
+    而Backtracking主要用于求解排列组合问题，例如有{'a','b','c' }三个字符求解所有由这三个字符排列得到的字符串，
+    这种问题在执行到特定的位置返回之后还会继续执行求解过程。
+    因为 Backtracking 不是立即返回，而要继续求解，因此在程序实现时，需要注意对元素的标记问题：
+
+    在访问一个新元素进入新的递归调用时，需要将新元素标记为已经访问，这样才能在继续递归调用时不用重复访问该元素；
+    但是在递归返回时，需要将元素标记为未访问，因为只需要保证在一个递归链中不同时访问一个元素，
+    可以访问已经访问过但是不在当前递归链中的元素。
+*/
 
 // 单词搜索；回溯问题
 
 #include <iostream>
 #include <vector>
+#include <cassert>
 using namespace std;
 
 class Solution {
 public:
-    //貌似真的是这里word传引用比传值要快10倍（时间和空间都是）string& word > string word
+    //貌似真的是这里word传引用比传值要快10倍（时间和空间都快了）string& word > string word
     bool dfs(vector<vector<char>>& board, string& word, int i,int j, int index){
         if(board[i][j] != word[index])//当前考察字符不相等
             return false;
@@ -51,7 +64,6 @@ public:
     }
 
 private:
-    //貌似真的是这里word传引用比传值要快10倍（时间和空间都是）string& word > string word
     bool DFS(vector<vector<char>>& board,string word,int index, int i, int j) {
         bool rs = false;
         //判断这个点对不对
@@ -127,15 +139,12 @@ private:
 public:
     bool exist(vector<vector<char>>& board , string word ){
         m = board.size() ;
-        assert(m > 0);
         n = board[0].size();
-        visited = vector<vector<bool>> (m , vector<bool>(n , false));
-
+        visited = vector<vector<bool>> (m, vector<bool>(n, false));
         for(int i = 0 ; i < m ; i ++)
             for(int j = 0 ; j < board[i].size() ; j ++)
                 if(searchWord(board , word , 0 , i , j))
                     return true ;
-
         return false;
     }
 
