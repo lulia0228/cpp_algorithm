@@ -19,7 +19,6 @@ private:
     vector<string> res ;
     //digits是数字字符串，index是digits的索引， s存储的是转化digits[0...index-1]所获得的字母字符串
     void findCombination(const string& digits , int index ,  const string& s){
-        //cout << index << ":" << s << endl ;
 
         if(index == digits.size()){
             res.push_back(s) ;
