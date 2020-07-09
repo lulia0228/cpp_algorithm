@@ -10,8 +10,8 @@ class Solution {
 public:
     vector<vector<int>> subsets(vector<int>& nums) {
         auto res = vector<vector<int>> ();
-        auto tmp = vector<int> ();
-        backtrack(res,tmp,nums,0);
+        vector<int> tmp;
+        backtrack(res, tmp, nums, 0);
         return res;
     }
     //注意在循环内部写递归语句是怎么运行的？另外，注意list.push_back(tempL)所处位置，带来的结果的顺序变动，有助于理解过程
