@@ -58,7 +58,7 @@ private:
         }
         for(int i=0; i < nums.size(); i++){
             if (!flags[i]){
-                //剪枝，最关键 !flags[i-1]
+                //去重，最关键 !flags[i-1]
                 if(i>0 && nums[i]==nums[i-1]&& !flags[i-1])
                     continue;
                 tem.push_back(nums[i]);
