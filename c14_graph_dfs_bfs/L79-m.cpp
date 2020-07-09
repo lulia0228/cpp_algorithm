@@ -31,6 +31,7 @@ public:
             return true;
         char tmp = board[i][j];
         board[i][j] = '0'; //防止走回头路
+        //每层遍历4个方向
         if( (i-1>=0 && dfs(board, word, i-1, j, index+1))
             || (j+1<=board[0].size()-1 && dfs(board, word, i, j+1, index+1))
             || (i+1<=board.size()-1 && dfs(board, word, i+1, j, index+1))
