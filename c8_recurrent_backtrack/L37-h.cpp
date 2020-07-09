@@ -6,12 +6,10 @@
 using namespace std;
 
 class Solution {
-
 public:
-
+    vector<vector<int>> pos;
+    vector<vector<char>> res;
     void solveSudoku(vector<vector<char>>& board) {
-        vector<vector<int>> pos;
-        vector<vector<char>> res;
         //初始化vector放在构造函数或者函数，不能直接在外面初始化
         vector<vector<int>> row(9, vector<int>(10,0));
         vector<vector<int>> col(9, vector<int>(10,0));
@@ -28,36 +26,30 @@ public:
                 }
             }
         vector<char> cur;
-        dfs(board, 0, cur, row, col, box, pos, res);
+        dfs(board, 0, cur, row, col, box);
         for(auto v:res){
-            for(auto c:v)
-                cout << c ;
+            for(int i=0; i<v.size(); ++i)
+                board[pos[i][0]][pos[i][1]] = v[i] ;
         }
 
     }
 
     void dfs(vector<vector<char>>& board, int idx, vector<char>& cur,
-            vector<vector<int>>&row,vector<vector<int>>&col,vector<vector<int>>&box,vector<vector<int>>& pos,
-    vector<vector<char>>& res){
+             vector<vector<int>>&row,vector<vector<int>>&col,vector<vector<int>>&box){
         if(idx == pos.size()){
             res.push_back(cur);
             return;
         }
         for(int num=1; num<=9; ++num){
-//            cout << idx <<endl;
             int t_r = pos[idx][0];
             int t_c = pos[idx][1];
-//            cout << t_r;
             if(!row[t_r][num] && !col[t_c][num] && !box[t_c/3 + (t_r/3)*3][num]){
                 char c = to_string(num)[0];
                 cur.push_back(c);
                 row[t_r][num] = 1;
                 col[t_c][num] = 1;
                 box[t_c/3 + (t_r/3)*3][num] = 1;
-                dfs(board, idx+1, cur, row, col, box, pos, res);
-                for(auto i:cur)
-                    cout << i ;
-                cout << endl;
+                dfs(board, idx+1, cur, row, col, box);
                 cur.pop_back();
                 row[t_r][num] = 0;
                 col[t_c][num] = 0;
@@ -79,5 +71,4 @@ int main(){
                               {'.','.','.','4','1','9','.','.','5'},
                               {'.','.','.','.','8','.','.','7','9'}};
     Solution().solveSudoku(b);
-
 }

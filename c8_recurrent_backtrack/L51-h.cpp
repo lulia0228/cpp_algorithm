@@ -12,7 +12,6 @@
 #include <cstring>
 
 using namespace std ;
-
 class Solution{
 private:
     vector<vector<string>> res;
@@ -53,10 +52,8 @@ public:
         col = vector<bool> (n , false) ;
         dia1 = vector<bool> (2*n-1 , false) ; //正对角线有2n-1条 且横纵坐标相加值相同
         dia2 = vector<bool> (n*n-1 , false) ; //副对角线有2n-1条
-
         vector<int> row ;
         pushQueen(n , 0 , row);
-
         return res ;
     }
 };
