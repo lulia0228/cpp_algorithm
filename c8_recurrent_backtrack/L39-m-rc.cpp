@@ -39,7 +39,9 @@ public:
 };
 
 
-//递归
+//以下1~4都是递归写法
+
+
 class Solution1 {
 public:
     vector<vector<int>> res;
@@ -91,52 +93,81 @@ private:
 
 
 class Solution2{
-
+public:
+    vector<vector<int>> ans;
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-        vector<vector<int>> ans;
+        ans.clear();
         vector<int> cur;
-        dfs(candidates, target, 0, cur, ans);
+        dfs(candidates, target, 0, cur);
         return ans;
     }
 
-    void dfs(vector<int>& candidates, int target, int idx, vector<int>& cur, vector<vector<int>>& ans) {
+    void dfs(vector<int>& candidates, int target, int idx, vector<int>& cur) {
         if (target == 0) {
             ans.push_back(cur);
             return;
         }
-        if (idx >= candidates.size()) return; //递归终止条件
-        dfs(candidates, target, idx + 1, cur, ans); // k == 0
-        for (int k = 1; k <= target / candidates[idx]; k++) {
-            cur.push_back(candidates[idx]);
-            dfs(candidates, target - k * candidates[idx], idx + 1, cur, ans);
-        }
-        for (int k = 1; k <= target / candidates[idx]; k++)
+        if(target < 0 )
+            return;
+        for (int i = idx; i<candidates.size(); i++) {
+            cur.push_back(candidates[i]);
+            dfs(candidates, target-candidates[i], i, cur);
             cur.pop_back();
+        }
     }
-
 };
 
 
 class Solution3 {
 public:
+    vector<vector<int>> res;
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-        vector<vector<int>> res;
-        vector<int> candidate_array;
-        getCombination(res, candidates, candidate_array, 0, target, 0);
+        vector<int> cur;
+        getCombination(candidates, 0, target, 0, cur);
         return res;
     }
-    void getCombination(vector<vector<int>> &res, vector<int>& candidates, vector<int> &candidate_array, int partial_sum, int &target, int idx){
-        if(partial_sum == target){
-            res.push_back(candidate_array);
-        }else if(partial_sum > target){
+    void getCombination(vector<int>& candidates, int partial_sum, int &target, int idx, vector<int> &cur){
+        if(partial_sum == target) {
+            res.push_back(cur);
             return;
-        }else{// partial_sum < target
-            for(int i = idx; i < candidates.size(); ++i){
-                candidate_array.push_back(candidates[i]);
-                getCombination(res, candidates, candidate_array, partial_sum + candidates[i], target, i);
-                candidate_array.pop_back();
-            }
         }
+        if(partial_sum > target)
+            return;
+        for(int i = idx; i < candidates.size(); ++i){
+            cur.push_back(candidates[i]);
+            getCombination(candidates, partial_sum + candidates[i], target, i, cur);
+            cur.pop_back();
+        }
+
     }
 };
 
+
+//原题没说数组是有序的正整数数组,先排序，排序后可以剪枝
+class Solution4 {
+public:
+    vector<vector<int>> ans;
+    vector<vector<int>> combinationSum(vector<int> &candidates, int target) {
+        ans.clear();
+        sort(candidates.begin(), candidates.end());
+        vector<int> cur;
+        dfs(candidates, target, 0, cur);
+        return ans;
+    }
+
+    void dfs(vector<int> &candidates, int target, int idx, vector<int> &cur) {
+        if (target == 0) {
+            ans.push_back(cur);
+            return;
+        }
+        for (int i = idx; i < candidates.size(); i++) {
+            //剪枝
+            if (target < 0)
+                break;
+            cur.push_back(candidates[i]);
+            dfs(candidates, target - candidates[i], i, cur);
+            cur.pop_back();
+        }
+    }
+
+};
