@@ -61,7 +61,7 @@ public:
         getCombination(candidates, candidate_array, 0, target, 0);
         return res;
     }
-    void getCombination(vector<int>& candidates, vector<int> &candidate_array, int partial_sum, int &target, int idx){
+    void getCombination(vector<int>& candidates, vector<int> &candidate_array, int partial_sum, int target, int idx){
         if(partial_sum == target){
             res.push_back(candidate_array);
             return;
@@ -80,7 +80,34 @@ public:
     }
 };
 
-
+//反向
+class Solution2 {
+public:
+    vector<vector<int>> res;
+    vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
+        sort(candidates.begin(),candidates.end());
+        vector<int> candidate_array;
+        getCombination(candidates, candidate_array, target, 0);
+        return res;
+    }
+    void getCombination(vector<int>& candidates, vector<int> &candidate_array, int target, int idx){
+        if(target == 0){
+            res.push_back(candidate_array);
+            return;
+        }
+        for(int i=idx; i<candidates.size(); ++i){
+            //因为排序了，可以提前剪枝
+            if (target-candidates[i] < 0)
+                break;
+            //去重操作，设计巧妙，条件i!=idx很重要
+            if (i!=idx&&candidates[i] == candidates[i-1])
+                continue;
+            candidate_array.push_back(candidates[i]);
+            getCombination(candidates, candidate_array, target-candidates[i], i+1);
+            candidate_array.pop_back();
+        }
+    }
+};
 
 /*
 2,5,2,1,2
