@@ -115,6 +115,7 @@ add_executable(L51 c8_recurrent_backtrack/L51-h.cpp)
 add_executable(L77 c8_recurrent_backtrack/L77-m.cpp)
 add_executable(L78 c8_recurrent_backtrack/L78-m.cpp)
 add_executable(L90 c8_recurrent_backtrack/L90-m.cpp)
+add_executable(L93 c8_recurrent_backtrack/L93-m.cpp)
 add_executable(L216 c8_recurrent_backtrack/L216-m.cpp)
 
 add_executable(c9_1 c9_dynamic_plan/dp_practice2.cpp)
