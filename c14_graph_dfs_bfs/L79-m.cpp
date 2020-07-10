@@ -23,13 +23,13 @@ using namespace std;
 
 class Solution {
 public:
-    //貌似真的是这里word传引用比传值要快10倍（时间和空间都快了）string& word > string word
+    //貌似真这里word传引用比传值要快10倍（时间和空间都快了）string& word > string word
     bool dfs(vector<vector<char>>& board, string& word, int i,int j, int index){
         if(board[i][j] != word[index])//当前考察字符不相等
             return false;
         if(index == word.length()-1) //走到最后一个字符还相等
             return true;
-        char tmp = board[i][j];
+        char tmp = board[i][j];//先记录下来，回退时候要复原
         board[i][j] = '0'; //防止走回头路
         //每层遍历4个方向
         if( (i-1>=0 && dfs(board, word, i-1, j, index+1))
