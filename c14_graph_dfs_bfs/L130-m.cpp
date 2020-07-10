@@ -33,7 +33,8 @@ private:
     void dfs(vector<vector<char>> &board,  int startx, int starty){
         if(board[startx][starty] != 'O')
             return;
-        //if(!visited[startx][starty]) 就可以了，不需要判断board[startx][starty] == 'O'
+        //1  if(!visited[startx][starty]) 就可以了，不需要判断board[startx][starty] == 'O'
+        //2  后来发现因为走过的被置为'#"回退后根本不用担心走老路，所以可以不设置visited数组
         if(board[startx][starty] == 'O' && !visited[startx][starty]) {
             visited[startx][starty] = true ;
             board[startx][starty] = '#';
@@ -75,7 +76,11 @@ public:
 
 };
 
-//显式栈
+
+
+
+// 2 设计显式栈，每个方向的代码块里必须要有continue这句话，此外因为凡是走过的位置都变成了'#"，
+// 因此当退回去之后，当前方向就不会再走了，不会因为continue导致不能执行别的方向
 #include <stack>
 class Solution1 {
 public:
