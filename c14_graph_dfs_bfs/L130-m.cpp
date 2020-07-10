@@ -74,3 +74,74 @@ public:
     }
 
 };
+
+//显式栈
+class Solution1 {
+public:
+    void solve(vector<vector<char>>& board) {
+        if (board.size() == 0) return;
+        int m = board.size();
+        int n = board[0].size();
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                // 只对边缘有O的做特殊处理
+                bool isEdge = (i == 0 || j == 0 || i == m - 1 || j == n - 1);
+                if (isEdge && board[i][j] == 'O') {
+                    dfs(board, i, j);
+                }
+            }
+        }
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (board[i][j] == 'O') {
+                    board[i][j] = 'X';
+                }
+                if (board[i][j] == '#') {
+                    board[i][j] = 'O';
+                }
+            }
+        }
+    }
+
+    void dfs(vector<vector<char>>& board, int i, int j) {
+        stack<pair<int,int>> stk;
+        stk.push(make_pair(i, j));
+        board[i][j] = '#';
+        while (!stk.empty()) {
+            // 取出当前stack 顶, 不弹出.
+            pair<int,int> current = stk.top();
+            // 上
+            if (current.first - 1 >= 0
+                && board[current.first - 1][current.second] == 'O') {
+                stk.push(make_pair(current.first - 1, current.second));
+                board[current.first - 1][current.second] = '#';
+                continue;
+            }
+            // 下
+            if (current.first + 1 <= board.size() - 1
+                && board[current.first + 1][current.second] == 'O') {
+                stk.push(make_pair(current.first + 1, current.second));
+                board[current.first + 1][current.second] = '#';
+                continue;
+            }
+            // 左
+            if (current.second - 1 >= 0
+                && board[current.first][current.second - 1] == 'O') {
+                stk.push(make_pair(current.first, current.second - 1));
+                board[current.first][current.second - 1] = '#';
+                continue;
+            }
+            // 右
+            if (current.second + 1 <= board[0].size() - 1
+                && board[current.first][current.second + 1] == 'O') {
+                stk.push(make_pair(current.first, current.second + 1));
+                board[current.first][current.second + 1] = '#';
+                continue;
+            }
+            // 如果上下左右都搜索不到,本次搜索结束，弹出stack
+            stk.pop();
+        }
+    }
+
+};
