@@ -76,6 +76,7 @@ public:
 };
 
 //显式栈
+#include <stack>
 class Solution1 {
 public:
     void solve(vector<vector<char>>& board) {
