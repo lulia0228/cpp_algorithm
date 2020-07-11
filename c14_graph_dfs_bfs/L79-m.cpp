@@ -16,6 +16,9 @@ Backtracking（回溯）属于 DFS。
 
 // 单词搜索；回溯问题
 
+// 关于不能走回头路：其实就是每层循环有4个候选方向，但是实际上只有3个方向可以走，
+// 因为从前面过来的那个方向的反方向不能走（题目要求一个未知的元素只能被使用一次）。
+
 #include <iostream>
 #include <vector>
 #include <cassert>

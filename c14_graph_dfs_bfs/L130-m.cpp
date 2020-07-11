@@ -34,7 +34,7 @@ private:
         if(board[startx][starty] != 'O')
             return;
         //1  if(!visited[startx][starty]) 就可以了，不需要判断board[startx][starty] == 'O'
-        //2  后来发现因为走过的被置为'#"回退后根本不用担心走老路，所以可以不设置visited数组
+        //2  后来发现因为走过的被置为'#"回退后根本不用担心走回头路（a->下->上），所以可以不设置visited数组
         if(board[startx][starty] == 'O' && !visited[startx][starty]) {
             visited[startx][starty] = true ;
             board[startx][starty] = '#';
@@ -77,12 +77,64 @@ public:
 };
 
 
+class Solution1{
+private:
+    int d[4][2] = {{-1,0},{0, 1},{1,0},{0,-1}} ;
+    int m,n; //因为inArea里面用到了
+    vector<vector<bool>> visited ;
 
+    bool inArea(int x , int y){
+        return x>=0 && x<m && y>=0 && y<n ;
+    }
+
+    void dfs(vector<vector<char>> &board,  int startx, int starty){
+        if(board[startx][starty] != 'O')
+            return;
+        //1  if(!visited[startx][starty]) 就可以了，不需要判断board[startx][starty] == 'O'
+        //2  后来发现因为走过的被置为'#"回退后根本不用担心走回头路（a->下->上），所以可以不设置visited数组
+
+        board[startx][starty] = '#';
+        //从[startx][starty]出发，4个方向寻找
+        for(int i = 0 ; i < 4 ; i++){
+            int newx = startx+d[i][0];
+            int newy = starty+d[i][1];
+            if(inArea(newx,newy))
+                dfs(board, newx, newy);
+        }
+
+    }
+
+public:
+    void solve(vector<vector<char>>& board) {
+        m = board.size() ;
+        if (m == 0) return;
+        n = board[0].size();
+        visited = vector<vector<bool>> (m, vector<bool>(n, false));
+        for(int i=0 ; i<m ; ++i)
+            for(int j=0 ; j<board[i].size() ; ++j) {
+                bool isEdge = (i == 0 || j == 0 || i == m - 1 || j == n - 1);
+                if(isEdge && board[i][j] == 'O')
+                    dfs(board,i,j);
+            }
+        for (int i=0; i<m; i++) {
+            for (int j=0; j<n; j++) {
+                if (board[i][j] == 'O') {
+                    board[i][j] = 'X';
+                }
+                if (board[i][j] == '#') {
+                    board[i][j] = 'O';
+                }
+            }
+        }
+
+    }
+
+};
 
 // 2 设计显式栈，每个方向的代码块里必须要有continue这句话，此外因为凡是走过的位置都变成了'#"，
 // 因此当退回去之后，当前方向就不会再走了，不会因为continue导致不能执行别的方向
 #include <stack>
-class Solution1 {
+class Solution2 {
 public:
     void solve(vector<vector<char>>& board) {
         if (board.size() == 0) return;
