@@ -209,6 +209,8 @@ add_executable(L200 c14_graph_dfs_bfs/L200-m.cpp)
 add_executable(L207 c14_graph_dfs_bfs/L207-m.cpp)
 add_executable(L279-g c14_graph_dfs_bfs/L279-G.cpp)
 add_executable(L417 c14_graph_dfs_bfs/L417-m.cpp)
+add_executable(L547 c14_graph_dfs_bfs/L547-m.cpp)
+add_executable(L695 c14_graph_dfs_bfs/L695-m.cpp)
 
 add_executable(L8 c15_string_topic/L8.cpp)
 add_executable(L14 c15_string_topic/L14.cpp)
