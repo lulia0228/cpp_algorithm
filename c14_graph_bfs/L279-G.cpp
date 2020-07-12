@@ -50,9 +50,43 @@ public:
         return 0;
     }
 };
+//仍然BFS，换种写法：类似二叉树层序遍历的写法
+class Solution1{
+public:
+    int numSquares(int n){
+        assert(n > 0);
+        queue<int> q ;
+        q.push(n);
+
+        vector<bool> visited(n + 1 , false) ;//设置一个访问记录数组，避免重复往队列推入数据
+        //visited[n] = true ;
+
+        int level = 0;
+        while(!q.empty()){
+            int sz = q.size();
+            ++level;
+            for(int k=0; k<sz; ++k){
+                int num = q.front();
+                q.pop() ;
+                for(int i = 1 ; num - i*i >= 0 ; ++i){
+                    int a = num - i*i ;
+                    if ( a == 0 )
+                        return level ;
+                    if (!visited[a]){
+                        q.push(a) ;
+                        visited[a] = true ;
+                    }
+                }
+            }
+
+        }
+        //throw  invalid_argument("No Solution .") ;
+        return 0;
+    }
+};
 
 //BFS: 0->n
-class Solution1{
+class Solution2{
 public:
     int numSquares(int n){
         assert(n > 0);
@@ -80,6 +114,8 @@ public:
         return 0 ;
     }
 };
+
+
 
 int main(){
     int num1 = 13 ;
