@@ -1,11 +1,12 @@
 //
 // Created by LiHeng on 2020/5/21.
 //
+
 #include <iostream>
 #include <vector>
 using  namespace std;
 
-//方法一 DFS 对每个节点做DFS判断是否有环
+//方法1 DFS 对每个节点做DFS判断是否有环
 class Solution {
 public:
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
