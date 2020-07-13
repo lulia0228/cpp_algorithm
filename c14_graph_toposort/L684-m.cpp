@@ -2,16 +2,13 @@
 // Created by LiHeng on 2020/7/12.
 //
 
-//唯一一道并查集的题目
+//唯一一道并查集的题目。
 
 //方法1 并查集 :根据给定的边连接，按特殊规则建立起来的一棵树
-
 #include <vector>
 #include <iostream>
 using  namespace std;
 
-
-//方法2  DFS 每次拿掉一条边AB，然后看剩下的图中能否让节点A和B连通
 class Solution {
 public:
     vector<int> findRedundantConnection(vector<vector<int>>& edges) {
@@ -42,9 +39,8 @@ public:
 
 };
 
-
+//方法2  DFS 每次拿掉一条边AB，然后看剩下的图中能否让节点A和B连通
 //用DFS写 费了老大劲了
-
 class Solution1 {
 public:
     vector<int> findRedundantConnection(vector<vector<int>>& edges) {
