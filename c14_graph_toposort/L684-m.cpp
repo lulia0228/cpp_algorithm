@@ -4,14 +4,48 @@
 
 //唯一一道并查集的题目
 
-//方法1 并查集
-//方法2  DFS 每次拿掉一条边AB，然后看剩下的图中能否让节点A和B连通
+//方法1 并查集 :根据给定的边连接，按特殊规则建立起来的一棵树
 
-//用DFS写 费了老大劲了
 #include <vector>
 #include <iostream>
 using  namespace std;
+
+
+//方法2  DFS 每次拿掉一条边AB，然后看剩下的图中能否让节点A和B连通
 class Solution {
+public:
+    vector<int> findRedundantConnection(vector<vector<int>>& edges) {
+        vector<int> rp(1001);
+        int sz = edges.size();
+        // 初始化各元素为单独的集合，代表（祖先）节点就是其本身
+        for(int i=0;i<sz;i++)
+            rp[i] = i;
+        for(int j=0;j<sz;j++){
+            // 找到边上两个节点所在集合的代表（祖先）节点
+            int set1 = find(edges[j][0], rp);
+            int set2 = find(edges[j][1], rp);
+            if(set1 == set2)  //两个集合代表节点相同，说明出现环，返回答案
+                return edges[j];
+            else  //两个集合独立，合并集合。将前一个集合代表（祖先）节点戳到后一个集合代表（祖先）节点上
+                rp[set1] = set2;
+        }
+        return {0, 0};
+    }
+
+    // 查找当前节点的祖先节点
+    int find(int n, vector<int> &rp){
+        int num = n;
+        while(rp[num] != num)
+            num = rp[num];
+        return num;
+    }
+
+};
+
+
+//用DFS写 费了老大劲了
+
+class Solution1 {
 public:
     vector<int> findRedundantConnection(vector<vector<int>>& edges) {
         int m = edges.size();
