@@ -103,3 +103,54 @@ int main(){
             cout<< i << '\t';
 }
 
+//效率很低
+class Solution2 {
+private:
+    class UF {
+    private:
+        vector<int> id;
+    public:
+        UF(int N) {
+            id = vector<int> (N + 1, 0);
+            for (int i = 0; i < id.size(); i++) {
+                id[i] = i;
+            }
+        }
+
+        void uni(int u, int v) {
+            int uID = find(u);
+            int vID = find(v);
+            if (uID == vID) {
+                return;
+            }
+            for (int i = 0; i < id.size(); i++) {
+                if (id[i] == uID) {
+                    id[i] = vID;
+                }
+            }
+        }
+
+        int find(int p) {
+            return id[p];
+        }
+
+        bool connect(int u, int v) {
+            return find(u) == find(v);
+        }
+
+    };
+
+public:
+    vector<int> findRedundantConnection(vector<vector<int>>& edges) {
+        int N = edges.size();
+        UF uf(N+1);
+        for (auto e : edges) {
+            int u = e[0], v = e[1];
+            if (uf.connect(u, v)) {
+                return e;
+            }
+            uf.uni(u, v);
+        }
+        return {-1, -1};
+    }
+};
