@@ -76,3 +76,28 @@ public:
         return level;
     }
 };
+
+// 或者下面这样写也可以
+#include <stack>
+class Solution3 {
+public:
+    int maxDepth(TreeNode* root) {
+        if(root == NULL) return 0;
+        stack<pair<TreeNode*, int>> s;
+        s.push(make_pair(root,1));
+        int level = 0;
+        while(!s.empty()){
+            pair<TreeNode*, int> cur = s.top();
+            s.pop();
+            TreeNode* curNode = cur.first;
+            int curLev = cur.second;
+            if(curNode->left == NULL && curNode->right == NULL)
+                level = max(level, curLev);
+            if(curNode->left != NULL)
+                s.push(make_pair(curNode->left, curLev+1));
+            if(curNode->right != NULL)
+                s.push(make_pair(curNode->right, curLev+1));
+        }
+        return level;
+    }
+};
