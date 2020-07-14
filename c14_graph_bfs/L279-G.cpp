@@ -50,6 +50,7 @@ public:
         return 0;
     }
 };
+
 //仍然BFS，换种写法：类似二叉树层序遍历的写法
 class Solution1{
 public:
