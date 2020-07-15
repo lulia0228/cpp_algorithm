@@ -13,10 +13,23 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
+// 新建一个树记录合并
 class Solution {
 public:
-    TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2)
-    {
+    TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2) {
+        if(!t1) return t2;
+        if(!t2) return t1;
+        TreeNode* root = new TreeNode(t1->val + t2->val);
+        root->left = mergeTrees(t1->left, t2->left);
+        root->right = mergeTrees(t1->right, t2->right);
+        return root;
+    }
+};
+
+//在原来的树上合并
+class Solution1 {
+public:
+    TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2){
         if(!t1)
             return t2;
         if(!t2)
@@ -31,8 +44,7 @@ public:
 
 //下面这个迭代的效率没有上面递归的好
 #include <stack>
-#include <queue>
-class Solution1 {
+class Solution2 {
 public:
     TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2) {
         if(t1 == NULL)
