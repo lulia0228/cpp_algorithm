@@ -47,3 +47,26 @@ public:
         return res;
     }
 };
+
+//类似动态规划，没看懂
+class Solution2 {
+public:
+    int rob(TreeNode* root) {
+        vector<int> result = robInternal(root);
+        return max(result[0], result[1]);
+    }
+
+    vector<int> robInternal(TreeNode* root) {
+        if (root == NULL) return vector<int>(2,0);
+        vector<int> result(2,0);
+
+        vector<int> left = robInternal(root->left);
+        vector<int> right = robInternal(root->right);
+
+        result[0] = max(left[0], left[1]) + max(right[0], right[1]);
+        result[1] = left[0] + right[0] + root->val;
+        return result;
+    }
+
+
+};
