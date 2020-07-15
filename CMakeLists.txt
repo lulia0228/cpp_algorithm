@@ -88,11 +88,11 @@ add_executable(L295 c6_heap/L295-m.cpp)
 add_executable(L347 c6_heap/L347-m.cpp)
 
 
-add_executable(c7_1 c7_2_tree_traversal/bianli_tree.cpp)
-add_executable(c7_2 c7_2_tree_traversal/binaryTree_2.cpp)
-add_executable(c7_3 c7_2_tree_traversal/use_stack_bianli_tree.cpp)
-add_executable(L22-rc c7_2_tree_traversal/L22-m-rc.cpp)
 add_executable(L144 c7_2_tree_traversal/L144-m.cpp)
+add_executable(L94 c7_2_tree_traversal/L94-m.cpp)
+add_executable(L145 c7_2_tree_traversal/L145-h.cpp)
+
+add_executable(L22-rc c7_2_tree_traversal/L22-m-rc.cpp)
 add_executable(L22 c7_2_tree_traversal/L22-m.cpp)
 add_executable(L114 c7_2_tree_traversal/L114-m.cpp)
 add_executable(L124 c7_2_tree_traversal/L124-h.cpp)

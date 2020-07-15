@@ -1,9 +1,13 @@
 //
-// Created by 李恒 on 2020/7/15.
-//
+// Created by LiHeng on 2019/8/10.
+
+//二叉树的后序遍历
+
 #include <iostream>
+#include <cassert>
+#include <stack>
 #include <vector>
-using namespace std;
+using namespace std ;
 
 struct TreeNode{
     int val ;
@@ -12,63 +16,36 @@ struct TreeNode{
     TreeNode(int x): val(x),left(NULL),right(NULL){}
 };
 
-//1 递归写法
+
+// 1 递归写法
 class Solution {
 public:
-    vector<int> preorderTraversal(TreeNode* root) {
+    vector<int> postorderTraversal(TreeNode* root) {
         vector<int> res;
-        preorder(root, res);
+        postorder(root, res);
         return res;
     }
-
-    //前序遍历打印，递归实现
-    void preorder(TreeNode* node , vector<int> &res){
+    //后序遍历打印，递归实现
+    void postorder(TreeNode* node ,vector<int> &res){
         if(node == NULL)  //递归终止条件
             return;
+        postorder(node->left,res);
+        postorder(node->right,res);
         res.push_back(node->val) ;
-        preorder(node->left , res);
-        preorder(node->right,res);
     }
 };
 
 
-//2 非递归写法
-#include <stack>
-class Solution1 {
-public:
-    vector<int> preorderTraversal(TreeNode* root) {
-        vector<int> res;
-        if(root == NULL) return res;
-        stack<TreeNode*> s;
-        s.push(root);
-        while(!s.empty()){
-            TreeNode* cur = s.top();
-            s.pop();
-            if(cur == NULL) continue;
-            res.push_back(cur->val);
-            //if(cur->right != NULL )
-            s.push(cur->right); //注意是cur->right 不是root->right这是容易犯的低级笔误
-            //if(cur->left != NULL )
-            s.push(cur->left);
-        }
-        return res;
-    }
-
-};
-
-
-//3 栈迭代，二叉树前中后三种遍历的统一写法
-
-// Command数据结构可以用pair<TreeNode*, string>代替
+// 栈迭代
 struct Command{
-    string s; // go  print
+    string s; // go print
     TreeNode* node ;
-    Command(string s, TreeNode* node ): s(s) , node(node){}
+    Command(string s , TreeNode* node ): s(s) , node(node){}
 };
 
-class Solution2 {
+class Solution1{
 public:
-    vector<int> preorderTraversal(TreeNode* root){
+    vector<int> postorderTraversal(TreeNode* root){
         vector<int> res ;
         if(root == NULL)
             return res;
@@ -82,11 +59,11 @@ public:
                 res.push_back(command.node->val);
             else{ //进栈操作，注意3个的顺序
                 assert( command.s == "go") ;
+                stack1.push(Command("print", command.node));
                 if(command.node->right) //判断如果当前节点的右子节点存在
                     stack1.push(Command("go", command.node->right));
                 if(command.node->left) //判断如果当前节点的左子节点存在
                     stack1.push(Command("go", command.node->left));
-                stack1.push(Command("print", command.node));
             }
         }
         return  res ;
@@ -103,14 +80,14 @@ int main(){
     layer1_r->left = new TreeNode(4);
     layer1_r->left->right = new TreeNode(0);
 
-    vector<int> res = Solution2().preorderTraversal(root);
+    vector<int> res = Solution1().postorderTraversal(root);
     for(auto i:res)
-            cout << i << "\t";
+        cout << i << "\t";
 
     return 0;
 }
 
-//  2	1	6	3	4	0
+//  6	1	0	4	3	2
 //                   2
 //                 /   \
 //                1     3
