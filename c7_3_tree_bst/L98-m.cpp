@@ -2,6 +2,9 @@
 // Created by LiHeng on 2020/5/20.
 //
 
+//二叉查找树（BST）：根节点大于等于左子树所有节点，小于等于右子树所有节点。
+//二叉查找树中序遍历有序。
+
 #include <iostream>
 #include <vector>
 using  namespace std;
@@ -34,7 +37,8 @@ public:
     }
 };
 
-//仍然是中序遍历，中序遍历的栈写法
+//仍然是中序遍历，中序遍历的栈写法,相当于只把左节点入栈了，即每次遍历到左节点入栈，然后直接访问右节点不入栈
+
 #include <stack>
 class Solution1 {
 public:

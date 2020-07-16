@@ -56,6 +56,26 @@ public:
 
 };
 
+//前序遍历，这样写也可以的
+class Solution2 {
+public:
+    vector<int> preorderTraversal(TreeNode* root){
+        vector<int> res;
+        if(root == nullptr) return res;
+        stack<TreeNode*> stack;
+        while (!stack.empty() || root != nullptr) {
+            while (root != nullptr) {
+                stack.push(root);
+                res.push_back(root->val);
+                root = root -> left;
+            }
+            root = stack.top();
+            stack.pop();
+            root = root -> right;
+        }
+        return res;
+    }
+};
 
 //3 栈迭代，二叉树前中后三种遍历的统一写法
 
@@ -66,7 +86,7 @@ struct Command{
     Command(string s, TreeNode* node ): s(s) , node(node){}
 };
 
-class Solution2 {
+class Solution3 {
 public:
     vector<int> preorderTraversal(TreeNode* root){
         vector<int> res ;

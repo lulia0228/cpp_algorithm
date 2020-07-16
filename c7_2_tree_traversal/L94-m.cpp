@@ -34,7 +34,7 @@ public:
     }
 };
 
-// 2 栈迭代
+// 2 栈迭代，二叉树前中后三种遍历的统一写法
 #include <stack>
 // Command数据结构可以用pair<TreeNode*, string>代替
 struct Command{
@@ -70,6 +70,28 @@ public:
     }
 };
 
+//这样写也可以
+class Solution2 {
+public:
+    vector<int> inorderTraversal(TreeNode* root) {
+        vector<int> res;
+        if(root == nullptr) return res;
+        stack<TreeNode*> stack;
+        while (!stack.empty() || root != nullptr) {
+            while (root != nullptr) {
+                stack.push(root);
+                root = root -> left;
+            }
+            root = stack.top();
+            stack.pop();
+            res.push_back(root->val) ;
+            root = root -> right;
+        }
+        return res;
+    }
+
+};
+
 int main(){
     TreeNode* root = new TreeNode(2);
     root->left = new TreeNode(1);
@@ -80,7 +102,7 @@ int main(){
     layer1_r->left = new TreeNode(4);
     layer1_r->left->right = new TreeNode(0);
 
-    vector<int> res = Solution1().inorderTraversal(root);
+    vector<int> res = Solution2().inorderTraversal(root);
     for(auto i:res)
         cout << i << "\t";
 

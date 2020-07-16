@@ -36,7 +36,7 @@ public:
 };
 
 
-// 栈迭代
+// 栈迭代，二叉树前中后三种遍历的统一写法
 struct Command{
     string s; // go print
     TreeNode* node ;
