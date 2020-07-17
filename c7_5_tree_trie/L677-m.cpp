@@ -58,11 +58,12 @@ public:
 
 
 //使用c++ 字符串查找 内置函数find的方法
+#include <map>
 class MapSum1 {
 public:
     map<string,int> mp;
     /** Initialize your data structure here. */
-    MapSum() {
+    MapSum1() {
 
     }
 
