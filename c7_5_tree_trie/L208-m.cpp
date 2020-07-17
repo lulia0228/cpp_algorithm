@@ -6,6 +6,7 @@
 using namespace std;
 
 //设计一个前缀树
+
 class Trie {
 private:
     bool isEnd;     //当前字符是不是单词的结尾

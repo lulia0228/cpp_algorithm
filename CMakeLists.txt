@@ -88,6 +88,23 @@ add_executable(L295 c6_heap/L295-m.cpp)
 add_executable(L347 c6_heap/L347-m.cpp)
 
 
+
+add_executable(L101 c7_1_tree_recurrent/L101.cpp)
+add_executable(L226 c7_1_tree_recurrent/L226.cpp)
+add_executable(L104 c7_1_tree_recurrent/L104.cpp)
+add_executable(L111 c7_1_tree_recurrent/L111.cpp)
+add_executable(L110 c7_1_tree_recurrent/L110.cpp)
+add_executable(L543 c7_1_tree_recurrent/L543.cpp)
+add_executable(L687 c7_1_tree_recurrent/L687.cpp)
+add_executable(L112 c7_1_tree_recurrent/L112.cpp)
+add_executable(L113 c7_1_tree_recurrent/L113-m.cpp)
+add_executable(L404 c7_1_tree_recurrent/L404.cpp)
+add_executable(L437 c7_1_tree_recurrent/L437.cpp)
+add_executable(L337 c7_1_tree_recurrent/L337-m.cpp)
+add_executable(L572 c7_1_tree_recurrent/L572.cpp)
+add_executable(L617 c7_1_tree_recurrent/L617.cpp)
+add_executable(L671 c7_1_tree_recurrent/L671.cpp)
+
 add_executable(L144 c7_2_tree_traversal/L144-m.cpp)
 add_executable(L94 c7_2_tree_traversal/L94-m.cpp)
 add_executable(L145 c7_2_tree_traversal/L145-h.cpp)
@@ -109,31 +126,15 @@ add_executable(L653 c7_3_tree_bst/L653.cpp)
 add_executable(L501 c7_3_tree_bst/L501.cpp)
 
 
-
 add_executable(L22-rc c7_4_tree_others/L22-m-rc.cpp)
 add_executable(L22 c7_4_tree_others/L22-m.cpp)
 add_executable(L114 c7_4_tree_others/L114-m.cpp)
 add_executable(L124 c7_4_tree_others/L124-h.cpp)
+
+
 add_executable(L208 c7_5_tree_trie/L208-m.cpp)
+add_executable(L677 c7_5_tree_trie/L677-m.cpp)
 
-
-
-
-add_executable(L101 c7_1_tree_recurrent/L101.cpp)
-add_executable(L226 c7_1_tree_recurrent/L226.cpp)
-add_executable(L104 c7_1_tree_recurrent/L104.cpp)
-add_executable(L111 c7_1_tree_recurrent/L111.cpp)
-add_executable(L110 c7_1_tree_recurrent/L110.cpp)
-add_executable(L543 c7_1_tree_recurrent/L543.cpp)
-add_executable(L687 c7_1_tree_recurrent/L687.cpp)
-add_executable(L112 c7_1_tree_recurrent/L112.cpp)
-add_executable(L113 c7_1_tree_recurrent/L113-m.cpp)
-add_executable(L404 c7_1_tree_recurrent/L404.cpp)
-add_executable(L437 c7_1_tree_recurrent/L437.cpp)
-add_executable(L337 c7_1_tree_recurrent/L337-m.cpp)
-add_executable(L572 c7_1_tree_recurrent/L572.cpp)
-add_executable(L617 c7_1_tree_recurrent/L617.cpp)
-add_executable(L671 c7_1_tree_recurrent/L671.cpp)
 
 add_executable(L17 c8_backtrack/L17-m.cpp)
 add_executable(L31 c8_backtrack/L31-m.cpp)
