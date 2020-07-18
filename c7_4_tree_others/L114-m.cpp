@@ -14,15 +14,14 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-
 class Solution {
 public:
     void flatten(TreeNode* root) {
         while (root != NULL) {
             //左子树为 null，直接考虑下一个节点
-            if (root->left == NULL) {
+            if (root->left == NULL)
                 root = root->right;
-            } else {
+            else {
                 // 找左子树最右边的节点
                 TreeNode* pre = root->left;
                 while (pre->right != NULL) {

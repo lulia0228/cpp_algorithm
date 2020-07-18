@@ -5,6 +5,12 @@
 #include <iostream>
 using namespace std;
 
+//对于每个节点而言，四种路径情况:
+// 1 路径只包含节点本身；
+// 2 路径只包含左子树+本身；
+// 3 路径只包含本身+右子树；
+// 4 路径包含左子树+本身+右子树
+
 // Definition for a binary tree node.
 struct TreeNode {
     int val;
@@ -23,7 +29,6 @@ public:
         // if(root = NULL) return 0;
         int ans = root->val; //ans的初始值必须要树中某一个节点的值
         max_sum(root, ans);
-
         return ans;
     }
 

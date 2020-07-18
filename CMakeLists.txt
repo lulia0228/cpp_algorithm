@@ -114,6 +114,7 @@ add_executable(L637 c7_2_tree_traversal/L637.cpp)
 add_executable(L513 c7_2_tree_traversal/L513-m.cpp)
 
 
+add_executable(L95 c7_3_tree_bst/L95-m.cpp)
 add_executable(L98 c7_3_tree_bst/L98-m.cpp)
 add_executable(L108 c7_3_tree_bst/L108.cpp)
 add_executable(L109 c7_3_tree_bst/L109-m.cpp)
@@ -127,12 +128,15 @@ add_executable(L501 c7_3_tree_bst/L501.cpp)
 add_executable(L669 c7_3_tree_bst/L669.cpp)
 add_executable(J36 c7_3_tree_bst/J36-m.cpp)
 
-
 add_executable(L22-rc c7_4_tree_others/L22-m-rc.cpp)
 add_executable(L22 c7_4_tree_others/L22-m.cpp)
+add_executable(L105 c7_4_tree_others/L105-m.cpp)
+add_executable(L106 c7_4_tree_others/L106-m.cpp)
 add_executable(L114 c7_4_tree_others/L114-m.cpp)
+add_executable(L116 c7_4_tree_others/L116-m.cpp)
 add_executable(L124 c7_4_tree_others/L124-h.cpp)
-
+add_executable(L257 c7_4_tree_others/L257.cpp)
+add_executable(L297 c7_4_tree_others/L297-h.cpp)
 
 add_executable(L208 c7_5_tree_trie/L208-m.cpp)
 add_executable(L677 c7_5_tree_trie/L677-m.cpp)
