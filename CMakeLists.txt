@@ -124,6 +124,8 @@ add_executable(L530 c7_3_tree_bst/L530.cpp)
 add_executable(L538 c7_3_tree_bst/L538.cpp)
 add_executable(L653 c7_3_tree_bst/L653.cpp)
 add_executable(L501 c7_3_tree_bst/L501.cpp)
+add_executable(L669 c7_3_tree_bst/L669.cpp)
+add_executable(J36 c7_3_tree_bst/J36-m.cpp)
 
 
 add_executable(L22-rc c7_4_tree_others/L22-m-rc.cpp)
