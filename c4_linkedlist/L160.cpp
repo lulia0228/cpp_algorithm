@@ -11,6 +11,7 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
 };
 
+// 题目要求不能修改原来的链表结构，不能占用额外空间，因此反转链表和哈希查找法不符合要求
 class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {

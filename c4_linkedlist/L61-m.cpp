@@ -14,33 +14,32 @@ struct ListNode {
 class Solution {
 public:
     ListNode* rotateRight(ListNode* head, int k) {
-        if (head == NULL)
-            return NULL;
+        if(head == NULL || head->next == NULL) return head;
         int len = 0;
-        ListNode* count = head;
-        while(count != NULL){
-            count = count->next;
+        ListNode* cnt = head;
+        ListNode* tail = head; //先把尾节点标记下来
+        while(cnt){
             ++len;
+            tail = cnt;
+            cnt = cnt->next;
         }
-        ListNode* dummy = new ListNode(0);
+        if(k%len == 0) return head;
+        ListNode* dummy = new ListNode(-1);
         dummy->next = head;
-        for(int i=0 ; i < k%len; i++){ //这里使用了循环，一次移动一位；也可以根据k%len的值 把链表切成2段再拼接，详见下面
-            ListNode* cur = dummy;
-            ListNode* nex = dummy->next;
-            while (nex->next != NULL){
-                cur = cur->next;
-                nex = nex->next;
-            }
-            cur->next = NULL;
-            nex->next = dummy->next;
-            dummy->next = nex;
+        ListNode* pre = dummy;
+        ListNode* cur = head;
+        for(int i=0; i<(len-k%len); ++i){
+            cur = cur->next;
+            pre = pre->next;
         }
+        dummy->next = cur;
+        tail->next = head;
+        pre->next = NULL;
         return dummy->next;
     }
-
 };
 
-
+//也可以下面这么写，思路是一样的
 class Solution1 {
 public:
     ListNode* rotateRight(ListNode* head, int k) {

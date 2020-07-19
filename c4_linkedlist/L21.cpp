@@ -13,44 +13,37 @@ struct ListNode {
 
 class Solution {
 public:
-    ListNode* Merge(ListNode* pHead1, ListNode* pHead2)
-    {
-        if(pHead1 == NULL)
-            return pHead2;
-        if(pHead2 == NULL)
-            return pHead1;
-        ListNode* new_head = new ListNode(0);
-        ListNode* tem = new_head;
-        while(pHead1 != NULL && pHead2 != NULL){
-            if(pHead1->val > pHead2->val){
-                tem->next = pHead2;
-                pHead2 = pHead2->next;
+    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
+        if(l1 == NULL)
+            return l2 ;
+        if(l2 == NULL)
+            return l1;
+        ListNode * re = new ListNode(-1) ;
+        ListNode * tem = re ;
+        while (l1 != NULL && l2 != NULL){
+            if(l1->val <  l2->val){
+                tem->next = l1 ;
+                l1 = l1->next ;
             }
             else{
-                tem->next = pHead1;
-                pHead1 = pHead1->next;
+                tem->next = l2 ;
+                l2 = l2->next ;
             }
-            tem = tem->next;
+            tem = tem->next ;
         }
-        tem->next = (pHead1 == NULL)? pHead2:pHead1 ;
-        ListNode* re = new_head->next ;
-        delete new_head;
-        return re;
+        tem->next = l1 != NULL ? l1 : l2;
+        return re->next ;
     }
 };
 
 
-//递归解法
+//递归解法，不太好理解
 class Solution1 {
 public:
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
-        if(l1 ==NULL)
-            return l2 ;
-        if(l2 == NULL)
-            return l1;
-
+        if(l1 ==NULL) return l2 ;
+        if(l2 == NULL) return l1;
         ListNode * re = NULL ;
-
         if(l1->val < l2->val){
             re = l1 ;
             re->next = mergeTwoLists(l1->next , l2);
@@ -59,8 +52,6 @@ public:
             re = l2 ;
             re->next = mergeTwoLists(l1, l2->next);
         }
-
         return re ;
-
     }
 };

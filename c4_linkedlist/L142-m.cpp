@@ -12,7 +12,7 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
 };
 
-//思路和141一样 略有修改
+//思路和141一样
 class Solution {
 public:
     ListNode* detectCycle(ListNode *head) {
@@ -41,7 +41,7 @@ public:
 class Solution1 {
 public:
     ListNode *detectCycle(ListNode *head) {
-        if(head == NULL || head->next == NULL ) //不能用&& 用||
+        if(head == NULL || head->next == NULL ) // 不能用&& 用 ||
             return NULL ;
         set<ListNode *>  p_set ;
         ListNode *p = head ;
@@ -54,19 +54,5 @@ public:
         return NULL;
     }
 
-    //leetcode 142 判断带环链表起始位置
-    ListNode *detectCycle1(ListNode *head) {
-        if(head == NULL || head->next == NULL ) //不能用&& 用||
-            return NULL ;
-        set<ListNode *>  p_set ;
-        ListNode *p = head ;
-        while(p){
-            if(p_set.find(p) != p_set.end())
-                return p ;
-            p_set.insert(p) ;
-            p = p->next ;
-        }
-        return NULL;
-    }
 };
 

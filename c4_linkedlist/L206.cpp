@@ -2,6 +2,8 @@
 // Created by LiHeng on 2020/4/19.
 //
 
+//反转链表
+
 #include <iostream>
 using namespace std;
 
@@ -12,50 +14,55 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
 };
 
+//迭代写法，三指针pre cur(head) back
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        if(head == NULL || head->next == NULL)
-            return head;
-        ListNode *pre = NULL ;
-        ListNode *next = NULL ;
-
-        while(head != NULL){
-            next = head->next ;
-            head->next = pre ;
-            pre = head ;
-            head = next ;
+        if (head == NULL) return NULL;
+        ListNode* pre = NULL;
+        ListNode* back = head;
+        while(head){
+            //先记下当前节点head后面的节点,这里back指的是cur右边， pre是cur的左边
+            back = head->next;
+            head->next = pre;
+            pre = head;
+            head = back;
         }
-        return pre ;
-    }
-
-    //leetcode 206 反转一个单链表
-//思路1： 设置2个节点 一前一后
-    ListNode* reverseList1(ListNode* head) {
-        if(head == NULL || head->next == NULL)
-            return head;
-        ListNode *pre = NULL ;
-        ListNode *next = NULL ;
-
-        while(head != NULL){
-            next = head->next ;
-            head->next = pre ;
-            pre = head ;
-            head = next ;
-        }
-        return pre ;
-    }
-
-//思路2： 递归写法
-    ListNode* reverseListR(ListNode* head) {
-        if(!head||!head->next) return head;
-        else{
-            ListNode *new_head = reverseListR(head->next);
-            head->next->next = head;
-            head->next = NULL;
-            return new_head;
-        }
+        return pre;
     }
 };
 
+//递归写法
+class Solution1 {
+public:
+    ListNode* reverseList(ListNode* head) {
+        if( head == NULL ||head->next == NULL)
+            return head;
+        ListNode* new_head = reverseList(head->next);
+        head->next->next = head;
+        head->next = NULL;
+        return new_head;
+    }
 
+};
+
+//标准单元 头插法
+class Solution2 {
+public:
+    ListNode* reverseList(ListNode* head) {
+        if( head == NULL ||head->next == NULL)
+            return head;
+        ListNode* new_head = new ListNode(-1);
+        while(head != NULL){
+            //标记当前节点的下一个节点
+            ListNode* tmp = head->next;
+            //当前节点连接头节点后的节点
+            head->next = new_head->next;
+            //头节点连接当前节点
+            new_head->next = head;
+            head = tmp;
+        }
+        return new_head->next;
+    }
+
+};

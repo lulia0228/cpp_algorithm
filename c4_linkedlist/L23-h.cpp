@@ -13,7 +13,7 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
 };
 
-
+//这个比较慢，借助合并2个排序链表
 class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
@@ -54,7 +54,7 @@ public:
 
 
 
-//采用的是两两合并链表，借助一个队列，直到队列里面元素只剩1个
+//速度提高了很多， 采用的是两两合并链表，借助一个队列，直到队列里面元素只剩1个，用队列设计的比较巧
 #include <queue>
 class Solution1 {
 public:
