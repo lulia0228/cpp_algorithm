@@ -117,6 +117,10 @@ add_executable(L102 c7_2_tree_traversal/L102-m.cpp)
 add_executable(L103 c7_2_tree_traversal/L103-m.cpp)
 add_executable(L637 c7_2_tree_traversal/L637.cpp)
 add_executable(L513 c7_2_tree_traversal/L513-m.cpp)
+add_executable(L429 c7_2_tree_traversal/L429-m.cpp)
+add_executable(L589 c7_2_tree_traversal/L589.cpp)
+add_executable(L590 c7_2_tree_traversal/L590.cpp)
+add_executable(L559 c7_2_tree_traversal/L559.cpp)
 
 
 add_executable(L95 c7_3_tree_bst/L95-m.cpp)
