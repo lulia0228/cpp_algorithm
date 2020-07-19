@@ -55,31 +55,25 @@ add_executable(L594 c3_hash/L594.cpp)
 
 add_executable(L206 c4_linkedlist/L206.cpp)
 add_executable(L92 c4_linkedlist/L92-m.cpp)
-add_executable(L234 c4_linkedlist/L234.cpp)
+add_executable(L234 c4_linkedlist/L234-m.cpp)
 add_executable(L24 c4_linkedlist/L24-m.cpp)
 add_executable(L328 c4_linkedlist/L328-m.cpp)
 add_executable(L61 c4_linkedlist/L61-m.cpp)
-
 add_executable(L2 c4_linkedlist/L2-m.cpp)
 add_executable(L445 c4_linkedlist/L445-m.cpp)
-
 add_executable(L19 c4_linkedlist/L19-m.cpp)
 add_executable(L83 c4_linkedlist/L83.cpp)
 add_executable(L203 c4_linkedlist/L203.cpp)
 add_executable(L237 c4_linkedlist/L237.cpp)
 add_executable(L21 c4_linkedlist/L21.cpp)
 add_executable(L23 c4_linkedlist/L23-h.cpp)
-
 add_executable(L141 c4_linkedlist/L141.cpp)
 add_executable(L142 c4_linkedlist/L142-m.cpp)
 add_executable(L160 c4_linkedlist/L160.cpp)
-
 add_executable(L146 c4_linkedlist/L146-m.cpp)
 add_executable(L148 c4_linkedlist/L148-m.cpp)
 add_executable(L138 c4_linkedlist/L138-m.cpp)
-add_executable(L138 c4_linkedlist/L138-m.cpp)
-add_executable(L725 c4_linkedlist/L725-m.cpp)
-
+add_executable(L726 c4_linkedlist/L725-m.cpp)
 
 add_executable(queue_3 c5_stack_queue/queue_3.cpp)
 add_executable(L20 c5_stack_queue/L20.cpp)
@@ -95,12 +89,10 @@ add_executable(L503 c5_stack_queue/L503-m.cpp)
 add_executable(L557 c5_stack_queue/L557.cpp)
 add_executable(L739 c5_stack_queue/L739-m.cpp)
 
-
 add_executable(L215 c6_heap/L215-m.cpp)
 add_executable(L295 c6_heap/L295-m.cpp)
 add_executable(L347 c6_heap/L347-m.cpp)
-
-
+add_executable(L692 c6_heap/L692-m.cpp)
 
 add_executable(L101 c7_1_tree_recurrent/L101.cpp)
 add_executable(L226 c7_1_tree_recurrent/L226.cpp)

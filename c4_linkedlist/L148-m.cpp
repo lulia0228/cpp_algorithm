@@ -1,6 +1,9 @@
 //
 // Created by LiHeng on 2020/4/19.
 //
+
+//排序链表 要求nlogn时间复杂度和常数空间复杂度 难度就增加了
+
 #include <iostream>
 using namespace std;
 
@@ -26,7 +29,6 @@ public:
             bre = slow; //断点
             slow = slow->next;
         }
-
         bre->next = NULL;
         ListNode* l1 = sortList(head);
         ListNode* l2 = sortList(slow);
