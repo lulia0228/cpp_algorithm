@@ -11,7 +11,7 @@
 - [数组原地操作](./c2_array/数组原地操作.md)
 ## 2. 双指针
 - [快慢指针](./c4_linkedlist/快慢指针.md)
-# 3. Tree   
+## 3. 哈希表   
 ```
 struct TreeNode {
     int val;
@@ -20,3 +20,5 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 ```
+## 4. 二分法
+## 5. 动态规划
