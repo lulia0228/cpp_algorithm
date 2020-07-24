@@ -1,3 +1,6 @@
+<div align="center">
+    <img src="https://github.com/lulia0228/cpp_algorithm/blob/master/fengmian.jpg" width="800px">
+</div>
 # 基础知识
 
 ## :cherries: 数据结构与算法
