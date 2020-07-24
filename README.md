@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://github.com/lulia0228/cpp_algorithm/blob/master/fengmian.jpg" width="800px">
+    <img src="https://github.com/lulia0228/cpp_algorithm/blob/master/fengmian.jpg" width="400px">
 </div>
 # 基础知识
 
