@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://github.com/lulia0228/cpp_algorithm/blob/master/fengmian.jpg" width="300px">
+    <img src="https://github.com/lulia0228/cpp_algorithm/blob/master/fengmian.jpg" width="200px">
 </div>
 
 ## :cherries: 数据结构与算法
