@@ -7,9 +7,7 @@
 
 <!-- GFM-TOC -->
 
-## 1. 滑动窗口   
-[专题](./c13_sliding_window)
-
+## 1. 滑动窗口   [source](./c13_sliding_window)
 - [数组原地操作](./c2_array/数组原地操作.md)
 ## 2. 双指针
 - [快慢指针](./c4_linkedlist/快慢指针.md)
