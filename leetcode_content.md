@@ -3,7 +3,7 @@
 比较难的专题： 回溯 BFS DFS 树 这些问题具有共同点。回溯本质上也是一种DFS，可以从多叉树多层结构去理解，有时候可以画出来树状图加深理解。
 # 数据结构
 
-- [栈和队列](./leetcode_content/栈和队列.md)
+- [栈和队列(11)](./leetcode_content/栈和队列.md)
 - [堆](./leetcode_content/堆.md)
 - [哈希表](./leetcode_content/哈希表.md)
 - [链表](./leetcode_content/链表.md)
