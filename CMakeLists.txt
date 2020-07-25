@@ -125,7 +125,7 @@ add_executable(L200 algo_08_graph/graph_2_dfs/L200-m.cpp)
 add_executable(L417 algo_08_graph/graph_2_dfs/L417-m.cpp)
 add_executable(L547 algo_08_graph/graph_2_dfs/L547-m.cpp)
 add_executable(L695 algo_08_graph/graph_2_dfs/L695-m.cpp)
-add_executable(L785 algo_08_graph/graph_2_dfs/L785-m.cpp)
+add_executable(L785 algo_08_graph/graph_3_toposort/L785-m.cpp)
 
 add_executable(L207 algo_08_graph/graph_3_toposort/L207-m.cpp)
 add_executable(L210 algo_08_graph/graph_3_toposort/L210-m.cpp)
