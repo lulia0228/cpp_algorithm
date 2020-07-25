@@ -157,6 +157,9 @@ add_executable(L605 algo_9_greedy/L605.cpp)
 add_executable(L665 algo_9_greedy/L665.cpp)
 add_executable(L763 algo_9_greedy/L763-m.cpp)
 
+# 算法10-分治篇
+add_executable(L95-c algo_10_divide_and_conquer/L95-m-copy.cpp)
+add_executable(L241 algo_10_divide_and_conquer/L241-m.cpp)
 
 # 数据结构1-栈和队列篇
 add_executable(queue_3 ds_1_stack_queue/queue_3.cpp)
