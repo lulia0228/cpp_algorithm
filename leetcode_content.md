@@ -21,6 +21,7 @@
 - [二分法](./leetcode_content/二分法.md)
 - [动态规划](./leetcode_content/动态规划.md)
 - [回溯](./leetcode_content/回溯.md)
+- [分治](./leetcode_content/分治.md)
 - [图的遍历](./leetcode_content/图的遍历.md)
 - [数学](./leetcode_content/数学.md)
 - [贪心](./leetcode_content/贪心.md)
