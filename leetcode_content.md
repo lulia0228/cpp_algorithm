@@ -20,7 +20,7 @@
 - [滑动窗口（7）](./leetcode_content/滑动窗口.md)
 - [双指针（15）](./leetcode_content/双指针.md)
 - [二分法（12）](./leetcode_content/二分法.md)
-- [动态规划](./leetcode_content/动态规划.md)
+- [动态规划（41）](./leetcode_content/动态规划.md)
 - [回溯（14）](./leetcode_content/回溯.md)
 - [分治（3）](./leetcode_content/分治.md)
 - [图的遍历（13）](./leetcode_content/图的遍历.md)
