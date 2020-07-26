@@ -61,7 +61,6 @@ add_executable(L704 algo_04_erfen/L704_fib_climbstairs.cpp)
 add_executable(L744 algo_04_erfen/L744.cpp)
 
 # 算法5-动态规划篇
-add_executable(c9_1 algo_05_dynamic_plan/dp_6_knapsack_problem/dp_practice2.cpp)
 add_executable(L70 algo_05_dynamic_plan/dp_1_simple_recursion_formula/L70.cpp)
 
 add_executable(L5 algo_05_dynamic_plan/dp_2_subsequence/L5-m.cpp)
@@ -89,6 +88,7 @@ add_executable(L96 algo_05_dynamic_plan/dp_4_special_state_transition/L96-m.cpp)
 add_executable(L198 algo_05_dynamic_plan/dp_5_rob/L198.cpp)
 add_executable(L213 algo_05_dynamic_plan/dp_5_rob/L213-m.cpp)
 
+add_executable(c9_1 algo_05_dynamic_plan/dp_6_knapsack_problem/dp_practice2.cpp)
 add_executable(L416 algo_05_dynamic_plan/dp_6_knapsack_problem/L416-m.cpp)
 add_executable(L494 algo_05_dynamic_plan/dp_6_knapsack_problem/L494-m.cpp)
 add_executable(L474 algo_05_dynamic_plan/dp_6_knapsack_problem/L474-m.cpp)
