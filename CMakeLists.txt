@@ -95,6 +95,7 @@ add_executable(L474 algo_05_dynamic_plan/dp_6_knapsack_problem/L474-m.cpp)
 add_executable(L139 algo_05_dynamic_plan/dp_6_knapsack_problem/L139-m.cpp)
 add_executable(L322 algo_05_dynamic_plan/dp_6_knapsack_problem/L322-m.cpp)
 add_executable(L377 algo_05_dynamic_plan/dp_6_knapsack_problem/L377-m.cpp)
+add_executable(L39-dp algo_05_dynamic_plan/dp_6_knapsack_problem/L39-m-dp.cpp)
 add_executable(L518 algo_05_dynamic_plan/dp_6_knapsack_problem/L518-m.cpp)
 
 add_executable(L62 algo_05_dynamic_plan/dp_7_matrix_path/L62-m.cpp)
