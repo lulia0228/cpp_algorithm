@@ -14,7 +14,7 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
 };
 
-//链表排序-----在 O(n log n) 时间复杂度和常数级空间复杂度下，对链表进行排序。  使用归并排序法
+//链表排序-----在 O(nlogn) 时间复杂度和常数级空间复杂度下，对链表进行排序。  使用归并排序法
 class Solution {
 public:
     ListNode* sortList(ListNode* head) {
@@ -24,12 +24,12 @@ public:
         ListNode* fast = head;
         ListNode* slow = head;
         ListNode* bre = head;
-        while(fast != NULL && fast->next !=NULL){
+        while(fast != NULL && fast->next != NULL){
             fast = fast->next->next;
-            bre = slow; //断点
+            bre = slow; //记录断点
             slow = slow->next;
         }
-        bre->next = NULL;
+        bre->next = NULL; //断开
         ListNode* l1 = sortList(head);
         ListNode* l2 = sortList(slow);
         return merge2lists(l1, l2);

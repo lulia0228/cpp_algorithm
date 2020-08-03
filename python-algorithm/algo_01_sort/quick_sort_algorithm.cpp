@@ -33,7 +33,7 @@ void quick_Sort1(vector<int> &nums , int left , int right){
             j-- ;
         }
     }
-    nums[i] = value ;//nums[i]=value;//当游标指针i和j重叠时将基准填入坑
+    nums[i] = value ; //nums[i]=value   当游标指针i和j重叠时将基准填入坑
     quick_Sort1(nums , left , i - 1) ;
     quick_Sort1(nums , i + 1 , right);
 }
@@ -53,19 +53,21 @@ void quick_Sort2(vector<int> & nums , int left , int right){
         while (i<j && nums[i] <= value ) //注意基准值选数组最后一个元素，要先从前面往后面找；
             i++;
         if(i<j)
-            swap(nums[i],nums[j]);
-        else
-            swap(nums[left] , nums[i]);
+            swap(nums[i], nums[j]);
     }
+    swap(nums[left], nums[i]);   //基准放到相遇位置
+
 
     /*while(i<j){
-        while (i<j && nums[j] >= value)  //注意基准值选数组第一个元素，要先从后面往前面找；
+        while (i<j && nums[j] >= value)
             j--;
-        while (i<j && nums[i] <= value ) //注意基准值选数组最后一个元素，要先从前面往后面找；
+        while (i<j && nums[i] <= value )
             i++;
-        swap(nums[i],nums[j]);
-    }
-    swap(nums[left] , nums[i]);*/
+        if(i<j)
+            swap(nums[i],nums[j]);
+        else
+            swap(nums[left], nums[i]);
+    }*/
 
     quick_Sort2(nums , left , i - 1);
     quick_Sort2(nums, i + 1 , right );

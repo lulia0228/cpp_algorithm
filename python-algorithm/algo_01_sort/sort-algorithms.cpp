@@ -10,6 +10,7 @@ int* bubbleSort(int* arry , int n){
     for(int i = 0 ; i < n ; i++){
         // 没有数据交换,提前退出冒泡循环的标志位
         bool flag = false ;
+        //一轮交换后最大值会转移到最末尾
         for(int j = 0 ; j < n-i-1 ; j++){
             if(arry[j] > arry[j+1]){
                 swap(arry[j] , arry[j+1]);
@@ -43,7 +44,7 @@ int* insertionSort(int* arry , int n){
 int* selectionSort(int* arry , int n){
     for(int i = 0 ; i < n ; i++){
         int minIndex = i;
-        for(int j = i+1 ;j < n ; j++ )
+        for(int j = i+1 ; j<n ; j++)
             if (arry[j] < arry[minIndex]) // 从大到小 只需要变成大于号
                 minIndex = j;
         swap(arry[i] , arry[minIndex]);

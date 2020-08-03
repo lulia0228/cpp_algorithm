@@ -2,6 +2,9 @@
 // Created by liheng on 19-8-27.
 //
 
+//归并排序数组；
+//归并排序链表：Leetcode 148
+
 #include <iostream>
 #include <vector>
 #include <cassert>
@@ -10,6 +13,7 @@ using namespace std ;
 
 //归并排序 （递归版本） 非递归版本怎么写
 
+//2个序列各设置一个指针
 vector<int> merge(vector<int>& a , vector<int>& b){
     vector<int> c ;
     int i = 0 ;
@@ -21,7 +25,7 @@ vector<int> merge(vector<int>& a , vector<int>& b){
         }
         else {
             c.push_back(b[j]);
-            j ++ ;
+            j++ ;
         }
     }
     if(i == a.size()){
@@ -35,6 +39,8 @@ vector<int> merge(vector<int>& a , vector<int>& b){
     return c ;
 }
 
+
+//每次切分数组为2段进行递归
 vector<int> gb_Sort(vector<int> & nums){
     if(nums.size() <= 1)
         return nums ;
@@ -51,7 +57,7 @@ vector<int> gb_Sort(vector<int> & nums){
     vector<int> left_sort = gb_Sort(left_nums);
     vector<int> right_sort = gb_Sort(right_nums);
 
-    return  merge(left_sort , right_sort) ;
+    return  merge(left_sort, right_sort) ;
 }
 
 
