@@ -4,113 +4,66 @@
 # @File    : quick_sort_algorithm.py
 # @Software: PyCharm
 
-# 5 快速排序
+# 快速排序
 # 时间复杂度 O(nlogn) 空间复杂度  O(logn)-O(n)   从小到大
 
-'''def quick_sort(li, start, end):
+def quick_sort(li, left, right):
     # 分治 一分为二
-    # start=end ,证明要处理的数据只有一个
-    # start>end ,证明右边没有数据
-    if start >= end:
+    # left=right ,证明要处理的数据只有一个
+    # left>right ,证明右边没有数据
+    if left >= right:
         return
-    # 定义两个游标，分别指向0和末尾位置
-    left = start
-    right = end
+    # 定义两个游标，分别指向0和末尾
+    i = left
+    j = right
     # 把0位置的数据，认为是中间值
-    mid = li[left]
-    print('mid',mid)
-    while left < right:
-        # 让右边游标往左移动，目的是找到小于mid的值，放到left游标位置
-        while left < right and li[right] >= mid:
-            right -= 1
-        print(right)
-        li[left] = li[right]
-        # 让左边游标往右移动，目的是找到大于mid的值，放到right游标位置
-        while left < right and li[left] < mid:
-            left += 1
-        print(left)
-        li[right] = li[left]
-    # while结束后，把mid放到中间位置，left=right
-    li[left] = mid
-    print(li)
+    mid = li[i]
+    while i < j:
+        # 让右边游标往左移动，目的是找到小于mid的值，放到i游标位置
+        while i < j and li[j] >= mid:
+            j -= 1
+        li[i] = li[j]
+        # 让左边游标往右移动，目的是找到大于mid的值，放到j游标位置
+        while i < j and li[i] <= mid:
+            i += 1
+        li[j] = li[i]
+    # while结束后，把mid放到中间位置，i=j
+    li[i] = mid
     # 递归处理左边的数据
-    quick_sort(li, start, left-1)
+    quick_sort(li, left, i-1)
     # 递归处理右边的数据
-    quick_sort(li, left+1, end)
+    quick_sort(li, i+1, right)
 
+def quick_sort_2(li, left, right):
+    # 分治 一分为二
+    # left=right ,证明要处理的数据只有一个
+    # left>right ,证明右边没有数据
+    if left >= right:
+        return
+    # 定义两个游标，分别指向0和末尾
+    i = left
+    j = right
+    # 把0位置的数据，认为是中间值
+    mid = li[i]
+    while i < j:
+        # 让右边游标往左移动，目的是找到小于mid的值，放到i游标位置
+        while i < j and li[j] >= mid:
+            j -= 1
+        # 让左边游标往右移动，目的是找到大于mid的值，放到j游标位置
+        while i < j and li[i] <= mid:
+            i += 1
+        li[i],li[j] = li[j],li[i]
+    # while结束后，把mid放到中间位置，i=j
+    li[left],li[i] = li[i],li[left]
+    # 递归处理左边的数据
+    quick_sort(li, left, i-1)
+    # 递归处理右边的数据
+    quick_sort(li, i+1, right)
 
-# l = [56,26,44,17,71,31,93,55]
-# l = [56,26,44,17,12,28,42,71,31,93,55,58,70,89]
-l = [56,26,44,17,12,28,42,71,31,85,55,58,70,89]
-quick_sort(l,0,len(l)-1)'''
-
-
-
-
-# 6 归并排序
-# 时间复杂度 O(nlogn)  空间复杂度  O(N)
-'''x = [int(i) for i in input().split(',')]
-
-def gbsort(x):
-    length = len(x)
-    if length <= 1:
-        return x
-    mid = length // 2
-
-    left = gbsort(x[:mid])
-    right = gbsort(x[mid:])
-
-    left_point, right_pointer = 0, 0
-    result = []
-
-    while left_point < len(left) and right_pointer < len(right):
-        if left[left_point] <= right[right_pointer]:
-            result.append(left[left_point])
-            left_point += 1
-        else:
-            result.append(right_pointer)
-            right_pointer += 1
-
-    result += left[left_point:]
-    result +=right[right_pointer]
-
-    return result
-
-print(gbsort(x))'''
-
-'''
-def merge(a, b):
-    print(a,b)
-    c = []
-    h = j = 0
-    while j < len(a) and h < len(b):
-        if a[j] < b[h]:
-            c.append(a[j])
-            j += 1
-        else:
-            c.append(b[h])
-            h += 1
-
-    if j == len(a):
-        for i in b[h:]:
-            c.append(i)
-    else:
-        for i in a[j:]:
-            c.append(i)
-    return c
-
-def merge_sort(lists):
-    if len(lists) <= 1:
-        return lists
-    middle = len(lists)//2
-    # print(middle,lists[:middle])
-    left = merge_sort(lists[:middle])
-    # print('aaa')
-    # print('-----',lists[middle:])
-    right = merge_sort(lists[middle:])
-    return merge(left, right)
 
 if __name__ == '__main__':
-    a = [4, 7, 8, 3, 5, 9, 1]
-    print(merge_sort(a))
-'''
+    # a = [4, 7, 8, 3, 5, 9, 1]
+    a = [56, 26, 44, 17, 12, 28, 42, 71, 31, 85, 55, 58, 70, 89]
+    quick_sort(a, 0, len(a) - 1)
+    # quick_sort_2(a, 0, len(a) - 1)
+    print(a)
