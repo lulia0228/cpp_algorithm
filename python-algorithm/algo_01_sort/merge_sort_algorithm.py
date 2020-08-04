@@ -35,30 +35,6 @@ def gb_sort(lists):
     return merge(left, right)
 
 
-# def gbsort(x):
-#     length = len(x)
-#     if length <= 1:
-#         return x
-#     mid = length // 2
-#
-#     left = gbsort(x[:mid])
-#     right = gbsort(x[mid:])
-#
-#     left_point, right_pointer = 0, 0
-#     result = []
-#
-#     while left_point < len(left) and right_pointer < len(right):
-#         if left[left_point] <= right[right_pointer]:
-#             result.append(left[left_point])
-#             left_point += 1
-#         else:
-#             result.append(right_pointer)
-#             right_pointer += 1
-#
-#     result += left[left_point:]
-#     result += right[right_pointer:]
-#
-#     return result
 
 if __name__ == '__main__':
     a = [4, 7, 8, 3, 5, 9, 1]
