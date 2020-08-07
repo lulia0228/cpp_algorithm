@@ -40,7 +40,7 @@ public:
             TreeNode* tmp = q.front();
             q.pop();
             swap(tmp->left, tmp->right);
-            if(tmp->left != NULL)
+            if(tmp->left != NULL) //顺序可以颠倒，无影响
                 q.push(tmp->left);
             if(tmp->right != NULL)
                 q.push(tmp->right);
