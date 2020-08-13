@@ -15,7 +15,6 @@ class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         dummy = ListNode(-1)
         cur = dummy
-        bit_sum = 0
         carry = False
         while l1 != None or l2 != None:
             tmp_sum = 0
