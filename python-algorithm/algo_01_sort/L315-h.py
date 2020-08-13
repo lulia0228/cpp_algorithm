@@ -70,7 +70,6 @@ class Solution1:
             for h in range(j, right+1):
                 tmp_nums.append(nums[h])
 
-
         m = 0
         n = left
         while m < len(tmp_nums):
