@@ -2,7 +2,7 @@
 '''
 @Time   : 2020/8/13
 @Author : Heng Li
-@Email  : liheng@elensdata.com
+@Email  : liheng_lulia@163.com
 '''
 
 # Definition for singly-linked list.
