@@ -4,6 +4,12 @@
 
 // L146 LRU缓存设计
 
+//1 哈希表：键为输入的key；值是为双向链表设计的节点(节点除了包含前后指针，还包含key/value，
+//  为什么要包含key,是因为删除节点的时候，也要对应删除哈希中的键值)
+//2 双向链表：方便缓存满的时候O(1)时间复杂度删除最不常用的节点
+
+//注意：每次操作key/value后，要把对应节点移动到双向链表前面。
+
 #include <vector>
 #include <algorithm>
 #include <iostream>
@@ -11,6 +17,7 @@
 
 using namespace std;
 
+//设计双向链表的节点
 class MyListNode {
 public:
     int key;
@@ -29,6 +36,7 @@ class LRUCache {
 public:
     MyListNode *head;
     MyListNode *tail;
+    //设计了一个字典，键是key,值是根据key/value创建的一种双向链表的节点
     unordered_map<int, MyListNode *> m;
     int cap;
     int now_size;
@@ -42,6 +50,7 @@ public:
         tail->pre = head;
     }
 
+    //当前节点移动到双向链表第二个位置(双向链表头尾节点是虚拟的),每次读/写后将最新鲜的数据放到最近的位置
     void lift_now_to_head(MyListNode *now) {
         if (now->pre != nullptr && now->nxt != nullptr) {
             now->pre->nxt = now->nxt;
@@ -69,7 +78,7 @@ public:
                 now_size++;
                 m[key] = now;
             }
-            else {
+            else {//删除双向链表倒数第二个节点（头和尾节点是虚拟的），并在哈希中删除对应的key:node
                 MyListNode *last = tail->pre;
                 last->pre->nxt = tail;
                 tail->pre = last->pre;
@@ -85,6 +94,9 @@ public:
         lift_now_to_head(now);
     }
 };
+
+
+
 
 #include <list>
 class LRUCache1 {
