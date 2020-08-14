@@ -46,7 +46,7 @@ public:
 
 };
 
-//标准单元 头插法
+//标准单元 头插法 但是头插法不是在原链表上操作
 class Solution2 {
 public:
     ListNode* reverseList(ListNode* head) {
