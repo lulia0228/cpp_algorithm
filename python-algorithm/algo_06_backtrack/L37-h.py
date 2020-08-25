@@ -13,7 +13,8 @@ class Solution:
         self.blank = []
         self.res = []
 
-    def solveSudoku(self, board: List[List[str]]) -> None:
+    # def solveSudoku(self, board: List[List[str]]) -> None:
+    def solveSudoku(self, board) -> None:
         """
         Do not return anything, modify board in-place instead.
         """
@@ -54,3 +55,19 @@ class Solution:
                 self.row[t_r][num] = 0
                 self.col[t_c][num] = 0
                 self.box[t_c//3 + (t_r//3)*3][num] = 0
+
+
+if __name__ == "__main__":
+    board =[['5','3','.','.','7','.','.','.','.'],
+            ['6','.','.','1','9','5','.','.','.'],
+            ['.','9','8','.','.','.','.','6','.'],
+            ['8','.','.','.','6','.','.','.','3'],
+            ['4','.','.','8','.','3','.','.','1'],
+            ['7','.','.','.','2','.','.','.','6'],
+            ['.','6','.','.','.','.','2','8','.'],
+            ['.','.','.','4','1','9','.','.','5'],
+            ['.','.','.','.','8','.','.','7','9']]
+
+    Solution().solveSudoku(board)
+    for i in board:
+        print(i)
