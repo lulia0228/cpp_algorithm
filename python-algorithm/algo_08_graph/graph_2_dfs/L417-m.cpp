@@ -26,6 +26,7 @@ public:
         vector<vector<bool>> arrive_Pc(m, vector<bool>(n, false));
         vector<vector<bool>> arrive_At(m, vector<bool>(n, false));
 
+        //即从边界出发，看看能到哪些位置
         for(int j=0; j<n; ++j) //找到与左边界连通的地方
             dfs(matrix, 0, j, arrive_Pc);
         for(int i=0; i<m; ++i) //找到与上边界连通的地方
