@@ -5,7 +5,6 @@
 @Email  : liheng_lulia@163.com
 '''
 
-
 class Solution:
     def __init__(self, **kwargs):
         self.m = 0
