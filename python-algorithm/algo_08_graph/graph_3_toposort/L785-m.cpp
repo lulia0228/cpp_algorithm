@@ -23,6 +23,7 @@ public:
         return true;
     }
 
+    //每下探一层遍历的对象是当前节点的邻接节点
     bool IsErFen(vector<vector<int>>& graph, int curNode, int curColor, vector<int>& color){
         if (color[curNode] != -1)
             return  color[curNode] == curColor;
