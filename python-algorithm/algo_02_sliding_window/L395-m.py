@@ -38,7 +38,7 @@ class Solution:
         while rt - lt + 1 >= k:
             flag = 0
             for key, val in new_record.items():
-                if val > 0 and val < k:
+                if val > 0 and val < k: # val=0说明子串中不含这个字符的意思
                     flag = 1
                     break
             if flag == 0:
