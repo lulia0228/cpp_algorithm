@@ -11,7 +11,7 @@ class Solution:
         res = 0
         m = len(M)
         if (m == 0):
-            return res;
+            return res
         # 标记第i个学生是否已经被访问了
         visited = [False for i in range(m)]
         for i in range(m):
