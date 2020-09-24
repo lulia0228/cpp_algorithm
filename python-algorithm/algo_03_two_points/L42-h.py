@@ -5,6 +5,8 @@
 @Email  : liheng@elensdata.com
 '''
 
+# 宽度为1，以每个柱子上可以装的水作为计算单元，只需知道它的左右两侧分别最高值，和二者中的较小值差值即为所求
+
 class Solution:
     def trap(self, height: List[int]) -> int:
         sz = len(height)
