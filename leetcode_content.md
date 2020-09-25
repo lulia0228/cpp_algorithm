@@ -16,7 +16,7 @@
 
 # 算法思想
 
-- [排序（7）](./leetcode_content/排序.md)
+- [排序（8）](./leetcode_content/排序.md)
 - [滑动窗口（8）](./leetcode_content/滑动窗口.md)
 - [双指针（15）](./leetcode_content/双指针.md)
 - [二分法（12）](./leetcode_content/二分法.md)
