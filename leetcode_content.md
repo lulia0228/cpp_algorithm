@@ -9,7 +9,7 @@
 - [链表（23）](./leetcode_content/链表.md)
 - [树（49）](./leetcode_content/树.md)
 - [字符串（8）](./leetcode_content/字符串.md)
-- [数组原地（13）](./leetcode_content/数组原地.md)
+- [数组原地（12）](./leetcode_content/数组原地.md)
 - [二维矩阵（6）](./leetcode_content/二维矩阵.md)
 - [位运算（12）](./leetcode_content/位运算.md)
 
