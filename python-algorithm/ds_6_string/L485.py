@@ -18,7 +18,7 @@ class Solution:
                 i += 1
         return res
 
-    
+
 class Solution:
     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
         res = 0

@@ -2,6 +2,8 @@
 # @Time    : 2020/10/3 13:42
 # @Author  : No Name
 
+# 这道题不太好想到解题方法
+
 # 记录一个字符上次出现的位置，如果两个字符串中的字符上次出现的位置一样，那么就属于同构。
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
