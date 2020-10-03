@@ -16,4 +16,4 @@ class Solution:
                 curLen = 1
             if preLen >= curLen:
                 count += 1
-        return count;
+        return count
