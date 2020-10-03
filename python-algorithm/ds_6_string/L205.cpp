@@ -18,31 +18,10 @@ public:
             if (preIndexOfS[s[i]] != preIndexOfT[t[i]]) {
                 return false;
             }
-            preIndexOfS[s[i]] = i + 1;
-            preIndexOfT[t[i]] = i + 1;
+            preIndexOfS[s[i]] = i;
+            preIndexOfT[t[i]] = i;
         }
         return true;
     }
 };
 
-//我的解法：最后个案例没通过，不知道为啥
-class Solution {
-public:
-    bool isIsomorphic(string s, string t) {
-        return convert2num(s) == convert2num(t);
-    }
-
-    string convert2num(string str){
-        int index = 1;
-        char c = str[0];
-        string res = "1";
-        for(int i=1; i<str.size(); ++i){
-            if(str[i] != c){
-                ++index;
-                c = str[i];
-            }
-            res += to_string(index);
-        }
-        return res;
-    }
-};
