@@ -214,6 +214,7 @@ add_executable(L412 ds_3_hash/L412.cpp)
 add_executable(L454 ds_3_hash/L454.cpp)
 add_executable(L560 ds_3_hash/L560-m.cpp)
 add_executable(L594 ds_3_hash/L594.cpp)
+add_executable(L697 ds_3_hash/L697.cpp)
 
 # 数据结构4-链表篇
 add_executable(L206 ds_4_linkedlist/linkedlist_2_inplace_operation/L206.cpp)
@@ -316,7 +317,6 @@ add_executable(L448 ds_7_array_inplace/L448.cpp)
 add_executable(L565 ds_7_array_inplace/L565-m.cpp)
 add_executable(L645 ds_7_array_inplace/L645.cpp)
 add_executable(L667 ds_7_array_inplace/L667-m.cpp)
-add_executable(L697 ds_7_array_inplace/L697.cpp)
 add_executable(L769 ds_7_array_inplace/L769-m.cpp)
 
 # 数据结构8-二维矩阵篇
