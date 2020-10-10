@@ -29,6 +29,7 @@ class Solution:
                     dp[i][j] = (dp[i - 1][j] or dp[i - 1][j - nums[i - 1]])
         return dp[sz][target]==1
 
+
 # 特殊设计的
 class Solution:
     def canPartition(self, nums: List[int]) -> bool:
