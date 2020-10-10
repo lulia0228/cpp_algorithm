@@ -17,7 +17,10 @@ class Solution:
 
         for i in range(1, n):
             for j in range(C+1):
-                dp[i][j] = dp[i-1][j] # 先给其赋值不装第i个的状态
+                # 装或者不装第i个
                 if j >= w[i]:
-                    dp[i][j] = max(dp[i][j], v[i]+dp[i-1][j - w[i]])
+                    dp[i][j] = max(dp[i-1][j], v[i]+dp[i-1][j - w[i]])
+                else:
+                    dp[i][j] = dp[i-1][j]  # 不装第i个
+
         return dp[n-1][C]
