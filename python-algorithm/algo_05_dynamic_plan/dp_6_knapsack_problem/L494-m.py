@@ -14,7 +14,7 @@ class Solution:
         if tmp % 2 or sum(nums) < S:
             return 0
         target = tmp // 2
-        # 题目转化成了和416类似的问题，从非负整数数组中选取一部分数字使他们和为Target,共有多少种选择方法？
+        # dp[i][j]表示表示能否用前i个物品[0,i-1]装满j容量
         dp = [[0] * (target + 1) for i in range(sz + 1)]
         dp[0][0] = 1
         for i in range(1, sz + 1):
@@ -35,7 +35,7 @@ s = 1
 res = Solution().findTargetSumWays(arr, s)
 print(res)
 
-
+# 特殊设计，速度更快
 class Solution:
     def findTargetSumWays(self, nums, S: int) -> int:
         sz = len(nums)
@@ -53,4 +53,5 @@ class Solution:
             for j in range(target, nums[i]-1, -1):
                 dp[j] += dp[j - nums[i]]
         return dp[target]
+
 
