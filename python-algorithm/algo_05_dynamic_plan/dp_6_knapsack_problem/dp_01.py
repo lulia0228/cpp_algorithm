@@ -19,5 +19,5 @@ class Solution:
             for j in range(C+1):
                 dp[i][j] = dp[i-1][j] # 先给其赋值不装第i个的状态
                 if j >= w[i]:
-                    dp[i][j] = max(dp[i][j], v[i]+dp[i-1][j - w[i]]);
-        return dp[n-1][C];
+                    dp[i][j] = max(dp[i][j], v[i]+dp[i-1][j - w[i]])
+        return dp[n-1][C]
