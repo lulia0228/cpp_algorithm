@@ -11,6 +11,7 @@ class Solution:
             return 0
         if n == 1:
             return nums[0]
+        # 不偷第一个房子和不偷最后一个房子
         max1, max2 = self.rob_(nums[:n-1]), self.rob_(nums[1:])
         return max(max1, max2)
 
