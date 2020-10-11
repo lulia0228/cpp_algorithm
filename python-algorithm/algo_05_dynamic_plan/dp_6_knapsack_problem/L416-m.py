@@ -4,10 +4,8 @@
 @Author : No Name
 '''
 
-# 注意：0-1背包问题每个元素是不可以复用的，即每个元素只可以用1次
-
-# 416. 分割等和子集
-# 题目：从正整数数组中选取一部分元素，使得他们的和为数组总和的一半。
+# 题目转化成了和494：从非负整数数组中选取一部分数字使他们和为Target,共有多少种选择方法？
+# 和494存在细微区别在于 这里数组中是正整数，不是非负整数，另外只是判断是否存在这样的一个选择？
 
 class Solution:
     def canPartition(self, nums: List[int]) -> bool:
@@ -39,8 +37,8 @@ class Solution:
         target = sum(nums) // 2
         dp = [0] * (target + 1)
         dp[0] = 1
-        for i in range(sz):
-            # 倒着设计，不会重复使用元素
+        for i in range(sz): # 每个元素只能用1次
+            # 倒序遍历
             for j in range(target, nums[i]-1, -1):
                     if dp[j-nums[i]] == 1:
                         dp[j] = 1

@@ -27,7 +27,8 @@ class Solution:
         n = len(w)
         dp = [0]*(C+1)
         for i in range(n):
-            # 只有倒着设计才能保证每个物品只被使用1次
+            # 为了省空间，只用1维表达，只有倒着设计才能避免覆盖的问题
+            # 因为dp[j-w]表示的是dp[i-1][j-w]，正着计算，省略有维度，会被二维的d[i][j-w]覆盖
             for j in range(C, w[i-1]-1, -1):
                 dp[j] = max(dp[j], v[i]+dp[j - w[i]])
         return [C]
