@@ -12,4 +12,4 @@ class Solution:
             res += max(prices[i+1]-prices[i], 0)
         return res
 
-    
+
