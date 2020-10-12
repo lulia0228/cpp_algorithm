@@ -33,13 +33,3 @@ class Solution:
                     if tmp <= n and not visited[tmp]:
                         que.append(tmp)
                         visited[tmp] = 1
-
-
-
-
-
-
-
-
-
-
