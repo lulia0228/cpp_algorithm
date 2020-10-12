@@ -8,7 +8,7 @@ using namespace std;
 class Solution {
 public:
     int numDecodings(string s) {
-        //先判断能否解码
+        //先判断能否解码: (1)0开头的不行 （2）0字符前面的数字大于2 （3）连续出现0个数大于1
         for(int i=0; i<s.size(); ++i){
             if(s[i] == '0'){
                 if(i==0 || (s[i-1]-'0')>2)

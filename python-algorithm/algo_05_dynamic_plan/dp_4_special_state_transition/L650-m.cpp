@@ -48,7 +48,7 @@ public:
     }
 };
 
-//贪心算法  没看懂
+//贪心算法
 #include <cmath>
 class Solution2 {
 public:
