@@ -22,6 +22,7 @@ public:
             return 0;
         int leftH = minDepth(root->left);
         int rightH = minDepth(root->right);
+        // 对当前节点而言，左子树为空，右子树不一定为空
         if(leftH == 0 )
             return rightH + 1;
         if(rightH == 0 )
