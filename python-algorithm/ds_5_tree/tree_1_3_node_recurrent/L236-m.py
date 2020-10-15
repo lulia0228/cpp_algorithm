@@ -18,7 +18,9 @@ class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         if root == None or root == p or root == q:
             return root
+        # 遍历根节点的左子树
         left = self.lowestCommonAncestor(root.left, p, q)
+        # 遍历根节点的右子树
         right = self.lowestCommonAncestor(root.right, p, q)
         if left and right:
             return root
