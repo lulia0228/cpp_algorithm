@@ -23,6 +23,7 @@ public:
         children = _children;
     }
 };
+
 //递归写法
 class Solution {
 public:
