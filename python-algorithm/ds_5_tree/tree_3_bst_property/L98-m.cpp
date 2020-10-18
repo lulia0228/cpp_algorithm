@@ -64,6 +64,7 @@ public:
 
 
 //方法3  递归写法
+//判断每个节点和父节点的关系
 class Solution2 {
 public:
     bool helper(TreeNode* root, long long lower, long long upper) {
