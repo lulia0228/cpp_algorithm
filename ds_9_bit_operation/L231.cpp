@@ -1,6 +1,4 @@
-//
-// Created by LiHeng on 2020/4/18.
-//
+
 
 //Bit Manipulation 78 136 169 231
 

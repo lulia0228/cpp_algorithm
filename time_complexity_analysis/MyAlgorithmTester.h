@@ -1,6 +1,3 @@
-//
-// Created by liheng on 19-8-7.
-//
 
 #ifndef CLION_P1_MYALGORITHMTESTER_H
 #define CLION_P1_MYALGORITHMTESTER_H

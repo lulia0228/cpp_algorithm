@@ -1,6 +1,4 @@
-//
-// Created by LiHeng on 2020/5/20.
-//
+
 /* 滑动窗口双指针一般逻辑
 int left = 0, right = 0;
 while (right < s.size()) {

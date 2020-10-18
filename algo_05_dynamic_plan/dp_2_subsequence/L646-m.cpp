@@ -1,6 +1,4 @@
-//
-// Created by LiHeng on 2020/6/21.
-//
+
 
 //dp似乎有点慢，还有贪心算法做的
 #include <iostream>

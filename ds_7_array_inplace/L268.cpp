@@ -1,6 +1,4 @@
-//
-// Created by LiHeng on 2020/6/28.
-//
+
 #include <iostream>
 #include <vector>
 using namespace std;

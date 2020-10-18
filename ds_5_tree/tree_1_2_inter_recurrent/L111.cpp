@@ -1,6 +1,3 @@
-//
-// Created by 李恒 on 2020/7/14.
-//
 
 //二叉树的最小深度
 #include <iostream>

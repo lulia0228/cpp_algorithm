@@ -1,9 +1,8 @@
-//
-// Created by 李恒 on 2020/7/3.
-//
+
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 //s是饼干 g是愿望

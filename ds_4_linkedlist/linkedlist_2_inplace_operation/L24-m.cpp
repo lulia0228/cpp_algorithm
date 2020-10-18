@@ -1,6 +1,4 @@
-//
-// Created by liheng on 19-8-5.
-//
+
 
 //leetcode 24 交换链表节点
 

@@ -1,6 +1,4 @@
-//
-// Created by LiHeng on 2020/6/3.
-//
+
 
 // 345 反转字符串中的元音字母
 #include <iostream>

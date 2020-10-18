@@ -1,6 +1,4 @@
-//
-// Created by 李恒 on 2020/6/30.
-//
+
 #include <cstring>
 #include <iostream>
 #include <cmath>

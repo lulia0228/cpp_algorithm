@@ -1,6 +1,4 @@
-//
-// Created by liheng on 19-8-8.
-//
+
 
 #ifndef CLION_P1_MYUTILS_H
 #define CLION_P1_MYUTILS_H

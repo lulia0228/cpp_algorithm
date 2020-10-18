@@ -1,6 +1,4 @@
-//
-// Created by LiHeng on 2020/6/21.
-//
+
 
 //这道题转化成求最长公共子序列问题，参考1143
 #include <iostream>

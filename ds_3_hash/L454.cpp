@@ -1,6 +1,4 @@
-//
-// Created by 李恒 on 2019/8/1.
-//
+
 
 //leetcode 454 4sum
 

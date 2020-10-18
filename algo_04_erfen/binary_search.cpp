@@ -1,6 +1,4 @@
-//
-// Created by liheng on 19-7-16.
-//
+
 //二分查找针对的是有序数组
 /*
 #include <iostream>

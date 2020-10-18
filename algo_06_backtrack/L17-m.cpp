@@ -1,6 +1,3 @@
-//
-// Created by LiHeng on 2020/4/28.
-//
 
 // leetcode 17 电话按键
 #include <iostream>

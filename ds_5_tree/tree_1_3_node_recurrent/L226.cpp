@@ -1,6 +1,3 @@
-//
-// Created by liheng on 19-9-11.
-//
 
 //翻转二叉树
 

@@ -1,6 +1,3 @@
-//
-// Created by LiHeng on 2020/4/22.
-//
 
 //跳跃游戏
 #include <iostream>

@@ -1,6 +1,3 @@
-//
-// Created by LiHeng on 2020/4/28.
-//
 
 // 状态转移方程 dp[i]表示抢劫nums[0,..,i]所能获得的最大收益
 // dp[i] = max(dp[i-1], dp[i-2]+nums[i])

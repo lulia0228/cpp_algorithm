@@ -1,6 +1,4 @@
-//
-// Created by LiHeng on 2020/5/31.
-//
+
 
 //L4
 #include <iostream>

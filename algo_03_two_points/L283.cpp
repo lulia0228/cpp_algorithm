@@ -1,6 +1,4 @@
-//
-// Created by LiHeng on 2020/4/23.
-//
+
 
 // 283 题目要求不能改变非0元素原来的顺序，而且要在原来数组上操作
 #include <iostream>

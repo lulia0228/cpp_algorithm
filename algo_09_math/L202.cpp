@@ -1,6 +1,4 @@
-//
-// Created by LiHeng on 2020/6/30.
-//
+
 #include <iostream>
 #include <unordered_map>
 using namespace std;

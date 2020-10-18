@@ -1,6 +1,4 @@
-//
-// Created by liheng on 19-8-23.
-//
+
 
 //leetcode 300 最长上升子序列问题
 //DP时间复杂度O(n*n)
