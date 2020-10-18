@@ -26,7 +26,7 @@ public:
         ListNode* pre = NULL;
         ListNode* slow = head;
         ListNode* fast = head;
-        //找到链表中间节点
+        //找到链表中间节点,作为根节点
         while(fast->next && fast->next->next){
             pre = slow; //标记中点前一个链节点
             slow = slow->next;
