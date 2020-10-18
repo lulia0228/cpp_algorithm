@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/1 21:21
-# @Author  : Heng Li
-# @File    : L387.py
-# @Software: PyCharm
+
 
 class Solution:
     def firstUniqChar(self, s: str) -> int:

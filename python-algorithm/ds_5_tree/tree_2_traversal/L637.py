@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/18 10:09
-# @Author  : No Name
+
 
 class Solution:
     def averageOfLevels(self, root: TreeNode) -> List[float]:

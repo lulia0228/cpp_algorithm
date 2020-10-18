@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/18 14:16
-# @Author  : No Name
+
 
 class Solution:
     def kthSmallest(self, root: TreeNode, k: int) -> int:

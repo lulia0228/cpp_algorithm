@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/2 10:08
-# @Author  : Heng Li
-# @File    : L232.py
-# @Software: PyCharm
+
 
 class MyQueue:
     def __init__(self):

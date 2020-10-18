@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/7 16:25
-# @Author  : No Name
 
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:

@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/5 12:10
-# @Author  : No Name
+
 
 # 这道题告诉我们，有时候要活用数组元素和它们的索引之间的关系
 class Solution:

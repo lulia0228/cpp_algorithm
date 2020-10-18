@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/1 16:19
-# @Author  : Heng Li
-# @File    : L1.py
-# @Software: PyCharm
+
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:

@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/18 15:56
-# @Author  : No Name
+
 
 # 优化了空间复杂度，在遍历的过程中确定，不是将全部元素记录到数组中，再处理数组
 class Solution:

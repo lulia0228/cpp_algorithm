@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/7 10:53
-# @Author  : No Name
+
 
 class Solution:
     def singleNumber(self, nums: int) -> List[int]:

@@ -1,9 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2019/8/26
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
+
 
 # 模拟树的层序遍历
 

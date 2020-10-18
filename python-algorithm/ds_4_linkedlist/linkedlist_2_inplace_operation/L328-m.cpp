@@ -1,6 +1,4 @@
-//
-// Created by LiHeng on 2020/7/19.
-//
+
 
 //基偶链表
 

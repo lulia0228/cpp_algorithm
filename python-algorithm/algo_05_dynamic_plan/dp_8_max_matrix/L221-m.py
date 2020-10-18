@@ -1,8 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/10/12
-@Author : No Name
-'''
+
 
 class Solution:
     def maximalSquare(self, matrix: List[List[str]]) -> int:

@@ -1,9 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/9/11
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
+
 
 # 思路：
 # 如果节点属于第一个集合，将其着为蓝色，否则着为红色。只有在二分图的情况下，

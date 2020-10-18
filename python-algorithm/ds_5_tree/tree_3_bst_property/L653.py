@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/18 16:50
-# @Author  : No Name
+
 
 class Solution:
     def findTarget(self, root: TreeNode, k: int) -> bool:

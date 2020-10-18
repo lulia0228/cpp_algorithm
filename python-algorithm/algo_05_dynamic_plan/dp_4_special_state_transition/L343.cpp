@@ -1,6 +1,4 @@
-//
-// Created by LiHeng on 2019/8/24.
-//
+
 
 //leetcode 343 最大乘积问题
 #include <iostream>

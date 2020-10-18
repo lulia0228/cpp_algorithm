@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/4 9:36
-# @Author  : No Name
+
 
 # 使用遍历个数作为终止条件
 class Solution:

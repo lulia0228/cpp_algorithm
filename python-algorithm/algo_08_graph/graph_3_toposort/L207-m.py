@@ -1,9 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/9/11
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
+
 
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:

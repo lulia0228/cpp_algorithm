@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/6 21:56
-# @Author  : No Name
+
 
 class Solution:
     def isHappy(self, n: int) -> bool:

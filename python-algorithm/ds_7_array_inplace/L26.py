@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/4 15:31
-# @Author  : No Name
 
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:

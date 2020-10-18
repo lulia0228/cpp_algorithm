@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/8 10:01
-# @Author  : No Name
 
 class Solution:
     def climbStairs(self, n: int) -> int:

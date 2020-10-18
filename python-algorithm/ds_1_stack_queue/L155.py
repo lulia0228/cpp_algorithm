@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/2 9:07
-# @Author  : Heng Li
-# @File    : L155.py
-# @Software: PyCharm
 
 # 这里是为了用list仿c++等语言的stack功能，所以不要使用python list的其它特性
 

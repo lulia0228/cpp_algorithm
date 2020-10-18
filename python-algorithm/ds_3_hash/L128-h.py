@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/1 17:20
-# @Author  : Heng Li
-# @File    : L128-h.py
-# @Software: PyCharm
+
 
 # 2种思路速度是差不多的；注意的是遍历过的需要在哈希中删除记录
 

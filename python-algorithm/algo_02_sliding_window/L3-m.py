@@ -1,9 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/9/18
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
+
 
 # 滑动窗口  模板化
 class Solution:

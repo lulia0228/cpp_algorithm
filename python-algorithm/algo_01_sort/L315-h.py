@@ -1,9 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/8/4
-@Author : Heng Li
-@Email  : liheng@elensdata.com
-'''
+
 
 # 1 暴力法 2层循环
 class Solution:

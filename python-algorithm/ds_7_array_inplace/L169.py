@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/4 15:47
-# @Author  : No Name
+
 
 # 进阶要求线性时间复杂度 常数空间复杂度 就不太好做了
 class Solution:

@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/9/19 20:38
-# @Author  : Heng Li
-# @File    : L904-m.py
-# @Software: PyCharm
+
 
 # 1 超时 收缩窗口的条件太费时间
 class Solution:

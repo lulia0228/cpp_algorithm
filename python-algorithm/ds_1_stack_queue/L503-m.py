@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/2 12:09
-# @Author  : Heng Li
-# @File    : L503-m.py
-# @Software: PyCharm
+
 
 # 503. 循环数组的下一个更大元素
 class Solution:

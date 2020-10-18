@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/4 10:43
-# @Author  : No Name
+
 
 # 占用了额外空间
 class Solution:

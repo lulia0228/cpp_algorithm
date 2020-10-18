@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/2 9:40
-# @Author  : Heng Li
-# @File    : L394-m.py
-# @Software: PyCharm
 
 class Solution:
     def decodeString(self, s: str) -> str:

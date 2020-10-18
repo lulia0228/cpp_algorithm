@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/2 10:31
-# @Author  : Heng Li
-# @File    : L225.py
-# @Software: PyCharm
+
 
 class MyStack:
     def __init__(self):

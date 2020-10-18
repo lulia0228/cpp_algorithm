@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/1 19:58
-# @Author  : Heng Li
-# @File    : L49-m.py
-# @Software: PyCharm
+
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:

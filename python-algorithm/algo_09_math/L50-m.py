@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/6 13:56
-# @Author  : No Name
+
 
 class Solution:
     def myPow(self, x: float, n: int) -> float:

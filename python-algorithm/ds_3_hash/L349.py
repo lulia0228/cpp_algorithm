@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/1 21:06
-# @Author  : Heng Li
-# @File    : L349.py
-# @Software: PyCharm
 
 class Solution:
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:

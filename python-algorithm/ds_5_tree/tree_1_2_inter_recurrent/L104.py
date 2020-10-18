@@ -1,8 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/10/13
-@Author : No Name
-'''
+
 
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:

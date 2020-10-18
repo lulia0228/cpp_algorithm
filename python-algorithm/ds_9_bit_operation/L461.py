@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/7 12:36
-# @Author  : No Name
+
 
 class Solution:
     def hammingDistance(self, x: int, y: int) -> int:

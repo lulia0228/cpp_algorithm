@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/4 9:42
-# @Author  : No Name
+
 
 class Solution:
     def generateMatrix(self, n: int) -> List[List[int]]:

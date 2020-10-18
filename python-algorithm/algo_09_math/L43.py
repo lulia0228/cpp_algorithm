@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/6 13:21
-# @Author  : No Name
+
 
 # 乘法竖式，不会溢出，每次2个1位整数相乘
 class Solution:

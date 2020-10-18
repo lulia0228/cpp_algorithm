@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/18 8:59
-# @Author  : No Name
+
 
 class Solution:
     def postorderTraversal(self, root: TreeNode) -> List[int]:

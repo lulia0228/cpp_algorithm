@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/4 10:06
-# @Author  : No Name
+
 
 # 先转置矩阵，再对称交换所有列
 class Solution:

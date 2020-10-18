@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/18 10:42
-# @Author  : No Name
+
 
 class Solution:
     def preorder(self, root: 'Node') -> List[int]:

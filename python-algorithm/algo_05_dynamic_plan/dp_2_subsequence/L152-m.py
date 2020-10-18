@@ -1,8 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/10/9
-@Author : No Name
-'''
+
 
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:

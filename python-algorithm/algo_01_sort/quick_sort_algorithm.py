@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/8/3 21:12
-# @Author  : Heng Li
-# @File    : quick_sort_algorithm.py
-# @Software: PyCharm
 
 # 快速排序
 # 时间复杂度 O(nlogn) 空间复杂度  O(logn)-O(n)   从小到大

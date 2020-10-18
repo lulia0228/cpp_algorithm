@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/18 9:49
-# @Author  : No Name
+
 
 class Solution:
     def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:

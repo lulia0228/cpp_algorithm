@@ -1,13 +1,11 @@
-# -*- coding: utf-8 -*-
-# @Time    : 2020/10/18 19:43
-# @Author  : No Name
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
+# 和108题思路一致，只是这里输入变成链表
 
 class Solution:
     def sortedListToBST(self, head: ListNode) -> TreeNode:

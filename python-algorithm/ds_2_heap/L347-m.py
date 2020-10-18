@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/2 14:49
-# @Author  : Heng Li
-# @File    : L347-m.py
-# @Software: PyCharm
+
 
 import  heapq
 class Solution:

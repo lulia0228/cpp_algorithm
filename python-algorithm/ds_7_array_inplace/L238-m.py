@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/4 19:21
-# @Author  : No Name
+
 
 # 搞了2个数组分别记录当前元素左右两侧的数字乘积，空间复杂度是O(n)
 class Solution:

@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/2 8:09
-# @Author  : Heng Li
-# @File    : L71-m.py
-# @Software: PyCharm
+
 
 # 思路就是把所有'/'之间的目录压入栈，如果是'.' '..' 特殊处理
 class Solution:

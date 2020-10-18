@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/1 21:46
-# @Author  : Heng Li
-# @File    : L36-m.py
-# @Software: PyCharm
+
 
 # 36. 有效的数独
 

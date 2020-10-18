@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/7 11:18
-# @Author  : No Name
+
 
 class Solution:
     def reverseBits(self, n: int) -> int:

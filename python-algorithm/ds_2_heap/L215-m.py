@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/2 12:38
-# @Author  : Heng Li
-# @File    : L215-m.py
-# @Software: PyCharm
+
 
 # python堆模块heapq是小顶堆，索引0处为最小值
 # 堆底层数据结构，时空复杂度要搞清楚

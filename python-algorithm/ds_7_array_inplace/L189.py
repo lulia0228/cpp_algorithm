@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/4 16:14
-# @Author  : No Name
+
 
 # 1 暴力法 不借助额外空间 旋转k次 超时
 class Solution:

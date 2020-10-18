@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/1 20:24
-# @Author  : Heng Li
-# @File    : L219.py
-# @Software: PyCharm
+
 
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:

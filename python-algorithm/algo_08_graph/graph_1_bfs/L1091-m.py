@@ -1,9 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/8/27
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
+
 
 
 class Solution:

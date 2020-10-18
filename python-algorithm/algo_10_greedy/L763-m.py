@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/7 19:14
-# @Author  : No Name
+
 
 class Solution:
     def partitionLabels(self, S: str) -> List[int]:

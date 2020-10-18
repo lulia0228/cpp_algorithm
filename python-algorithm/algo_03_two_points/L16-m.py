@@ -1,9 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/9/24
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
+
 
 class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:

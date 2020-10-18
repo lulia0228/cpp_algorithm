@@ -1,6 +1,4 @@
-//
-// Created by LiHeng on 2019/8/25.
-//
+
 
 //最长公共子序列L1143 字符串
 #include <iostream>

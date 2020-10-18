@@ -1,6 +1,3 @@
-//
-// Created by 李恒 on 2020/1/8.
-//
 
 //数组中的第K个最大元素
 #include <iostream>

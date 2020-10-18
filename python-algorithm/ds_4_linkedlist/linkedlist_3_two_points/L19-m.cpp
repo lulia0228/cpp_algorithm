@@ -1,6 +1,4 @@
-//
-// Created by LiHeng on 2019/7/28.
-//
+
 
 //双指针技术在链表中的应用
 //leetcode  19 删除倒数第n个节点

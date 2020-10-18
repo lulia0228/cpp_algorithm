@@ -1,6 +1,4 @@
-//
-// Created by LiHeng on 2019/8/25.
-//
+
 
 //0-1背包 重点研究，此外如果需要返回实际装的物品，还需要记录下来路径
 #include <iostream>

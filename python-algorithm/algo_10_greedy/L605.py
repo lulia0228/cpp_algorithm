@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/7 19:08
-# @Author  : No Name
+
 
 # 一次遍历，同时看前后是否为0
 class Solution:

@@ -1,8 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/10/10
-@Author : No Name
-'''
+
 
 class Solution:
     def findTargetSumWays(self, nums, S: int) -> int:

@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/18 16:09
-# @Author  : No Name
 
 class Solution:
     def getMinimumDifference(self, root: TreeNode) -> int:

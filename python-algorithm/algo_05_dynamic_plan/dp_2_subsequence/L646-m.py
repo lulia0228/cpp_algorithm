@@ -1,8 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/10/9
-@Author : No Name
-'''
+
 
 # 贪心算法，起始和题目leetcode435删除区间，使剩下的不重叠区间最多  类似
 class Solution:

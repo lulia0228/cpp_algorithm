@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/1 21:36
-# @Author  : Heng Li
-# @File    : L13.py
-# @Software: PyCharm
+
 
 class Solution:
     def romanToInt(self, s: str) -> int:

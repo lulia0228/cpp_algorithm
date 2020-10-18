@@ -1,6 +1,4 @@
-//
-// Created by LiHeng on 2020/4/21.
-//
+
 //11 盛最多水的容器
 
 #include <iostream>

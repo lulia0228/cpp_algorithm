@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/18 10:28
-# @Author  : No Name
+
 
 class Solution:
     def levelOrder(self, root: 'Node') -> List[List[int]]:

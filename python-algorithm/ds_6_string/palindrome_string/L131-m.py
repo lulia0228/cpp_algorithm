@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/3 9:33
-# @Author  : No Name
 
 # 131 分割回文串
 class Solution:

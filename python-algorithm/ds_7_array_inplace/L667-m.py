@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/5 10:39
-# @Author  : No Name
+
 
 class Solution:
     def constructArray(self, n: int, k: int) :

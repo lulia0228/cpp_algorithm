@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/6 19:42
-# @Author  : No Name
 
 from functools import cmp_to_key
 class Solution:

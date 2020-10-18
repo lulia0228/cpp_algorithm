@@ -1,6 +1,4 @@
-//
-// Created by 李恒 on 2020/6/29.
-//
+
 #include <iostream>
 using namespace std;
 class Solution {

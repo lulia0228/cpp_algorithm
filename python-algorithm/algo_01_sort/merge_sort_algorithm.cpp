@@ -1,6 +1,4 @@
-//
-// Created by liheng on 19-8-27.
-//
+
 
 //归并排序数组；
 //归并排序链表：Leetcode 148

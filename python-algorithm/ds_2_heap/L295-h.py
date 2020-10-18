@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/2 14:15
-# @Author  : Heng Li
-# @File    : L295-h.py
-# @Software: PyCharm
+
 
 import  heapq
 class MedianFinder:

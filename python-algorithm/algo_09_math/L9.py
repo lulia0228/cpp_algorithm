@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/6 12:55
-# @Author  : No Name
 
 class Solution:
     def isPalindrome(self, x: int) -> bool:

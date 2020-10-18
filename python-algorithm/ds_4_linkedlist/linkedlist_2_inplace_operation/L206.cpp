@@ -1,6 +1,3 @@
-//
-// Created by LiHeng on 2020/4/19.
-//
 
 //反转链表
 

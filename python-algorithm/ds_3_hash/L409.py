@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/1 21:26
-# @Author  : Heng Li
-# @File    : L409.py
-# @Software: PyCharm
+
 
 # 409. 最长回文串
 

@@ -1,9 +1,4 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/9/24
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
 
 # 题目只说是2个整数，没说不能是2个一样的整数
 import math

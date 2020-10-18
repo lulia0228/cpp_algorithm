@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/1 20:38
-# @Author  : Heng Li
-# @File    : L220-m.py
-# @Software: PyCharm
+
 
 # 超时
 class Solution:

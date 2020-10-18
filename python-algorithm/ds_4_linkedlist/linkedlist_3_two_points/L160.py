@@ -1,9 +1,4 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/8/14
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
 
 # 另一种办法是各自遍历一次得到两者长度差值，然后快慢指针相遇
 # Definition for singly-linked list.

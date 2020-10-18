@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/6 22:58
-# @Author  : No Name
+
 
 class Solution:
     def isPowerOfThree(self, n: int) -> bool:

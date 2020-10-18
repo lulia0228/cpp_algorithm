@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/18 10:33
-# @Author  : No Name
+
 
 class Solution:
     def postorder(self, root: 'Node') -> List[int]:

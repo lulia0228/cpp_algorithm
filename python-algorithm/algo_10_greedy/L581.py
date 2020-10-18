@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/7 17:24
-# @Author  : No Name
 
 # 这道题不好O(n) O(1)的方法不好想到
 # 1  排序 O(nlogn) O(n)

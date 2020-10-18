@@ -1,9 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/8/14
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
+
 
 # back cur front 分别表示上一个节点 当前节点 下一个节点
 

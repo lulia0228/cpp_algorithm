@@ -1,6 +1,3 @@
-//
-// Created by LiHeng on 2019/8/17.
-//
 
 //八皇后问题L51
 

@@ -1,9 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/9/24
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
+
 
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:

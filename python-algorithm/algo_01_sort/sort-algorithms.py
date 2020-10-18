@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/8/3 21:11
-# @Author  : Heng Li
-# @File    : sort-algorithms.py
-# @Software: PyCharm
-
 
 # 1 冒泡排序
 def bubbleSort(x):

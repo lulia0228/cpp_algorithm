@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/2 15:17
-# @Author  : Heng Li
-# @File    : L692-m.py
-# @Software: PyCharm
 
 # 因为python heapq不支持自定义比较函数，
 # 这道题需要多个条件比较堆中元素，因此放弃使用堆，直接排序了

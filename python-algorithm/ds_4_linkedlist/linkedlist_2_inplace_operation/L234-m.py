@@ -1,9 +1,4 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/8/14
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
 
 # 进阶：
 # 你能否用 O(n) 时间复杂度和 O(1) 空间复杂度解决此题？

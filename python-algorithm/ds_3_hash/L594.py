@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/1 17:59
-# @Author  : Heng Li
-# @File    : L594.py
-# @Software: PyCharm
 
 class Solution:
     def findLHS(self, nums: List[int]) -> int:

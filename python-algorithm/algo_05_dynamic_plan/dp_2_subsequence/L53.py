@@ -1,8 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/10/9
-@Author : No Name
-'''
+
 
 # dp[i] = max(dp[i-1]+nums[i], nums[i])
 class Solution:

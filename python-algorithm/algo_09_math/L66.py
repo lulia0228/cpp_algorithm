@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/6 13:36
-# @Author  : No Name
+
 
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:

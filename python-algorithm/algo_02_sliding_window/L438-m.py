@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/9/19 19:46
-# @Author  : Heng Li
-# @File    : L438-m.py
-# @Software: PyCharm
+
 
 # 相当于是567题的结果集合
 class Solution:

@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/1 20:08
-# @Author  : Heng Li
-# @File    : L242.py
-# @Software: PyCharm
+
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:

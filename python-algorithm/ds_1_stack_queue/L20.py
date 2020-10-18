@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/2 7:53
-# @Author  : Heng Li
-# @File    : L20.py
-# @Software: PyCharm
+
 
 # 栈类型的题目要注意判断栈是否为空
 class Solution:

@@ -1,6 +1,3 @@
-//
-// Created by LiHeng on 2019/8/17.
-//
 
 //leetcode 200 number of islands 解决办法：图的深度遍历
 

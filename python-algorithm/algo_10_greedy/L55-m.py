@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/7 15:56
-# @Author  : No Name
+
 
 class Solution:
     def canJump(self, nums: List[int]) -> bool:

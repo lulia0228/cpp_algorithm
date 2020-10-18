@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/2 11:43
-# @Author  : Heng Li
-# @File    : L739-m.py
-# @Software: PyCharm
+
 
 # 739. 每日温度
 

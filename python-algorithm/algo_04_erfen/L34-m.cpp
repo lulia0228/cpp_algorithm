@@ -1,6 +1,4 @@
-//
-// Created by LiHeng on 2020/4/21.
-//
+
 
 // 在排序数组中查找元素的第一个和最后一个位置  算法时间复杂度必须是 O(log n) 级别。
 #include <iostream>

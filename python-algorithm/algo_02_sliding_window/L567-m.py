@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/9/19 18:02
-# @Author  : Heng Li
-# @File    : L567-m.py
-# @Software: PyCharm
+
 
 # 滑动窗口
 

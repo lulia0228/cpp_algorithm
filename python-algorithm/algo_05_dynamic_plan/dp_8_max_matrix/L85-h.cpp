@@ -1,6 +1,3 @@
-//
-// Created by LiHeng on 2020/4/23.
-//
 
 // 这道题用dp做，时空复杂度不理想；还有一种方法转化成了单调栈还没去看？？？
 #include <iostream>

@@ -1,9 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/8/14
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
+
 
 
 # 这道题依然是三个指针，只是每次往后移动2步

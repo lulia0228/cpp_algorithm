@@ -1,6 +1,4 @@
-//
-// Created by liheng on 19-9-10.
-//
+
 
 #include <iostream>
 #include <cassert>

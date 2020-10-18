@@ -1,6 +1,4 @@
-//
-// Created by LiHeng on 2020/6/4.
-//
+
 
 // 滑动窗口思想
 #include <iostream>

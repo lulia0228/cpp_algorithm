@@ -1,9 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2019/8/24
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
+
 
 # 组合总数，结果不能重复（不考虑顺序）
 

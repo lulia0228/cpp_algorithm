@@ -1,9 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2019/8/24
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
+
 
 # 对于此类问题，要搞明白每层循环的候选对象到底是什么！！！
 

@@ -1,9 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/9/10
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
+
 
 # 有返回值的dfs递归
 

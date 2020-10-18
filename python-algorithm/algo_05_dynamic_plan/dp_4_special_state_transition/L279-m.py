@@ -1,8 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/10/12
-@Author : No Name
-'''
+
 
 # 动态规划：可以看作是完全背包问题
 class Solution:

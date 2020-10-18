@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/1 19:47
-# @Author  : Heng Li
-# @File    : L38.py
-# @Software: PyCharm
+
 
 class Solution:
     def countAndSay(self, n: int) -> str:

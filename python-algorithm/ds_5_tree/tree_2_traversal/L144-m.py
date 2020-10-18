@@ -1,8 +1,4 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/10/16
-@Author : No Name
-'''
 
 # Definition for a binary tree node.
 # class TreeNode:

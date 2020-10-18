@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/4 20:05
-# @Author  : No Name
+
 
 class RandomizedSet:
     def __init__(self):

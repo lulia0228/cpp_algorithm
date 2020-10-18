@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/3 11:44
-# @Author  : No Name
+
 
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:

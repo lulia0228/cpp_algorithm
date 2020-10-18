@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/18 19:39
-# @Author  : No Name
+
 
 class Solution:
     def sortedArrayToBST(self, nums: List[int]) -> TreeNode:

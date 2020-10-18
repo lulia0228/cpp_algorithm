@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/1 16:53
-# @Author  : Heng Li
-# @File    : L560-m.py
-# @Software: PyCharm
+
 
 # 560 和为k的连续子数组
 

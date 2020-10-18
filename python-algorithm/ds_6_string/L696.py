@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/3 15:15
-# @Author  : No Name
 
 # 这道题不太好想到解题办法
 class Solution:

@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/7 16:57
-# @Author  : No Name
+
 
 class Solution:
     def findContentChildren(self, g: List[int], s: List[int]) -> int:

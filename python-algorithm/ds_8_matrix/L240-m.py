@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/4 9:58
-# @Author  : No Name
+
 
 class Solution:
     def searchMatrix(self, matrix, target):

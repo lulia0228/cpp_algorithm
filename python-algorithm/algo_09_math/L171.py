@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/6 19:16
-# @Author  : No Name
+
 
 class Solution:
     def titleToNumber(self, s: str) -> int:

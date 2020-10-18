@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/9/19 16:04
-# @Author  : Heng Li
-# @File    : L395-m.py
-# @Software: PyCharm
+
 
 # 分治法
 class Solution:

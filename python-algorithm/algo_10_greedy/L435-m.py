@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/7 18:24
-# @Author  : No Name
+
 
 # 本题返回的是：要删除的区间的个数
 class Solution:

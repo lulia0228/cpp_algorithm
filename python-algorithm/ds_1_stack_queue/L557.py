@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/2 9:42
-# @Author  : Heng Li
-# @File    : L557.py
-# @Software: PyCharm
+
 
 class Solution:
     def reverseWords(self, s: str) -> str:

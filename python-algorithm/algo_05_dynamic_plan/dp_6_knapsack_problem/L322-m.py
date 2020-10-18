@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/11 16:28
-# @Author  : No Name
+
 
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:

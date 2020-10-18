@@ -1,6 +1,4 @@
-//
-// Created by liheng on 19-7-23.
-//
+
 
 //leetcode 203 移除链表中所有值等于给定值的节点
 #include <iostream>

@@ -1,8 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/10/14
-@Author : No Name
-'''
+
 
 # 土方法：全部遍历找
 class Solution:

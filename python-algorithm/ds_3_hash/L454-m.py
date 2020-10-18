@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/1 16:34
-# @Author  : Heng Li
-# @File    : L454-m.py
-# @Software: PyCharm
+
 
 class Solution:
     def fourSumCount(self, A: List[int], B: List[int], C: List[int], D: List[int]) -> int:

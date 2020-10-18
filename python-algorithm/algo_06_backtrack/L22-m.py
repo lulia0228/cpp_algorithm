@@ -1,9 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2019/8/24
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
+
 
 # 可以抽象成二叉树去遍历，选取符合要求的路径
 

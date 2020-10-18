@@ -1,9 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/8/28
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
+
 
 class Solution:
     def __init__(self, **kwargs):

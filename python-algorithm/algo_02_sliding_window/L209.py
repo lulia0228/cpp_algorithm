@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/9/19 15:13
-# @Author  : Heng Li
-# @File    : L209.py
-# @Software: PyCharm
+
 
 
 # 滑动窗口，有时候结果是在收缩窗口的内部处理的，有时候是在收缩完窗口外面完成的

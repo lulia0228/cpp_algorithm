@@ -1,9 +1,5 @@
 #--coding:utf-8--
-'''
-@Time   : 2020/9/24
-@Author : Heng Li
-@Email  : liheng_lulia@163.com
-'''
+
 
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:

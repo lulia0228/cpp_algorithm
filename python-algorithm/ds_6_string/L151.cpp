@@ -1,6 +1,3 @@
-//
-// Created by liheng on 19-8-28.
-//
 
 //151 翻转字符串中的每个单词
 #include<iostream>

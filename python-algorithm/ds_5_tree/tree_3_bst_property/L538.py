@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/10/18 16:31
-# @Author  : No Name
+
 
 # 逆中序遍历（右-根-左），不是后续遍历
 class Solution:

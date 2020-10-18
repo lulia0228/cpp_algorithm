@@ -1,6 +1,3 @@
-//
-// Created by LiHeng on 2020/7/12.
-//
 
 //DFS实现拓扑排序
 
