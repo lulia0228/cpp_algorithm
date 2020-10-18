@@ -21,11 +21,11 @@ class Solution:
     def mypreorder(self, root, res):
         if not root:
             return
-        res.append(root.val)
-        self.mypreorder(root.left, res)
-        self.mypreorder(root.right, res)
+        res.append(root.val)              # 根
+        self.mypreorder(root.left, res)   # 左
+        self.mypreorder(root.right, res)  # 右
 
-
+# 栈迭代1
 class Solution:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         res = []
@@ -42,7 +42,7 @@ class Solution:
                 stk.append(cur.left)
         return res
 
-
+# 栈迭代2
 class Solution:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         res = []
@@ -57,7 +57,7 @@ class Solution:
         return res
 
 
-# 前、中、后序遍历的通用写法格式
+# 前、中、后序遍历的栈迭代通用写法
 class Solution:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         res = []
