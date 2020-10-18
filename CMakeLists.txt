@@ -289,7 +289,7 @@ add_executable(L114 ds_5_tree/tree_5_tree_and_linkedlist/L114-m.cpp)
 add_executable(L116 ds_5_tree/tree_2_traversal/L116-m.cpp)
 add_executable(L124 ds_5_tree/tree_1_4_path_recurrent/L124-h.cpp)
 add_executable(L257 ds_5_tree/tree_1_4_path_recurrent/L257.cpp)
-add_executable(L297 ds_5_tree/tree_2_traversal/L297-h.cpp)
+add_executable(L297 ds_5_tree/tree_4_build_tree/L297-h.cpp)
 
 add_executable(L208 ds_5_tree/tree_6_trie_tree/L208-m.cpp)
 add_executable(L677 ds_5_tree/tree_6_trie_tree/L677-m.cpp)
