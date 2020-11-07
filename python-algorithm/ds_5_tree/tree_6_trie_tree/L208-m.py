@@ -99,3 +99,7 @@ class Trie:
                 return False
         return True
 
+# 练习
+# 211. 添加与搜索单词 - 数据结构设计
+# 212. 单词搜索 II
+# 421. 数组中两个数的最大异或值
