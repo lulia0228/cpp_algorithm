@@ -1,13 +1,12 @@
 #--coding:utf-8--
 
-
 # 必须要先排序
 
 class Solution:
     def __init__(self, **kwargs):
         self.res = []
 
-    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+    def combinationSum2(self, candidates, target: int):
         candidates.sort()
         self.dfs(candidates, 0, target, 0, [])
         return self.res
@@ -30,3 +29,8 @@ class Solution:
             # 因为每个数字在一个组合中只可以用1次，所以设置成i+1
             self.dfs(candidates, cur_sum + candidates[i], target, i+1, cur_ls)
             cur_ls.pop()
+
+if __name__ == "__main__":
+    num = [4,2,1,3,5,3,2]
+    res = Solution().combinationSum2(num, 5)
+    print(res)
