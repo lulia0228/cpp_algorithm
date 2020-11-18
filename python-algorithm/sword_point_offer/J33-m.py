@@ -31,7 +31,7 @@
 class Solution:
 
     def verifyPostorder(self, postorder: List[int]) -> bool:
-        
+
         def recur(i, j):
             # 当i≥j ，说明此子树节点数量≤1，无需判别正确性，因此直接返回true
             if i >= j:
