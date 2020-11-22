@@ -67,12 +67,9 @@
 ## 1 用两个栈实现队列   
 剑指 Offer 09
 
-[力扣](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) / [Python3](../python-algorithm/sword_point_offer/J09.py)    
+[力扣](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) / [Python3](./python-algorithm/sword_point_offer/J09.py)    
 
-```
-题目:假设你正在爬楼梯。需要 n 阶你才能到达楼顶。每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？
-注意：给定 n 是一个正整数。
-```
+
 
 ## 2 母牛生产
 ```
