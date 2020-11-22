@@ -1,5 +1,5 @@
 <!-- GFM-TOC -->
-* [一维公式递推](#一维公式递推)
+* [一、栈](#栈)
     * [1. 爬楼梯](#1-爬楼梯)
     * [2. 母牛生产](#2-母牛生产)
     * [3. 变态跳](#3-变态跳)   
@@ -63,11 +63,10 @@
 动态规划问题在于找出状态转移方程，此外，根据方程中所需要的上一个状态的变量情况，适当优化存储空间。
 ```
 
-# 一维公式递推
-## 1 爬楼梯    
-70\. Climbing Stairs (Easy)
+# 栈
+## 1 剑指 Offer 09. 用两个栈实现队列   
 
-[力扣](https://leetcode-cn.com/problems/climbing-stairs/description/) / [Leetcode](https://leetcode.com/problems/climbing-stairs/description/) / [Cpp](../algo_05_dynamic_plan/dp_1_simple_recursion_formula/L70.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_1_simple_recursion_formula/L70.py)    
+[力扣](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) / [Python3](../python-algorithm/sword_point_offer/J09.py)    
 
 ```
 题目:假设你正在爬楼梯。需要 n 阶你才能到达楼顶。每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？
