@@ -1,6 +1,6 @@
 <!-- GFM-TOC -->
 * [一、栈](#栈)
-    * [1. 爬楼梯](#1-爬楼梯)
+    * [1. 用两个栈实现队列](#1-用两个栈实现队列)
     * [2. 母牛生产](#2-母牛生产)
     * [3. 变态跳](#3-变态跳)   
     
@@ -64,7 +64,8 @@
 ```
 
 # 栈
-## 1 剑指 Offer 09. 用两个栈实现队列   
+## 1 用两个栈实现队列   
+剑指 Offer 09
 
 [力扣](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) / [Python3](../python-algorithm/sword_point_offer/J09.py)    
 
