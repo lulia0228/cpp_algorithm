@@ -34,6 +34,12 @@
     * [3. 链表中倒数第k个节点](#3-链表中倒数第k个节点)
     * [4. 反转链表](#4-反转链表)
     * [5. 两个链表的第一个公共节点](#5-两个链表的第一个公共节点)
+    
+* [六、二分查找](#二分查找)
+    * [1. 二维数组中的查找](#1-二维数组中的查找)
+    * [2. 旋转数组的最小数字](#2-旋转数组的最小数字)
+    * [3. 在排序数组中查找数字I](#3-在排序数组中查找数字I)
+    * [4. 0到n-1中缺失的数字](#4-0到n-1中缺失的数字)
 
     
 * [六、特殊状态转移方程](#特殊状态转移方程)
@@ -345,6 +351,8 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 [力扣](https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J68_2-m.py)       
 
 
+
+# 链表相关
 ## 1 从尾到头打印链表   
 剑指 Offer 06. 
 
@@ -369,6 +377,28 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 剑指 Offer 52. 
 
 [力扣](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J52.py) 
+
+
+# 二分查找
+## 1 二维数组中的查找   
+剑指 Offer 04.   
+
+[力扣](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) / [Python3](./python-algorithm/sword_point_offer/J04-m.py) 
+
+## 2 旋转数组的最小数字
+剑指 Offer 11. 
+
+[力扣](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J11-m.py) 
+
+## 3 在排序数组中查找数字I 
+剑指 Offer 53 - I.    
+   
+[力扣](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J53_1.py) 
+
+## 4 0到n-1中缺失的数字
+剑指 Offer 53 - II. 
+
+[力扣](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J53_2.py) 
 
 
 
