@@ -34,6 +34,8 @@
     * [3. 链表中倒数第k个节点](#3-链表中倒数第k个节点)
     * [4. 反转链表](#4-反转链表)
     * [5. 两个链表的第一个公共节点](#5-两个链表的第一个公共节点)
+    * [6. 合并两个排序的链表](#6-合并两个排序的链表)
+    * [7. 二叉搜索树与双向链表](#7-二叉搜索树与双向链表)
     
 * [六、二分查找](#二分查找)
     * [1. 二维数组中的查找](#1-二维数组中的查找)
@@ -41,17 +43,15 @@
     * [3. 在排序数组中查找数字I](#3-在排序数组中查找数字I)
     * [4. 0到n-1中缺失的数字](#4-0到n-1中缺失的数字)
 
-    
-* [六、特殊状态转移方程](#特殊状态转移方程)
+* [七、动态规划](#动态规划)
     * [1. 格雷编码](#1-格雷编码)
     * [2. 比特位计数](#2-比特位计数)
     * [3. 解码方法](#3-解码方法)
     * [4. 复制粘贴字符](#4-复制粘贴字符)
     * [5. 整数拆分](#5-整数拆分)
-    * [6. 整数拆分成最少平方数之和](#6-整数拆分成最少平方数之和)
-    * [7. 不同的二叉搜索树  ](#7-不同的二叉搜索树) 
 
-    
+
+
 * [矩形问题](#矩形问题)
    * [1. 最大正方形](#1-最大正方形)
    * [2. 最大矩形](#2-最大矩形)
@@ -377,6 +377,16 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 剑指 Offer 52. 
 
 [力扣](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J52.py) 
+
+## 6 合并两个排序的链表
+剑指 Offer 25. 
+
+[力扣](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/) / [Python3](./python-algorithm/sword_point_offer/J25.py) 
+
+## 7 二叉搜索树与双向链表  
+剑指 Offer 36. 
+
+[力扣](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/) / [Python3](./python-algorithm/sword_point_offer/J36.py) 
 
 
 # 二分查找
