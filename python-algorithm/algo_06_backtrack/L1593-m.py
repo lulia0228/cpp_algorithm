@@ -1,6 +1,5 @@
 #--coding:utf-8--
 
-
 class Solution:
     max_split = 1
     def maxUniqueSplit(self, s: str) -> int:
