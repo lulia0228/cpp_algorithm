@@ -4,6 +4,10 @@
     * [2. 包含min函数的栈](#2-包含min函数的栈)
     * [3. 队列的最大值](#3-队列的最大值)   
     
+* [二、堆的应用](#堆的应用)
+    * [1. 最小的k个数 ](#1-最小的k个数 )
+    * [2. 数据流中的中位数](#2-数据流中的中位数)
+    
 * [子序列问题](#子序列问题)
     * [1. 最长回文子串](#1-最长回文子串)
     * [2. 连续子数组：和最大](#2-最大连续子数组和)
@@ -19,11 +23,7 @@
     * [2. 最长公共连续子数组](#2-最长公共连续子数组)
     * [3. 最长公共子序列](#3-最长公共子序列)
     * [4. 删除两个字符串的字符使它们相等](#4-删除两个字符串的字符使它们相等)
-    
-* [打家劫舍问题](#打家劫舍问题)
-    * [1. 打家劫舍 ](#1-打家劫舍 )
-    * [2. 打家劫舍II](#2-打家劫舍II)
-    
+
 * [0-1背包问题](#01背包问题)
     * [1. 目标和](#1-目标和)
     * [2. 分割等和子集](#2-分割等和子集)
@@ -81,6 +81,34 @@
 题目：请定义一个队列并实现函数 max_value 得到队列里的最大值，要求函数max_value、push_back 和 pop_front 的均摊时间复杂度都是O(1)。
 ```
 [力扣](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J59_2.py)    
+
+
+# 堆的应用   
+## 1 最小的k个数  
+剑指 Offer 40   
+
+[力扣](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/) / [Python3](./python-algorithm/sword_point_offer/J40.py)     
+```
+题目: 输入整数数组 arr ，找出其中最小的 k 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。
+```
+## 2 数据流中的中位数  
+剑指 Offer 41  
+
+[力扣](https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/) / [Python3](./python-algorithm/sword_point_offer/J41-h.py)    
+```
+题目：如何得到一个数据流中的中位数？如果从数据流中读出奇数个数值，那么中位数就是所有数值排序之后位于中间的数值。如果从数据流中读出偶数个数值，
+那么中位数就是所有数值排序之后中间两个数的平均值。
+例如，[2,3,4] 的中位数是 3
+[2,3] 的中位数是 (2 + 3) / 2 = 2.5
+
+设计一个支持以下两种操作的数据结构：
+void addNum(int num) - 从数据流中添加一个整数到数据结构中。
+double findMedian() - 返回目前所有元素的中位数。
+```
+
+
+
+
 
 # 子序列问题
 ## 1 最长回文子串
@@ -220,24 +248,6 @@
       输入: "sea", "eat"
       输出: 2
       解释: 第一步将"sea"变为"ea"，第二步将"eat"变为"ea"
-```
-
-# 打家劫舍问题
-## 1 打家劫舍
-198\. House Robber (Easy)
-
-[力扣](https://leetcode-cn.com/problems/house-robber/description/) / [Leetcode](https://leetcode.com/problems/house-robber/description/) / [Cpp](../algo_05_dynamic_plan/dp_5_rob/L198.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_5_rob/L198.py) 
-```
-题目: 一排房屋，给定一个代表每个房屋存放金额的非负整数数组，计算你 不触动警报装置(不能偷2家挨着)
-     的情况下 ，一夜之内能够偷窃到的最高金额。
-```
-
-## 2 打家劫舍II
-213\. House Robber II (Medium)
-
-[力扣](https://leetcode-cn.com/problems/house-robber-ii/description/) / [Leetcode](https://leetcode.com/problems/house-robber-ii/description/) / [Cpp](../algo_05_dynamic_plan/dp_5_rob/L213-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_5_rob/L213-m.py) 
-```
-题目：环形排列房屋，给定一个代表每个房屋存放金额的非负整数数组，计算你在不触动警报装置的情况下，能够偷窃到的最高金额。
 ```
 
 # 01背包问题  
