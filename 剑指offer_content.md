@@ -28,16 +28,15 @@
     * [13. 二叉搜索树的最近公共祖先  ](#13-二叉搜索树的最近公共祖先  )
     * [14. 二叉树的最近公共祖先](#14-二叉树的最近公共祖先) 
 
-* [0-1背包问题](#01背包问题)
-    * [1. 目标和](#1-目标和)
-    * [2. 分割等和子集](#2-分割等和子集)
-    * [3. 一和零](#3-一和零)
-    * [4. 单词拆分](#4-单词拆分)
-    * [5. 零钱兑换](#5-零钱兑换)
-    * [6. 组合总和](#6-组合总和)
-    * [7. 找零钱的硬币数组合](#7-找零钱的硬币数组合)
+* [五、链表相关](#链表相关)
+    * [1. 从尾到头打印链表](#1-从尾到头打印链表)
+    * [2. 删除链表的节点](#2-删除链表的节点)
+    * [3. 链表中倒数第k个节点](#3-链表中倒数第k个节点)
+    * [4. 反转链表](#4-反转链表)
+    * [5. 两个链表的第一个公共节点](#5-两个链表的第一个公共节点)
+
     
-* [特殊状态转移方程](#特殊状态转移方程)
+* [六、特殊状态转移方程](#特殊状态转移方程)
     * [1. 格雷编码](#1-格雷编码)
     * [2. 比特位计数](#2-比特位计数)
     * [3. 解码方法](#3-解码方法)
@@ -346,248 +345,33 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 [力扣](https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J68_2-m.py)       
 
 
+## 1 从尾到头打印链表   
+剑指 Offer 06. 
 
+[力扣](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/) / [Python3](./python-algorithm/sword_point_offer/J06.py) 
 
-# 01背包问题  
-背包问题分类：     
-（1）一维约束：原始背包问题就是1维约束问题，只有重量约束。      
-（2）多维约束：背包问题里面除了有重量约束，再添加一个体积约束，就是二维约束问题。      
-（3）完全背包：每个物品可以使用无限次     
-（4）不完全背包：每个物品可使用的次数有限   
+## 2 删除链表的节点
+剑指 Offer 18.   
 
-背包问题细分：    
-来自leetcode347 题解作者：Jackie1995     
-1、组合问题：377组合总和Ⅳ    494目标和    518找零组合数   
-2、存在问题：416分割等和子集   139单词拆分   
-3、最值问题：474一和零    322最少硬币找零数   
+[力扣](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J18.py) 
 
-以上3类的状态转移方程：     
-dp[i] += dp[i-num]   
-dp[i] = dp[i] or dp[i-num]   
-dp[i] = min(dp[i], dp[i-num]+1)或者dp[i] = max(dp[i], dp[i-num]+1)  
-
-背包问题分析步骤：   
-1.分析是否为背包问题。   
-2.是以上三种背包问题中的哪一种。   
-3.是0-1背包问题还是完全背包问题。也就是题目给的nums数组中的元素是否可以重复使用。   
-4.如果是组合问题，是否需要考虑元素之间的顺序。需要考虑顺序有顺序的解法，不需要考虑顺序又有对应的解法。   
-
-背包问题的判定：   
-给定一个约束s，它可以是数字也可以是字符串（可以是1维度，也可是多维度，例如474一和零的各自使用次数上限），    
-再给定一个数组nums，nums中装的可能是数字，也可能是字符串，问：能否使用nums中的元素做各种排列组合完成约束（存在问题）？     
-或者是使用nums中的元素在完成约束的前提下使其它产物(组合问题、最值问题)达到目的？    
-
-背包问题技巧：    
-1.如果是0-1背包，即数组中的元素不可重复使用，nums放在外循环，约束在内循环，且内循环倒序。 （494）     
-```
-for num in nums:
-    for i in range(s, num-1, -1):
-````
-2.如果是完全背包，即数组中的元素可重复使用，nums放在外循环，约束在内循环，且内循环正序。（518）    
-```
-for num in nums:
-    for i in range(nums, s+1):
-```
-3.如果组合问题中不同顺序的相同元素序列算做不同，需将约束放在外循环，将nums放在内循环。（377）          
-```
-for i in range(1, s+1):
-    for num in nums:
-```
-
-## 原始问题：      
-问题描述：现有n个物品，每个的重量用数组w表示，每个物品的价值用数组v表示，     
-现有一个背包最大承重为C，求用这n个物品装入背包能获得的最大总价值？    
-
-条件：1维约束；每个元素只可用1次。      
-目标：总价值最大。      
-```
-class Solution:
-    def knapsack(self, w , v , C ):
-        n = len(w)
-        # dp[i][j]表示用[0,...,i-1]物品填充容量为j的最大价值
-        dp = [[0]*(C+1) for i in range(n+1)]
-        for i in range(1, n+1):
-            for j in range(C+1):
-                # 装或者不装第i个
-                if j >= w[i]:
-                    dp[i][j] = max(dp[i-1][j], v[i-1]+dp[i-1][j - w[i-1]])
-                else:
-                    dp[i][j] = dp[i-1][j]  # 不装第i个
-        return dp[n][C]
- 
- 优化空间：即dp[j]同时表示原来的dp[i-1][j]和dp[i][j]   
- class Solution:
-    def knapsack(self, w , v , C ):
-        n = len(w)
-        dp = [0]*(C+1)
-        for i in range(n): # 每个元素只能使用1次
-            # 只有倒着设计才能避免因为省略第1维度带来的原来俩维度的dp[i-1][j-w]正序计算会被提前覆盖的问题   
-            for j in range(C, w[i-1]-1, -1):
-                dp[j] = max(dp[j], v[i]+dp[j - w[i]])
-        return dp[C]
-```
-
-## 1 目标和
-## 从非负整数数组中挑选出部分元素，使它们的和等于target，问有多少种挑选方法？      
-494\. Target Sum (Medium)
-
-[力扣](https://leetcode-cn.com/problems/target-sum/description/) / [Leetcode](https://leetcode.com/problems/target-sum/description/) / [Cpp](../algo_05_dynamic_plan/dp_6_knapsack_problem/L494-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_6_knapsack_problem/L494-m.py) 
-```
-题目: 给定一个非负整数数组，a1, a2, ..., an, 和一个目标数，S。现在你有两个符号 + 和 -。对于数组中的任意一个整数，
-你都可以从 + 或 -中选择一个符号添加在前面。返回可以使最终数组和为目标数 S 的所有添加符号的方法数。
-示例：
-      输入：nums: [1, 1, 1, 1, 1], S: 3
-      输出：5
-      解释：
-      -1+1+1+1+1 = 3
-      +1-1+1+1+1 = 3
-      +1+1-1+1+1 = 3
-      +1+1+1-1+1 = 3
-      +1+1+1+1-1 = 3
-      一共有5种方法让最终目标和为3。
-      
-条件：1维约束；每个元素只可用1次。      
-目标：可选择的方式总数。  
-```
-
-## 2 分割等和子集
-## 判断是否可以从正整数数组中挑出部分元素，使他们的和为数组总和的一半。      
-416\. Partition Equal Subset Sum (Medium)  
-
-[力扣](https://leetcode-cn.com/problems/partition-equal-subset-sum/description/) / [Leetcode](https://leetcode.com/problems/partition-equal-subset-sum/description/) / [Cpp](../algo_05_dynamic_plan/dp_6_knapsack_problem/L416-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_6_knapsack_problem/L416-m.py) 
-```
-题目: 给定一个只包含正整数的非空数组。是否可以将这个数组分割成两个子集，使得两个子集的元素和相等。
-注意:
-      每个数组中的元素不会超过 100
-      数组的大小不会超过 200
-示例 1:
-      输入: [1, 5, 11, 5]
-      输出: true
-      解释: 数组可以分割成 [1, 5, 5] 和 [11].
-
-条件：1维约束；每个元素只可用1次。      
-目标：是否存在，bool。  
-```
-
-## 3 一和零 
-474\. Ones and Zeroes (Medium)  
+## 3 链表中倒数第k个节点 
+剑指 Offer 22. 
    
-[力扣](https://leetcode-cn.com/problems/ones-and-zeroes/description/) / [Leetcode](https://leetcode.com/problems/ones-and-zeroes/description/) / [Cpp](../algo_05_dynamic_plan/dp_6_knapsack_problem/L474-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_6_knapsack_problem/L474-m.py) 
-```
-题目: 在计算机界中，我们总是追求用有限的资源获取最大的收益。现在，假设你分别支配着 m 个 0 和 n 个 1。
-     另外，还有一个仅包含 0 和 1 字符串的数组。你的任务是使用给定的 m 个 0 和 n 个 1 ，找到能拼出
-     存在于数组中的字符串的最大数量。每个 0 和 1 至多被使用一次。
-示例 1:
-      输入: strs = ["10", "0001", "111001", "1", "0"], m = 5, n = 3
-      输出: 4
-      解释: 总共 4 个字符串可以通过 5 个 0 和 3 个 1 拼出，即 "10","0001","1","0" 。
-      示例 2:
+[力扣](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J22.py) 
 
-      输入: strs = ["10", "0", "1"], m = 1, n = 1
-      输出: 2
-      解释: 你可以拼出 "10"，但之后就没有剩余数字了。更好的选择是拼出 "0" 和 "1" 。
-      
-条件：2维约束；每个元素只可用1次。        
-目标：能生成存在于给定集合的字符串的个数最多。  
-```
+## 4 反转链表
+剑指 Offer 24. 
 
-## 4 单词拆分
-139\. Word Break (Medium)
+[力扣](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/) / [Python3](./python-algorithm/sword_point_offer/J24.py) 
 
-[力扣](https://leetcode-cn.com/problems/word-break/description/) / [Leetcode](https://leetcode.com/problems/word-break/description/) / [Cpp](../algo_05_dynamic_plan/dp_6_knapsack_problem/L139-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_6_knapsack_problem/L139-m.py) 
-```
-题目:给定一个非空字符串 s 和一个包含非空单词的列表 wordDict，判定 s 是否可以被空格拆分为一个或多个在字典中出现的单词。
-说明：
-      拆分时可以重复使用字典中的单词。
-      你可以假设字典中没有重复的单词。
+## 5 两个链表的第一个公共节点  
+剑指 Offer 52. 
 
-示例 1：
-      输入: s = "leetcode", wordDict = ["leet", "code"]
-      输出: true
-      解释: 返回 true 因为 "leetcode" 可以被拆分成 "leet code"。
-示例 2：
-      输入: s = "applepenapple", wordDict = ["apple", "pen"]
-      输出: true
-      解释: 返回 true 因为 "applepenapple" 可以被拆分成 "apple pen apple"。
-           注意你可以重复使用字典中的单词。
-示例 3：
-      输入: s = "catsandog", wordDict = ["cats", "dog", "sand", "and", "cat"]
-      输出: false
-条件：1维约束；每个单词可用任意次。     
-目标：判断是否可以形成约束s。  
-```
+[力扣](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J52.py) 
 
-## 5 零钱兑换
-322\. Coin Change (Medium)
 
-[力扣](https://leetcode-cn.com/problems/coin-change/description/) / [Leetcode](https://leetcode.com/problems/coin-change/description/) / [Cpp](../algo_05_dynamic_plan/dp_6_knapsack_problem/L322-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_6_knapsack_problem/L322-m.py) 
-```
-题目:给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。
-    如果没有任何一种硬币组合能组成总金额，返回 -1。你可以认为每种硬币的数量是无限的。
-示例 1：
-      输入：coins = [1, 2, 5], amount = 11
-      输出：3 
-      解释：11 = 5 + 5 + 1
-      示例 2：
 
-      输入：coins = [2], amount = 3
-      输出：-1
-
-条件：1维约束；每个元素可用无限次。      
-目标：找零需要的最少硬币数。      
-```
-
-## 6 组合总和
-377\. Combination Sum IV (Medium)
-
-[力扣](https://leetcode-cn.com/problems/combination-sum-iv/description/) / [Leetcode](https://leetcode.com/problems/combination-sum-iv/description/) / [Cpp](../algo_05_dynamic_plan/dp_6_knapsack_problem/L377-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_6_knapsack_problem/L377-m.py) 
-```
-题目: 给定一个由正整数组成且不存在重复数字的数组，找出和为给定目标正整数的组合的个数。
-示例:
-      nums = [1, 2, 3]
-      target = 4
-      所有可能的组合为：
-      (1, 1, 1, 1)
-      (1, 1, 2)
-      (1, 2, 1)
-      (1, 3)
-      (2, 1, 1)
-      (2, 2)
-      (3, 1)
-      请注意，顺序不同的序列被视作不同的组合。
-      因此输出为 7。
-进阶：
-      如果给定的数组中含有负数会怎么样？
-      问题会产生什么变化？
-      我们需要在题目中添加什么限制来允许负数的出现？   
-
-条件：1维约束；每个元素可用无限次。        
-目标：组合总数。      
-```
-
-## 7 找零钱的硬币数组合
-518\. Coin Change 2 (Medium)
-
-[力扣](https://leetcode-cn.com/problems/coin-change-2/description/) / [Leetcode](https://leetcode.com/problems/coin-change-2/description/) / [Cpp](../algo_05_dynamic_plan/dp_6_knapsack_problem/L518-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_6_knapsack_problem/L518-m.py) 
-```
-题目:给定不同面额的硬币和一个总金额。写出函数来计算可以凑成总金额的硬币组合数。假设每一种面额的硬币有无限个。   
-注意:和377组合总和的区别在于，硬币组合数是不考虑顺序的，即顺序不同的相同元素序列算一种组合。    
-示例 1:
-      输入: amount = 5, coins = [1, 2, 5]
-      输出: 4
-      解释: 有四种方式可以凑成总金额:
-      5=5
-      5=2+2+1
-      5=2+1+1+1
-      5=1+1+1+1+1
-示例 2:
-      输入: amount = 3, coins = [2]
-      输出: 0
-      解释: 只用面额2的硬币不能凑成总金额3。
-
-条件：1维约束；每个元素可用无限次。      
-目标：找零的方式总数。      
-```
 
 # 特殊状态转移方程
 ## 1 格雷编码
