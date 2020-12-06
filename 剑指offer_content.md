@@ -80,6 +80,7 @@
 ```
 题目：请定义一个队列并实现函数 max_value 得到队列里的最大值，要求函数max_value、push_back 和 pop_front 的均摊时间复杂度都是O(1)。
 ```
+[力扣](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J59_2.py)    
 
 # 子序列问题
 ## 1 最长回文子串
