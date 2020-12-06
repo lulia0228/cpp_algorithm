@@ -3,6 +3,7 @@
     * [1. 用两个栈实现队列](#1-用两个栈实现队列)
     * [2. 包含min函数的栈](#2-包含min函数的栈)
     * [3. 队列的最大值](#3-队列的最大值)   
+    * [4. 滑动窗口的最大值](#3-滑动窗口的最大值)   
 
 * [二、堆的应用](#堆的应用)
     * [1. 最小的k个数 ](#1-最小的k个数 )
@@ -88,6 +89,17 @@
 题目：请定义一个队列并实现函数 max_value 得到队列里的最大值，要求函数max_value、push_back 和 pop_front 的均摊时间复杂度都是O(1)。
 ```
 [力扣](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J59_2.py)    
+
+## 4 滑动窗口的最大值    
+剑指 Offer 59 - I. 
+
+```
+题目：给定一个数组 nums 和滑动窗口的大小 k，请找出所有滑动窗口里的最大值。
+输入: nums = [1,3,-1,-3,5,3,6,7], 和 k = 3
+输出: [3,3,5,5,6,7] 
+```
+[力扣](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J59_1.py)    
+
 
 
 # 堆的应用   
