@@ -79,14 +79,15 @@
 ## 2 包含min函数的栈
 剑指 Offer 30    
 
+[力扣](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/) / [Python3](./python-algorithm/sword_point_offer/J30.py) 
 ```
 题目：定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的 min 函数在该栈中，调用 min、push 及 pop 的时间复杂度都是 O(1)。
 ```
-[力扣](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/) / [Python3](./python-algorithm/sword_point_offer/J30.py) 
 
 ## 3 栈的压入弹出序列    
 剑指 Offer 31  
 
+[力扣](https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/) / [Python3](./python-algorithm/sword_point_offer/J31.py)  
 ```
 题目：输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否为该栈的弹出顺序。假设压入栈的所有数字均不相等。
 例如，序列 {1,2,3,4,5} 是某栈的压栈序列，序列 {4,5,3,2,1} 是该压栈序列对应的一个弹出序列，
@@ -99,25 +100,24 @@
 push(1), push(2), push(3), push(4), pop() -> 4,
 push(5), pop() -> 5, pop() -> 3, pop() -> 2, pop() -> 1
 ```
-[力扣](https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/) / [Python3](./python-algorithm/sword_point_offer/J31.py)  
 
 ## 4 队列的最大值    
 剑指 Offer 59  
 
+[力扣](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J59_2.py)    
 ```
 题目：请定义一个队列并实现函数 max_value 得到队列里的最大值，要求函数max_value、push_back 和 pop_front 的均摊时间复杂度都是O(1)。
 ```
-[力扣](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J59_2.py)    
 
 ## 5 滑动窗口的最大值    
 剑指 Offer 59 - I. 
 
+[力扣](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J59_1.py)    
 ```
 题目：给定一个数组 nums 和滑动窗口的大小 k，请找出所有滑动窗口里的最大值。
 输入: nums = [1,3,-1,-3,5,3,6,7], 和 k = 3
 输出: [3,3,5,5,6,7] 
 ```
-[力扣](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J59_1.py)    
 
 # 滑动窗口  
 ## 1 和为s的连续正数序列
