@@ -18,9 +18,9 @@
     * [3. 对称的二叉树](#3-对称的二叉树)
     * [4. 二叉树的镜像](#4-二叉树的镜像)
     * [5. 树的子结构](#5-树的子结构)
-    * [6. 一组整数对能够构成的最长链](#6-一组整数对能够构成的最长链)
-    * [7. 数组中等差递增子区间的个数](#7-数组中等差递增子区间的个数)
-    * [8. 区域和检索-数组不可变](#8-区域和检索)
+    * [6. 从上到下打印二叉树](#6-从上到下打印二叉树)
+    * [7. 从上到下打印二叉树II](#7-从上到下打印二叉树II)
+    * [8. 从上到下打印二叉树III](#8-从上到下打印二叉树III)
     * [9. 编辑距离](#9-编辑距离)
     * [10. 最长公共连续子数组](#10-最长公共连续子数组)
     * [11. 最长公共子序列](#11-最长公共子序列)
@@ -211,37 +211,66 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 返回 true，因为 B 与 A 的一个子树拥有相同的结构和节点值。
 ```
 
+## 6 从上到下打印二叉树
+剑指 Offer 32 - I
 
-## 6 一组整数对能够构成的最长链
-646\. Maximum Length of Pair Chain (Medium)
-
-[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
+[力扣](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/) / [Python3](./python-algorithm/sword_point_offer/J32_1.py)      
 ```
-题目: 给出 n 个数对, 在每一个数对中，第一个数字总是比第二个数字小。
-现在，我们定义一种跟随关系，当且仅当 b < c 时，数对(c, d) 才可以跟在 (a, b) 后面。我们用这种形式来构造一个数对链。
-给定一个对数集合，找出能够形成的最长数对链的长度。你不需要用到所有的数对，你可以以任何顺序选择其中的一些数对来构造。
-示例 :
-输入: [[1,2], [2,3], [3,4]]
-输出: 2
-解释: 最长的数对链是 [1,2] -> [3,4]
-注意：给出数对的个数在 [1, 1000] 范围内。
+题目: 例如:
+给定二叉树: [3,9,20,null,null,15,7],
 
-```
+    3
+   / \
+  9  20
+    /  \
+   15   7
+返回：
 
-## 7 数组中等差递增子区间的个数
-413\. Arithmetic Slices (Medium)
-
-[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
-```
-题目: 返回数组中是等差数列的连续子数组(长度至少为3)的个数。
+[3,9,20,15,7]
 ```
 
-## 8 区域和检索
-303\. Range Sum Query - Immutable (Easy)
+## 7 从上到下打印二叉树II
+剑指 Offer 32 - II
 
-[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
+[力扣](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/) / [Python3](./python-algorithm/sword_point_offer/J32_2.py)      
 ```
-题目:给定一个整数数组  nums，求出数组从索引 i 到 j  (i ≤ j) 范围内元素的总和，包含 i,  j 两点。
+题目: 例如:
+给定二叉树: [3,9,20,null,null,15,7],
+
+    3
+   / \
+  9  20
+    /  \
+   15   7
+返回其层次遍历结果：
+
+[
+  [3],
+  [9,20],
+  [15,7]
+]
+```
+
+## 8 从上到下打印二叉树III
+剑指 Offer 32 - III
+
+[力扣](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/) / [Python3](./python-algorithm/sword_point_offer/J32_3.py)      
+```
+题目:例如:
+给定二叉树: [3,9,20,null,null,15,7],
+
+    3
+   / \
+  9  20
+    /  \
+   15   7
+返回其层次遍历结果：
+
+[
+  [3],
+  [20,9],
+  [15,7]
+]
 ```
 
 ## 9 编辑距离
