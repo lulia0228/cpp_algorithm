@@ -21,12 +21,12 @@
     * [6. 从上到下打印二叉树](#6-从上到下打印二叉树)
     * [7. 从上到下打印二叉树II](#7-从上到下打印二叉树II)
     * [8. 从上到下打印二叉树III](#8-从上到下打印二叉树III)
-    * [9. 编辑距离](#9-编辑距离)
-    * [10. 最长公共连续子数组](#10-最长公共连续子数组)
-    * [11. 最长公共子序列](#11-最长公共子序列)
-    * [12. 删除两个字符串的字符使它们相等](#12-删除两个字符串的字符使它们相等)
-    * [13. 最长公共子序列](#13-最长公共子序列)
-    * [14. 删除两个字符串的字符使它们相等](#14-删除两个字符串的字符使它们相等) 
+    * [9. 重建二叉树](#9-重建二叉树)
+    * [10. 序列化二叉树](#10-序列化二叉树)
+    * [11. 二叉树中和为某一值的路径](#11-二叉树中和为某一值的路径)
+    * [12. 二叉搜索树的第k大节点](#12-二叉搜索树的第k大节点)
+    * [13. 二叉搜索树的最近公共祖先  ](#13-二叉搜索树的最近公共祖先  )
+    * [14. 二叉树的最近公共祖先](#14-二叉树的最近公共祖先) 
 
 * [0-1背包问题](#01背包问题)
     * [1. 目标和](#1-目标和)
@@ -273,87 +273,78 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 ]
 ```
 
-## 9 编辑距离
-72\. Edit Distance (Hard)
+## 9 重建二叉树
+剑指 Offer 07. 
 
-[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
+[力扣](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) / [Python3](./python-algorithm/sword_point_offer/J07-m.py)      
 ```
-题目:给你两个单词 word1 和 word2，请你计算出将 word1 转换成 word2 所使用的最少操作数 。
-你可以对一个单词进行如下三种操作：
-      插入一个字符
-      删除一个字符
-      替换一个字符
-示例 1：
-      输入：word1 = "horse", word2 = "ros"
-      输出：3
-      解释：
-      horse -> rorse (将 'h' 替换为 'r')
-      rorse -> rose (删除 'r')
-      rose -> ros (删除 'e')
+题目:输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。
+例如，给出
+   前序遍历 preorder = [3,9,20,15,7]
+   中序遍历 inorder = [9,3,15,20,7]
+返回如下的二叉树：
+                3
+               / \
+              9  20
+                /  \
+               15   7
 ```
 
-## 10 最长公共连续子数组
-718\. Maximum Length of Repeated Subarray
+## 10 序列化二叉树
+剑指 Offer 37.    
 
-[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
+[力扣](https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/) / [Python3](./python-algorithm/sword_point_offer/J37-h.py)      
 ```
-题目: 给两个整数数组 A 和 B ，返回两个数组中公共的、长度最长的子数组的长度。
-示例：
-      输入：
-      A: [1,2,3,2,1]
-      B: [3,2,1,4,7]
-      输出：3
-      解释：
-      长度最长的公共子数组是 [3, 2, 1] 。
-```
-
-## 11 最长公共子序列
-1143\. Longest Common Subsequence
-
-[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
-```
-题目：给定两个字符串 text1 和 text2，返回这两个字符串的最长公共子序列的长度。
-     一个字符串的 子序列 是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符
-    （也可以不删除任何字符）后组成的新字符串。例如，"ace" 是 "abcde" 的子序列，但 "aec" 不是 "abcde" 
-     的子序列。两个字符串的「公共子序列」是这两个字符串所共同拥有的子序列。
-     若这两个字符串没有公共子序列，则返回 0。
+题目: 请实现两个函数，分别用来序列化和反序列化二叉树。
+示例: 
+你可以将以下二叉树：
+          1
+         / \
+        2   3
+           / \
+          4   5
+序列化为 "[1,2,3,null,null,4,5]"
 ```
 
-## 12 删除两个字符串的字符使它们相等
-583\. Delete Operation for Two Strings (Medium)
+## 11 二叉树中和为某一值的路径
+剑指 Offer 34. 
 
-[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
+[力扣](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/) / [Python3](./python-algorithm/sword_point_offer/J34-m.py)      
 ```
-题目:给定两个单词 word1 和 word2，找到使得 word1 和 word2 相同所需的最小步数，每步可以删除任意一个字符串中的一个字符
-示例：
-      输入: "sea", "eat"
-      输出: 2
-      解释: 第一步将"sea"变为"ea"，第二步将"eat"变为"ea"
-```
-
-## 13 最长公共子序列
-1143\. Longest Common Subsequence
-
-[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
-```
-题目：给定两个字符串 text1 和 text2，返回这两个字符串的最长公共子序列的长度。
-     一个字符串的 子序列 是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符
-    （也可以不删除任何字符）后组成的新字符串。例如，"ace" 是 "abcde" 的子序列，但 "aec" 不是 "abcde" 
-     的子序列。两个字符串的「公共子序列」是这两个字符串所共同拥有的子序列。
-     若这两个字符串没有公共子序列，则返回 0。
+示例:给定如下二叉树，以及目标和 sum = 22，
+              5
+             / \
+            4   8
+           /   / \
+          11  13  4
+         /  \    / \
+        7    2  5   1
+返回:
+         [
+            [5,4,11,2],
+            [5,8,4,5]
+         ]
 ```
 
-## 14 删除两个字符串的字符使它们相等
-583\. Delete Operation for Two Strings (Medium)
+## 12 二叉搜索树的第k大节点
+剑指 Offer 54. 
 
-[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)       
+[力扣](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J54.py)      
 ```
-题目:给定两个单词 word1 和 word2，找到使得 word1 和 word2 相同所需的最小步数，每步可以删除任意一个字符串中的一个字符
-示例：
-      输入: "sea", "eat"
-      输出: 2
-      解释: 第一步将"sea"变为"ea"，第二步将"eat"变为"ea"
+题目:给定一棵二叉搜索树，请找出其中第k大的节点。
 ```
+
+## 13 二叉搜索树的最近公共祖先
+剑指 Offer 68 - I.   
+
+[力扣](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J68_1-m.py)      
+
+
+## 14 二叉树的最近公共祖先
+剑指 Offer 68 - II.  
+
+[力扣](https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J68_2-m.py)       
+
 
 
 
