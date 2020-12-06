@@ -7,8 +7,8 @@
     * [5. 滑动窗口的最大值](#5-滑动窗口的最大值)   
 
 * [二、滑动窗口](#滑动窗口)
-   * [1. 和为s的连续正数序列](#1-和为s的连续正数序列)
-   * [2. 最长不含重复字符的子字符串](#2-最长不含重复字符的子字符串)
+    * [1. 和为s的连续正数序列](#1-和为s的连续正数序列)
+    * [2. 最长不含重复字符的子字符串](#2-最长不含重复字符的子字符串)
    
 * [三、堆的应用](#堆的应用)
     * [1. 最小的k个数 ](#1-最小的k个数 )
@@ -56,16 +56,13 @@
     * [4. 股票的最大利润](#4-股票的最大利润)   
     * [5. n个骰子的点数](#4-n个骰子的点数)  
 
-   
-   
-  
-* [股票问题](#股票问题)
-    * [1. 买卖股票一次交易](#1-买卖股票一次交易)
-    * [2. 买卖股票不限次数](#2-买卖股票不限次数)
-    * [3. 最佳买卖股票时机含冷冻期不限次数](#3-最佳买卖股票时机含冷冻期不限次数)
-    * [4. 买卖股票的最佳时机含手续费不限次数](#4-买卖股票的最佳时机含手续费不限次数)
-    * [5. 只能进行两次的股票交易](#5-只能进行两次的股票交易)
-    * [6. 只能进行k次的股票交易](#6-只能进行k次的股票交易)
+* [九、分治](#分治)
+    * [1. 数组中的逆序对](#1-数组中的逆序对)
+    * [2. 二叉搜索树的后序遍历序列](#2-二叉搜索树的后序遍历序列)
+ 
+* [十、图的遍历](#图的遍历)
+    * [1. 机器人的运动范围](#1-机器人的运动范围)
+    * [2. 矩阵中的路径](#2-矩阵中的路径)
 
 <!-- GFM-TOC -->
 
@@ -544,111 +541,65 @@ k[0],k[1]...k[m-1] 。请问 k[0]*k[1]*...*k[m-1]可能的最大乘积是多少�
 ```
 
 
+# 分治
+## 1 数组中的逆序对
+剑指 Offer 51. 
 
-
-# 股票问题
-## 1 买卖股票一次交易
-121\. Best Time to Buy and Sell Stock
-
-[力扣](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) / [Leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) / [Cpp](../algo_05_dynamic_plan/dp_9_stock/L121.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_9_stock/L121.py) 
+[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) / [Python3](./python-algorithm/sword_point_offer/J51-h.py) 
 ```
-题目:给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。
-    如果你最多只允许完成一笔交易（即买入和卖出一支股票一次），设计一个算法来计算你所能获取的最大利润。
-    注意：你不能在买入股票前卖出股票。
+题目:在数组中的两个数字，如果前面一个数字大于后面的数字，则这两个数字组成一个逆序对。输入一个数组，求出这个数组中的逆序对的总数。
 示例 1:
-      输入: [7,1,5,3,6,4]
-      输出: 5
-      解释: 在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。
-           注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格；同时，你不能在买入前卖出股票。
+输入: [7,5,6,4]
+输出: 5
 ```
 
-## 2 买卖股票不限次数
-122\. Best Time to Buy and Sell Stock II
+## 2 二叉搜索树的后序遍历序列
+剑指 Offer 33. 
 
-[力扣](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) / [Leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) / [Cpp](../algo_05_dynamic_plan/dp_9_stock/L122.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_9_stock/L122.py) 
+[力扣](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) / [Python3](./python-algorithm/sword_point_offer/J33-m.py) 
 ```
-题目: 给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。
-     设计一个算法来计算你所能获取的最大利润。你可以尽可能地完成更多的交易（多次买卖一支股票）。
-     注意：你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）
-示例 1:
-      输入: [7,1,5,3,6,4]
-      输出: 7
-      解释: 在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5-1 = 4 。
-           随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖出, 这笔交易所能获得利润 = 6-3 = 3 。
-```
-
-## 3 最佳买卖股票时机含冷冻期不限次数
-309\. Best Time to Buy and Sell Stock with Cooldown(Medium)
-
-[力扣](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/) / [Leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/) /  [Cpp](../algo_05_dynamic_plan/dp_9_stock/) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_9_stock/) 
-```
-题目:给定一个整数数组，其中第 i 个元素代表了第 i 天的股票价格 。
-    设计一个算法计算出最大利润。在满足以下约束条件下，你可以尽可能地完成更多的交易（多次买卖一支股票）:
-    你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。
-    卖出股票后，你无法在第二天买入股票 (即冷冻期为 1 天)。
-示例:
-      输入: [1,2,3,0,2]
-      输出: 3 
-      解释: 对应的交易状态为: [买入, 卖出, 冷冻期, 买入, 卖出]
+题目: 输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历结果。如果是则返回 true，否则返回 false。假设输入的数组的任意两个数字都互不相同。
+参考以下这颗二叉搜索树：
+           5
+          / \
+         2   6
+        / \
+       1   3
+示例 1：
+      输入: [1,6,3,2,5]
+      输出: false
 ```
 
-## 4 买卖股票的最佳时机含手续费不限次数
-714\. Best Time to Buy and Sell Stock with Transaction Fee (Medium)
+# 图的遍历
+## 1 机器人的运动范围
+剑指 Offer 13. 
 
-[力扣](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/) / [Leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/) / [Cpp](../algo_05_dynamic_plan/dp_9_stock/) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_9_stock/) 
+[力扣](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) / [Python3](./python-algorithm/sword_point_offer/J13-m.py) 
 ```
-题目:给定一个整数数组 prices，其中第 i 个元素代表了第 i 天的股票价格 ；非负整数 fee 代表了交易股票的手续费用。
-    你可以无限次地完成交易，但是你每笔交易都需要付手续费。如果你已经购买了一个股票，在卖出它之前你就不能再继续购买股票了。
-    返回获得利润的最大值。
-    注意：这里的一笔交易指买入持有并卖出股票的整个过程，每笔交易你只需要为支付一次手续费。
-示例 1:
-      输入: prices = [1, 3, 2, 8, 4, 9], fee = 2
-      输出: 8
-      解释: 能够达到的最大利润:  
-      在此处买入 prices[0] = 1
-      在此处卖出 prices[3] = 8
-      在此处买入 prices[4] = 4
-      在此处卖出 prices[5] = 9
-      总利润: ((8 - 1) - 2) + ((9 - 4) - 2) = 8
+题目:地上有一个m行n列的方格，从坐标 [0,0] 到坐标 [m-1,n-1] 。一个机器人从坐标 [0, 0] 的格子开始移动，
+它每次可以向左、右、上、下移动一格（不能移动到方格外），也不能进入行坐标和列坐标的数位之和大于k的格子。
+例如，当k为18时，机器人能够进入方格 [35, 37] ，因为3+5+3+7=18。但它不能进入方格 [35, 38]，
+因为3+5+3+8=19。请问该机器人能够到达多少个格子？
+
+示例 1：
+      输入：m = 2, n = 3, k = 1
+      输出：3
 ```
 
-## 5 只能进行两次的股票交易
-123\. Best Time to Buy and Sell Stock III (Hard)
+## 2 矩阵中的路径
+剑指 Offer 12.   
 
-[力扣](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/description/) / [Leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/) / [Cpp](../algo_05_dynamic_plan/dp_9_stock/) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_9_stock/) 
+[力扣](https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J12-m.py) 
 ```
-题目:给定一个数组，它的第 i 个元素是一支给定的股票在第 i 天的价格。
-    设计一个算法来计算你所能获取的最大利润。你最多可以完成 两笔 交易。
-    注意: 你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。
-示例 1:
-      输入: [3,3,5,0,0,3,1,4]
-      输出: 6
-      解释: 在第 4 天（股票价格 = 0）的时候买入，在第 6 天（股票价格 = 3）的时候卖出，这笔交易所能获得利润 = 3-0 = 3 。
-           随后，在第 7 天（股票价格 = 1）的时候买入，在第 8 天 （股票价格 = 4）的时候卖出，这笔交易所能获得利润 = 4-1 = 3 。
-示例 2:
-      输入: [1,2,3,4,5]
-      输出: 4
-      解释: 在第 1 天（股票价格 = 1）的时候买入，在第 5 天 （股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5-1 = 4 。   
-           注意你不能在第 1 天和第 2 天接连购买股票，之后再将它们卖出。   
-           因为这样属于同时参与了多笔交易，你必须在再次购买前出售掉之前的股票。
-```
+题目:请设计一个函数，用来判断在一个矩阵中是否存在一条包含某字符串所有字符的路径。路径可以从矩阵中的任意一格开始，
+每一步可以在矩阵中向左、右、上、下移动一格。如果一条路径经过了矩阵的某一格，那么该路径不能再次进入该格子。
+例如，在下面的3×4的矩阵中包含一条字符串“bfce”的路径（路径中的字母用加粗标出）。
+               [["a","b","c","e"],
+               ["s","f","c","s"],
+               ["a","d","e","e"]]
+但矩阵中不包含字符串“abfb”的路径，因为字符串的第一个字符b占据了矩阵中的第一行第二个格子之后，路径不能再次进入这个格子。
 
-## 6 只能进行k次的股票交易
-188\. Best Time to Buy and Sell Stock IV (Hard)
-
-[力扣](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/description/) / [Leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/description/) / [Cpp](../algo_05_dynamic_plan/dp_9_stock/) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_9_stock/) 
+示例 1：
+            输入：board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
+            输出：true
 ```
-题目:给定一个数组，它的第 i 个元素是一支给定的股票在第 i 天的价格。
-     设计一个算法来计算你所能获取的最大利润。你最多可以完成 k 笔交易。
-注意:你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。
-示例 1:
-      输入: [2,4,1], k = 2
-      输出: 2
-      解释: 在第 1 天 (股票价格 = 2) 的时候买入，在第 2 天 (股票价格 = 4) 的时候卖出，这笔交易所能获得利润 = 4-2 = 2 。
-示例 2:
-      输入: [3,2,6,5,0,3], k = 2
-      输出: 7
-      解释: 在第 2 天 (股票价格 = 2) 的时候买入，在第 3 天 (股票价格 = 6) 的时候卖出, 这笔交易所能获得利润 = 6-2 = 4 。
-           随后，在第 5 天 (股票价格 = 0) 的时候买入，在第 6 天 (股票价格 = 3) 的时候卖出, 这笔交易所能获得利润 = 3-0 = 3 。
-```
-
