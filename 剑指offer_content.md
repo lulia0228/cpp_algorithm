@@ -13,8 +13,8 @@
     * [2. 数组中出现次数超过一半的数字](#2-数组中出现次数超过一半的数字)
     
 * [四、树相关](#树相关)
-    * [1. 最长回文子串](#1-最长回文子串)
-    * [2. 连续子数组：和最大](#2-最大连续子数组和)
+    * [1. 二叉树的深度](#1-二叉树的深度)
+    * [2. 平衡二叉树](#2-平衡二叉树)
     * [3. 连续子数组：乘积最大](#3-最大连续子数组乘积)
     * [4. 最长摆动子序列](#4-最长摆动子序列)
     * [5. 最长上升子序列](#5-最长上升子序列)
@@ -130,58 +130,92 @@ double findMedian() - 返回目前所有元素的中位数。
 
 
 # 树相关
-## 1 最长回文子串
-5\. Longest Palindromic Substring
+## 1 二叉树的深度  
+剑指 Offer 55 - I.   
 
-[力扣](https://leetcode-cn.com/problems/longest-palindromic-substring/) / [Leetcode](https://leetcode.com/problems/longest-palindromic-substring/) / [Cpp](../algo_05_dynamic_plan/dp_2_subsequence/L5-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_2_subsequence/L5-m.py)   
+[力扣](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
 
-## 2 最大连续子数组和
-53\. Maximum Subarray
+## 2 平衡二叉树
+剑指 Offer 55 - II. 
 
-[力扣](https://leetcode-cn.com/problems/maximum-subarray/) / [Leetcode](https://leetcode.com/problems/maximum-subarray/) / [Cpp](../algo_05_dynamic_plan/dp_2_subsequence/L53.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_2_subsequence/L53.py)   
+[力扣](https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
 ```
 题目:给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
 ```
 
-## 3 最大连续子数组乘积
-152\. Maximum Product Subarray
+## 3 对称的二叉树
+剑指 Offer 28.    
 
-[力扣](https://leetcode-cn.com/problems/maximum-product-subarray/) / [Leetcode](https://leetcode.com/maximum-product-subarray/) / [Cpp](../algo_05_dynamic_plan/dp_2_subsequence/L152-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_2_subsequence/L152-m.py)   
+[力扣](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/) / [Python3](./python-algorithm/sword_point_offer/J28.py)      
 ```
-题目:给你一个整数数组 nums ，请你找出数组中乘积最大的连续子数组（该子数组中至少包含一个数字），并返回该子数组所对应的乘积。
+题目:请实现一个函数，用来判断一棵二叉树是不是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。
+例如，二叉树 [1,2,2,3,4,4,3] 是对称的。
+
+    1
+   / \
+  2   2
+ / \ / \
+3  4 4  3
+但是下面这个 [1,2,2,null,3,null,3] 则不是镜像对称的:
+
+    1
+   / \
+  2   2
+   \   \
+   3    3
 ```
 
-## 4 最长摆动子序列
-376\. Wiggle Subsequence (Medium)
+## 4 二叉树的镜像
+剑指 Offer 27.   
 
-[力扣](https://leetcode-cn.com/problems/wiggle-subsequence/description/) / [Leetcode](https://leetcode.com/problems/wiggle-subsequence/description/) / [Cpp](../algo_05_dynamic_plan/dp_2_subsequence/L376-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_2_subsequence/L376-m.py)   
+[力扣](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/) / [Python3](./python-algorithm/sword_point_offer/J27.py)      
 ```
-题目：从给定数组中找到长度最长的摆动子序列。通过从原始序列中删除一些（也可以不删除）元素来获得子序列，剩下的元素保持其原始顺序。
-进阶:
-     你能否用 O(n) 时间复杂度完成此题?
+题目：请完成一个函数，输入一个二叉树，该函数输出它的镜像。
+例如输入：
+
+     4
+   /   \
+  2     7
+ / \   / \
+1   3 6   9
+镜像输出：
+
+     4
+   /   \
+  7     2
+ / \   / \
+9   6 3   1
+
 ```
 
+## 5 树的子结构
+剑指 Offer 26. 
 
-## 5 最长上升子序列
-300\. Longest Increasing Subsequence (Medium)
+[力扣](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/) / [Python3](./python-algorithm/sword_point_offer/J26-m.py)      
+```
+题目:输入两棵二叉树A和B，判断B是不是A的子结构。(约定空树不是任意一个树的子结构)
+B是A的子结构， 即 A中有出现和B相同的结构和节点值。
+例如:
+给定的树 A:
 
-[力扣](https://leetcode-cn.com/problems/longest-increasing-subsequence/description/) / [Leetcode](https://leetcode.com/problems/longest-increasing-subsequence/description/) / [Cpp](../algo_05_dynamic_plan/dp_2_subsequence/L300.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_2_subsequence/L300.py)   
+     3
+    / \
+   4   5
+  / \
+ 1   2
+给定的树 B：
+
+   4 
+  /
+ 1
+返回 true，因为 B 与 A 的一个子树拥有相同的结构和节点值。
 ```
-题目:给定一个无序的整数数组，找到其中最长上升子序列的长度。
-示例:
-输入: [10,9,2,5,3,7,101,18]
-输出: 4 
-解释: 最长的上升子序列是 [2,3,7,101]，它的长度是 4。
-说明:
-   可能会有多种最长上升子序列的组合，你只需要输出对应的长度即可。
-   你算法的时间复杂度应该为 O(n2) 。
-进阶: 你能将算法的时间复杂度降低到 O(n log n) 吗?
-```
+
 
 ## 6 一组整数对能够构成的最长链
 646\. Maximum Length of Pair Chain (Medium)
 
-[力扣](https://leetcode-cn.com/problems/maximum-length-of-pair-chain/description/) / [Leetcode](https://leetcode.com/problems/maximum-length-of-pair-chain/description/) / [Cpp](../algo_05_dynamic_plan/dp_2_subsequence/L646-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_2_subsequence/L646-m.py)   
+[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
 ```
 题目: 给出 n 个数对, 在每一个数对中，第一个数字总是比第二个数字小。
 现在，我们定义一种跟随关系，当且仅当 b < c 时，数对(c, d) 才可以跟在 (a, b) 后面。我们用这种形式来构造一个数对链。
@@ -197,7 +231,7 @@ double findMedian() - 返回目前所有元素的中位数。
 ## 7 数组中等差递增子区间的个数
 413\. Arithmetic Slices (Medium)
 
-[力扣](https://leetcode-cn.com/problems/arithmetic-slices/description/) / [Leetcode](https://leetcode.com/problems/arithmetic-slices/description/) / [Cpp](../algo_05_dynamic_plan/dp_2_subsequence/L413-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_2_subsequence/L413-m.py)   
+[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
 ```
 题目: 返回数组中是等差数列的连续子数组(长度至少为3)的个数。
 ```
@@ -205,7 +239,7 @@ double findMedian() - 返回目前所有元素的中位数。
 ## 8 区域和检索
 303\. Range Sum Query - Immutable (Easy)
 
-[力扣](https://leetcode-cn.com/problems/range-sum-query-immutable/description/) / [Leetcode](https://leetcode.com/problems/range-sum-query-immutable/description/) / [Cpp](../algo_05_dynamic_plan/dp_2_subsequence/L303.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_2_subsequence/L303.py)   
+[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
 ```
 题目:给定一个整数数组  nums，求出数组从索引 i 到 j  (i ≤ j) 范围内元素的总和，包含 i,  j 两点。
 ```
@@ -213,7 +247,7 @@ double findMedian() - 返回目前所有元素的中位数。
 ## 9 编辑距离
 72\. Edit Distance (Hard)
 
-[力扣](https://leetcode-cn.com/problems/edit-distance/description/) / [Leetcode](https://leetcode.com/problems/edit-distance/description/) / [Cpp](../algo_05_dynamic_plan/dp_3_two_sequence/L72-h.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_3_two_sequence/L72-h.py)   
+[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
 ```
 题目:给你两个单词 word1 和 word2，请你计算出将 word1 转换成 word2 所使用的最少操作数 。
 你可以对一个单词进行如下三种操作：
@@ -232,7 +266,7 @@ double findMedian() - 返回目前所有元素的中位数。
 ## 10 最长公共连续子数组
 718\. Maximum Length of Repeated Subarray
 
-[力扣](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/) / [Leetcode](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) / [Cpp](../algo_05_dynamic_plan/dp_3_two_sequence/L718-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_3_two_sequence/L718-m.py)   
+[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
 ```
 题目: 给两个整数数组 A 和 B ，返回两个数组中公共的、长度最长的子数组的长度。
 示例：
@@ -247,7 +281,7 @@ double findMedian() - 返回目前所有元素的中位数。
 ## 11 最长公共子序列
 1143\. Longest Common Subsequence
 
-[力扣](https://leetcode-cn.com/problems/longest-common-subsequence/) / [Leetcode](https://leetcode.com/problems/longest-common-subsequence/) / [Cpp](../algo_05_dynamic_plan/dp_3_two_sequence/L1143-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_3_two_sequence/L1143-m.py)   
+[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
 ```
 题目：给定两个字符串 text1 和 text2，返回这两个字符串的最长公共子序列的长度。
      一个字符串的 子序列 是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符
@@ -259,7 +293,7 @@ double findMedian() - 返回目前所有元素的中位数。
 ## 12 删除两个字符串的字符使它们相等
 583\. Delete Operation for Two Strings (Medium)
 
-[力扣](https://leetcode-cn.com/problems/delete-operation-for-two-strings/description/) / [Leetcode](https://leetcode.com/problems/delete-operation-for-two-strings/description/) / [Cpp](../algo_05_dynamic_plan/dp_3_two_sequence/L583-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_3_two_sequence/L583-m.py)   
+[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
 ```
 题目:给定两个单词 word1 和 word2，找到使得 word1 和 word2 相同所需的最小步数，每步可以删除任意一个字符串中的一个字符
 示例：
@@ -271,7 +305,7 @@ double findMedian() - 返回目前所有元素的中位数。
 ## 13 最长公共子序列
 1143\. Longest Common Subsequence
 
-[力扣](https://leetcode-cn.com/problems/longest-common-subsequence/) / [Leetcode](https://leetcode.com/problems/longest-common-subsequence/) / [Cpp](../algo_05_dynamic_plan/dp_3_two_sequence/L1143-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_3_two_sequence/L1143-m.py)   
+[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
 ```
 题目：给定两个字符串 text1 和 text2，返回这两个字符串的最长公共子序列的长度。
      一个字符串的 子序列 是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符
@@ -283,7 +317,7 @@ double findMedian() - 返回目前所有元素的中位数。
 ## 14 删除两个字符串的字符使它们相等
 583\. Delete Operation for Two Strings (Medium)
 
-[力扣](https://leetcode-cn.com/problems/delete-operation-for-two-strings/description/) / [Leetcode](https://leetcode.com/problems/delete-operation-for-two-strings/description/) / [Cpp](../algo_05_dynamic_plan/dp_3_two_sequence/L583-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_3_two_sequence/L583-m.py)   
+[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)       
 ```
 题目:给定两个单词 word1 和 word2，找到使得 word1 和 word2 相同所需的最小步数，每步可以删除任意一个字符串中的一个字符
 示例：
