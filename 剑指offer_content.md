@@ -44,11 +44,10 @@
     * [4. 0到n-1中缺失的数字](#4-0到n-1中缺失的数字)
 
 * [七、动态规划](#动态规划)
-    * [1. 格雷编码](#1-格雷编码)
-    * [2. 比特位计数](#2-比特位计数)
-    * [3. 解码方法](#3-解码方法)
-    * [4. 复制粘贴字符](#4-复制粘贴字符)
-    * [5. 整数拆分](#5-整数拆分)
+    * [1. 剪绳子](#1-剪绳子)
+    * [2. 连续子数组的最大和](#2-连续子数组的最大和)
+    * [3. 礼物的最大价值](#3-礼物的最大价值)
+    * [4. 股票的最大利润](#4-股票的最大利润)   
 
 
 
@@ -411,136 +410,57 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 [力扣](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J53_2.py) 
 
 
+# 动态规划
+## 1 剪绳子
+剑指 Offer 14- I. 
 
-
-# 特殊状态转移方程
-## 1 格雷编码
-89\. Gray Code
-
-[力扣](https://leetcode-cn.com/problems/gray-code/) / [Leetcode](https://leetcode.com/problems/gray-code/) / [Cpp](../algo_05_dynamic_plan/dp_4_special_state_transition/L89-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_4_special_state_transition/L89-m.py)   
+[力扣](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J14-m.py) 
 ```
-题目: 格雷编码是一个二进制数字系统，在该系统中，两个连续的数值仅有一个位数的差异。
-     给定一个代表编码总位数的非负整数 n，打印其格雷编码序列。即使有多个不同答案，你也只需要返回其中一种。
-     格雷编码序列必须以 0 开头。
+题目: 给你一根长度为 n 的绳子，请把绳子剪成整数长度的 m 段（m、n都是整数，n>1并且m>1），每段绳子的长度记为 k[0],k[1]...k[m-1] 。请问 k[0]*k[1]*...*k[m-1]
+可能的最大乘积是多少？例如，当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此时得到的最大乘积是18。n>=2。
+```
+
+## 2 连续子数组的最大和
+剑指 Offer 42. 
+
+[力扣](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/) / [Python3](./python-algorithm/sword_point_offer/J42.py) 
+```
+题目: 输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。
+要求时间复杂度为O(n)。
+```
+
+## 3 礼物的最大价值
+剑指 Offer 47. 
+
+[力扣](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J47.py) 
+```
 示例 1:
-      输入: 2
-      输出: [0,1,3,2]
-      解释:
-      00 - 0
-      01 - 1
-      11 - 3
-      10 - 2
+输入: 
+[
+  [1,3,1],
+  [1,5,1],
+  [4,2,1]
+]
+输出: 12
+解释: 路径 1→3→5→2→1 可以拿到最多价值的礼物
 
-      对于给定的 n，其格雷编码序列并不唯一。
-      例如，[0,2,3,1] 也是一个有效的格雷编码序列。
-
-      00 - 0
-      10 - 2
-      11 - 3
-      01 - 1
 ```
 
-## 2 比特位计数
-338\. Counting Bits
+## 4 股票的最大利润
+剑指 Offer 63. 
 
-[力扣](https://leetcode-cn.com/problems/counting-bits/) / [Leetcode](https://leetcode.com/problems/counting-bits/) / [Cpp](../algo_05_dynamic_plan/dp_4_special_state_transition/L338-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_4_special_state_transition/L338-m.py) 
+[力扣](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/) / [Python3](./python-algorithm/sword_point_offer/J63.py) 
 ```
-题目: 给定一个非负整数 num。对于 0 ≤ i ≤ num 范围中的每个数字 i ，计算其二进制数中的 1 的数目并将它们作为数组返回。
-进阶:
-      给出时间复杂度为O(n*sizeof(integer))的解答非常容易。但你可以在线性时间O(n)内用一趟扫描做到吗？
-      要求算法的空间复杂度为O(n)
-```
-
-## 3 解码方法
-91\. Decode Ways (Medium)
-
-[力扣](https://leetcode-cn.com/problems/decode-ways/description/) / [Leetcode](https://leetcode.com/problems/decode-ways/description/) / [Cpp](../algo_05_dynamic_plan/dp_4_special_state_transition/L91-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_4_special_state_transition/L91-m.py) 
-```
-题目:一条包含字母 A-Z 的消息通过以下方式进行了编码：
-   'A' -> 1
-   'B' -> 2
-   ...
-   'Z' -> 26
-   给定一个只包含数字的非空字符串，请计算解码方法的总数。
-
+题目:假设把某股票的价格按照时间先后顺序存储在数组中，请问买卖该股票一次可能获得的最大利润是多少？
 示例 1:
-      输入: "12"
-      输出: 2
-      解释: 它可以解码为 "AB"（1 2）或者 "L"（12）。
-      示例 2:
-
-      输入: "226"
-      输出: 3
-      解释: 它可以解码为 "BZ" (2 26), "VF" (22 6), 或者 "BBF" (2 2 6) 
+输入: [7,1,5,3,6,4]
+输出: 5
+解释: 在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。
+     注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格。
 ```
 
-## 4 复制粘贴字符
-650\. 2 Keys Keyboard (Medium)
 
-[力扣](https://leetcode-cn.com/problems/2-keys-keyboard/description/) / [Leetcode](https://leetcode.com/problems/2-keys-keyboard/description/) / [Cpp](../algo_05_dynamic_plan/dp_4_special_state_transition/L650-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_4_special_state_transition/L650-m.py) 
-```
-题目: 最初在一个记事本上只有一个字符 'A'。你每次可以对这个记事本进行两种操作：
-     Copy All (复制全部) : 你可以复制这个记事本中的所有字符(部分的复制是不允许的)。
-     Paste (粘贴) : 你可以粘贴你上一次复制的字符。
-给定一个数字 n 。你需要使用最少的操作次数，在记事本中打印出恰好 n 个 'A'。输出能够打印出 n 个 'A' 的最少操作次数。
-示例 1:
-      输入: 3
-      输出: 3
-      解释:
-      最初, 我们只有一个字符 'A'。
-      第 1 步, 我们使用 Copy All 操作。
-      第 2 步, 我们使用 Paste 操作来获得 'AA'。
-      第 3 步, 我们使用 Paste 操作来获得 'AAA'。
-```
 
-## 5 整数拆分
-343\. Integer Break (Medim)
-
-[力扣](https://leetcode-cn.com/problems/integer-break/description/) / [Leetcode](https://leetcode.com/problems/integer-break/description/) / [Cpp](../algo_05_dynamic_plan/dp_4_special_state_transition/L343.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_4_special_state_transition/L343.py) 
-```
-题目: 给定一个正整数 n，将其拆分为至少两个正整数的和，并使这些整数的乘积最大化。 返回你可以获得的最大乘积。
-示例 1:
-      输入: 2
-      输出: 1
-      解释: 2 = 1 + 1, 1 × 1 = 1。
-      示例 2:
-
-      输入: 10
-      输出: 36
-      解释: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36。
-      说明: 你可以假设 n 不小于 2 且不大于 58。
-```
-
-## 6 整数拆分成最少平方数之和
-279\. Perfect Squares(Medium)
-
-[力扣](https://leetcode-cn.com/problems/perfect-squares/description/) / [Leetcode](https://leetcode.com/problems/perfect-squares/description/) / [Cpp](../algo_05_dynamic_plan/dp_4_special_state_transition/L279-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_4_special_state_transition/L279-m.py) 
-```
-题目: 给定正整数 n，找到若干个完全平方数（比如 1, 4, 9, 16, ...）使得它们的和等于 n。你需要让组成和的完全平方数的个数最少。
-示例 1:
-      输入: n = 12
-      输出: 3 
-      解释: 12 = 4 + 4 + 4.
-```
-
-## 7 不同的二叉搜索树
-96\. Unique Binary Search Trees
-
-[力扣](https://leetcode-cn.com/problems/unique-binary-search-trees/) / [Leetcode](https://leetcode.com/problems/unique-binary-search-trees/) / [Cpp](../algo_05_dynamic_plan/dp_4_special_state_transition/L96-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_4_special_state_transition/L96-m.py) 
-```
-题目: 给定一个整数 n，求以 1 ... n 为节点组成的二叉搜索树有多少种？
-示例:
-            输入: 3
-            输出: 5
-            解释:
-            给定 n = 3, 一共有 5 种不同结构的二叉搜索树:
-
-               1         3     3      2      1
-                \       /     /      / \      \
-                 3     2     1      1   3      2
-                /     /       \                 \
-               2     1         2                 3
-```
 
 # 矩形问题  
 ## 1 最大正方形
