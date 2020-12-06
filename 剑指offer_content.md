@@ -3,10 +3,14 @@
     * [1. 用两个栈实现队列](#1-用两个栈实现队列)
     * [2. 包含min函数的栈](#2-包含min函数的栈)
     * [3. 队列的最大值](#3-队列的最大值)   
-    
+
 * [二、堆的应用](#堆的应用)
     * [1. 最小的k个数 ](#1-最小的k个数 )
     * [2. 数据流中的中位数](#2-数据流中的中位数)
+    
+* [三、位运算](#位运算)
+    * [1. 二进制中1的个数](#1-二进制中1的个数)
+    * [2. 数组中出现次数超过一半的数字](#2-数组中出现次数超过一半的数字)
     
 * [子序列问题](#子序列问题)
     * [1. 最长回文子串](#1-最长回文子串)
@@ -41,10 +45,7 @@
     * [5. 整数拆分](#5-整数拆分)
     * [6. 整数拆分成最少平方数之和](#6-整数拆分成最少平方数之和)
     * [7. 不同的二叉搜索树  ](#7-不同的二叉搜索树) 
-    
-* [矩阵路径](#矩阵路径)
-    * [1. 不同路径](#1-不同路径)
-    * [2. 最小路径和](#2-最小路径和)
+
     
 * [矩形问题](#矩形问题)
    * [1. 最大正方形](#1-最大正方形)
@@ -59,17 +60,17 @@
     * [6. 只能进行k次的股票交易](#6-只能进行k次的股票交易)
 
 <!-- GFM-TOC -->
-```
-动态规划问题在于找出状态转移方程，此外，根据方程中所需要的上一个状态的变量情况，适当优化存储空间。
-```
+
 
 # 栈和队列
 ## 1 用两个栈实现队列   
 剑指 Offer 09  
+
 [力扣](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) / [Python3](./python-algorithm/sword_point_offer/J09.py)    
 
 ## 2 包含min函数的栈
 剑指 Offer 30    
+
 ```
 题目：定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的 min 函数在该栈中，调用 min、push 及 pop 的时间复杂度都是 O(1)。
 ```
@@ -77,6 +78,7 @@
 
 ## 3 队列的最大值    
 剑指 Offer 59  
+
 ```
 题目：请定义一个队列并实现函数 max_value 得到队列里的最大值，要求函数max_value、push_back 和 pop_front 的均摊时间复杂度都是O(1)。
 ```
@@ -91,6 +93,7 @@
 ```
 题目: 输入整数数组 arr ，找出其中最小的 k 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。
 ```
+
 ## 2 数据流中的中位数  
 剑指 Offer 41  
 
@@ -105,6 +108,26 @@
 void addNum(int num) - 从数据流中添加一个整数到数据结构中。
 double findMedian() - 返回目前所有元素的中位数。
 ```
+
+
+# 矩阵路径
+## 1 二进制中1的个数
+剑指 Offer 15         
+
+[力扣](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/) / [Python3](./python-algorithm/sword_point_offer/J15.py)      
+```
+题目: 输入一个整数（以二进制串形式），输出该数二进制表示中 1 的个数。
+```
+
+## 2 数组中出现次数超过一半的数字
+剑指 Offer 39      
+
+[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
+```
+题目:数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。
+你可以假设数组是非空的，并且给定的数组总是存在多数元素。
+```
+
 
 
 
@@ -619,37 +642,6 @@ class Solution:
                 /     /       \                 \
                2     1         2                 3
 ```
-
-
-# 矩阵路径
-## 1 不同路径
-62\. Unique Paths (Medium)
-
-[力扣](https://leetcode-cn.com/problems/unique-paths/description/) / [Leetcode](https://leetcode.com/problems/unique-paths/description/) / [Cpp](../algo_05_dynamic_plan/dp_7_matrix_path/L62-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_7_matrix_path/L62-m.py) 
-```
-题目: 一个机器人位于一个 m x n 网格的左上角 
-     机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角。
-     问总共有多少条不同的路径？
-```
-
-## 2 最小路径和
-64\. Minimum Path Sum (Medium)
-
-[力扣](https://leetcode-cn.com/problems/minimum-path-sum/description/) / [Leetcode](https://leetcode.com/problems/minimum-path-sum/description/) / [Cpp](../algo_05_dynamic_plan/dp_7_matrix_path/L64-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_7_matrix_path/L64-m.py) 
-```
-题目:给定一个包含非负整数的 m x n 网格，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。
-说明：每次只能向下或者向右移动一步。
-示例:
-      输入:
-      [
-        [1,3,1],
-        [1,5,1],
-        [4,2,1]
-      ]
-      输出: 7
-      解释: 因为路径 1→3→1→1→1 的总和最小。
-```
-
 
 # 矩形问题  
 ## 1 最大正方形
