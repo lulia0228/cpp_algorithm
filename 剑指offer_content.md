@@ -12,7 +12,7 @@
     * [1. 二进制中1的个数](#1-二进制中1的个数)
     * [2. 数组中出现次数超过一半的数字](#2-数组中出现次数超过一半的数字)
     
-* [子序列问题](#子序列问题)
+* [四、树相关](#树相关)
     * [1. 最长回文子串](#1-最长回文子串)
     * [2. 连续子数组：和最大](#2-最大连续子数组和)
     * [3. 连续子数组：乘积最大](#3-最大连续子数组乘积)
@@ -21,12 +21,12 @@
     * [6. 一组整数对能够构成的最长链](#6-一组整数对能够构成的最长链)
     * [7. 数组中等差递增子区间的个数](#7-数组中等差递增子区间的个数)
     * [8. 区域和检索-数组不可变](#8-区域和检索)
-    
-* [双序列问题](#双序列问题)
-    * [1. 编辑距离](#1-编辑距离)
-    * [2. 最长公共连续子数组](#2-最长公共连续子数组)
-    * [3. 最长公共子序列](#3-最长公共子序列)
-    * [4. 删除两个字符串的字符使它们相等](#4-删除两个字符串的字符使它们相等)
+    * [9. 编辑距离](#9-编辑距离)
+    * [10. 最长公共连续子数组](#10-最长公共连续子数组)
+    * [11. 最长公共子序列](#11-最长公共子序列)
+    * [12. 删除两个字符串的字符使它们相等](#12-删除两个字符串的字符使它们相等)
+    * [13. 最长公共子序列](#13-最长公共子序列)
+    * [14. 删除两个字符串的字符使它们相等](#14-删除两个字符串的字符使它们相等) 
 
 * [0-1背包问题](#01背包问题)
     * [1. 目标和](#1-目标和)
@@ -129,11 +129,7 @@ double findMedian() - 返回目前所有元素的中位数。
 ```
 
 
-
-
-
-
-# 子序列问题
+# 树相关
 ## 1 最长回文子串
 5\. Longest Palindromic Substring
 
@@ -214,8 +210,7 @@ double findMedian() - 返回目前所有元素的中位数。
 题目:给定一个整数数组  nums，求出数组从索引 i 到 j  (i ≤ j) 范围内元素的总和，包含 i,  j 两点。
 ```
 
-# 双序列问题
-## 1 编辑距离
+## 9 编辑距离
 72\. Edit Distance (Hard)
 
 [力扣](https://leetcode-cn.com/problems/edit-distance/description/) / [Leetcode](https://leetcode.com/problems/edit-distance/description/) / [Cpp](../algo_05_dynamic_plan/dp_3_two_sequence/L72-h.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_3_two_sequence/L72-h.py)   
@@ -234,7 +229,7 @@ double findMedian() - 返回目前所有元素的中位数。
       rose -> ros (删除 'e')
 ```
 
-## 2 最长公共连续子数组
+## 10 最长公共连续子数组
 718\. Maximum Length of Repeated Subarray
 
 [力扣](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/) / [Leetcode](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) / [Cpp](../algo_05_dynamic_plan/dp_3_two_sequence/L718-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_3_two_sequence/L718-m.py)   
@@ -249,7 +244,7 @@ double findMedian() - 返回目前所有元素的中位数。
       长度最长的公共子数组是 [3, 2, 1] 。
 ```
 
-## 3 最长公共子序列
+## 11 最长公共子序列
 1143\. Longest Common Subsequence
 
 [力扣](https://leetcode-cn.com/problems/longest-common-subsequence/) / [Leetcode](https://leetcode.com/problems/longest-common-subsequence/) / [Cpp](../algo_05_dynamic_plan/dp_3_two_sequence/L1143-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_3_two_sequence/L1143-m.py)   
@@ -261,7 +256,7 @@ double findMedian() - 返回目前所有元素的中位数。
      若这两个字符串没有公共子序列，则返回 0。
 ```
 
-## 4 删除两个字符串的字符使它们相等
+## 12 删除两个字符串的字符使它们相等
 583\. Delete Operation for Two Strings (Medium)
 
 [力扣](https://leetcode-cn.com/problems/delete-operation-for-two-strings/description/) / [Leetcode](https://leetcode.com/problems/delete-operation-for-two-strings/description/) / [Cpp](../algo_05_dynamic_plan/dp_3_two_sequence/L583-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_3_two_sequence/L583-m.py)   
@@ -272,6 +267,32 @@ double findMedian() - 返回目前所有元素的中位数。
       输出: 2
       解释: 第一步将"sea"变为"ea"，第二步将"eat"变为"ea"
 ```
+
+## 13 最长公共子序列
+1143\. Longest Common Subsequence
+
+[力扣](https://leetcode-cn.com/problems/longest-common-subsequence/) / [Leetcode](https://leetcode.com/problems/longest-common-subsequence/) / [Cpp](../algo_05_dynamic_plan/dp_3_two_sequence/L1143-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_3_two_sequence/L1143-m.py)   
+```
+题目：给定两个字符串 text1 和 text2，返回这两个字符串的最长公共子序列的长度。
+     一个字符串的 子序列 是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符
+    （也可以不删除任何字符）后组成的新字符串。例如，"ace" 是 "abcde" 的子序列，但 "aec" 不是 "abcde" 
+     的子序列。两个字符串的「公共子序列」是这两个字符串所共同拥有的子序列。
+     若这两个字符串没有公共子序列，则返回 0。
+```
+
+## 14 删除两个字符串的字符使它们相等
+583\. Delete Operation for Two Strings (Medium)
+
+[力扣](https://leetcode-cn.com/problems/delete-operation-for-two-strings/description/) / [Leetcode](https://leetcode.com/problems/delete-operation-for-two-strings/description/) / [Cpp](../algo_05_dynamic_plan/dp_3_two_sequence/L583-m.cpp) / [Python3](../python-algorithm/algo_05_dynamic_plan/dp_3_two_sequence/L583-m.py)   
+```
+题目:给定两个单词 word1 和 word2，找到使得 word1 和 word2 相同所需的最小步数，每步可以删除任意一个字符串中的一个字符
+示例：
+      输入: "sea", "eat"
+      输出: 2
+      解释: 第一步将"sea"变为"ea"，第二步将"eat"变为"ea"
+```
+
+
 
 # 01背包问题  
 背包问题分类：     
