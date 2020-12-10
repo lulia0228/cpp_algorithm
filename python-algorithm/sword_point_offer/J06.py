@@ -8,6 +8,8 @@
 #         self.val = x
 #         self.next = None
 
+
+# 使用了递归
 class Solution:
     def reversePrint(self, head: ListNode) -> List[int]:
         res = []

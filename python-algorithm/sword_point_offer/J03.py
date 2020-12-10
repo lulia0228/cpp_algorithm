@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# 找出数组中重复的数组 和 leetcode448一样
+# 找出数组中重复的数；和leetcode448一样
 
+# 2次遍历
 class Solution:
     def findRepeatNumber(self, nums: List[int]) -> int:
         for i in range(len(nums)):
@@ -16,7 +17,7 @@ class Solution:
             if nums[i] != i:
                 return nums[i]
 
-# 更快的做法
+# 1次遍历
 class Solution:
     def findRepeatNumber(self, nums: List[int]) -> int:
         for i in range(len(nums)):

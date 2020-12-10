@@ -10,28 +10,26 @@
 #         self.right = None
 
 class Solution:
-    def buildTree(self, preorder: List[int], inorder: List[int]) -> TreeNode:
-        sz = len(preorder)
-        record = {}
-        for i in range(sz):
-            record[inorder[i]] = i
-        return self.myBuild(preorder, inorder, 0, sz - 1, 0, sz - 1, record)
+    record = {}
 
-    def myBuild(self, preorder, inorder, p_lt, p_rt, i_lt, i_rt, record):
+    def buildTree(self, preorder: List[int], inorder: List[int]) -> TreeNode:
+        for i in range(len(inorder)):
+            self.record[inorder[i]] = i
+        return self.my_build(preorder, inorder, 0, len(preorder) - 1, 0, len(inorder) - 1)
+
+    def my_build(self, pre, ino, p_lt, p_rt, i_lt, i_rt):
         if p_lt > p_rt:
             return None
         # 当前根节点在前序列表中的索引
-        p_root = p_lt
+        root_pre = p_lt
         # 找到根节点在中序列表中的索引
-        i_root = record[preorder[p_root]]
-        root = TreeNode(preorder[p_root])
+        root_ino = self.record[pre[root_pre]]
+        root = TreeNode(pre[root_pre])
         # 左子树节点数目
-        num_lt = i_root - i_lt
-        root.left = self.myBuild(preorder, inorder, p_lt + 1, p_lt + num_lt, i_lt, i_root - 1, record)
-        root.right = self.myBuild(preorder, inorder, p_lt + num_lt + 1, p_rt, i_root + 1, i_rt, record)
-
+        n_left = root_ino - i_lt
+        root.left = self.my_build(pre, ino, p_lt + 1, p_lt + n_left, i_lt, root_ino - 1)
+        root.right = self.my_build(pre, ino, p_lt + n_left + 1, p_rt, root_ino + 1, i_rt)
         return root
-
 
 
 
