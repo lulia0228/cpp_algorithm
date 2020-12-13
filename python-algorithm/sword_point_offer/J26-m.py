@@ -31,4 +31,25 @@ class Solution:
         if A.val != B.val:
             return False
         return self.isEqual(A.left, B.left) and self.isEqual(A.right, B.right)
+    
+
+class Solution:
+    def isSubStructure(self, A: TreeNode, B: TreeNode) -> bool:
+        if not A or not B:
+            return False
+        if self.isSub(A, B):
+            return True
+        return self.isSubStructure(A.left, B) or self.isSubStructure(A.right, B)
+
+    def isSub(self, a, b):
+        if not a and not b:
+            return True
+        # 子树和子结构区别体现：B是空而A不是空的时候是True
+        if not b:
+            return True
+        if not a:
+            return False
+        if a.val != b.val:
+            return False
+        return self.isSub(a.left, b.left) and self.isSub(a.right, b.right)
 
