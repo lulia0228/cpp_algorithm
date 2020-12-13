@@ -16,3 +16,15 @@ class Solution:
                 lt += 1
                 rt -= 1
         return n_nums
+
+class Solution:
+    def exchange(self, nums: List[int]) -> List[int]:
+        lt, rt = 0, len(nums)-1
+        while lt < rt:
+            while lt<len(nums) and nums[lt]&1 == 1:
+                lt += 1
+            while rt >=0 and nums[rt]&1 == 0:
+                rt -= 1
+            if lt < rt:
+                nums[lt], nums[rt] = nums[rt], nums[lt]
+        return nums

@@ -15,3 +15,14 @@ class Solution:
             tmp_node = tmp_node.next
         tmp_node.next = tmp_node.next.next
         return dummy.next
+
+class Solution:
+    def deleteNode(self, head: ListNode, val: int) -> ListNode:
+        dummy = ListNode(-1)
+        dummy.next = head
+        tmp = dummy
+        while head.val != val:
+            tmp = head
+            head = head.next
+        tmp.next = head.next
+        return dummy.next
