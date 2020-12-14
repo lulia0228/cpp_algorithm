@@ -4,19 +4,20 @@
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        if s == "":
-            return 0
+        if  s == "": return 0
         record = {}
         for c in s:
             record[c] = 0
-        i, j = 0, 0
-        min_len = 1
-        while j<len(s):
-            record[s[j]] += 1
-            while record[s[j]] > 1:
-                record[s[i]] -= 1
-                i += 1
-            # 在循环外面判断最长值
-            min_len = max(min_len, j-i+1)
-            j += 1
-        return min_len
+        i = j = 0
+        max_len = 1
+        while i < len(s):
+            record[s[i]] += 1
+            while record[s[i]] > 1:
+                if s[j] in record:
+                    record[s[j]] -= 1
+                j += 1
+            max_len = max(max_len, i-j+1)
+            i += 1
+        return max_len
+
+
