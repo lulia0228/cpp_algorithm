@@ -31,7 +31,7 @@ class Solution:
         if A.val != B.val:
             return False
         return self.isEqual(A.left, B.left) and self.isEqual(A.right, B.right)
-    
+
 
 class Solution:
     def isSubStructure(self, A: TreeNode, B: TreeNode) -> bool:
