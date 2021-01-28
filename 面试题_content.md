@@ -65,11 +65,10 @@
     * [4. 单词转换](#4-单词转换)
 
 * [十三、回溯类](#回溯类)
-    * [1. 节点间通路](#1-节点间通路)
-    * [2. 迷路的机器人](#2-迷路的机器人)
-    * [3. 水域大小](#3-水域大小)
-    * [4. 单词转换](#4-单词转换)
-
+    * [1. 幂集](#1-幂集)
+    * [2. 无重复字符串的排列组合](#2-无重复字符串的排列组合)
+    * [3. 有重复字符串的排列组合](#3-有重复字符串的排列组合)
+    * [4. 括号](#4-括号)
 
 <!-- GFM-TOC -->
 
@@ -702,75 +701,74 @@ wordList = ["hot","dot","dog","lot","log"]
 
 
 # 回溯类
-## 1 节点间通路
-面试题 04.01. 节点间通路   
+## 1 幂集
+面试题 08.04. 幂集 
 
-[力扣](https://leetcode-cn.com/problems/route-between-nodes-lcci/) / [Python3](./python-algorithm/interview_sets/04.01.py) 
+[力扣](https://leetcode-cn.com/problems/power-set-lcci/) / [Python3](./python-algorithm/interview_sets/08.04.py) 
 ```
-节点间通路。给定有向图，设计一个算法，找出两个节点之间是否存在一条路径。
+幂集。编写一种方法，返回某集合的所有子集。集合中不包含重复的元素。
+说明：解集不能包含重复的子集。
+
+ 输入： nums = [1,2,3]
+ 输出：
+         [
+           [3],
+           [1],
+           [2],
+           [1,2,3],
+           [1,3],
+           [2,3],
+           [1,2],
+           []
+         ]
+```
+
+## 2 无重复字符串的排列组合
+面试题 08.07. 无重复字符串的排列组合    
+
+[力扣](https://leetcode-cn.com/problems/permutation-i-lcci/) / [Python3](./python-algorithm/interview_sets/08.07.py) 
+```
+无重复字符串的排列组合。编写一种方法，计算某字符串的所有排列组合，字符串每个字符均不相同。
 
 示例1:
-输入：n = 3, graph = [[0,1], [0,2], [1,2], [1,2]], start = 0, target=2
-输出：true
+ 输入：S = "qwe"
+ 输出：["qwe", "qew", "wqe", "weq", "ewq", "eqw"]
+ 
 示例2:
-输入：n = 5, graph = [[0,1], [0,2], [0,4], [0,4], [0,1], [1,3], [1,4], [1,3], [2,3], [3,4]], start=0, target=4
-输出 true
-
+ 输入：S = "ab"
+ 输出：["ab", "ba"]
 ```
 
-## 2 迷路的机器人
-面试题 08.02. 迷路的机器人   
+## 3 有重复字符串的排列组合   
+面试题 08.08. 有重复字符串的排列组合       
 
-[力扣](https://leetcode-cn.com/problems/robot-in-a-grid-lcci/) / [Python3](./python-algorithm/interview_sets/08.02.py) 
+[力扣](https://leetcode-cn.com/problems/permutation-ii-lcci/) / [Python3](./python-algorithm/interview_sets/08.08.py) 
 ```
-设想有个机器人坐在一个网格的左上角，网格 r 行 c 列。机器人只能向下或向右移动，但不能走到一些被禁止的网格（有障碍物）。
-设计一种算法，寻找机器人从左上角移动到右下角的路径。
+有重复字符串的排列组合。编写一种方法，计算某字符串的所有排列组合。
 
-网格中的障碍物和空位置分别用 1 和 0 来表示。
-返回一条可行的路径，路径由经过的网格的行号和列号组成。左上角为 0 行 0 列。如果没有可行的路径，返回空数组。
-```
-
-## 3 水域大小
-面试题 16.19. 水域大小     
-
-[力扣](https://leetcode-cn.com/problems/pond-sizes-lcci/) / [Python3](./python-algorithm/interview_sets/16.19.py) 
-```
-你有一个用于表示一片土地的整数矩阵land，该矩阵中每个点的值代表对应地点的海拔高度。若值为0则表示水域。由垂直、水平或对角连接的水域为池塘。
-池塘的大小是指相连接的水域的个数。编写一个方法来计算矩阵中所有池塘的大小，返回值需要从小到大排序。
-
-输入：
-         [
-           [0,2,1,0],
-           [0,1,0,1],
-           [1,1,0,1],
-           [0,1,0,1]
-         ]
-输出：      [1,2,4]
-
+示例1:
+ 输入：S = "qqe"
+ 输出：["eqq","qeq","qqe"]
+ 
+示例2:
+ 输入：S = "ab"
+ 输出：["ab", "ba"]
 ```
 
+## 4 括号
+面试题 08.09. 括号     
 
-## 4 单词转换
-面试题 17.22. 单词转换   
-
-[力扣](https://leetcode-cn.com/problems/word-transformer-lcci/) / [Python3](./python-algorithm/interview_sets/17.22.py) 
+[力扣](https://leetcode-cn.com/problems/bracket-lcci/) / [Python3](./python-algorithm/interview_sets/08.09.py) 
 ```
-给定字典中的两个词，长度相等。写一个方法，把一个词转换成另一个词， 但是一次只能改变一个字符。每一步得到的新词都必须能在字典中找到。
-编写一个程序，返回一个可能的转换序列。如有多个可能的转换序列，你可以返回任何一个。
+括号。设计一种算法，打印n对括号的所有合法的（例如，开闭一一对应）组合。
+说明：解集不能包含重复的子集。
 
-示例 1:
-输入:
-beginWord = "hit",
-endWord = "cog",
-wordList = ["hot","dot","dog","lot","log","cog"]
-输出:
-["hit","hot","dot","lot","log","cog"]
-
-示例 2:
-输入:
-beginWord = "hit"
-endWord = "cog"
-wordList = ["hot","dot","dog","lot","log"]
-输出: []
-解释: endWord "cog" 不在字典中，所以不存在符合要求的转换序列。
+例如，给出 n = 3，生成结果为：
+      [
+        "((()))",
+        "(()())",
+        "(())()",
+        "()(())",
+        "()()()"
+      ]
 ```
