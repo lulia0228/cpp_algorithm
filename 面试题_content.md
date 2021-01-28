@@ -12,20 +12,13 @@
     * [1. 交换数字](#1-交换数字)
  
 * [五、树相关](#树相关)
-    * [1. 二叉树的深度](#1-二叉树的深度)
-    * [2. 平衡二叉树](#2-平衡二叉树)
-    * [3. 对称的二叉树](#3-对称的二叉树)
-    * [4. 二叉树的镜像](#4-二叉树的镜像)
-    * [5. 树的子结构](#5-树的子结构)
-    * [6. 从上到下打印二叉树](#6-从上到下打印二叉树)
-    * [7. 从上到下打印二叉树II](#7-从上到下打印二叉树II)
-    * [8. 从上到下打印二叉树III](#8-从上到下打印二叉树III)
-    * [9. 重建二叉树](#9-重建二叉树)
-    * [10. 序列化二叉树](#10-序列化二叉树)
-    * [11. 二叉树中和为某一值的路径](#11-二叉树中和为某一值的路径)
-    * [12. 二叉搜索树的第k大节点](#12-二叉搜索树的第k大节点)
-    * [13. 二叉搜索树的最近公共祖先  ](#13-二叉搜索树的最近公共祖先  )
-    * [14. 二叉树的最近公共祖先](#14-二叉树的最近公共祖先) 
+    * [1. 特定深度节点链表](#1-特定深度节点链表)
+    * [2. 合法二叉搜索树](#2-合法二叉搜索树)
+    * [3. 后继者](#3-后继者)
+    * [4. 首个共同祖先](#4-首个共同祖先)
+    * [5. 检查子树](#5-检查子树)
+    * [6. Trie单词频率](#6-Trie单词频率)
+    * [7. Trie多次搜索](#7-Trie次搜索)
 
 * [六、链表相关](#链表相关)
     * [1. 分割链表](#1-分割链表)
@@ -138,222 +131,147 @@ small = [1,5,9]
 
 
 # 树相关
-## 1 二叉树的深度  
-剑指 Offer 55 - I.   
+## 1 特定深度节点链表        
+面试题 04.03. 特定深度节点链表     
 
-[力扣](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
-
-## 2 平衡二叉树
-剑指 Offer 55 - II. 
-
-[力扣](https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
+[力扣](https://leetcode-cn.com/problems/list-of-depth-lcci/) / [Python3](./python-algorithm/interview_sets/04.03.py)      
 ```
-题目:给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
-```
+给定一棵二叉树，设计一个算法，创建含有某一深度上所有节点的链表（比如，若一棵树的深度为 D，则会创建出 D 个链表）。返回一个包含所有深度的链表的数组。
 
-## 3 对称的二叉树
-剑指 Offer 28.    
+输入：[1,2,3,4,5,null,7,8]
 
-[力扣](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/) / [Python3](./python-algorithm/sword_point_offer/J28.py)      
-```
-题目:请实现一个函数，用来判断一棵二叉树是不是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。
-例如，二叉树 [1,2,2,3,4,4,3] 是对称的。
+        1
+       /  \ 
+      2    3
+     / \    \ 
+    4   5    7
+   /
+  8
 
-    1
-   / \
-  2   2
- / \ / \
-3  4 4  3
-但是下面这个 [1,2,2,null,3,null,3] 则不是镜像对称的:
-
-    1
-   / \
-  2   2
-   \   \
-   3    3
+输出：[[1],[2,3],[4,5,7],[8]]
 ```
 
-## 4 二叉树的镜像
-剑指 Offer 27.   
+## 2 合法二叉搜索树   
+面试题 04.05. 合法二叉搜索树     
 
-[力扣](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/) / [Python3](./python-algorithm/sword_point_offer/J27.py)      
+[力扣](https://leetcode-cn.com/problems/legal-binary-search-tree-lcci/) / [Python3](./python-algorithm/interview_sets/04.05.py)      
 ```
-题目：请完成一个函数，输入一个二叉树，该函数输出它的镜像。
-例如输入：
+实现一个函数，检查一棵二叉树是否为二叉搜索树。
 
-     4
-   /   \
-  2     7
- / \   / \
-1   3 6   9
-镜像输出：
+示例 1:
+输入:
+                      2
+                     / \
+                    1   3
+输出: true
 
-     4
-   /   \
-  7     2
- / \   / \
-9   6 3   1
+示例 2:
+输入:
+                   5
+                  / \
+                 1   4
+                    / \
+                   3   6
+输出: false
+解释: 输入为: [5,1,4,null,null,3,6]。
+     根节点的值为 5 ，但是其右子节点值为 4 。
 
 ```
 
-## 5 树的子结构
-剑指 Offer 26. 
+## 3 后继者  
+面试题 04.06. 后继者       
 
-[力扣](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/) / [Python3](./python-algorithm/sword_point_offer/J26-m.py)      
+[力扣](https://leetcode-cn.com/problems/successor-lcci/) / [Python3](./python-algorithm/interview_sets/04.06.py)      
 ```
-题目:输入两棵二叉树A和B，判断B是不是A的子结构。(约定空树不是任意一个树的子结构)
-B是A的子结构， 即 A中有出现和B相同的结构和节点值。
-例如:
-给定的树 A:
+设计一个算法，找出二叉搜索树中指定节点的“下一个”节点（也即中序后继）。
+如果指定节点没有对应的“下一个”节点，则返回null。
 
-     3
-    / \
-   4   5
-  / \
- 1   2
-给定的树 B：
+输入: root = [2,1,3], p = 1
+           2
+          / \
+         1   3
 
-   4 
-  /
- 1
-返回 true，因为 B 与 A 的一个子树拥有相同的结构和节点值。
+输出: 2
 ```
 
-## 6 从上到下打印二叉树
-剑指 Offer 32 - I
+## 4 首个共同祖先  
+面试题 04.08. 首个共同祖先     
 
-[力扣](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/) / [Python3](./python-algorithm/sword_point_offer/J32_1.py)      
+[力扣](https://leetcode-cn.com/problems/first-common-ancestor-lcci/) / [Python3](./python-algorithm/interview_sets/04.08.py)      
 ```
-题目: 例如:
-给定二叉树: [3,9,20,null,null,15,7],
+设计并实现一个算法，找出二叉树中某两个节点的第一个共同祖先。不得将其他的节点存储在另外的数据结构中。注意：这不一定是二叉搜索树。
+例如，给定如下二叉树: root = [3,5,1,6,2,0,8,null,null,7,4]
 
     3
    / \
-  9  20
-    /  \
-   15   7
-返回：
+  5   1
+ / \ / \
+6  2 0  8
+  / \
+ 7   4
+示例 1:
 
-[3,9,20,15,7]
+输入: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
+输出: 3
+解释: 节点 5 和节点 1 的最近公共祖先是节点 3。
+示例 2:
+
+输入: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4
+输出: 5
+解释: 节点 5 和节点 4 的最近公共祖先是节点 5。因为根据定义最近公共祖先节点可以为节点本身。
 ```
 
-## 7 从上到下打印二叉树II
-剑指 Offer 32 - II
+## 5 检查子树   
+面试题 04.10. 检查子树   
 
-[力扣](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/) / [Python3](./python-algorithm/sword_point_offer/J32_2.py)      
+[力扣](https://leetcode-cn.com/problems/check-subtree-lcci/) / [Python3](./python-algorithm/interview_sets/04.10.py)      
 ```
-题目: 例如:
-给定二叉树: [3,9,20,null,null,15,7],
+检查子树。你有两棵非常大的二叉树：T1，有几万个节点；T2，有几万个节点。设计一个算法，判断 T2 是否为 T1 的子树。
+如果 T1 有这么一个节点 n，其子树与 T2 一模一样，则 T2 为 T1 的子树，也就是说，从节点 n 处把树砍断，得到的树与 T2 完全相同。
 
-    3
-   / \
-  9  20
-    /  \
-   15   7
-返回其层次遍历结果：
+示例1:
 
-[
-  [3],
-  [9,20],
-  [15,7]
-]
+ 输入：t1 = [1, 2, 3], t2 = [2]
+ 输出：true
+示例2:
+
+ 输入：t1 = [1, null, 2, 4], t2 = [3, 2]
+ 输出：false
 ```
 
-## 8 从上到下打印二叉树III
-剑指 Offer 32 - III
+## 6 Trie单词频率  
+面试题 16.02. 单词频率    
 
-[力扣](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/) / [Python3](./python-algorithm/sword_point_offer/J32_3.py)      
+[力扣](https://leetcode-cn.com/problems/words-frequency-lcci/) / [Python3](./python-algorithm/interview_sets/16.02.py)      
 ```
-题目:例如:
-给定二叉树: [3,9,20,null,null,15,7],
+设计一个方法，找出任意指定单词在一本书中的出现频率。
+你的实现应该支持如下操作：
 
-    3
-   / \
-  9  20
-    /  \
-   15   7
-返回其层次遍历结果：
+WordsFrequency(book)构造函数，参数为字符串数组构成的一本书
+get(word)查询指定单词在书中出现的频率
+示例：
 
-[
-  [3],
-  [20,9],
-  [15,7]
-]
+WordsFrequency wordsFrequency = new WordsFrequency({"i", "have", "an", "apple", "he", "have", "a", "pen"});
+wordsFrequency.get("you"); //返回0，"you"没有出现过
+wordsFrequency.get("have"); //返回2，"have"出现2次
+wordsFrequency.get("an"); //返回1
+wordsFrequency.get("apple"); //返回1
+wordsFrequency.get("pen"); //返回1
 ```
 
-## 9 重建二叉树
-剑指 Offer 07. 
+## 7 Trie多次搜索
+面试题 17.17. 多次搜索  
 
-[力扣](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) / [Python3](./python-algorithm/sword_point_offer/J07-m.py)      
+[力扣](https://leetcode-cn.com/problems/multi-search-lcci/) / [Python3](./python-algorithm/interview_sets/17.17.py)      
 ```
-题目:输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。
-例如，给出
-   前序遍历 preorder = [3,9,20,15,7]
-   中序遍历 inorder = [9,3,15,20,7]
-返回如下的二叉树：
-                3
-               / \
-              9  20
-                /  \
-               15   7
+给定一个较长字符串big和一个包含较短字符串的数组smalls，设计一个方法，根据smalls中的每一个较短字符串，
+对big进行搜索。输出smalls中的字符串在big里出现的所有位置positions，其中positions[i]为smalls[i]出现的所有位置。
+
+输入：
+big = "mississippi"
+smalls = ["is","ppi","hi","sis","i","ssippi"]
+输出： [[1,4],[8],[],[3],[1,4,7,10],[5]]
 ```
-
-## 10 序列化二叉树
-剑指 Offer 37.    
-
-[力扣](https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/) / [Python3](./python-algorithm/sword_point_offer/J37-h.py)      
-```
-题目: 请实现两个函数，分别用来序列化和反序列化二叉树。
-示例: 
-你可以将以下二叉树：
-          1
-         / \
-        2   3
-           / \
-          4   5
-序列化为 "[1,2,3,null,null,4,5]"
-```
-
-## 11 二叉树中和为某一值的路径
-剑指 Offer 34. 
-
-[力扣](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/) / [Python3](./python-algorithm/sword_point_offer/J34-m.py)      
-```
-示例:给定如下二叉树，以及目标和 sum = 22，
-              5
-             / \
-            4   8
-           /   / \
-          11  13  4
-         /  \    / \
-        7    2  5   1
-返回:
-         [
-            [5,4,11,2],
-            [5,8,4,5]
-         ]
-```
-
-## 12 二叉搜索树的第k大节点
-剑指 Offer 54. 
-
-[力扣](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J54.py)      
-```
-题目:给定一棵二叉搜索树，请找出其中第k大的节点。
-```
-
-## 13 二叉搜索树的最近公共祖先
-剑指 Offer 68 - I.   
-
-[力扣](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J68_1-m.py)      
-
-
-## 14 二叉树的最近公共祖先
-剑指 Offer 68 - II.  
-
-[力扣](https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J68_2-m.py)       
-
-
 
 # 链表相关
 ## 1 分割链表  
