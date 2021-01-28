@@ -33,10 +33,9 @@
     * [3. 环路检测](#3-环路检测)
   
 * [七、二分查找](#二分查找)
-    * [1. 二维数组中的查找](#1-二维数组中的查找)
-    * [2. 旋转数组的最小数字](#2-旋转数组的最小数字)
-    * [3. 在排序数组中查找数字I](#3-在排序数组中查找数字I)
-    * [4. 0到n-1中缺失的数字](#4-0到n-1中缺失的数字)
+    * [1. 搜索旋转数组](#1-搜索旋转数组)
+    * [2. 排序矩阵查找](#2-排序矩阵查找)
+
 
 * [八、动态规划](#动态规划)
     * [1. 剪绳子](#1-剪绳子)
@@ -376,26 +375,38 @@ x 的元素之后(如下所示)。分割元素 x 只需处于“右半部分”�
 
 
 # 二分查找
-## 1 二维数组中的查找   
-剑指 Offer 04.   
+## 1 搜索旋转数组    
+面试题 10.03. 搜索旋转数组   
 
-[力扣](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) / [Python3](./python-algorithm/sword_point_offer/J04-m.py) 
+[力扣](https://leetcode-cn.com/problems/search-rotate-array-lcci/) / [Python3](./python-algorithm/interview_sets/10.03.py) 
+```
+搜索旋转数组。给定一个排序后的数组，包含n个整数，但这个数组已被旋转过很多次了，次数不详。请编写代码找出数组中的某个元素，
+假设数组元素原先是按升序排列的。若有多个相同元素，返回索引值最小的一个。
 
-## 2 旋转数组的最小数字
-剑指 Offer 11. 
+示例1:
+ 输入: arr = [15, 16, 19, 20, 25, 1, 3, 4, 5, 7, 10, 14], target = 5
+ 输出: 8（元素5在该数组中的索引）
+```
 
-[力扣](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J11-m.py) 
+## 2 排序矩阵查找  
+面试题 10.09. 排序矩阵查找   
 
-## 3 在排序数组中查找数字I 
-剑指 Offer 53 - I.    
-   
-[力扣](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J53_1.py) 
+[力扣](https://leetcode-cn.com/problems/sorted-matrix-search-lcci/) / [Python3](./python-algorithm/interview_sets/10.09.py) 
+```
+给定M×N矩阵，每一行、每一列都按升序排列，请编写代码找出某元素。
 
-## 4 0到n-1中缺失的数字
-剑指 Offer 53 - II. 
-
-[力扣](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J53_2.py) 
-
+示例:
+现有矩阵 matrix 如下：
+      [
+        [1,   4,  7, 11, 15],
+        [2,   5,  8, 12, 19],
+        [3,   6,  9, 16, 22],
+        [10, 13, 14, 17, 24],
+        [18, 21, 23, 26, 30]
+      ]
+给定 target = 5，返回 true。
+给定 target = 20，返回 false。
+```
 
 # 动态规划
 ## 1 剪绳子
