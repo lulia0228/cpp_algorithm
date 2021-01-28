@@ -1,6 +1,6 @@
 <!-- GFM-TOC -->
 * [一、栈和队列](#栈和队列)
-    * [1. 用两个栈实现队列](#1-用两个栈实现队列)
+    * [1. 栈排序](#1-栈排序)
     * [2. 包含min函数的栈](#2-包含min函数的栈)
     * [3. 栈的压入弹出序列](#3-栈的压入弹出序列)
     * [4. 队列的最大值](#4-队列的最大值)   
@@ -68,10 +68,10 @@
 
 
 # 栈和队列
-## 1 用两个栈实现队列   
-剑指 Offer 09  
+## 1 栈排序  
+面试题 03.05. 栈排序
 
-[力扣](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) / [Python3](./python-algorithm/sword_point_offer/J09.py)    
+[力扣](https://leetcode-cn.com/problems/sort-of-stacks-lcci/) / [Python3](./python-algorithm/interview_sets/03.05.py)     
 
 ## 2 包含min函数的栈
 剑指 Offer 30    
