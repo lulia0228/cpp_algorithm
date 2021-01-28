@@ -409,70 +409,110 @@ x 的元素之后(如下所示)。分割元素 x 只需处于“右半部分”�
 ```
 
 # 动态规划
-## 1 剪绳子
-剑指 Offer 14- I. 
+## 1 一次编辑
+面试题 01.05. 一次编辑   
 
-[力扣](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J14-m.py) 
+[力扣](https://leetcode-cn.com/problems/one-away-lcci/) / [Python3](./python-algorithm/interview_sets/01.05.py) 
 ```
-题目: 给你一根长度为 n 的绳子，请把绳子剪成整数长度的 m 段（m、n都是整数，n>1并且m>1），每段绳子的长度记为 
-k[0],k[1]...k[m-1] 。请问 k[0]*k[1]*...*k[m-1]可能的最大乘积是多少？例如，当绳子的长度是8时，我们把它剪成
-长度分别为2、3、3的三段，此时得到的最大乘积是18。n>=2。
-```
+字符串有三种编辑操作:插入一个字符、删除一个字符或者替换一个字符。 给定两个字符串，编写一个函数判定它们是否只需要一次(或者零次)编辑。
 
-## 2 连续子数组的最大和
-剑指 Offer 42. 
-
-[力扣](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/) / [Python3](./python-algorithm/sword_point_offer/J42.py) 
-```
-题目: 输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。
-要求时间复杂度为O(n)。
-```
-
-## 3 礼物的最大价值
-剑指 Offer 47. 
-
-[力扣](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J47.py) 
-```
-示例 1:
 输入: 
-[
-  [1,3,1],
-  [1,5,1],
-  [4,2,1]
-]
-输出: 12
-解释: 路径 1→3→5→2→1 可以拿到最多价值的礼物
-
+      first = "pale"
+      second = "ple"
+输出:   True
 ```
 
-## 4 股票的最大利润
-剑指 Offer 63. 
+## 2 硬币   
+面试题 08.11. 硬币   
 
-[力扣](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/) / [Python3](./python-algorithm/sword_point_offer/J63.py) 
+[力扣](https://leetcode-cn.com/problems/coin-lcci/) / [Python3](./python-algorithm/interview_sets/08.11.py) 
 ```
-题目:假设把某股票的价格按照时间先后顺序存储在数组中，请问买卖该股票一次可能获得的最大利润是多少？
+硬币。给定数量不限的硬币，币值为25分、10分、5分和1分，编写代码计算n分有几种表示法。(结果可能会很大，你需要将结果模上1000000007)
+
+ 输入: n = 5
+ 输出：2
+ 解释: 有两种方式可以凑成总金额:
+         5=5
+         5=1+1+1+1+1
+```
+
+## 3 马戏团人塔   
+面试题 17.08. 马戏团人塔   
+
+[力扣](https://leetcode-cn.com/problems/circus-tower-lcci/) / [Python3](./python-algorithm/interview_sets/17.08.py) 
+```
+有个马戏团正在设计叠罗汉的表演节目，一个人要站在另一人的肩膀上。出于实际和美观的考虑，在上面的人要比下面的人矮一点且轻一点。
+已知马戏团每个人的身高和体重，请编写代码计算叠罗汉最多能叠几个人。
+
+示例：
+输入：height = [65,70,56,75,60,68] weight = [100,150,90,190,95,110]
+输出：6
+解释：从上往下数，叠罗汉最多能叠 6 层：(56,90), (60,95), (65,100), (68,110), (70,150), (75,190)
+```
+
+## 4 丑数
+面试题 17.09. 第 k 个数  
+
+[力扣](https://leetcode-cn.com/problems/get-kth-magic-number-lcci/) / [Python3](./python-algorithm/interview_sets/17.09.py) 
+```
+有些数的素因子只有 3，5，7，请设计一个算法找出第 k 个数。注意，不是必须有这些素因子，而是必须不包含其他的素因子。
+例如，前几个数按顺序应该是 1，3，5，7，9，15，21。
+
 示例 1:
-输入: [7,1,5,3,6,4]
-输出: 5
-解释: 在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。
-     注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格。
+输入: k = 5
+输出: 9
 ```
 
-## 5 n个骰子的点数
-剑指 Offer 60. 
+## 5 恢复空格  
+面试题 17.13. 恢复空格  
 
-[力扣](https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/) / [Python3](./python-algorithm/sword_point_offer/J60.py) 
+[力扣](https://leetcode-cn.com/problems/re-space-lcci/) / [Python3](./python-algorithm/interview_sets/17.13.py) 
 ```
-题目:把n个骰子扔在地上，所有骰子朝上一面的点数之和为s。输入n，打印出s的所有可能的值出现的概率。
-你需要用一个浮点数数组返回答案，其中第 i 个元素代表这 n 个骰子所能掷出的点数集合中第 i 小的那个的概率。
+哦，不！你不小心把一个长篇文章中的空格、标点都删掉了，并且大写也弄成了小写。像句子"I reset the computer. It still didn’t boot!"已经
+变成了"iresetthecomputeritstilldidntboot"。在处理标点符号和大小写之前，你得先把它断成词语。当然了，你有一本厚厚的词典dictionary，
+不过，有些词没在词典里。假设文章用sentence表示，设计一个算法，把文章断开，要求未识别的字符最少，返回未识别的字符数。
 
-示例 1:
-输入: 1
-输出: [0.16667,0.16667,0.16667,0.16667,0.16667,0.16667]
+注意：本题相对原题稍作改动，只需返回未识别的字符数
 
-示例 2:
-输入: 2
-输出: [0.02778,0.05556,0.08333,0.11111,0.13889,0.16667,0.13889,0.11111,0.08333,0.05556,0.02778]
+输入：
+dictionary = ["looked","just","like","her","brother"]
+sentence = "jesslookedjustliketimherbrother"
+输出： 7
+解释： 断句后为"jess looked just like tim her brother"，共7个未识别字符。
+```
+
+## 6 最长单词  
+面试题 17.15. 最长单词   
+
+[力扣](https://leetcode-cn.com/problems/longest-word-lcci/) / [Python3](./python-algorithm/interview_sets/17.15.py) 
+```
+给定一组单词words，编写一个程序，找出其中的最长单词，且该单词由这组单词中的其他单词组合而成。若有多个长度相同的结果，
+返回其中字典序最小的一项，若没有符合要求的单词则返回空字符串。
+
+输入： ["cat","banana","dog","nana","walk","walker","dogwalker"]
+输出： "dogwalker"
+解释： "dogwalker"可由"dog"和"walker"组成。
+```
+
+
+## 7 最大黑方阵 
+面试题 17.23. 最大黑方阵   
+
+[力扣](https://leetcode-cn.com/problems/max-black-square-lcci/) / [Python3](./python-algorithm/interview_sets/17.23.py) 
+```
+给定一个方阵，其中每个单元(像素)非黑即白。设计一个算法，找出 4 条边皆为黑色像素的最大子方阵。
+返回一个数组 [r, c, size] ，其中 r, c 分别代表子方阵左上角的行号和列号，size 是子方阵的边长。
+若有多个满足条件的子方阵，返回 r 最小的，若 r 相同，返回 c 最小的子方阵。
+若无满足条件的子方阵，返回空数组。
+
+输入:
+         [
+            [1,0,1],
+            [0,0,1],
+            [0,0,1]
+         ]
+输出: [1,0,2]
+解释: 输入中 0 代表黑色，1 代表白色，标粗的元素即为满足条件的最大子方阵
 ```
 
 
