@@ -549,35 +549,75 @@ sentence = "jesslookedjustliketimherbrother"
 ```
 
 # 图的遍历
-## 1 机器人的运动范围
-剑指 Offer 13. 
+## 1 节点间通路
+面试题 04.01. 节点间通路   
 
-[力扣](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) / [Python3](./python-algorithm/sword_point_offer/J13-m.py) 
+[力扣](https://leetcode-cn.com/problems/route-between-nodes-lcci/) / [Python3](./python-algorithm/interview_sets/04.01.py) 
 ```
-题目:地上有一个m行n列的方格，从坐标 [0,0] 到坐标 [m-1,n-1] 。一个机器人从坐标 [0, 0] 的格子开始移动，
-它每次可以向左、右、上、下移动一格（不能移动到方格外），也不能进入行坐标和列坐标的数位之和大于k的格子。
-例如，当k为18时，机器人能够进入方格 [35, 37] ，因为3+5+3+7=18。但它不能进入方格 [35, 38]，
-因为3+5+3+8=19。请问该机器人能够到达多少个格子？
+节点间通路。给定有向图，设计一个算法，找出两个节点之间是否存在一条路径。
 
-示例 1：
-      输入：m = 2, n = 3, k = 1
-      输出：3
+示例1:
+输入：n = 3, graph = [[0,1], [0,2], [1,2], [1,2]], start = 0, target=2
+输出：true
+示例2:
+输入：n = 5, graph = [[0,1], [0,2], [0,4], [0,4], [0,1], [1,3], [1,4], [1,3], [2,3], [3,4]], start=0, target=4
+输出 true
+
 ```
 
-## 2 矩阵中的路径
-剑指 Offer 12.   
+## 2 迷路的机器人
+面试题 08.02. 迷路的机器人   
 
-[力扣](https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J12-m.py) 
+[力扣](https://leetcode-cn.com/problems/robot-in-a-grid-lcci/) / [Python3](./python-algorithm/interview_sets/08.02.py) 
 ```
-题目:请设计一个函数，用来判断在一个矩阵中是否存在一条包含某字符串所有字符的路径。路径可以从矩阵中的任意一格开始，
-每一步可以在矩阵中向左、右、上、下移动一格。如果一条路径经过了矩阵的某一格，那么该路径不能再次进入该格子。
-例如，在下面的3×4的矩阵中包含一条字符串“bfce”的路径（路径中的字母用加粗标出）。
-               [["a","b","c","e"],
-               ["s","f","c","s"],
-               ["a","d","e","e"]]
-但矩阵中不包含字符串“abfb”的路径，因为字符串的第一个字符b占据了矩阵中的第一行第二个格子之后，路径不能再次进入这个格子。
+设想有个机器人坐在一个网格的左上角，网格 r 行 c 列。机器人只能向下或向右移动，但不能走到一些被禁止的网格（有障碍物）。
+设计一种算法，寻找机器人从左上角移动到右下角的路径。
 
-示例 1：
-            输入：board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
-            输出：true
+网格中的障碍物和空位置分别用 1 和 0 来表示。
+返回一条可行的路径，路径由经过的网格的行号和列号组成。左上角为 0 行 0 列。如果没有可行的路径，返回空数组。
+```
+
+## 3 水域大小
+面试题 16.19. 水域大小     
+
+[力扣](https://leetcode-cn.com/problems/pond-sizes-lcci/) / [Python3](./python-algorithm/interview_sets/16.19.py) 
+```
+你有一个用于表示一片土地的整数矩阵land，该矩阵中每个点的值代表对应地点的海拔高度。若值为0则表示水域。由垂直、水平或对角连接的水域为池塘。
+池塘的大小是指相连接的水域的个数。编写一个方法来计算矩阵中所有池塘的大小，返回值需要从小到大排序。
+
+输入：
+         [
+           [0,2,1,0],
+           [0,1,0,1],
+           [1,1,0,1],
+           [0,1,0,1]
+         ]
+输出：      [1,2,4]
+
+```
+
+
+## 4 单词转换
+面试题 17.22. 单词转换   
+
+[力扣](https://leetcode-cn.com/problems/word-transformer-lcci/) / [Python3](./python-algorithm/interview_sets/17.22.py) 
+```
+给定字典中的两个词，长度相等。写一个方法，把一个词转换成另一个词， 但是一次只能改变一个字符。每一步得到的新词都必须能在字典中找到。
+编写一个程序，返回一个可能的转换序列。如有多个可能的转换序列，你可以返回任何一个。
+
+示例 1:
+输入:
+beginWord = "hit",
+endWord = "cog",
+wordList = ["hot","dot","dog","lot","log","cog"]
+输出:
+["hit","hot","dot","lot","log","cog"]
+
+示例 2:
+输入:
+beginWord = "hit"
+endWord = "cog"
+wordList = ["hot","dot","dog","lot","log"]
+输出: []
+解释: endWord "cog" 不在字典中，所以不存在符合要求的转换序列。
 ```
