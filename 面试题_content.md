@@ -565,33 +565,40 @@ sentence = "jesslookedjustliketimherbrother"
 ```
 
 # 哈希
-## 1 数组中的逆序对
-剑指 Offer 51. 
+## 1 变位词组
+面试题 10.02. 变位词组  
 
-[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) / [Python3](./python-algorithm/sword_point_offer/J51-h.py) 
+[力扣](https://leetcode-cn.com/problems/group-anagrams-lcci/) / [Python3](./python-algorithm/interview_sets/10.02.py) 
 ```
-题目:在数组中的两个数字，如果前面一个数字大于后面的数字，则这两个数字组成一个逆序对。输入一个数组，求出这个数组中的逆序对的总数。
-示例 1:
-输入: [7,5,6,4]
-输出: 5
+编写一种方法，对字符串数组进行排序，将所有变位词组合在一起。变位词是指字母相同，但排列不同的字符串。
+注意：本题相对原题稍作修改
+
+输入: ["eat", "tea", "tan", "ate", "nat", "bat"],
+输出:
+         [
+           ["ate","eat","tea"],
+           ["nat","tan"],
+           ["bat"]
+         ]
+
 ```
 
-## 2 二叉搜索树的后序遍历序列
-剑指 Offer 33. 
+## 2 数字流的秩  
+面试题 10.10. 数字流的秩     
 
-[力扣](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) / [Python3](./python-algorithm/sword_point_offer/J33-m.py)  
+[力扣](https://leetcode-cn.com/problems/rank-from-stream-lcci/) / [Python3](./python-algorithm/interview_sets/10.10.py)  
 ```
-题目: 输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历结果。如果是则返回 true，
-否则返回 false。假设输入的数组的任意两个数字都互不相同。
-参考以下这颗二叉搜索树：
-           5
-          / \
-         2   6
-        / \
-       1   3
-示例 1：
-      输入: [1,6,3,2,5]
-      输出: false
+假设你正在读取一串整数。每隔一段时间，你希望能找出数字 x 的秩(小于或等于 x 的值的个数)。请实现数据结构和算法来支持这些操作，也就是说：
+实现 track(int x) 方法，每读入一个数字都会调用该方法；
+实现 getRankOfNumber(int x) 方法，返回小于或等于 x 的值的个数。
+注意：本题相对原题稍作改动
+
+输入:
+["StreamRank", "getRankOfNumber", "track", "getRankOfNumber"]
+[[], [1], [0], [0]]
+输出:
+[null,0,null,1]
+
 ```
 
 
