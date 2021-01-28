@@ -1,14 +1,9 @@
 <!-- GFM-TOC -->
 * [一、栈和队列](#栈和队列)
     * [1. 栈排序](#1-栈排序)
-    * [2. 包含min函数的栈](#2-包含min函数的栈)
-    * [3. 栈的压入弹出序列](#3-栈的压入弹出序列)
-    * [4. 队列的最大值](#4-队列的最大值)   
-    * [5. 滑动窗口的最大值](#5-滑动窗口的最大值)   
 
 * [二、滑动窗口](#滑动窗口)
-    * [1. 和为s的连续正数序列](#1-和为s的连续正数序列)
-    * [2. 最长不含重复字符的子字符串](#2-最长不含重复字符的子字符串)
+    * [1. 最短超串](#1-最短超串)  
    
 * [三、堆的应用](#堆的应用)
     * [1. 最小的k个数 ](#1-最小的k个数 )
@@ -72,83 +67,31 @@
 面试题 03.05. 栈排序
 
 [力扣](https://leetcode-cn.com/problems/sort-of-stacks-lcci/) / [Python3](./python-algorithm/interview_sets/03.05.py)     
-
-## 2 包含min函数的栈
-剑指 Offer 30    
-
-[力扣](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/) / [Python3](./python-algorithm/sword_point_offer/J30.py) 
 ```
-题目：定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的 min 函数在该栈中，调用 min、push 及 pop 的时间复杂度都是 O(1)。
-```
+栈排序。 编写程序，对栈进行排序使最小元素位于栈顶。最多只能使用一个其他的临时栈存放数据，但不得将元素复制到别的数据结构（如数组）中。
+该栈支持如下操作：push、pop、peek 和 isEmpty。当栈为空时，peek 返回 -1。
 
-## 3 栈的压入弹出序列    
-剑指 Offer 31  
+输入：
+["SortedStack", "push", "push", "peek", "pop", "peek"]
+[[], [1], [2], [], [], []]
+输出：
+[null,null,null,1,null,2]
 
-[力扣](https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/) / [Python3](./python-algorithm/sword_point_offer/J31.py)  
-```
-题目：输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否为该栈的弹出顺序。假设压入栈的所有数字均不相等。
-例如，序列 {1,2,3,4,5} 是某栈的压栈序列，序列 {4,5,3,2,1} 是该压栈序列对应的一个弹出序列，
-但 {4,3,5,1,2} 就不可能是该压栈序列的弹出序列。
-
-示例 1：
-输入：pushed = [1,2,3,4,5], popped = [4,5,3,2,1]
-输出：true
-解释：我们可以按以下顺序执行：
-push(1), push(2), push(3), push(4), pop() -> 4,
-push(5), pop() -> 5, pop() -> 3, pop() -> 2, pop() -> 1
-```
-
-## 4 队列的最大值    
-剑指 Offer 59  
-
-[力扣](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J59_2.py)    
-```
-题目：请定义一个队列并实现函数 max_value 得到队列里的最大值，要求函数max_value、push_back 和 pop_front 的均摊时间复杂度都是O(1)。
-```
-
-## 5 滑动窗口的最大值    
-剑指 Offer 59 - I. 
-
-[力扣](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J59_1.py)    
-```
-题目：给定一个数组 nums 和滑动窗口的大小 k，请找出所有滑动窗口里的最大值。
-输入: nums = [1,3,-1,-3,5,3,6,7], 和 k = 3
-输出: [3,3,5,5,6,7] 
 ```
 
 # 滑动窗口  
-## 1 和为s的连续正数序列
-剑指 Offer 57 - II. 
+## 1 最短超串
+面试题 17.18. 最短超串    
 
-[力扣](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/) / [Python3](./python-algorithm/sword_point_offer/J57_2.py) 
+[力扣](https://leetcode-cn.com/problems/shortest-supersequence-lcci/) / [Python3](./python-algorithm/interview_sets/17.18.py) 
 ```
-题目:输入一个正整数 target ，输出所有和为 target 的连续正整数序列（至少含有两个数）。
-序列内的数字由小到大排列，不同序列按照首个数字从小到大排列。
-
-示例 1：
-输入：target = 9
-输出：[[2,3,4],[4,5]]
-
-示例 2：
-输入：target = 15
-输出：[[1,2,3,4,5],[4,5,6],[7,8]]
-```
-
-## 2 最长不含重复字符的子字符串
-剑指 Offer 48. 
-
-[力扣](https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/) / [Python3](./python-algorithm/sword_point_offer/J48.py) 
-```
-题目:请从字符串中找出一个最长的不包含重复字符的子字符串，计算该最长子字符串的长度。
-示例 1:
-输入: "abcabcbb"
-输出: 3 
-解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
-
-示例 2:
-输入: "bbbbb"
-输出: 1
-解释: 因为无重复字符的最长子串是 "b"，所以其长度为 1。
+假设你有两个数组，一个长一个短，短的元素均不相同。找到长数组中包含短数组所有的元素的最短子数组，其出现顺序无关紧要。
+返回最短子数组的左端点和右端点，如有多个满足条件的子数组，返回左端点最小的一个。若不存在，返回空数组。
+示例 1:
+输入:
+big = [7,5,9,0,2,1,3,5,7,9,1,1,5,8,8,9,7]
+small = [1,5,9]
+输出: [7,10] 
 ```
 
 
