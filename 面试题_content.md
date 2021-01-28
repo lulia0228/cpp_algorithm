@@ -28,14 +28,10 @@
     * [14. 二叉树的最近公共祖先](#14-二叉树的最近公共祖先) 
 
 * [六、链表相关](#链表相关)
-    * [1. 从尾到头打印链表](#1-从尾到头打印链表)
-    * [2. 删除链表的节点](#2-删除链表的节点)
-    * [3. 链表中倒数第k个节点](#3-链表中倒数第k个节点)
-    * [4. 反转链表](#4-反转链表)
-    * [5. 两个链表的第一个公共节点](#5-两个链表的第一个公共节点)
-    * [6. 合并两个排序的链表](#6-合并两个排序的链表)
-    * [7. 二叉搜索树与双向链表](#7-二叉搜索树与双向链表)
-    
+    * [1. 分割链表](#1-分割链表)
+    * [2. 链表求和](#2-链表求和)
+    * [3. 环路检测](#3-环路检测)
+  
 * [七、二分查找](#二分查找)
     * [1. 二维数组中的查找](#1-二维数组中的查找)
     * [2. 旋转数组的最小数字](#2-旋转数组的最小数字)
@@ -62,7 +58,7 @@
 
 # 栈和队列
 ## 1 栈排序  
-面试题 03.05. 栈排序
+面试题 03.05. 栈排序 
 
 [力扣](https://leetcode-cn.com/problems/sort-of-stacks-lcci/) / [Python3](./python-algorithm/interview_sets/03.05.py)     
 ```
@@ -79,7 +75,7 @@
 
 # 滑动窗口  
 ## 1 最短超串
-面试题 17.18. 最短超串    
+面试题 17.18. 最短超串     
 
 [力扣](https://leetcode-cn.com/problems/shortest-supersequence-lcci/) / [Python3](./python-algorithm/interview_sets/17.18.py) 
 ```
@@ -95,7 +91,7 @@ small = [1,5,9]
 
 # 堆的应用   
 ## 1 最小的k个数  
-面试题 17.14. 最小K个数 
+面试题 17.14. 最小K个数    
 
 [力扣](https://leetcode-cn.com/problems/smallest-k-lcci/) / [Python3](./python-algorithm/interview_sets/17.14.py)     
 ```
@@ -109,7 +105,7 @@ small = [1,5,9]
 
 # 位运算
 ## 1 交换数字
-面试题 16.01. 交换数字         
+面试题 16.01. 交换数字          
 
 [力扣](https://leetcode-cn.com/problems/swap-numbers-lcci/) / [Python3](./python-algorithm/interview_sets/16.01.py)      
 ```
@@ -340,40 +336,43 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 
 
 # 链表相关
-## 1 从尾到头打印链表   
-剑指 Offer 06. 
+## 1 分割链表  
+面试题 02.04. 分割链表     
 
-[力扣](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/) / [Python3](./python-algorithm/sword_point_offer/J06.py) 
+[力扣](https://leetcode-cn.com/problems/partition-list-lcci/) / [Python3](./python-algorithm/interview_sets/02.04.py) 
+```
+编写程序以 x 为基准分割链表，使得所有小于 x 的节点排在大于或等于 x 的节点之前。如果链表中包含 x，x 只需出现在小于
+x 的元素之后(如下所示)。分割元素 x 只需处于“右半部分”即可，其不需要被置于左右两部分之间。
 
-## 2 删除链表的节点
-剑指 Offer 18.   
+示例:
+输入: head = 3->5->8->5->10->2->1, x = 5
+输出: 3->1->2->10->5->5->8
+```
 
-[力扣](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J18.py) 
+## 2 链表求和
+面试题 02.05. 链表求和     
 
-## 3 链表中倒数第k个节点 
-剑指 Offer 22. 
+[力扣](https://leetcode-cn.com/problems/sum-lists-lcci/) / [Python3](./python-algorithm/interview_sets/02.05.py) 
+```
+给定两个用链表表示的整数，每个节点包含一个数位。
+这些数位是反向存放的，也就是个位排在链表首部。
+编写函数对这两个整数求和，并用链表形式返回结果。
+
+示例：
+输入：(7 -> 1 -> 6) + (5 -> 9 -> 2)，即617 + 295
+输出：2 -> 1 -> 9，即912
+```
+
+## 3 环路检测
+面试题 02.08. 环路检测    
    
-[力扣](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J22.py) 
-
-## 4 反转链表
-剑指 Offer 24. 
-
-[力扣](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/) / [Python3](./python-algorithm/sword_point_offer/J24.py) 
-
-## 5 两个链表的第一个公共节点  
-剑指 Offer 52. 
-
-[力扣](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/) / [Python3](./python-algorithm/sword_point_offer/J52.py) 
-
-## 6 合并两个排序的链表
-剑指 Offer 25. 
-
-[力扣](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/) / [Python3](./python-algorithm/sword_point_offer/J25.py) 
-
-## 7 二叉搜索树与双向链表  
-剑指 Offer 36. 
-
-[力扣](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/) / [Python3](./python-algorithm/sword_point_offer/J36.py) 
+[力扣](https://leetcode-cn.com/problems/linked-list-cycle-lcci/) / [Python3](./python-algorithm/interview_sets/02.08.py) 
+```
+给定一个链表，如果它是有环链表，实现一个算法返回环路的开头节点。
+如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，我们使用整数 pos 
+来表示链表尾连接到链表中的位置（索引从 0 开始）。 如果 pos 是 -1，则在该链表中没有环。
+注意：pos 不作为参数进行传递，仅仅是为了标识链表的实际情况。
+```
 
 
 # 二分查找
