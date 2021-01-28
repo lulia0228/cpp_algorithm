@@ -111,7 +111,7 @@ small = [1,5,9]
 ## 1 交换数字
 面试题 16.01. 交换数字         
 
-[力扣](https://leetcode-cn.com/problems/swap-numbers-lcci/) / [Python3](./python-algorithm/sword_point_offer/16.01.py)      
+[力扣](https://leetcode-cn.com/problems/swap-numbers-lcci/) / [Python3](./python-algorithm/interview_sets/16.01.py)      
 ```
 编写一个函数，不用临时变量，直接交换numbers = [a, b]中a与b的值。
 
