@@ -9,9 +9,8 @@
     * [1. 最小的k个数 ](#1-最小的k个数 )  
 
 * [四、位运算](#位运算)
-    * [1. 二进制中1的个数](#1-二进制中1的个数)
-    * [2. 数组中出现次数超过一半的数字](#2-数组中出现次数超过一半的数字)
-    
+    * [1. 交换数字](#1-交换数字)
+ 
 * [五、树相关](#树相关)
     * [1. 二叉树的深度](#1-二叉树的深度)
     * [2. 平衡二叉树](#2-平衡二叉树)
@@ -107,38 +106,18 @@ small = [1,5,9]
 输出： [1,2,3,4]
 ```
 
-## 2 数据流中的中位数  
-剑指 Offer 41  
-
-[力扣](https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/) / [Python3](./python-algorithm/sword_point_offer/J41-h.py)    
-```
-题目：如何得到一个数据流中的中位数？如果从数据流中读出奇数个数值，那么中位数就是所有数值排序之后位于中间的数值。
-如果从数据流中读出偶数个数值，那么中位数就是所有数值排序之后中间两个数的平均值。
-例如，[2,3,4] 的中位数是 3
-[2,3] 的中位数是 (2 + 3) / 2 = 2.5
-
-设计一个支持以下两种操作的数据结构：
-void addNum(int num) - 从数据流中添加一个整数到数据结构中。
-double findMedian() - 返回目前所有元素的中位数。
-```
-
 
 # 位运算
-## 1 二进制中1的个数
-剑指 Offer 15         
+## 1 交换数字
+面试题 16.01. 交换数字         
 
-[力扣](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/) / [Python3](./python-algorithm/sword_point_offer/J15.py)      
+[力扣](https://leetcode-cn.com/problems/swap-numbers-lcci/) / [Python3](./python-algorithm/sword_point_offer/16.01.py)      
 ```
-题目: 输入一个整数（以二进制串形式），输出该数二进制表示中 1 的个数。
-```
+编写一个函数，不用临时变量，直接交换numbers = [a, b]中a与b的值。
 
-## 2 数组中出现次数超过一半的数字
-剑指 Offer 39      
-
-[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) / [Python3](./python-algorithm/sword_point_offer/J39.py)      
-```
-题目:数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。
-你可以假设数组是非空的，并且给定的数组总是存在多数元素。
+示例：
+输入: numbers = [1,2]
+输出: [2,1]
 ```
 
 
