@@ -47,8 +47,7 @@
     * [7. 最大黑方阵](#7-最大黑方阵)  
 
 * [九、前缀和思想](#前缀和思想)
-    * [1. 数组中的逆序对](#1-数组中的逆序对)
-    * [2. 二叉搜索树的后序遍历序列](#2-二叉搜索树的后序遍历序列)
+    * [1. 生存人数](#1-生存人数)
 
 * [十、哈希](#哈希)
     * [1. 变位词组](#1-变位词组)
@@ -57,8 +56,9 @@
     * [4. 数对和 ](#4-数对和 )
      
 * [十一、双指针](#双指针)
-    * [1. 数组中的逆序对](#1-数组中的逆序对)
-    * [2. 二叉搜索树的后序遍历序列](#2-二叉搜索树的后序遍历序列)
+    * [1. 最小差](#1-最小差)
+    * [2. 部分排序](#2-部分排序)
+    * [3. 单词距离](#3-单词距离)
     
 * [十二、图的遍历](#图的遍历)
     * [1. 节点间通路](#1-节点间通路)
@@ -537,34 +537,23 @@ sentence = "jesslookedjustliketimherbrother"
 
 
 # 前缀和思想
-## 1 数组中的逆序对
-剑指 Offer 51. 
+## 1 生存人数
+面试题 16.10. 生存人数  
 
-[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) / [Python3](./python-algorithm/sword_point_offer/J51-h.py) 
+[力扣](https://leetcode-cn.com/problems/living-people-lcci/) / [Python3](./python-algorithm/interview_sets/16.06.py) 
 ```
-题目:在数组中的两个数字，如果前面一个数字大于后面的数字，则这两个数字组成一个逆序对。输入一个数组，求出这个数组中的逆序对的总数。
-示例 1:
-输入: [7,5,6,4]
-输出: 5
+给定 N 个人的出生年份和死亡年份，第 i 个人的出生年份为 birth[i]，死亡年份为 death[i]，实现一个方法以计算生存人数最多的年份。
+你可以假设所有人都出生于 1900 年至 2000 年（含 1900 和 2000 ）之间。如果一个人在某一年的任意时期处于生存状态，
+那么他应该被纳入那一年的统计中。例如，生于 1908 年、死于 1909 年的人应当被列入 1908 年和 1909 年的计数。
+
+如果有多个年份生存人数相同且均为最大值，输出其中最小的年份。
+
+输入：
+         birth = {1900, 1901, 1950}
+         death = {1948, 1951, 2000}
+输出： 1901
 ```
 
-## 2 二叉搜索树的后序遍历序列
-剑指 Offer 33. 
-
-[力扣](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) / [Python3](./python-algorithm/sword_point_offer/J33-m.py)  
-```
-题目: 输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历结果。如果是则返回 true，
-否则返回 false。假设输入的数组的任意两个数字都互不相同。
-参考以下这颗二叉搜索树：
-           5
-          / \
-         2   6
-        / \
-       1   3
-示例 1：
-      输入: [1,6,3,2,5]
-      输出: false
-```
 
 # 哈希
 ## 1 变位词组
@@ -637,33 +626,41 @@ sentence = "jesslookedjustliketimherbrother"
 
 
 # 双指针
-## 1 数组中的逆序对
-剑指 Offer 51. 
+## 1 最小差
+面试题 16.06. 最小差  
 
-[力扣](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) / [Python3](./python-algorithm/sword_point_offer/J51-h.py) 
+[力扣](https://leetcode-cn.com/problems/smallest-difference-lcci/) / [Python3](./python-algorithm/interview_sets/16.06.py) 
 ```
-题目:在数组中的两个数字，如果前面一个数字大于后面的数字，则这两个数字组成一个逆序对。输入一个数组，求出这个数组中的逆序对的总数。
-示例 1:
-输入: [7,5,6,4]
-输出: 5
+给定两个整数数组a和b，计算具有最小差绝对值的一对数值（每个数组中取一个值），并返回该对数值的差
+
+输入：{1, 3, 15, 11, 2}, {23, 127, 235, 19, 8}
+输出：3，即数值对(11, 8)
 ```
 
-## 2 二叉搜索树的后序遍历序列
-剑指 Offer 33. 
+## 2 部分排序
+面试题 16.16. 部分排序  
 
-[力扣](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) / [Python3](./python-algorithm/sword_point_offer/J33-m.py)  
+[力扣](https://leetcode-cn.com/problems/sub-sort-lcci/) / [Python3](./python-algorithm/interview_sets/16.16.py)  
 ```
-题目: 输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历结果。如果是则返回 true，
-否则返回 false。假设输入的数组的任意两个数字都互不相同。
-参考以下这颗二叉搜索树：
-           5
-          / \
-         2   6
-        / \
-       1   3
-示例 1：
-      输入: [1,6,3,2,5]
-      输出: false
+给定一个整数数组，编写一个函数，找出索引m和n，只要将索引区间[m,n]的元素排好序，整个数组就是有序的。
+注意：n-m尽量最小，也就是说，找出符合条件的最短序列。函数返回值为[m,n]，若不存在这样的m和n
+例如整个数组是有序的），请返回[-1,-1]。
+
+输入： [1,2,4,7,10,11,7,12,6,7,16,18,19]
+输出： [3,9]
+```
+
+
+## 3 单词距离  
+面试题 17.11. 单词距离   
+
+[力扣](https://leetcode-cn.com/problems/find-closest-lcci/ / [Python3](./python-algorithm/interview_sets/17.11.py)  
+```
+有个内含单词的超大文本文件，给定任意两个单词，找出在这个文件中这两个单词的最短距离(相隔单词数)。
+如果寻找过程在这个文件中会重复多次，而每次寻找的单词不同，你能对此优化吗?
+
+输入：words = ["I","am","a","student","from","a","university","in","a","city"], word1 = "a", word2 = "student"
+输出：1
 ```
 
 # 图的遍历
