@@ -1,4 +1,5 @@
 #--coding:utf-8--
+
 class Solution:
     def swapNumbers(self, numbers: List[int]) -> List[int]:
         # 利用a^b^a=b
