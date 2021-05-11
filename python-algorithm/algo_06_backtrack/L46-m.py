@@ -6,6 +6,7 @@ class Solution:
         self.res = []
         self.flag = []
 
+
     def permute(self, nums: List[int]) -> List[List[int]]:
         if nums == []:
             return self.res
