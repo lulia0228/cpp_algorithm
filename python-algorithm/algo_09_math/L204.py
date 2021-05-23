@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-
-
 # 超时
 class Solution:
     def countPrimes(self, n: int) -> int:
