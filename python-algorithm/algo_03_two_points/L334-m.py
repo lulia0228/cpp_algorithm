@@ -1,6 +1,8 @@
 #--coding:utf-8--
 
 
+# 算贪心算法
+
 class Solution:
     def increasingTriplet(self, nums: List[int]) -> bool:
         sz = len(nums)

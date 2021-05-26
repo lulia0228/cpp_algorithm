@@ -1,7 +1,6 @@
 #--coding:utf-8--
 
 
-
 class Solution:
     def shortestPathBinaryMatrix(self, grid: List[List[int]]) -> int:
         m = len(grid)

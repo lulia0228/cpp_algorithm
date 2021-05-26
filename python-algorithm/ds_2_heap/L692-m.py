@@ -2,6 +2,7 @@
 
 # 因为python heapq不支持自定义比较函数，
 # 这道题需要多个条件比较堆中元素，因此放弃使用堆，直接排序了
+
 class Solution:
     def topKFrequent(self, words: List[str], k: int) -> List[str]:
         d = {}

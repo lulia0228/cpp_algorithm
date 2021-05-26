@@ -1,4 +1,5 @@
 #--coding:utf-8--
+
 # 超大数组
 class MyHashMap(object):
 
