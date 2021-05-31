@@ -40,11 +40,6 @@
     * [2. 部分排序](#2-部分排序)
     * [3. 单词距离](#3-单词距离)
     
-* [十二、图的遍历](#图的遍历)
-    * [1. 节点间通路](#1-节点间通路)
-    * [2. 迷路的机器人](#2-迷路的机器人)
-    * [3. 水域大小](#3-水域大小)
-    * [4. 单词转换](#4-单词转换)
 
 <!-- GFM-TOC -->
 
@@ -512,76 +507,3 @@ sentence = "jesslookedjustliketimherbrother"
 输出：1
 ```
 
-# 图的遍历
-## 1 节点间通路
-面试题 04.01. 节点间通路   
-
-[力扣](https://leetcode-cn.com/problems/route-between-nodes-lcci/) / [Python3](./python-algorithm/interview_sets/04.01.py) 
-```
-节点间通路。给定有向图，设计一个算法，找出两个节点之间是否存在一条路径。
-
-示例1:
-输入：n = 3, graph = [[0,1], [0,2], [1,2], [1,2]], start = 0, target=2
-输出：true
-示例2:
-输入：n = 5, graph = [[0,1], [0,2], [0,4], [0,4], [0,1], [1,3], [1,4], [1,3], [2,3], [3,4]], start=0, target=4
-输出 true
-
-```
-
-## 2 迷路的机器人
-面试题 08.02. 迷路的机器人   
-
-[力扣](https://leetcode-cn.com/problems/robot-in-a-grid-lcci/) / [Python3](./python-algorithm/interview_sets/08.02.py) 
-```
-设想有个机器人坐在一个网格的左上角，网格 r 行 c 列。机器人只能向下或向右移动，但不能走到一些被禁止的网格（有障碍物）。
-设计一种算法，寻找机器人从左上角移动到右下角的路径。
-
-网格中的障碍物和空位置分别用 1 和 0 来表示。
-返回一条可行的路径，路径由经过的网格的行号和列号组成。左上角为 0 行 0 列。如果没有可行的路径，返回空数组。
-```
-
-## 3 水域大小
-面试题 16.19. 水域大小     
-
-[力扣](https://leetcode-cn.com/problems/pond-sizes-lcci/) / [Python3](./python-algorithm/interview_sets/16.19.py) 
-```
-你有一个用于表示一片土地的整数矩阵land，该矩阵中每个点的值代表对应地点的海拔高度。若值为0则表示水域。由垂直、水平或对角连接的水域为池塘。
-池塘的大小是指相连接的水域的个数。编写一个方法来计算矩阵中所有池塘的大小，返回值需要从小到大排序。
-
-输入：
-         [
-           [0,2,1,0],
-           [0,1,0,1],
-           [1,1,0,1],
-           [0,1,0,1]
-         ]
-输出：      [1,2,4]
-
-```
-
-
-## 4 单词转换
-面试题 17.22. 单词转换   
-
-[力扣](https://leetcode-cn.com/problems/word-transformer-lcci/) / [Python3](./python-algorithm/interview_sets/17.22.py) 
-```
-给定字典中的两个词，长度相等。写一个方法，把一个词转换成另一个词， 但是一次只能改变一个字符。每一步得到的新词都必须能在字典中找到。
-编写一个程序，返回一个可能的转换序列。如有多个可能的转换序列，你可以返回任何一个。
-
-示例 1:
-输入:
-beginWord = "hit",
-endWord = "cog",
-wordList = ["hot","dot","dog","lot","log","cog"]
-输出:
-["hit","hot","dot","lot","log","cog"]
-
-示例 2:
-输入:
-beginWord = "hit"
-endWord = "cog"
-wordList = ["hot","dot","dog","lot","log"]
-输出: []
-解释: endWord "cog" 不在字典中，所以不存在符合要求的转换序列。
-```
