@@ -1,4 +1,5 @@
 #--coding:utf-8--
+
 class Solution:
     def wiggleSort(self, nums: List[int]) -> None:
         """
@@ -13,3 +14,4 @@ class Solution:
             for i in range(0, len(nums)-1, 2):
                 nums[i], nums[i+1] = nums[i+1], nums[i]
 
+# 可以双指针
