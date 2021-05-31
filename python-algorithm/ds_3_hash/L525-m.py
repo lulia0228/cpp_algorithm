@@ -1,6 +1,7 @@
 #--coding:utf-8--
 
 # 前缀和+哈希思想
+
 class Solution:
     def findMaxLength(self, nums: List[int]) -> int:
         dic = {0:-1}
