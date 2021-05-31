@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+# 此题有多种解法； 注意看题解
 
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:

@@ -1,4 +1,6 @@
 #--coding:utf-8--
+
+# 字符串相加
 class Solution:
     def addStrings(self, num1: str, num2: str) -> str:
         sz1, sz2 = len(num1), len(num2)
