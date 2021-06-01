@@ -1,5 +1,5 @@
 #--coding:utf-8--
-
+# 奇数偶数位置各维护一个指针
 class Solution:
     def sortArrayByParityII(self, nums: List[int]) -> List[int]:
         sz = len(nums)
