@@ -17,3 +17,12 @@ class Solution:
                 else:
                     rt = mid - 1
         return nums[lt]
+
+
+
+class Solution:
+    def singleNonDuplicate(self, nums: List[int]) -> int:
+        res = 0
+        for i in nums:
+            res = res^i
+        return res

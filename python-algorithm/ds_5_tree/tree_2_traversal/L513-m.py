@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 
+# 给定一个二叉树，在树的最后一行找到最左边的值。
 
 class Solution:
+
     def findBottomLeftValue(self, root: TreeNode) -> int:
         res = root.val
         que = []

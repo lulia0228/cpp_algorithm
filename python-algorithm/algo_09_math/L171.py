@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+# 26进制
 
 class Solution:
     def titleToNumber(self, s: str) -> int:

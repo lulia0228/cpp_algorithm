@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 
-
 class Solution:
     def countSubstrings(self, s: str) -> int:
         res = 0

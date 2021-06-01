@@ -1,5 +1,7 @@
 #--coding:utf-8--
 
+# 同440
+
 # 10叉树先序遍历
 class Solution:
     def lexicalOrder(self, n: int) -> List[int]:
