@@ -17,3 +17,5 @@ class Solution:
             pre = root.val
             root = root.right
         return min_abs
+
+# 同783
