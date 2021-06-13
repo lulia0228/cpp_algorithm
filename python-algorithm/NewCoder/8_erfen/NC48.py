@@ -7,6 +7,10 @@
 # @return int整型
 #
 
+# 注意也可以和nums[0]比较来判断 target和mid在左子数组还是右子数组中
+# 这里选择和nums[-1]比较
+# 本题同lc33 lc81（升级版本）
+
 class Solution:
     def search(self, nums, target):
         # write code here
