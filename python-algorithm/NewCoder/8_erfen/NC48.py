@@ -11,6 +11,7 @@
 # 这里选择和nums[-1]比较
 # 本题同lc33 lc81（升级版本）
 
+
 class Solution:
     def search(self, nums, target):
         # write code here
