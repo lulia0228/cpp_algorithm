@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # 克鲁斯卡尔算法(Kruskal算法)求最小生成树
+
 from queue import PriorityQueue
 class Solution:
     def miniSpanningTree(self, n, m, cost: list):
