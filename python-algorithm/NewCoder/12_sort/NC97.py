@@ -10,4 +10,3 @@ class Solution:
         r = sorted(r_d.items(), key = lambda x: (-x[1], x[0]))
         return r[:n]
 
-    
