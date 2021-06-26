@@ -3,8 +3,8 @@
 比较难的专题： 回溯、图(BFS/DFS)、树等问题具有共同点，可以从多叉树多层结构去理解 。回溯本质上也是一种DFS，有时候可以画出树状图来更好理解。
 # 数据结构
 
-- [栈和队列（11）](./leetcode_content/栈和队列.md)
-- [堆（4）](./leetcode_content/堆.md)
+- [栈和队列（32）](./leetcode_content/栈和队列.md)
+- [堆（7）](./leetcode_content/堆.md)
 - [链表（33）](./leetcode_content/链表.md)
 - [树（48）](./leetcode_content/树.md)
 - [数组原地（12）](./leetcode_content/数组原地.md)
