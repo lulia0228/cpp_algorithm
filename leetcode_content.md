@@ -5,7 +5,7 @@
 
 - [栈和队列（11）](./leetcode_content/栈和队列.md)
 - [堆（4）](./leetcode_content/堆.md)
-- [链表（21）](./leetcode_content/链表.md)
+- [链表（33）](./leetcode_content/链表.md)
 - [树（48）](./leetcode_content/树.md)
 - [数组原地（12）](./leetcode_content/数组原地.md)
 - [字符串（8）](./leetcode_content/字符串.md)
