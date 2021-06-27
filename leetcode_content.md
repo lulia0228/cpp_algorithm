@@ -7,7 +7,7 @@
 - [堆（7）](./leetcode_content/堆.md)
 - [链表（33）](./leetcode_content/链表.md)
 - [树（77）](./leetcode_content/树.md)
-- [哈希（19）](./leetcode_content/哈希表.md)
+- [哈希（25）](./leetcode_content/哈希表.md)
 - [数组原地（12）](./leetcode_content/数组原地.md)
 - [字符串（17）](./leetcode_content/字符串.md)
 - [矩阵（6）](./leetcode_content/二维矩阵.md)
