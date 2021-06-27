@@ -16,10 +16,10 @@
 
 # 算法思想
 
-- [排序（8）](./leetcode_content/排序.md)
 - [滑动窗口（8）](./leetcode_content/滑动窗口.md)
 - [双指针（21）](./leetcode_content/双指针.md)
 - [二分法（12）](./leetcode_content/二分法.md)
+- [排序（8）](./leetcode_content/排序.md)
 - [动态规划（41）](./leetcode_content/动态规划.md)
 - [前缀和思想（5）](./leetcode_content/前缀和.md)
 - [回溯（17）](./leetcode_content/回溯.md)
