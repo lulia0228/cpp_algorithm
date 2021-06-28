@@ -24,4 +24,4 @@
 - [图的遍历（26）](./leetcode_content/图的遍历.md)
 - [动态规划（41）](./leetcode_content/动态规划.md)
 - [数学（13）](./leetcode_content/数学.md)
-- [贪心（11）](./leetcode_content/贪心.md)
+- [贪心（24）](./leetcode_content/贪心.md)
