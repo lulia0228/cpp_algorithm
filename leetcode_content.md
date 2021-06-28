@@ -21,7 +21,7 @@
 - [二分法（23）](./leetcode_content/二分法.md)
 - [排序（22）](./leetcode_content/排序.md)
 - [动态规划（41）](./leetcode_content/动态规划.md)
-- [前缀和思想（5）](./leetcode_content/前缀和.md)
+- [前缀和（5）](./leetcode_content/前缀和.md)
 - [回溯（17）](./leetcode_content/回溯.md)
 - [分治（3）](./leetcode_content/分治.md)
 - [图的遍历（14）](./leetcode_content/图的遍历.md)
