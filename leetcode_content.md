@@ -23,7 +23,6 @@
 - [动态规划（41）](./leetcode_content/动态规划.md)
 - [前缀和（11）](./leetcode_content/前缀和.md)
 - [回溯（17）](./leetcode_content/回溯.md)
-- [分治（3）](./leetcode_content/分治.md)
 - [图的遍历（14）](./leetcode_content/图的遍历.md)
 - [数学（13）](./leetcode_content/数学.md)
 - [贪心（11）](./leetcode_content/贪心.md)
