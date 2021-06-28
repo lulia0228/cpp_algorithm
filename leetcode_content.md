@@ -23,7 +23,7 @@
 - [排序（22）](./leetcode_content/排序.md)
 - [前缀和（11）](./leetcode_content/前缀和.md)
 - [回溯（20）](./leetcode_content/回溯.md)
-- [图的遍历（14）](./leetcode_content/图的遍历.md)
+- [图的遍历（26）](./leetcode_content/图的遍历.md)
 - [动态规划（41）](./leetcode_content/动态规划.md)
 - [数学（13）](./leetcode_content/数学.md)
 - [贪心（11）](./leetcode_content/贪心.md)
