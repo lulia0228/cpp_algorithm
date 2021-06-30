@@ -9,7 +9,7 @@ class Solution:
     def reverseKGroup(self, head: ListNode, k: int) -> ListNode:
         # nextHead指向链表中除去k个节点之后的头节点
         # 初始指向节点head
-        nextHead = head;
+        nextHead = head
         # // 链表中剩余节点个数
         remainNum = 0;
         while remainNum < k:
