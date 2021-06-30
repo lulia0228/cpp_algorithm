@@ -2,7 +2,7 @@
 
 # 数据结构
 
-- [栈和队列（32）](./leetcode_content/栈和队列.md)
+- [栈和队列（34）](./leetcode_content/栈和队列.md)
 - [堆（7）](./leetcode_content/堆.md)
 - [链表（33）](./leetcode_content/链表.md)
 - [树（77）](./leetcode_content/树.md)
@@ -22,6 +22,6 @@
 - [前缀和（11）](./leetcode_content/前缀和.md)
 - [回溯（21）](./leetcode_content/回溯.md)
 - [图的遍历（26）](./leetcode_content/图的遍历.md)
-- [动态规划（74）](./leetcode_content/动态规划.md)
+- [动态规划（75）](./leetcode_content/动态规划.md)
 - [数学（22）](./leetcode_content/数学.md)
 - [贪心（24）](./leetcode_content/贪心.md)
