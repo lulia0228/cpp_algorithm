@@ -11,3 +11,28 @@ class Solution:
                     # 两种情况，用i-1个数划分成j-1份 ； 用i-j个数划分成j份
                     dp[i][j] = dp[i-1][j-1] + dp[i-j][j]
         return dp[n][k]
+
+
+# 回溯会超时
+class Solution1:
+    def divideNumber(self , n , k ):
+        # write code here
+        self.res = 0
+        self.r_c = []
+        def dfs(idx, cnt, num, tmp):
+            if cnt == 0:
+                if num == 0:
+                    self.res += 1
+                    self.r_c.append(tmp[:])
+                return
+            for i in range(idx, num+1):
+                tmp.append(i)
+                dfs(i, cnt-1, num-i, tmp)
+                tmp.pop()
+        dfs(1, k, n, [])
+        return self.res
+
+n, k = 7,  3
+n, k = 200,  5
+res = Solution1().divideNumber(n,k)
+print(res)
