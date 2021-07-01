@@ -4,27 +4,21 @@
 # 滑动窗口  模板化
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        if len(s) < 2:
-            return len(s)
-        record = {}
-        # 用python需要提前初始化字典
-        for char in s:
-            record[char] = 0
-        lt,rt = 0,0
-        res = 1
-        while rt < len(s):
-            c = s[rt]
-            # 进行窗口内数据的一系列更新
-            record[c] += 1
-            # 判断左侧窗口是否要收缩
-            while record[c] > 1:
-                d = s[lt]
-                lt += 1
-                # 进行窗口内数据的一系列更新
-                record[d] -= 1
-            res = max(res, rt-lt+1)
-            rt += 1
-        return res
+        r_d = {}
+        i, j = 0, 0
+        ans = 0
+        while j < len(s):
+            if s[j] not in r_d:
+                r_d[s[j]] = 1
+            else:
+                r_d[s[j]] += 1
+            while r_d[s[j]] > 1:
+                if s[i] in r_d:
+                    r_d[s[i]] -= 1
+                i += 1
+            ans = max(ans, j - i + 1)
+            j += 1
+        return ans
 
 
 # 双指针
