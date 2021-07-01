@@ -1,35 +1,34 @@
 #--coding:utf-8--
 
 
-
+# 注意两处去重
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        nums.sort()
-        print(nums)
-        sz = len(nums)
         res = []
-        if sz < 3 or nums[0] > 0 or nums[sz - 1] < 0:
-            return []
-        for i in range(sz):
-            # 去掉以相同值开始的重复情况
-            if i > 0 and nums[i] == nums[i - 1]:
-                continue
-            lt, rt = i + 1, sz - 1
-            while lt < rt:
-                s = nums[i] + nums[lt] + nums[rt]
-                if s > 0:
-                    rt -= 1
-                elif s < 0:
-                    lt += 1
-                else:
+        if len(nums) < 3: return res
+        nums.sort()
+        for i in range(len(nums)-2):
+            if nums[i] > 0: break
+            # 第一处去重，防止起始值重复
+            if i>0 and nums[i] == nums[i-1]: continue
+            lt, rt = i+1, len(nums)-1
+            while lt<rt:
+                tmp = nums[lt]+nums[rt]
+                if tmp == -nums[i]:
                     res.append([nums[i], nums[lt], nums[rt]])
-                    # 去除双指针区间内的重复情况
-                    while lt < rt and nums[lt + 1] == nums[lt]:
-                        lt += 1
-                    # attention: lt<rt 条件应该放在and之前 防止索引取值越界错误
-                    while lt < rt and nums[rt - 1] == nums[rt]:
-                        rt -= 1
                     lt += 1
                     rt -= 1
+                    # 第二处去重，防止第2，3个数组合重复
+                    while lt < rt and nums[lt]==nums[lt-1]:
+                        lt += 1
+                    while lt < rt and nums[rt]==nums[rt+1]:
+                        rt-=1
+                elif tmp > -nums[i]:
+                    rt -= 1
+                else:
+                    lt += 1
         return res
+
+
+
 
