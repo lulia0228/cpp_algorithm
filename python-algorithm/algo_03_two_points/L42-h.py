@@ -1,8 +1,49 @@
 #--coding:utf-8--
 
+# 单调栈
+# O(n) O(n)
+class Solution:
+    def trap(self, height: List[int]) -> int:
+        ans = 0
+        stack = list()
+        n = len(height)
 
-# 宽度为1，以每个柱子上可以装的水作为计算单元，只需知道它的左右两侧分别最高值，和二者中的较小值差值即为所求
+        for i, h in enumerate(height):
+            while stack and height[stack[-1]] < h:
+                top = stack.pop()
+                if not stack:
+                    break
+                left = stack[-1]
+                currWidth = i - left - 1
+                currHeight = min(height[left], height[i]) - height[top]
+                ans += currWidth * currHeight
+            stack.append(i)
 
+        return ans
+
+
+# 计算并存储每个位置两边的最大高度
+# O(n) O(n)
+class Solution:
+    def trap(self, height: List[int]) -> int:
+        if not height:
+            return 0
+
+        n = len(height)
+        leftMax = [height[0]] + [0] * (n - 1)
+        for i in range(1, n):
+            leftMax[i] = max(leftMax[i - 1], height[i])
+
+        rightMax = [0] * (n - 1) + [height[n - 1]]
+        for i in range(n - 2, -1, -1):
+            rightMax[i] = max(rightMax[i + 1], height[i])
+
+        ans = sum(min(leftMax[i], rightMax[i]) - height[i] for i in range(n))
+        return ans
+
+
+# 升级
+# O(n) O(1)
 class Solution:
     def trap(self, height: List[int]) -> int:
         sz = len(height)

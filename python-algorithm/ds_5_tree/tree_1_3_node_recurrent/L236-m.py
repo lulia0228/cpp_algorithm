@@ -11,17 +11,21 @@
 #         	如果左右子树其中一个不为空，则返回非空节点。
 
 
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        if root == None or root == p or root == q:
+        if root == p or root==q or root == None:
             return root
-        # 遍历根节点的左子树
-        left = self.lowestCommonAncestor(root.left, p, q)
-        # 遍历根节点的右子树
-        right = self.lowestCommonAncestor(root.right, p, q)
-        if left and right:
+        lt = self.lowestCommonAncestor(root.left, p, q)
+        rt = self.lowestCommonAncestor(root.right, p, q)
+        if lt!=None and rt!=None:
             return root
-        if left == None:
-            return right
-        if right == None:
-            return left
+        if lt!=None:
+            return lt
+        if rt!=None:
+            return rt

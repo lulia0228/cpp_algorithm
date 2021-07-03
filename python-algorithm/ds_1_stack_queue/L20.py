@@ -6,19 +6,22 @@ class Solution:
     def isValid(self, s: str) -> bool:
         stk = []
         for c in s:
-            if c in ['(', '[', '{' ]:
+            if c not in [")", "]", "}"]:
                 stk.append(c)
             else:
-                if c == ')':
-                    match = '('
-                elif c == ']':
-                    match = '['
-                elif c == '}':
-                    match = '{'
-                # 容易漏掉stk==[]的判断条件
-                if stk == [] or stk.pop(-1) != match:
-                    return False
-        # 如果栈中还有值，字符串也不合法
-        if stk:
+                # 栈内无匹配
+                if stk == []: return False
+                pi = stk.pop()
+                if c == ")":
+                    if pi != "(":
+                        return False
+                elif c == "]":
+                    if pi != "[":
+                        return False
+                elif c == "}":
+                    if pi != "{":
+                        return False
+        # 栈内有多余
+        if stk != []:
             return False
         return True

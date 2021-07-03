@@ -1,7 +1,7 @@
 #--coding:utf-8--
 
 
-# back cur front 分别表示上一个节点 当前节点 下一个节点
+# back cur fut 分别表示上一个节点 当前节点 下一个节点
 
 # Definition for singly-linked list.
 class ListNode:
@@ -9,24 +9,31 @@ class ListNode:
         self.val = x
         self.next = None
 
+
 class Solution:
-    def reverseBetween(self, head: ListNode, m: int, n: int) -> ListNode:
-        dummy = ListNode(-1)
+    def reverseBetween(self, head: ListNode, left: int, right: int) -> ListNode:
+        dummy = ListNode(0)
         dummy.next = head
+        break_point = dummy
         cur = dummy
-        start = 0
-        while start < m:
-            point1 = cur # 记反转位置上一个节点
+        cnt = 0
+        while cnt < left:
+            break_point = cur  # 标记反转起始位置上一个点
             cur = cur.next
-            start += 1
-        point2 = cur # 标记反转位置
-        back = None
-        while start <= n:
-            front = cur.next
+            cnt += 1
+
+        old_start = cur        # 标记反转起始位置
+        back = fut = None
+        while cnt <= right:
+            fut = cur.next
             cur.next = back
             back = cur
-            cur = front
-            start += 1
-        point1.next = back
-        point2.next = front
+            cur = fut
+            cnt += 1
+
+        break_point.next = back
+        old_start.next = fut
+
         return dummy.next
+
+

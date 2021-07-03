@@ -1,30 +1,25 @@
 #--coding:utf-8--
 
-
 class Solution:
-    def __init__(self, **kwargs):
-        self.res = []
-        self.flag = []
-
-
     def permute(self, nums: List[int]) -> List[List[int]]:
-        if nums == []:
-            return self.res
-        self.flag = [False for i in range(len(nums))]
-        self.dfs(nums, 0, [])
-        return self.res
+        res = []
+        visit = [False] * len(nums)
+        self.dfs(nums, visit, [], res)
+        return res
 
-    def dfs(self, candinates, idx, cur_ls):
-        if idx == len(candinates):
-            self.res.append(cur_ls[:])
+    def dfs(self, nums, visit, tmp, res):
+        if len(tmp) == len(nums):
+            res.append(tmp[:])
             return
-        for i in range(len(candinates)):
-            if not self.flag[i]:
-                cur_ls.append(candinates[i])
-                self.flag[i] = True
-                self.dfs(candinates, idx + 1, cur_ls)
-                cur_ls.pop()
-                self.flag[i] = False
+        for i in range(len(nums)):
+            if not visit[i]:
+                visit[i] = True
+                tmp.append(nums[i])
+                self.dfs(nums, visit, tmp, res)
+                visit[i] = False
+                tmp.pop()
+
+
 
 
 

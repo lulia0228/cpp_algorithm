@@ -19,16 +19,17 @@ class Solution:
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         res = []
-        if not root:
-            return res
+        if root == None: return res
+        tmp = root
         stk = []
-        while stk!= [] or root != None:
-            while root:
-                stk.append(root)
-                root = root.left
-            root = stk.pop(-1)
-            res.append(root.val)
-            root = root.right
+        while stk or tmp:
+            while tmp:
+                # 下面2句顺序不要弄反
+                stk.append(tmp)
+                tmp = tmp.left
+            tmp = stk.pop()
+            res.append(tmp.val)
+            tmp = tmp.right
         return res
 
 # 前、中、后序遍历的栈迭代通用写法

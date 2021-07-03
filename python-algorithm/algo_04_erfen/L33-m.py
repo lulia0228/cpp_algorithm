@@ -5,30 +5,32 @@
 
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        lt, rt = 0, len(nums)-1
-        while lt <= rt: # 必须是等号
+        sz = len(nums)
+        lt, rt = 0, sz-1
+        while lt<=rt:
             mid = lt + (rt-lt)//2
-            if nums[0] > target: # 目标在右子数组
-                if nums[mid] >= nums[0]: # 中点在左子数组
-                    lt = mid + 1
-                else: # 中点在右子数组
-                    if nums[mid] == target:
-                        return mid
-                    elif nums[mid] > target:
+            if nums[0]>target: # 目标在右子数组
+                if nums[0]<=nums[mid]: # 中点在左子数组
+                    lt = mid+1
+                else:
+                    if nums[mid]>target:
                         rt = mid-1
+                    elif nums[mid]<target:
+                        lt = mid+1
                     else:
-                        lt = mid + 1
-            else: # 目标在左子数组
-                if nums[mid] < nums[0]: # 中点在左子数组
-                    rt = mid - 1
-                else: # 中点在右子数组
-                    if nums[mid] == target:
                         return mid
-                    elif nums[mid] > target:
-                        rt = mid - 1
+            else: # 目标在左子数组
+                if nums[0]>nums[mid]: # 中点在右子数组
+                    rt = mid-1
+                else:
+                    if nums[mid]>target:
+                        rt = mid-1
+                    elif nums[mid]<target:
+                        lt = mid+1
                     else:
-                        lt = mid + 1
+                        return mid
         return -1
+
 
 
 

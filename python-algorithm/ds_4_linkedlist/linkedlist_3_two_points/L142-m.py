@@ -9,21 +9,19 @@ class ListNode:
 
 class Solution:
     def detectCycle(self, head: ListNode) -> ListNode:
-        if not head or not head.next:
-            return None
+        if head == None: return None
         slow = fast = head
-        flag =  False
+        flag = False
         while fast.next and fast.next.next:
             slow = slow.next
             fast = fast.next.next
             if slow == fast:
                 flag = True
                 break
-        if flag:
-            cur = head
-            while cur != slow:
-                cur = cur.next
-                slow = slow.next
-            return slow
-        else:
+        if not flag:
             return None
+        start = head
+        while start != slow:
+            start = start.next
+            slow = slow.next
+        return start
