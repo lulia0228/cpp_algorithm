@@ -1,29 +1,25 @@
 #--coding:utf-8--
 
-
 # 110 判断平衡二叉树
 
 # Definition for a binary tree node.
 # class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 
 class Solution:
-    flag = True
     def isBalanced(self, root: TreeNode) -> bool:
-        self.defy(root)
+        self.flag = True
+        self.length_transvel(root)
         return self.flag
 
-    def defy(self, root):
-        if root == None:
-            return 0
-        l_h = self.defy(root.left)
-        r_h = self.defy(root.right)
-        if abs(l_h-r_h)>1:
-            self.flag = False
-        return max(l_h, r_h)+1
-
+    def length_transvel(self, root):
+        if not root: return 0
+        lt = self.length_transvel(root.left)
+        rt = self.length_transvel(root.right)
+        if abs(lt - rt) > 1: self.flag = False
+        return max(lt, rt) + 1
 
 

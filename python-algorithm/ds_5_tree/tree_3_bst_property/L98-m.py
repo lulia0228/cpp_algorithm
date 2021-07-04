@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-
-
 # 判断一棵树是否为二叉搜索树
-
 # 递归
 class Solution:
     def isValidBST(self, root):
@@ -15,6 +12,21 @@ class Solution:
                 return False
         return BFS(root, -float('inf'), float('inf'))
 
+class Solution:
+    def isValidBST(self, root: TreeNode) -> bool:
+        def helper(node, lower=float('-inf'), upper=float('inf')) -> bool:
+            if not node:
+                return True
+            val = node.val
+            if val <= lower or val >= upper:
+                return False
+            if not helper(node.left, lower, val):
+                return False
+            if not helper(node.right, val, upper):
+                return False
+            return True
+
+        return helper(root)
 
 # 中序遍历二叉树；为了省空间，不采用全部记录下来的方式，设置一个变量记录上一个节点即可
 class Solution:

@@ -3,18 +3,21 @@
 # def rand7():
 # @return a random integer in the range 1 to 7
 
+
 class Solution:
     def rand10(self):
         """
         :rtype: int
         """
-        num = (rand7()-1)*7+rand7()
-        while num > 40:
-            num = (rand7()-1)*7+rand7()
-        return num%10+1
+        while True:
+            n = (rand7()-1)*7 + rand7()
+            if n>40:
+                continue
+            else:
+                return n%10+1
 
 # 继续优化；减少生成失败的次数
-class Solution1:
+class Solution:
     def rand10(self):
         """
         :rtype: int

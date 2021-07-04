@@ -1,35 +1,24 @@
 # -*- coding: utf-8 -*-
 
 # 169 多数元素
-
 # 进阶要求线性时间复杂度 常数空间复杂度 就不太好做了
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        res = nums[0]
-        cnt = 0
-        for i in range(len(nums)):
-            if cnt == 0:
-                res = nums[i]
-                cnt = 1
+        flag= nums[0]
+        cnt = 1
+        # 摩尔投票
+        for i in range(1, len(nums)):
+            if nums[i] != flag:
+                cnt -= 1
+                if cnt == 0:
+                    flag = nums[i]
+                    cnt = 1 # 容易漏掉
             else:
-                if nums[i] != res:
-                    cnt -= 1
-                else:
-                    cnt += 1
-        return res
+                cnt += 1
+        return flag
 
-
+# 排序
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        cnt = 0
-        flag = nums[0]
-        for i in range(len(nums)):
-            if nums[i] == flag:
-                cnt += 1
-            else:
-                if cnt == 0:
-                    cnt += 1
-                    flag = nums[i]
-                else:
-                    cnt -= 1
-        return flag
+        nums.sort()
+        return nums[len(nums)//2]

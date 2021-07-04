@@ -1,6 +1,5 @@
 #--coding:utf-8--
 
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -8,18 +7,15 @@
 #         self.left = None
 #         self.right = None
 
-
 class Solution:
-    res = 0
-
     def diameterOfBinaryTree(self, root: TreeNode) -> int:
-        self.cal_depth(root)
+        self.res = -float("inf")
+        self.transval(root)
         return self.res
 
-    def cal_depth(self, root):
-        if root == None:
-            return 0
-        l_h = self.cal_depth(root.left)
-        r_h = self.cal_depth(root.right)
-        self.res = max(self.res, l_h+r_h)
-        return max(l_h, r_h)+1
+    def transval(self, root):
+        if not root: return 0
+        lt_max = self.transval(root.left)
+        rt_max = self.transval(root.right)
+        self.res = max(self.res, lt_max+rt_max)
+        return max(lt_max, rt_max)+1

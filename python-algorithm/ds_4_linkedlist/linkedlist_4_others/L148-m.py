@@ -1,44 +1,37 @@
 #--coding:utf-8--
-
-
 # 排序链表（归并）
-
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
 class Solution:
     def sortList(self, head: ListNode) -> ListNode:
-        if not head or not head.next:
-            return head
+        # not head.next 不能没有
+        if not head or not head.next: return head
         slow = fast = head
-        bre = head  # 记录打断位置上一个节点
-        while fast and fast.next:
-            bre = slow
+        while fast.next and fast.next.next:
             slow = slow.next
-            fast = fast.next
-        bre.next = None
+            fast = fast.next.next
+        ano_half = slow.next
+        slow.next = None
         lt = self.sortList(head)
-        rt = self.sortList(slow)
-        return self.merge2Lists(lt, rt)
+        rt = self.sortList(ano_half)
+        return self.merge(lt, rt)
 
-    def merge2Lists(self, l1: ListNode, l2: ListNode) -> ListNode:
-        dummy = ListNode(-1)
-        cur = dummy
-        while l1 and l2:
-            if l1.val < l2.val:
-                cur.next = l1
-                l1 = l1.next
+    def merge(self, h1, h2):
+        if not h1: return h2
+        if not h2: return h1
+        dummy = ListNode(0)
+        cursor = dummy  # 重新开辟一个指针，方便后面返回dummy.next
+        while h1 and h2:
+            if h1.val <= h2.val:
+                cursor.next = h1
+                h1 = h1.next
             else:
-                cur.next = l2
-                l2 = l2.next
-            cur = cur.next
-        if l1:
-            cur.next = l1
-        else:
-            cur.next = l2
-        return dummy.next
+                cursor.next = h2
+                h2 = h2.next
+            cursor = cursor.next
+        # 太容易漏掉了
+        if h1:
+            cursor.next = h1
+        if h2:
+            cursor.next = h2
 
+        return dummy.next
     
