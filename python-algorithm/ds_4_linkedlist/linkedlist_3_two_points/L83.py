@@ -1,11 +1,20 @@
 #--coding:utf-8--
+class Solution:
+    def deleteDuplicates(self, head: ListNode) -> ListNode:
+        if not head:
+            return head
+        cur = head
+        while cur.next:
+            if cur.val == cur.next.val:
+                # x = cur.val
+                # while cur.next and cur.next.val == x:
+                #     cur.next = cur.next.next
+                cur.next = cur.next.next
+            else:
+                cur = cur.next
+        return head
 
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
+# 自己写的
 class Solution:
     def deleteDuplicates(self, head: ListNode) -> ListNode:
         if not head:
@@ -24,19 +33,3 @@ class Solution:
         return head
 
 
-class Solution:
-    def deleteDuplicates(self, head: ListNode) -> ListNode:
-        if not head or not head.next:
-            return head
-        flag = head.val
-        back = head
-        cur = head.next
-        while cur :
-            if cur.val == flag:
-                back.next = cur.next
-                cur = cur.next
-            else:
-                back = cur
-                flag = back.val
-                cur = cur.next
-        return head
