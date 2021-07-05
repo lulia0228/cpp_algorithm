@@ -1,9 +1,6 @@
 #--coding:utf-8--
 
-
-
-# 这道题依然是三个指针，只是每次往后移动2步
-
+# 这道题是三个指针
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
@@ -14,15 +11,15 @@ class Solution:
     def swapPairs(self, head: ListNode) -> ListNode:
         if not head or not head.next:
             return head
-        dummy = ListNode(-1)
-        dummy.next = head
+        dummy = ListNode(0, head)
         back = dummy
         cur = head
+        # 三指针
         while cur and cur.next:
-            front = cur.next
-            back.next = front
-            cur.next = front.next
-            front.next = cur
+            fut = cur.next
+            cur.next = fut.next
+            fut.next = cur
+            back.next = fut
             back = cur
-            cur = back.next
+            cur = cur.next
         return dummy.next

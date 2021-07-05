@@ -43,4 +43,3 @@ class Solution:
                 dp[0][i] = dp[1][i]
         return dp[0][sz2]
 
-

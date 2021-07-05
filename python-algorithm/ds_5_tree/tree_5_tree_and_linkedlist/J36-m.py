@@ -8,28 +8,28 @@ class Node:
         self.right = right
 """
 
+
 class Solution:
     def treeToDoublyList(self, root: 'Node') -> 'Node':
-        if root == None:
-            return None
+        if not root: return None
         pre = None
-        head = None
         stk = []
-        while stk != [] or root != None:
-            while root:
-                stk.append(root)
-                root = root.left
-            root = stk.pop(-1)
-            if pre == None:
-                # 找到中序遍历起始节点head
-                head = root
-                pass
+        cursor = root
+        while stk or cursor:
+            while cursor:
+                stk.append(cursor)
+                cursor = cursor.left
+            cursor = stk.pop()
+            if not pre:
+                head = cursor
             else:
-                root.left = pre
-                pre.right = root
-            pre = root
-            root = root.right
-        # 首尾连起来
+                pre.right = cursor
+                cursor.left = pre
+            pre = cursor
+            cursor = cursor.right
+        #  连接首尾
         head.left = pre
         pre.right = head
         return head
+
+

@@ -6,7 +6,6 @@ class Solution:
         lt, rt = 0, len(nums)-1
         if nums[0] < nums[rt]:
             return nums[0]
-        # 取等会死循环
         while lt < rt:
             mid = lt + (rt-lt)//2
             if nums[mid] <= nums[rt]:
@@ -14,3 +13,5 @@ class Solution:
             else:
                 lt = mid + 1
         return nums[lt]
+
+
