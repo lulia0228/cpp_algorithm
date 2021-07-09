@@ -2,12 +2,10 @@
 
 class Solution:
     def change(self, amount: int, coins: List[int]) -> int:
-        sz = len(coins)
         dp = [0]*(amount+1)
         dp[0] = 1
+        # 内外层循环不能反，反了有重复计算
         for coin in coins:
-            for i in range(1, amount+1):
-                if i >= coin:
-                    dp[i] += dp[i-coin]
+            for c in range(coin, amount+1):
+                dp[c] += dp[c-coin]
         return dp[amount]
-

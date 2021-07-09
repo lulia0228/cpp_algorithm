@@ -1,6 +1,5 @@
 #--coding:utf-8--
 
-
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
@@ -9,19 +8,23 @@ class ListNode:
 
 class Solution:
     def rotateRight(self, head: ListNode, k: int) -> ListNode:
-        if not head or not head.next:
-            return head
-        tail = head # 标记尾节点
-        lenth = 1
+        if not head:
+            return None
+        cnt = 1
+        tail = head
+        # 计算出链表长度并标记最后个节点
         while tail.next:
-            lenth += 1
+            cnt += 1
             tail = tail.next
-        if k%lenth == 0:
+        if k%cnt == 0:
             return head
-        last = head # 断开位置上一个节点
-        for i in range(lenth-k%lenth-1):
-            last = last.next
-        new_head = last.next
+        slow = fast = head
+        for _ in range(k%cnt):
+            fast = fast.next
+        while fast.next:
+            slow = slow.next
+            fast = fast.next
+        new_head = slow.next
+        slow.next = None
         tail.next = head
-        last.next = None
         return new_head

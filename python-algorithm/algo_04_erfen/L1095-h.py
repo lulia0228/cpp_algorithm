@@ -1,31 +1,50 @@
 #--coding:utf-8--
+
+
 #class MountainArray:
+#    def get(self, index: int) -> int:
+#    def length(self) -> int:
+
+# """
+# This is MountainArray's API interface.
+# You should not implement it, or speculate about its implementation
+# """
+# class MountainArray:
 #    def get(self, index: int) -> int:
 #    def length(self) -> int:
 
 class Solution:
     def findInMountainArray(self, target: int, mountain_arr: 'MountainArray') -> int:
-        lt, rt = 0, mountain_arr.length()-1
-        while lt<rt:
-            mid = lt +(rt-lt)//2
-            if mountain_arr.get(mid) < mountain_arr.get(mid + 1):
-                lt = mid+1
-            else:
-                rt = mid
-        peak = lt
-        index = self.binary_serach(mountain_arr, target, 0, peak, func=lambda x:x)
-        if index == -1:
-            index = self.binary_serach(mountain_arr, target, peak+1, mountain_arr.length()-1, func=lambda x:-x)
-        return index
-
-    def binary_serach(self, mountain_arr, target, lt, rt, func = lambda x:x):
-        target = func(target)
-        while lt<=rt:
+        peak = 0
+        sz = mountain_arr.length()
+        lt, rt = 0, sz - 1
+        while lt < rt:
             mid = lt + (rt - lt) // 2
-            if func(mountain_arr.get(mid))<target:
-                lt = mid+1
-            elif func(mountain_arr.get(mid))>target:
-                rt = mid-1
+            if mountain_arr.get(mid) > mountain_arr.get(mid + 1):
+                rt = mid
             else:
+                lt = mid + 1
+        peak = rt
+
+        left_idx = self.binary_search(mountain_arr, 0, peak, target, lambda x: x)
+        right_idx = self.binary_search(mountain_arr, peak, sz - 1, target, lambda x: -x)
+        if left_idx == -1 and right_idx == -1:
+            return -1
+        if left_idx == -1:
+            return right_idx
+        if right_idx == -1:
+            return left_idx
+        return min(left_idx, right_idx)
+
+    def binary_search(self, mountain_arr, lt, rt, target, func):
+        targ = func(target)
+        while lt <= rt:
+            mid = lt + (rt - lt) // 2
+            tmp = func(mountain_arr.get(mid))
+            if tmp == targ:
                 return mid
+            elif tmp > targ:
+                rt = mid - 1
+            else:
+                lt = mid + 1
         return -1

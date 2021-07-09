@@ -1,11 +1,6 @@
 # -*- coding: utf-8 -*-
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
 
+# 非递归写法
 class Solution:
     def flatten(self, root: TreeNode) -> None:
         """
@@ -25,3 +20,28 @@ class Solution:
                 root.right = root.left
                 root.left = None
                 root = root.right
+
+# 递归写法
+class Solution:
+    def flatten(self, root: TreeNode) -> None:
+        """
+        Do not return anything, modify root in-place instead.
+        """
+        if not root:
+            return
+        # 必须写成if else 不能平行
+        if not root.left:
+            self.flatten(root.right)
+        elif not root.right:
+            root.right = root.left
+            root.left = None
+            self.flatten(root.right)
+        else:
+            cur = root.left
+            while cur.right:
+                cur = cur.right
+            cur.right = root.right
+            root.right = root.left
+            root.left = None
+            self.flatten(root.right)
+

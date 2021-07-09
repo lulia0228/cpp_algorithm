@@ -1,22 +1,21 @@
 #--coding:utf-8--
 
 # 同牛客134
-# 贪心算法：1 只要明天价格大于当天价格，当天就买；2 当天买第二天就卖
+# 题目要求不能同时参与多笔交易
 class Solution:
+    # #方法1 DP
     def maxProfit(self, prices: List[int]) -> int:
-        res = 0
-        for i in range(len(prices)-1):
-            res += max(prices[i+1]-prices[i], 0)
-        return res
-
-# 动态规划
-class Solution:
-    def maxProfit(self , prices ):
-        # write code here
-        # dp[0]表示昨天不持有状态下获得的利润，dp[1]表示昨天持有状态下获得的利润
-        dp = [0, -prices[0]]
+        dp = [[0, 0] for _ in range(len(prices))]
+        dp[0][0] = 0
+        dp[0][1] = -prices[0]
         for i in range(1, len(prices)):
-            tmp = dp[0]
-            dp[0] = max(dp[0], dp[1]+prices[i])
-            dp[1] = max(tmp-prices[i], dp[1])
-        return dp[0]
+            dp[i][0] = max(dp[i-1][0], dp[i-1][1]+prices[i])
+            dp[i][1] = max(dp[i-1][0]-prices[i], dp[i-1][1])
+        return dp[len(prices)-1][0]
+
+    # #方法2 贪心
+    # def maxProfit(self, prices: List[int]) -> int:
+    #     res = 0
+    #     for i in range(1, len(prices)):
+    #         res += max(prices[i]-prices[i-1], 0)
+    #     return res

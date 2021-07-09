@@ -20,18 +20,17 @@ class Solution:
 class Solution:
     def postorderTraversal(self, root: TreeNode) -> List[int]:
         res = []
-        if not root:
-            return res
+        if not root: return res
         stk = []
-        stk.append([root, "go"])
-        while stk != []:
-            cur = stk.pop(-1)
-            if cur[1] == "print":
-                res.append(cur[0].val)
+        stk.append((root, "go"))
+        while stk:
+            cur_nd = stk.pop()
+            if cur_nd[1] == "print":
+                res.append(cur_nd[0].val)
             else:
-                stk.append([cur[0], "print"])
-                if cur[0].right:
-                    stk.append([cur[0].right, "go"])
-                if cur[0].left:
-                    stk.append([cur[0].left, "go"])
+                stk.append((cur_nd[0], "print"))
+                if cur_nd[0].right:
+                    stk.append((cur_nd[0].right, "go"))
+                if cur_nd[0].left:
+                    stk.append((cur_nd[0].left, "go"))
         return res

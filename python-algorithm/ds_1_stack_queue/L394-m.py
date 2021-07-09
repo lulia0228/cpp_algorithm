@@ -3,24 +3,21 @@
 class Solution:
     def decodeString(self, s: str) -> str:
         stk = []
-        res = ""
         for c in s:
-            if c != ']':
+            if c != "]":
                 stk.append(c)
             else:
-                tmp_str = ""
-                while stk[-1] != '[':
-                    tmp_str = stk[-1]+tmp_str
-                    stk.pop(-1)
-                stk.pop(-1)
-                # 容易考虑不到就是重复次数不是1位的整数
-                cnt_str = ""
-                # 必须判断为空，否则访问越界报错
+                tmp_s = ""
+                while stk[-1] != "[":
+                    tmp_s = stk.pop()+tmp_s
+                stk.pop()
+                cnt_s = ""
+                # 这里需要注意栈为空的判定
                 while stk and stk[-1].isdigit():
-                    cnt_str = stk.pop(-1) + cnt_str
-                cnt = int(cnt_str)
-                stk.append(tmp_str*cnt)
-        # 这里用python list模拟c++中的stack，最好不要使用Python的字符串join()
+                    cnt_s = stk.pop() + cnt_s
+                for _ in range(int(cnt_s)):
+                    stk.append(tmp_s)
+        res = ""
         while stk:
-            res = stk.pop(-1) + res
+            res = stk.pop()+res
         return res
