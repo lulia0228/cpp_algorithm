@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 
-
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
-        tmp_max = nums[0] # 表示当前步可以到达的最远处
-        for i in range(len(nums)):
-            # 剪枝作用
-            if tmp_max == len(nums)-1:
+        fast_arrive = 0
+        for i, step in enumerate(nums):
+            if fast_arrive>=len(nums)-1:# 提前结束；剪枝
                 return True
-            if i > tmp_max:
+            if fast_arrive<i:
                 return False
-            tmp_max = max(tmp_max, nums[i]+i)
+            fast_arrive = max(fast_arrive, nums[i]+i)
         return True

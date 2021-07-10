@@ -1,8 +1,33 @@
 #--coding:utf-8--
 
 # 必须要先排序
+from typing import *
+class Solution:
+    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+        candidates.sort()
+        res = []
+        self.dfs(candidates, 0, target, [], res)
+        return res
+
+    def dfs(self, nums, idx, target, tmp, res):
+        if target==0:
+            res.append(tmp[:])
+            return
+        for i in range(idx, len(nums)):
+            # 因为从小到大排序了，这里可以剪枝
+            if target-nums[i]<0:
+                break
+            if i!=idx and nums[i]==nums[i-1]:
+                continue
+            tmp.append(nums[i])
+            # 因为每个数字在一个组合中只可以用1次，所以设置成i+1
+            self.dfs(nums, i+1, target-nums[i], tmp, res)
+            tmp.pop()
+
 
 class Solution:
+    # res = [] # 直接这么写，在不停调用的情况下是不对的，因为所有案例的结果都会累加到res里
+
     def __init__(self, **kwargs):
         self.res = []
 
@@ -13,21 +38,15 @@ class Solution:
 
     def dfs(self, candidates, cur_sum, target, idx, cur_ls):
         if cur_sum == target:
-            # 这里一开始直接append cur_ls，最后res成了[[],[]],是因为python参数传递的是引用，
-            # 导致最后res里面的cur_ls也被更新掉了;a=[1,2,3]，b=a，a[0]=10则b相应变成【10，2，3】
             self.res.append(cur_ls[:])
             return
-        # if cur_sum > target:
-        #     return
         for i in range(idx, len(candidates)):
-            # 剪枝
-            if cur_sum > target:
+            if cur_sum + candidates[i] > target:
                 break
-            if i != idx and candidates[i]==candidates[i-1]:
+            if i != idx and candidates[i] == candidates[i - 1]:
                 continue
             cur_ls.append(candidates[i])
-            # 因为每个数字在一个组合中只可以用1次，所以设置成i+1
-            self.dfs(candidates, cur_sum + candidates[i], target, i+1, cur_ls)
+            self.dfs(candidates, cur_sum + candidates[i], target, i + 1, cur_ls)
             cur_ls.pop()
 
 if __name__ == "__main__":

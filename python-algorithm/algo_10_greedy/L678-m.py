@@ -1,15 +1,25 @@
 #--coding:utf-8--
 
+# lo、hi表示可能多余的最少、最多左括号
+# 1 遇到左括号：lo++, hi++
+# 2 遇到星号：lo--, hi++（因为星号有三种情况）
+# 3 遇到右括号：lo--, hi--
+# lo要保持不小于0。
+# 如果hi < 0，说明把星号全变成左括号也不够了
+# 如果lo > 0，说明末尾有多余的左括号
+
+# 贪心算法
 class Solution(object):
     def checkValidString(self, s):
         lo = hi = 0
         for c in s:
             lo += 1 if c == '(' else -1
             hi += 1 if c != ')' else -1
-            if hi < 0: break
+            if hi < 0:
+                return False
             lo = max(lo, 0)
-
         return lo == 0
+
 
 
 class Solution1(object):
@@ -37,33 +47,3 @@ class Solution1(object):
                             dp[i][i+size] = True
 
         return dp[0][-1]
-
-
-class Solution2(object):
-    def checkValidString(self, s):
-        if not s: return True
-        A = list(s)
-        self.ans = False
-
-        def solve(i):
-            if i == len(A):
-                self.ans |= valid()
-            elif A[i] == '*':
-                for c in '() ':
-                    A[i] = c
-                    solve(i+1)
-                    if self.ans: return
-                A[i] = '*'
-            else:
-                solve(i+1)
-
-        def valid():
-            bal = 0
-            for x in A:
-                if x == '(': bal += 1
-                if x == ')': bal -= 1
-                if bal < 0: break
-            return bal == 0
-
-        solve(0)
-        return self.ans

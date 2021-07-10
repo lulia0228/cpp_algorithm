@@ -1,7 +1,6 @@
 #--coding:utf-8--
-
-
 # Definition for a binary tree node.
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,19 +8,17 @@ class TreeNode:
         self.right = right
 
 class Solution:
-    def isSubtree(self, s: TreeNode, t: TreeNode) -> bool:
-        if s == None :
-            return False
-        # 判断当前节点作为根节点的2棵树是否相等
-        if self.equal_tree(s,t):
+    def isSubtree(self, root: TreeNode, subRoot: TreeNode) -> bool:
+        if not root: return False
+        if self.isSame(root, subRoot):
             return True
-        return self.isSubtree(s.left, t) or self.isSubtree(s.right, t)
+        return self.isSubtree(root.left, subRoot) or self.isSubtree(root.right, subRoot)
 
-    def equal_tree(self, r1, r2):
-        if r1 == None and r2 == None:
+    def isSame(self, r1, r2):
+        if not r1 and not r2:
             return True
-        if r1 == None or r2 == None:
+        if not r1 or not r2:
             return False
         if r1.val != r2.val:
             return False
-        return self.equal_tree(r1.left, r2.left) and self.equal_tree(r1.right, r2.right)
+        return self.isSame(r1.left, r2.left) and self.isSame(r1.right, r2.right)

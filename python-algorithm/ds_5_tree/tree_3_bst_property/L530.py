@@ -1,21 +1,18 @@
 # -*- coding: utf-8 -*-
 
+# 同783
 class Solution:
     def getMinimumDifference(self, root: TreeNode) -> int:
+        ans = float("inf")
+        pre = None
         stk = []
-        pre, idx, min_abs = 0, 0, float("inf")
-        while stk != [] or root != None:
+        while stk or root:
             while root:
                 stk.append(root)
                 root = root.left
-            root = stk.pop(-1)
-            idx += 1
-            if idx == 1: # 遍历第一个值时候不处理
-                pass
-            else:
-                min_abs = min(min_abs, abs(root.val-pre))
-            pre = root.val
+            root = stk.pop()
+            if pre:
+                ans = min(ans, abs(root.val-pre.val))
+            pre = root
             root = root.right
-        return min_abs
-
-# 同783
+        return ans

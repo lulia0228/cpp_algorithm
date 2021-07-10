@@ -1,6 +1,7 @@
 #--coding:utf-8--
 
 # 缩小到一定范围后，再用的DFS 比较蠢 但是时间能过  和官方的也不一样
+# 是不是可以用下一个排列做？
 from functools import reduce
 class Solution:
     def getPermutation(self, n: int, k: int) -> str:
@@ -38,7 +39,6 @@ class Solution:
                 self.dfs(candinates, idx+1, visited, cur_ls, record)
                 cur_ls.pop()
                 visited[i] = False
-
 
 if __name__ == "__main__":
     n,k = 4, 9
