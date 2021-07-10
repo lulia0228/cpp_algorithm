@@ -1,33 +1,34 @@
 # -*- coding: utf-8 -*-
 
-
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 
 class Solution:
-    dic = {}
     def buildTree(self, inorder: List[int], postorder: List[int]) -> TreeNode:
-        sz = len(postorder)
-        for i in range(sz):
-            self.dic[inorder[i]] = i
-        return self.myBuildTree(postorder, inorder, 0, sz-1, 0, sz-1)
+        sz = len(inorder)
+        ino_idx_dic = {}
+        for i, val in enumerate(inorder):
+            ino_idx_dic[val] = i
+        return self.my_build(postorder, inorder, 0, sz-1, 0, sz-1, ino_idx_dic)
 
-    def myBuildTree(self, postorder, inorder, p_lt, p_rt, i_lt, i_rt):
-        # 递归终止条件
-        if p_lt > p_rt:
+    def my_build(self, postorder, inorder, pos_lt, pos_rt, ino_left, ino_rt, ino_idx_dic):
+        if pos_lt>pos_rt:
             return None
+        root_val = postorder[pos_rt]
         # 找到当前根节点在两个遍历中的索引
-        p_root = p_rt
-        i_root = self.dic[postorder[p_root]]
-        # 创建当前根节点
-        root = TreeNode(postorder[p_root])
+        ino_root_idx = ino_idx_dic[root_val]
         # 左子树中节点数目
-        num_lt = i_root-i_lt
-        # 递归建树
-        root.left = self.myBuildTree(postorder, inorder, p_lt, p_lt+num_lt-1, i_lt, i_root-1) # 都是取闭区间值
-        root.right = self.myBuildTree(postorder, inorder, p_lt+num_lt, p_rt-1, i_root+1, i_rt)
+        nums_of_left = ino_root_idx-ino_left
+        # 创建当前根节点
+        root = TreeNode(root_val)
+        root.left = self.my_build(postorder, inorder, pos_lt,
+                    pos_lt+nums_of_left-1, ino_left, ino_root_idx-1, ino_idx_dic)
+        root.right = self.my_build(postorder, inorder,
+                    pos_lt+nums_of_left, pos_rt-1, ino_root_idx+1, ino_rt, ino_idx_dic)
+
         return root
+

@@ -1,24 +1,18 @@
 #--coding:utf-8--
 
-# 前缀和+双端队列
+# 前缀和+双端单调队列
 class Solution:
     def shortestSubarray(self, A: List[int], K: int) -> int:
-        N = len(A)
-        P = [0]
-        for x in A:
-            P.append(P[-1] + x)
-
-        # Want smallest y-x with Py - Px >= K
-        ans = N + 1  # N+1 is impossible
-        monoq = collections.deque()
-        for y, Py in enumerate(P):
-            # Want opt(y) = largest x with Px <= Py - K
-            # 单调递增队列
-            while monoq and Py <= P[monoq[-1]]:
-                monoq.pop()
-            while monoq and Py - P[monoq[0]] >= K:
-                ans = min(ans, y - monoq.popleft())
-
-            monoq.append(y)
-
-        return ans if ans < N + 1 else -1
+        prefix = [0]
+        for n in A:
+            prefix.append(prefix[-1]+n)
+        q = collections.deque()
+        ans = len(A)+1
+        for idx, val in enumerate(prefix):
+            # 单调递增前缀和队列（题目中K>0）
+            while q and prefix[q[-1]] > val:
+                q.pop()
+            while q and prefix[q[0]]+K<=val:
+                ans = min(ans, idx-q.popleft())
+            q.append(idx)
+        return ans if ans < len(A)+1 else -1

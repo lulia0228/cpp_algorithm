@@ -1,5 +1,7 @@
 #--coding:utf-8--
 
+# 从最高位开始向右侧遍历，如果最高位右侧存在比它大的数字，找到最大的这个数字
+
 class Solution:
     def maximumSwap(self, num: int) -> int:
         nums = [int(n) for n in str(num)]
@@ -13,5 +15,6 @@ class Solution:
                     nums[i] , nums[num_dict[n]] = nums[num_dict[n]] , nums[i]
                     return int("".join(str(n) for n in nums))
         return num
+
 
 
