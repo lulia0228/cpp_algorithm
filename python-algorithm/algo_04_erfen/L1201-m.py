@@ -10,7 +10,8 @@
 6.该数只能被b和c同时整除 (该数一定是b、c最小公倍数的整数倍)
 7.该数只能被a和b和c同时整除（该数一定是a、b、c的最小公倍数的整数倍）
 '''
-# 同leetcode 878 被2个数整除
+# 同leetcode 878 被2个数整除 这里是848的升级版本 被3个数整除
+
 class Solution:
     def nthUglyNumber(self, n: int, a: int, b: int, c: int) -> int:
         l_ab, l_ac, l_bc = self.LCM(a,b), self.LCM(a,c), self.LCM(b,c)
