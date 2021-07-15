@@ -17,7 +17,7 @@
 
 - [滑动窗口（16）](./leetcode_content/滑动窗口.md)
 - [双指针（15）](./leetcode_content/双指针.md)
-- [二分法（23）](./leetcode_content/二分法.md)
+- [二分法（24）](./leetcode_content/二分法.md)
 - [排序（22）](./leetcode_content/排序.md)
 - [前缀和（11）](./leetcode_content/前缀和.md)
 - [回溯（21）](./leetcode_content/回溯.md)
