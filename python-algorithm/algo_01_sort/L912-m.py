@@ -11,6 +11,8 @@ class Solution:
 
     def QuickSort(self, nums, lt, rt):
         if lt >= rt: return
+        # partiton功能2个：部分排序数组；返回分界点下标
+        # 可以在这里直接写函数体，不用单独调函数也可以
         mid = self.partition(nums, lt, rt)
         self.QuickSort(nums, lt, mid - 1)
         self.QuickSort(nums, mid + 1, rt)
