@@ -12,7 +12,7 @@ class Solution:
             i = (i + m - 1) % (n - j)
             res.pop(i)
         return res[0]
-    
+
 class Solution:
     def ysf(self, n, m):
         # write code here
