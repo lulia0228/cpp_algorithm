@@ -2,7 +2,6 @@
 
 # dp[0][K] = 0, dp[N][1] = N, dp[N][K] = min(max(dp[i-1][K-1], dp[N-i][K])) + 1
 
-
 class Solution:
     def solve(self , n , k ):
         # write code here
